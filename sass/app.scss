@@ -8,8 +8,967 @@
 2. Common CSS 
 /*===============================================
 
-/* >>>>>>>>> Montserrat <<<<<<<<< */
-@import url("../fonts/Montserrat/stylesheet.css");
+/* >>>>>>>>> Quicksand <<<<<<<<< */
+@import url("../fonts/Quicksand/stylesheet.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  /* Header Height */
+  padding-top: 107px;
+  background: #fafcfc;
+}
+
+.-bg {
+  z-index: -1;
+  width: 3736px;
+  height: 4481px;
+  position: absolute;
+  top: -643px;
+  left: -1183px;
+}
+
+.-message {
+  padding: 4px 20px;
+  width: 100%;
+  text-overflow: ellipsis;
+  background: #ec6d75;
+  text-align: center;
+  p {
+    font: normal normal bold 12px/15px "Quicksand";
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    opacity: 1;
+  }
+}
+
+#scroll-down {
+  text-align: center;
+  margin-top: 80px;
+  .mouse {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 3px solid #000;
+    height: 56px;
+    width: 31px;
+    position: relative;
+    .move {
+      position: absolute;
+      background-color: #000;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: move 1.2s linear infinite;
+    }
+  }
+  h6 {
+    font: normal normal 500 14px/18px "Quicksand";
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-top: 15px;
+    color: #272727;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, 5px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 40px);
+    opacity: 0;
+  }
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 14px 7px -10px rgb(245, 245, 245);
+  .navbar {
+    height: 84px;
+    max-width: 1664px;
+    margin: 0 auto;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        a {
+          font: normal normal 500 18px/23px "Quicksand";
+          text-decoration: none;
+          letter-spacing: 0px;
+          color: #272727;
+          text-transform: uppercase;
+          transition: 0.3s;
+          opacity: 1;
+          &:hover {
+            color: #ec6d75;
+            transition: 0.3s;
+          }
+        }
+        margin-right: 50px;
+        &:last-of-type {
+          margin-right: 0px;
+          margin-left: 18px;
+          a {
+            font: normal normal bold 16px/20px "Quicksand";
+            display: block;
+            text-align: center;
+            border: 2px solid #ec6d75;
+            border-radius: 2px;
+            padding: 11px 15px;
+            color: #ec6d75;
+            width: 259px;
+            &:hover {
+              box-shadow: 0.25em 0.25em 0 0 #ec6d75;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-banner {
+  padding: 100px 0px;
+  .container {
+    max-width: 1664px;
+  }
+  img {
+    width: 100%;
+  }
+  .-text-area {
+    margin-bottom: 40px;
+    h1 {
+      font: normal normal bold 48px/60px "Quicksand";
+      color: #272727;
+      letter-spacing: 0px;
+      margin-bottom: 2px;
+      span {
+        color: #ec6d75;
+      }
+    }
+    h6 {
+      font: normal normal 500 18px/23px "Quicksand";
+      color: #272727;
+      margin: 0;
+      letter-spacing: 0px;
+    }
+  }
+  form {
+    input,
+    button {
+      outline: none;
+      border: none;
+    }
+    input {
+      width: 378px;
+      border-bottom: 2px solid #ec6d75;
+      font: normal normal 500 18px/23px "Quicksand";
+      padding-bottom: 6px;
+      letter-spacing: 0px;
+      color: #ec6d75;
+      text-transform: uppercase;
+      &::placeholder {
+        color: #ec6d75;
+        opacity: 0.55;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 35px;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      background: transparent;
+      text-decoration: underline;
+      svg {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.why-ma-afro {
+  padding: 35px 0px 100px 0px;
+  text-align: center;
+  .container {
+    max-width: 1664px;
+    .row {
+      margin: 110px 0px 153px 0px;
+    }
+  }
+  h2 {
+    font: normal normal bold 48px/60px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+    opacity: 1;
+  }
+  .-reasons {
+    svg {
+      margin-bottom: 10px;
+    }
+    h5 {
+      margin-bottom: 20px;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      opacity: 1;
+    }
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      margin: 0;
+      color: #777777;
+      opacity: 1;
+    }
+  }
+  .why-coiffeuse {
+    a {
+      font: normal normal normal 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      text-decoration: underline;
+    }
+  }
+}
+
+.how-it-works {
+  margin-top: 135px;
+  position: relative;
+  .container {
+    max-width: 1664px;
+    padding: 80px 120px;
+    background: #ec6d75;
+    position: relative;
+  }
+  img {
+    position: relative;
+    margin-top: -135px;
+    width: 100%;
+  }
+  h2 {
+    font: normal normal bold 48px/60px "Quicksand";
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+  }
+  ul {
+    margin: 96px 0px 0px 0px;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 60px;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      .-processes {
+        display: flex;
+        align-items: flex-start;
+        .process-number {
+          .-number {
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            border-radius: 50%;
+            position: relative;
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font: normal normal bold 22px/28px "Quicksand";
+              letter-spacing: 0px;
+              color: #ec6d75;
+              opacity: 1;
+            }
+          }
+        }
+        .process-description {
+          margin-left: 25px;
+          h5 {
+            font: normal normal bold 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #ffffff;
+            opacity: 1;
+          }
+          p {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #ffffff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  a.-register {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 60px 0px 0px 55px;
+    font: normal normal bold 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #fff !important;
+    color: unset;
+    background: transparent;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+    svg {
+      margin-left: 15px;
+    }
+  }
+}
+
+.unique-offers {
+  padding: 100px 0px;
+  .container {
+    max-width: 1664px;
+    text-align: center;
+  }
+  h2 {
+    font: normal normal bold 48px/60px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+    margin-bottom: 44px;
+    opacity: 1;
+    span {
+      color: #ec6d75;
+    }
+  }
+  p {
+    font: normal normal 500 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #777777;
+    margin-bottom: 70px;
+    opacity: 1;
+  }
+  .-offers {
+    position: relative;
+    max-width: 395px;
+    height: 384px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 40px rgb(247, 247, 247);
+    text-align: left;
+    padding: 60px 20px 20px 20px;
+    .-offer {
+      width: 287px;
+      margin: 0 auto;
+    }
+    .-top {
+      position: absolute;
+      top: -26px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: fit-content;
+      padding: 15px 73px;
+      background: #eaeaea;
+      border-radius: 24px;
+      h5 {
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #777777;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+    .-par-transaction {
+      margin-bottom: 55px;
+      h3 {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #777777;
+        text-transform: uppercase;
+        span {
+          font: normal normal bold 48px/60px "Quicksand";
+          margin-right: 12px;
+        }
+      }
+    }
+    .check-points {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        .points {
+          display: flex;
+          align-items: center;
+          h4 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            margin: 0;
+            color: #272727;
+          }
+          svg {
+            margin-right: 30px;
+          }
+        }
+        &:first-of-type {
+          margin-bottom: 25px;
+        }
+        &:nth-of-type(2) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    /* Active Offer */
+    &.active {
+      max-width: 441px;
+      height: 424px;
+      box-shadow: 0px 3px 40px #ec6d7529;
+      padding-top: 80px;
+      .-top {
+        background: #ffeaea;
+        padding: 15px 44px;
+        h5 {
+          color: #ec6d75;
+        }
+      }
+      .-par-transaction {
+        h3 {
+          color: #ec6d75;
+          span {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+    /* 3rd Offer */
+    &.offer-3 {
+      .-top {
+        padding: 15px 36px;
+      }
+      .-par-transaction {
+        h3 {
+          text-align: center;
+          span {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+  a.-register {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font: normal normal bold 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    width: fit-content;
+    margin: 0 auto;
+    color: #ec6d75 !important;
+    color: unset;
+    background: transparent;
+    text-decoration: underline;
+    margin-top: 25px;
+    &:hover {
+      text-decoration: underline;
+    }
+    svg {
+      margin-left: 15px;
+    }
+  }
+}
+
+.contact-us {
+  margin-bottom: 143px;
+  .container {
+    max-width: 1664px;
+    text-align: center;
+  }
+  h2 {
+    font: normal normal bold 48px/60px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+    margin-bottom: 41px;
+  }
+  p {
+    font: normal normal 500 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    margin: 0;
+    color: #777777;
+  }
+  form {
+    margin-top: 60px;
+    input,
+    button {
+      outline: none;
+      border: none;
+    }
+    input {
+      width: 341px;
+      border-bottom: 2px solid #ec6d75;
+      font: normal normal 500 18px/23px "Quicksand";
+      padding-bottom: 6px;
+      letter-spacing: 0px;
+      color: #ec6d75;
+      text-transform: uppercase;
+      &::placeholder {
+        color: #ec6d75;
+        opacity: 0.55;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin: 0 auto;
+      cursor: pointer;
+      margin-top: 40px;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      background: transparent;
+      text-decoration: underline;
+      svg {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 90px 0px 100px 0px;
+  background: #ec6d75;
+  .container {
+    max-width: 1277px;
+    .col-lg-3 {
+      &:first-of-type {
+        background: yellow;
+      }
+    }
+  }
+  .-footer-list-th {
+    text-decoration: underline;
+    font: normal normal bold 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  p {
+    font: normal normal 500 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .-icons {
+    display: flex;
+    align-items: center;
+    li {
+      &:first-of-type {
+        margin-right: 30px;
+      }
+    }
+  }
+  .-links {
+    li {
+      a {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.steps {
+  padding: 75px 0px 63px 0px;
+  height: 975px;
+  position: relative;
+  .container {
+    max-width: 1664px;
+  }
+  .-back,
+  .-steps-count {
+    margin-bottom: 28px;
+  }
+  .-back {
+    a {
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #777777;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+  .step {
+    h1,
+    p,
+    h6,
+    label {
+      margin: 0;
+    }
+    h1 {
+      font: normal normal bold 48px/60px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      span {
+        color: #ec6d75;
+      }
+    }
+    .-steps-count {
+      h6 {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #272727;
+      }
+    }
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #777777;
+    }
+    form {
+      margin-top: 50px;
+      label {
+        display: block;
+        margin: 0;
+        font: normal normal 500 14px/18px "Quicksand";
+        letter-spacing: 0px;
+        color: #ec6d75;
+      }
+      input,
+      button {
+        outline: none;
+        border: none;
+      }
+      input {
+        width: 378px;
+        border-bottom: 2px solid #ec6d75;
+        font: normal normal 500 18px/23px "Quicksand";
+        padding-bottom: 6px;
+        letter-spacing: 0px;
+        color: #ec6d75;
+        text-transform: uppercase;
+        &::placeholder {
+          color: #ec6d75;
+          opacity: 0.55;
+        }
+      }
+      button,
+      .-actions {
+        position: absolute;
+        bottom: 63px;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #ec6d75;
+        background: transparent;
+        text-decoration: underline;
+        svg {
+          margin-left: 15px;
+        }
+      }
+    }
+    /* Step # 2 */
+    &.step-2 {
+      form {
+        .-inputs {
+          margin-bottom: 30px;
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+    /* Step # 3 */
+    &.step-3 {
+      form {
+        /* Address */
+        .-address {
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 50px;
+          .-inputs.-get-street {
+            input {
+              width: 249px;
+            }
+          }
+          .-inputs.-get-postal-code {
+            input {
+              width: 88px;
+            }
+          }
+          .-inputs.-get-city {
+            input {
+              width: 88px;
+              &::placeholder {
+                font: normal normal bold 18px/23px "Quicksand";
+                opacity: 1;
+              }
+            }
+          }
+          .-inputs {
+            margin-right: 25px;
+            &:last-of-type {
+              margin-right: 0px;
+            }
+          }
+        }
+        /* Checkbox */
+        .-checkbox {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+          input,
+          label {
+            width: fit-content;
+          }
+          input {
+            margin-right: 17px;
+            padding: 0;
+            height: initial;
+            width: initial;
+            margin-bottom: 0;
+            display: none;
+            cursor: pointer;
+          }
+          label {
+            position: relative;
+            color: #777777;
+            cursor: pointer;
+            &::before {
+              content: "";
+              border: 1px solid #ec6d75;
+              border-radius: 3px;
+              width: 21px;
+              height: 21px;
+              display: inline-block;
+              position: relative;
+              vertical-align: middle;
+              cursor: pointer;
+              margin-right: 15px;
+            }
+          }
+          input:checked + label {
+            color: #ec6d75;
+          }
+          input:checked + label::before {
+            background: #ec6d75;
+          }
+          input:checked + label:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 8px;
+            height: 13px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+        }
+        /* Ready to Move */
+        .-ready-to-move {
+          p {
+            font: normal normal bold 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            margin-bottom: 25px;
+            color: #272727;
+          }
+        }
+        /* Choose Department */
+        .-choose-dep {
+          margin-top: 14px;
+          p {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #777777;
+          }
+          .-depatrtments {
+            max-width: 1270px;
+            margin-top: 28px;
+          }
+        }
+      }
+    }
+    /* Step # 4 */
+    &.step-4 {
+      .-offers {
+        position: relative;
+        max-width: 395px;
+        height: 384px;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 0 40px rgb(247, 247, 247);
+        text-align: left;
+        padding: 60px 20px 20px 20px;
+        margin-bottom: 100px;
+        .-offer {
+          width: 287px;
+          margin: 0 auto;
+        }
+        .-top,
+        .-bottom {
+          position: absolute;
+          top: -26px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: fit-content;
+          padding: 15px 73px;
+          background: #eaeaea;
+          border-radius: 24px;
+          h5 {
+            font: normal normal bold 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #777777;
+            text-transform: uppercase;
+            margin: 0;
+          }
+        }
+        .-bottom {
+          top: unset;
+          bottom: -20px;
+          background: #ec6d75;
+          padding: 11px 43px;
+          border-radius: 15px;
+          left: 50%;
+          h5 {
+            color: #fff;
+            text-decoration: underline;
+            font: normal normal bold 18px/23px "Quicksand";
+          }
+        }
+        .-par-transaction {
+          margin-bottom: 55px;
+          h3 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #777777;
+            text-transform: uppercase;
+            span {
+              font: normal normal bold 48px/60px "Quicksand";
+              margin-right: 12px;
+            }
+          }
+        }
+        .check-points {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            .points {
+              display: flex;
+              align-items: center;
+              h4 {
+                font: normal normal 500 18px/23px "Quicksand";
+                letter-spacing: 0px;
+                margin: 0;
+                color: #272727;
+              }
+              svg {
+                margin-right: 30px;
+              }
+            }
+            &:first-of-type {
+              margin-bottom: 25px;
+            }
+            &:nth-of-type(2) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+        /* Active Offer */
+        &.active {
+          max-width: 441px;
+          height: 424px;
+          box-shadow: 0px 3px 40px #ec6d7529;
+          padding-top: 80px;
+          .-top {
+            background: #ffeaea;
+            padding: 15px 44px;
+            h5 {
+              color: #ec6d75;
+            }
+          }
+          .-par-transaction {
+            h3 {
+              color: #ec6d75;
+              span {
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+        /* 3rd Offer */
+        &.offer-3 {
+          .-top {
+            padding: 15px 36px;
+          }
+          .-par-transaction {
+            h3 {
+              text-align: center;
+              span {
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+      }
+      .-actions {
+        display: flex;
+        align-items: center;
+        button {
+          position: unset;
+          bottom: unset;
+          margin: 0;
+          padding: 0;
+          margin-right: 60px;
+          opacity: 0.5;
+        }
+        a {
+          font: normal normal bold 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #777777;
+          text-transform: uppercase;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<  */
