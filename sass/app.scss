@@ -33,6 +33,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Quicksand";
   overflow-x: hidden;
@@ -377,8 +380,25 @@ header {
       color: #ec6d75;
       background: transparent;
       text-decoration: underline;
-      svg {
+      .next-icon {
+        width: 34px;
+        height: 34px;
+        background: #ec6d75;
+        position: relative;
         margin-left: 15px;
+        border-radius: 50%;
+        span {
+          font: normal normal bold 16px/20px "Quicksand";
+          margin: 0;
+          padding: 0;
+          display: block;
+          color: #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-decoration: unset;
+        }
       }
     }
   }
@@ -687,8 +707,25 @@ header {
     &:hover {
       text-decoration: underline;
     }
-    svg {
+    .next-icon {
+      width: 34px;
+      height: 34px;
+      background: #fff;
+      position: relative;
       margin-left: 15px;
+      border-radius: 50%;
+      span {
+        font: normal normal bold 16px/20px "Quicksand";
+        margin: 0;
+        padding: 0;
+        display: block;
+        color: #ec6d75;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: unset;
+      }
     }
   }
 }
@@ -874,7 +911,7 @@ header {
             margin: 0;
             color: #272727;
           }
-          svg {
+          img {
             margin-right: 30px;
           }
         }
@@ -939,8 +976,25 @@ header {
     &:hover {
       text-decoration: underline;
     }
-    svg {
+    .next-icon {
+      width: 34px;
+      height: 34px;
+      background: #ec6d75;
+      position: relative;
       margin-left: 15px;
+      border-radius: 50%;
+      span {
+        font: normal normal bold 16px/20px "Quicksand";
+        margin: 0;
+        padding: 0;
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: unset;
+      }
     }
   }
 }
@@ -987,7 +1041,7 @@ header {
             h4 {
               font: normal normal 500 14px/18px "Quicksand";
             }
-            svg {
+            img {
               margin-right: 30px;
             }
           }
@@ -1064,8 +1118,25 @@ header {
       color: #ec6d75;
       background: transparent;
       text-decoration: underline;
-      svg {
+      .next-icon {
+        width: 34px;
+        height: 34px;
+        background: #ec6d75;
+        position: relative;
         margin-left: 15px;
+        border-radius: 50%;
+        span {
+          font: normal normal bold 16px/20px "Quicksand";
+          margin: 0;
+          padding: 0;
+          display: block;
+          color: #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-decoration: unset;
+        }
       }
     }
   }
@@ -1268,8 +1339,25 @@ footer {
         color: #ec6d75;
         background: transparent;
         text-decoration: underline;
-        svg {
+        .next-icon {
+          width: 34px;
+          height: 34px;
+          background: #ec6d75;
+          position: relative;
           margin-left: 15px;
+          border-radius: 50%;
+          span {
+            font: normal normal bold 16px/20px "Quicksand";
+            margin: 0;
+            padding: 0;
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-decoration: unset;
+          }
         }
       }
     }
@@ -1477,7 +1565,7 @@ footer {
                 margin: 0;
                 color: #272727;
               }
-              svg {
+              img {
                 margin-right: 30px;
               }
             }
@@ -1494,7 +1582,7 @@ footer {
           max-width: 441px;
           height: 424px;
           box-shadow: 0px 3px 40px #ec6d7529;
-          padding-top: 80px;
+          padding-top: 60px;
           .offer-top {
             background: #ffeaea;
             padding: 15px 44px;

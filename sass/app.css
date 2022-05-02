@@ -29,6 +29,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Quicksand";
   overflow-x: hidden;
@@ -395,8 +399,27 @@ header .navbar ul li:last-of-type a:hover {
   text-decoration: underline;
 }
 
-.hero-banner form button svg {
+.hero-banner form button .next-icon {
+  width: 34px;
+  height: 34px;
+  background: #ec6d75;
+  position: relative;
   margin-left: 15px;
+  border-radius: 50%;
+}
+
+.hero-banner form button .next-icon span {
+  font: normal normal bold 16px/20px "Quicksand";
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: unset;
 }
 
 @media only screen and (max-width: 768px) {
@@ -729,8 +752,27 @@ header .navbar ul li:last-of-type a:hover {
   text-decoration: underline;
 }
 
-.how-it-works a.register svg {
+.how-it-works a.register .next-icon {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  position: relative;
   margin-left: 15px;
+  border-radius: 50%;
+}
+
+.how-it-works a.register .next-icon span {
+  font: normal normal bold 16px/20px "Quicksand";
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #ec6d75;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: unset;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -923,7 +965,7 @@ header .navbar ul li:last-of-type a:hover {
   color: #272727;
 }
 
-.unique-offers .all-offers .check-points li .points svg {
+.unique-offers .all-offers .check-points li .points img {
   margin-right: 30px;
 }
 
@@ -997,8 +1039,27 @@ header .navbar ul li:last-of-type a:hover {
   text-decoration: underline;
 }
 
-.unique-offers a.register svg {
+.unique-offers a.register .next-icon {
+  width: 34px;
+  height: 34px;
+  background: #ec6d75;
+  position: relative;
   margin-left: 15px;
+  border-radius: 50%;
+}
+
+.unique-offers a.register .next-icon span {
+  font: normal normal bold 16px/20px "Quicksand";
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: unset;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1041,7 +1102,7 @@ header .navbar ul li:last-of-type a:hover {
   .unique-offers .all-offers .check-points li .points h4 {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .unique-offers .all-offers .check-points li .points svg {
+  .unique-offers .all-offers .check-points li .points img {
     margin-right: 30px;
   }
   .unique-offers .all-offers .check-points li:first-of-type {
@@ -1145,8 +1206,27 @@ header .navbar ul li:last-of-type a:hover {
   text-decoration: underline;
 }
 
-.contact-us form button svg {
+.contact-us form button .next-icon {
+  width: 34px;
+  height: 34px;
+  background: #ec6d75;
+  position: relative;
   margin-left: 15px;
+  border-radius: 50%;
+}
+
+.contact-us form button .next-icon span {
+  font: normal normal bold 16px/20px "Quicksand";
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: unset;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1390,8 +1470,27 @@ footer .the-links li a:hover {
   text-decoration: underline;
 }
 
-.steps .step form button svg {
+.steps .step form button .next-icon {
+  width: 34px;
+  height: 34px;
+  background: #ec6d75;
+  position: relative;
   margin-left: 15px;
+  border-radius: 50%;
+}
+
+.steps .step form button .next-icon span {
+  font: normal normal bold 16px/20px "Quicksand";
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: unset;
 }
 
 .steps .step.step-2 form .all-inputs {
@@ -1659,7 +1758,7 @@ footer .the-links li a:hover {
   color: #272727;
 }
 
-.steps .step.step-4 .all-offers .check-points li .points svg {
+.steps .step.step-4 .all-offers .check-points li .points img {
   margin-right: 30px;
 }
 
@@ -1676,7 +1775,7 @@ footer .the-links li a:hover {
   height: 424px;
   -webkit-box-shadow: 0px 3px 40px #ec6d7529;
           box-shadow: 0px 3px 40px #ec6d7529;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .steps .step.step-4 .all-offers.active .offer-top {
