@@ -1653,12 +1653,6 @@ footer {
       }
     }
     .step {
-      h1,
-      p,
-      h6,
-      label {
-        margin: 0;
-      }
       h1 {
         font: normal normal bold 32px/40px "Quicksand";
       }
@@ -1682,7 +1676,7 @@ footer {
       /* Step # 2 */
       &.step-2 {
         height: fit-content;
-        padding-bottom: 40px;
+        padding-bottom: 53px;
         button,
         .all-actions {
           position: relative;
@@ -1693,7 +1687,7 @@ footer {
       /* Step # 3 */
       &.step-3 {
         height: fit-content;
-        padding-bottom: 40px;
+        padding-bottom: 53px;
         button,
         .all-actions {
           position: relative;
@@ -1749,7 +1743,7 @@ footer {
       /* Step # 4 */
       &.step-4 {
         height: fit-content;
-        padding-bottom: 40px;
+        padding-bottom: 53px;
         button,
         .all-actions {
           position: relative;

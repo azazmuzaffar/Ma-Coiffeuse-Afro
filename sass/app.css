@@ -1861,12 +1861,6 @@ footer .the-links li a:hover {
     /* Step # 3 */
     /* Step # 4 */
   }
-  .steps .step h1,
-  .steps .step p,
-  .steps .step h6,
-  .steps .step label {
-    margin: 0;
-  }
   .steps .step h1 {
     font: normal normal bold 32px/40px "Quicksand";
   }
@@ -1889,7 +1883,7 @@ footer .the-links li a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding-bottom: 40px;
+    padding-bottom: 53px;
   }
   .steps .step.step-2 button,
   .steps .step.step-2 .all-actions {
@@ -1901,7 +1895,7 @@ footer .the-links li a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding-bottom: 40px;
+    padding-bottom: 53px;
   }
   .steps .step.step-3 button,
   .steps .step.step-3 .all-actions {
@@ -1966,7 +1960,7 @@ footer .the-links li a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding-bottom: 40px;
+    padding-bottom: 53px;
   }
   .steps .step.step-4 button,
   .steps .step.step-4 .all-actions {
