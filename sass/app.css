@@ -5,20 +5,45 @@
 /*===============================================
 1. Importing Fonts
 2. Common CSS 
-/*===============================================
-
+3. Header
+4. Hero Banner
+5. Scroll Down
+6. Why Coiffeuse Afro
+7. Mobile Image (Mobile Only)
+8. How it Works
+9. Unique Offers
+10. Contact Us 
+11. Footer
+12. Steps -> Step 1, 2, 3, 4
+=================================================*/
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Fonts <<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>> Quicksand <<<<<<<<< */
 @import url("../fonts/Quicksand/stylesheet.css");
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Common CSS <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  font-family: "Quicksand";
   overflow-x: hidden;
   /* Header Height */
   padding-top: 107px;
   background: #fafcfc;
+}
+
+input {
+  background: transparent !important;
+}
+
+a,
+svg {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -27,7 +52,10 @@ body {
   }
 }
 
-.-bg {
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Background <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.bg-image {
   z-index: -1;
   width: 3736px;
   height: 4481px;
@@ -37,12 +65,15 @@ body {
 }
 
 @media only screen and (max-width: 1900px) {
-  .-bg {
+  .bg-image {
     width: 100%;
   }
 }
 
-.-message {
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>> Message (Mini Header) <<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.mini-header {
   padding: 4px 20px;
   width: 100%;
   text-overflow: ellipsis;
@@ -50,7 +81,7 @@ body {
   text-align: center;
 }
 
-.-message p {
+.mini-header p {
   font: normal normal bold 12px/15px "Quicksand";
   letter-spacing: 0px;
   color: #ffffff;
@@ -59,85 +90,9 @@ body {
   opacity: 1;
 }
 
-#scroll-down {
-  text-align: center;
-  margin-top: 80px;
-}
-
-#scroll-down .mouse {
-  margin: 0 auto;
-  display: block;
-  cursor: pointer;
-  border-radius: 50px;
-  border: 3px solid #000;
-  height: 56px;
-  width: 31px;
-  position: relative;
-}
-
-#scroll-down .mouse .move {
-  position: absolute;
-  background-color: #000;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-animation: move 1.2s linear infinite;
-          animation: move 1.2s linear infinite;
-}
-
-#scroll-down h6 {
-  font: normal normal 500 14px/18px "Quicksand";
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  margin-top: 15px;
-  color: #272727;
-}
-
-@media only screen and (max-width: 1300px) {
-  #scroll-down {
-    display: none;
-  }
-}
-
-@-webkit-keyframes move {
-  0% {
-    -webkit-transform: translate(-50%, 5px);
-            transform: translate(-50%, 5px);
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translate(-50%, 20px);
-            transform: translate(-50%, 20px);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translate(-50%, 40px);
-            transform: translate(-50%, 40px);
-    opacity: 0;
-  }
-}
-
-@keyframes move {
-  0% {
-    -webkit-transform: translate(-50%, 5px);
-            transform: translate(-50%, 5px);
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translate(-50%, 20px);
-            transform: translate(-50%, 20px);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translate(-50%, 40px);
-            transform: translate(-50%, 40px);
-    opacity: 0;
-  }
-}
-
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 header {
   background: #fff;
   position: fixed;
@@ -337,6 +292,9 @@ header .navbar ul li:last-of-type a:hover {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Hero Banner <<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 .hero-banner {
   padding: 100px 0px;
 }
@@ -358,26 +316,26 @@ header .navbar ul li:last-of-type a:hover {
   width: 100%;
 }
 
-.hero-banner .-text-area {
+.hero-banner .main-text-area {
   margin-bottom: 40px;
 }
 
-.hero-banner .-text-area h1 {
+.hero-banner .main-text-area h1 {
   font: normal normal bold 48px/60px "Quicksand";
   color: #272727;
   letter-spacing: 0px;
   margin: 0 0 2px 0px;
 }
 
-.hero-banner .-text-area h1 span {
+.hero-banner .main-text-area h1 span {
   color: #ec6d75;
 }
 
-.hero-banner .-text-area h1 br {
+.hero-banner .main-text-area h1 br {
   display: none;
 }
 
-.hero-banner .-text-area h6 {
+.hero-banner .main-text-area h6 {
   font: normal normal 500 18px/23px "Quicksand";
   color: #272727;
   margin: 0;
@@ -451,10 +409,10 @@ header .navbar ul li:last-of-type a:hover {
   .hero-banner img {
     margin-top: 60px;
   }
-  .hero-banner .-text-area {
+  .hero-banner .main-text-area {
     margin-bottom: 21px;
   }
-  .hero-banner .-text-area h1 {
+  .hero-banner .main-text-area h1 {
     font: normal normal bold 32px/40px "Quicksand";
   }
   .hero-banner form button {
@@ -466,13 +424,13 @@ header .navbar ul li:last-of-type a:hover {
   .hero-banner {
     padding: 25px 0px 40px 0px;
   }
-  .hero-banner .-text-area h1 {
+  .hero-banner .main-text-area h1 {
     margin-bottom: 6px;
   }
-  .hero-banner .-text-area h1 br {
+  .hero-banner .main-text-area h1 br {
     display: block;
   }
-  .hero-banner .-text-area h6 {
+  .hero-banner .main-text-area h6 {
     font-size: 14px;
   }
   .hero-banner form input {
@@ -480,6 +438,91 @@ header .navbar ul li:last-of-type a:hover {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Scroll Down <<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+#scroll-down {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#scroll-down .mouse {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 3px solid #000;
+  height: 56px;
+  width: 31px;
+  position: relative;
+}
+
+#scroll-down .mouse .move {
+  position: absolute;
+  background-color: #000;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: move 1.2s linear infinite;
+          animation: move 1.2s linear infinite;
+}
+
+#scroll-down h6 {
+  font: normal normal 500 14px/18px "Quicksand";
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  margin-top: 15px;
+  color: #272727;
+}
+
+@media only screen and (max-width: 1300px) {
+  #scroll-down {
+    display: none;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(-50%, 5px);
+            transform: translate(-50%, 5px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(-50%, 20px);
+            transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 40px);
+            transform: translate(-50%, 40px);
+    opacity: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(-50%, 5px);
+            transform: translate(-50%, 5px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(-50%, 20px);
+            transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 40px);
+            transform: translate(-50%, 40px);
+    opacity: 0;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>><> Why Coiffeuse Afro <<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 .why-ma-afro {
   padding: 35px 0px 100px 0px;
   text-align: center;
@@ -500,12 +543,12 @@ header .navbar ul li:last-of-type a:hover {
   opacity: 1;
 }
 
-.why-ma-afro .-reasons img {
+.why-ma-afro .reasons img {
   margin-bottom: 10px;
   height: 52px;
 }
 
-.why-ma-afro .-reasons h5 {
+.why-ma-afro .reasons h5 {
   margin: 0;
   margin-bottom: 20px;
   font: normal normal bold 18px/23px "Quicksand";
@@ -514,7 +557,7 @@ header .navbar ul li:last-of-type a:hover {
   opacity: 1;
 }
 
-.why-ma-afro .-reasons p {
+.why-ma-afro .reasons p {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   margin: 0;
@@ -530,8 +573,8 @@ header .navbar ul li:last-of-type a:hover {
 }
 
 @media only screen and (max-width: 1300px) {
-  .why-ma-afro .-reasons h5 br,
-  .why-ma-afro .-reasons p br {
+  .why-ma-afro .reasons h5 br,
+  .why-ma-afro .reasons p br {
     display: none;
   }
   .why-ma-afro .why-coiffeuse a br {
@@ -558,15 +601,15 @@ header .navbar ul li:last-of-type a:hover {
   .why-ma-afro h2 {
     font: normal normal bold 32px/40px "Quicksand";
   }
-  .why-ma-afro .-reasons img {
+  .why-ma-afro .reasons img {
     margin-bottom: 10px;
     height: 42px;
   }
-  .why-ma-afro .-reasons h5 {
+  .why-ma-afro .reasons h5 {
     margin-bottom: 10px;
     font: normal normal bold 14px/18px "Quicksand";
   }
-  .why-ma-afro .-reasons p {
+  .why-ma-afro .reasons p {
     font: normal normal 500 14px/18px "Quicksand";
   }
   .why-ma-afro .why-coiffeuse a {
@@ -574,6 +617,9 @@ header .navbar ul li:last-of-type a:hover {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> How it Works <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 .how-it-works {
   margin-top: 135px;
   position: relative;
@@ -613,7 +659,7 @@ header .navbar ul li:last-of-type a:hover {
   margin-bottom: 0px;
 }
 
-.how-it-works ul li .-processes {
+.how-it-works ul li .processes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,7 +668,7 @@ header .navbar ul li:last-of-type a:hover {
           align-items: flex-start;
 }
 
-.how-it-works ul li .-processes .process-number .-number {
+.how-it-works ul li .processes .process-number .the-number {
   width: 30px;
   height: 30px;
   background: #fff;
@@ -630,7 +676,7 @@ header .navbar ul li:last-of-type a:hover {
   position: relative;
 }
 
-.how-it-works ul li .-processes .process-number .-number span {
+.how-it-works ul li .processes .process-number .the-number span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -642,11 +688,11 @@ header .navbar ul li:last-of-type a:hover {
   opacity: 1;
 }
 
-.how-it-works ul li .-processes .process-description {
+.how-it-works ul li .processes .process-description {
   margin-left: 25px;
 }
 
-.how-it-works ul li .-processes .process-description h5 {
+.how-it-works ul li .processes .process-description h5 {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
   margin: 0;
@@ -655,14 +701,14 @@ header .navbar ul li:last-of-type a:hover {
   opacity: 1;
 }
 
-.how-it-works ul li .-processes .process-description p {
+.how-it-works ul li .processes .process-description p {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
 }
 
-.how-it-works a.-register {
+.how-it-works a.register {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,12 +725,23 @@ header .navbar ul li:last-of-type a:hover {
   text-decoration: underline;
 }
 
-.how-it-works a.-register:hover {
+.how-it-works a.register:hover {
   text-decoration: underline;
 }
 
-.how-it-works a.-register svg {
+.how-it-works a.register svg {
   margin-left: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .how-it-works img {
+    margin-top: 0px;
+    width: 100%;
+    margin-left: auto;
+  }
+  .how-it-works ul li .processes .process-description p br {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -694,6 +751,9 @@ header .navbar ul li:last-of-type a:hover {
   }
   .how-it-works .container-fluid {
     padding: 40px 20px;
+  }
+  .how-it-works img {
+    display: none;
   }
   .how-it-works h2 {
     margin: 0;
@@ -709,34 +769,34 @@ header .navbar ul li:last-of-type a:hover {
   .how-it-works ul li:last-of-type {
     margin-bottom: 0px;
   }
-  .how-it-works ul li .-processes .process-description {
+  .how-it-works ul li .processes .process-description {
     margin-left: 25px;
   }
-  .how-it-works ul li .-processes .process-description h5 {
+  .how-it-works ul li .processes .process-description h5 {
     font: normal normal bold 14px/18px "Quicksand";
   }
-  .how-it-works ul li .-processes .process-description p {
+  .how-it-works ul li .processes .process-description p {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .how-it-works a.-register {
+  .how-it-works a.register {
     margin: 60px 0px 0px 55px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 567px) {
   .how-it-works .container-fluid {
     padding: 40px 20px !important;
   }
-  .how-it-works ul li .-processes {
+  .how-it-works ul li .processes {
     display: block;
   }
-  .how-it-works ul li .-processes .process-description {
+  .how-it-works ul li .processes .process-description {
     margin-left: 0px;
   }
-  .how-it-works ul li .-processes .process-description h5 {
+  .how-it-works ul li .processes .process-description h5 {
     margin-top: 12px;
   }
-  .how-it-works a.-register {
+  .how-it-works a.register {
     margin: 0 auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -745,35 +805,9 @@ header .navbar ul li:last-of-type a:hover {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .how-it-works img {
-    margin-top: 0px;
-    width: 100%;
-    margin-left: auto;
-  }
-  .how-it-works ul li .-processes .process-description p br {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .how-it-works .col-lg-5 {
-    position: unset;
-  }
-  .how-it-works img {
-    display: none;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    background: red;
-    top: -200px;
-    z-index: -1;
-  }
-  .how-it-works ul li .-processes .process-description p br {
-    display: none;
-  }
-}
-
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Unique Offers <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 .unique-offers {
   padding: 100px 0px;
 }
@@ -803,7 +837,7 @@ header .navbar ul li:last-of-type a:hover {
   opacity: 1;
 }
 
-.unique-offers .-offers {
+.unique-offers .all-offers {
   position: relative;
   max-width: 395px;
   height: 384px;
@@ -819,17 +853,17 @@ header .navbar ul li:last-of-type a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  .unique-offers .-offers.offer-1, .unique-offers .-offers.offer-3 {
+  .unique-offers .all-offers.offer-1, .unique-offers .all-offers.offer-3 {
     display: none;
   }
 }
 
-.unique-offers .-offers .-offer {
+.unique-offers .all-offers .single-offer {
   width: 287px;
   margin: 0 auto;
 }
 
-.unique-offers .-offers .-top {
+.unique-offers .all-offers .offer-top {
   position: absolute;
   top: -26px;
   left: 50%;
@@ -843,7 +877,7 @@ header .navbar ul li:last-of-type a:hover {
   border-radius: 24px;
 }
 
-.unique-offers .-offers .-top h5 {
+.unique-offers .all-offers .offer-top h5 {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #777777;
@@ -851,29 +885,29 @@ header .navbar ul li:last-of-type a:hover {
   margin: 0;
 }
 
-.unique-offers .-offers .-par-transaction {
+.unique-offers .all-offers .par-transaction {
   margin-bottom: 55px;
 }
 
-.unique-offers .-offers .-par-transaction h3 {
+.unique-offers .all-offers .par-transaction h3 {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #777777;
   text-transform: uppercase;
 }
 
-.unique-offers .-offers .-par-transaction h3 span {
+.unique-offers .all-offers .par-transaction h3 span {
   font: normal normal bold 48px/60px "Quicksand";
   margin-right: 12px;
 }
 
-.unique-offers .-offers .check-points {
+.unique-offers .all-offers .check-points {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.unique-offers .-offers .check-points li .points {
+.unique-offers .all-offers .check-points li .points {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,26 +916,26 @@ header .navbar ul li:last-of-type a:hover {
           align-items: center;
 }
 
-.unique-offers .-offers .check-points li .points h4 {
+.unique-offers .all-offers .check-points li .points h4 {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   margin: 0;
   color: #272727;
 }
 
-.unique-offers .-offers .check-points li .points svg {
+.unique-offers .all-offers .check-points li .points svg {
   margin-right: 30px;
 }
 
-.unique-offers .-offers .check-points li:first-of-type {
+.unique-offers .all-offers .check-points li:first-of-type {
   margin-bottom: 25px;
 }
 
-.unique-offers .-offers .check-points li:nth-of-type(2) {
+.unique-offers .all-offers .check-points li:nth-of-type(2) {
   margin-bottom: 15px;
 }
 
-.unique-offers .-offers.active {
+.unique-offers .all-offers.active {
   max-width: 441px;
   height: 424px;
   -webkit-box-shadow: 0px 3px 40px #ec6d7529;
@@ -909,36 +943,36 @@ header .navbar ul li:last-of-type a:hover {
   padding-top: 80px;
 }
 
-.unique-offers .-offers.active .-top {
+.unique-offers .all-offers.active .offer-top {
   background: #ffeaea;
   padding: 15px 44px;
 }
 
-.unique-offers .-offers.active .-top h5 {
+.unique-offers .all-offers.active .offer-top h5 {
   color: #ec6d75;
 }
 
-.unique-offers .-offers.active .-par-transaction h3 {
+.unique-offers .all-offers.active .par-transaction h3 {
   color: #ec6d75;
 }
 
-.unique-offers .-offers.active .-par-transaction h3 span {
+.unique-offers .all-offers.active .par-transaction h3 span {
   margin-right: 6px;
 }
 
-.unique-offers .-offers.offer-3 .-top {
+.unique-offers .all-offers.offer-3 .offer-top {
   padding: 15px 36px;
 }
 
-.unique-offers .-offers.offer-3 .-par-transaction h3 {
+.unique-offers .all-offers.offer-3 .par-transaction h3 {
   text-align: center;
 }
 
-.unique-offers .-offers.offer-3 .-par-transaction h3 span {
+.unique-offers .all-offers.offer-3 .par-transaction h3 span {
   margin-right: 6px;
 }
 
-.unique-offers a.-register {
+.unique-offers a.register {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,11 +993,11 @@ header .navbar ul li:last-of-type a:hover {
   margin-top: 25px;
 }
 
-.unique-offers a.-register:hover {
+.unique-offers a.register:hover {
   text-decoration: underline;
 }
 
-.unique-offers a.-register svg {
+.unique-offers a.register svg {
   margin-left: 15px;
 }
 
@@ -985,42 +1019,45 @@ header .navbar ul li:last-of-type a:hover {
 }
 
 @media only screen and (max-width: 567px) {
-  .unique-offers .-offers {
+  .unique-offers .all-offers {
     height: 339px !important;
     padding: 40px 20px 20px 20px !important;
     /* Active Offer */
   }
-  .unique-offers .-offers .-offer {
+  .unique-offers .all-offers .single-offer {
     width: 100%;
     max-width: 247px;
   }
-  .unique-offers .-offers .-par-transaction {
+  .unique-offers .all-offers .par-transaction {
     margin-bottom: 32px;
   }
-  .unique-offers .-offers .-par-transaction h3 {
+  .unique-offers .all-offers .par-transaction h3 {
     text-align: center;
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .unique-offers .-offers .-par-transaction h3 span {
+  .unique-offers .all-offers .par-transaction h3 span {
     font: normal normal bold 32px/40px "Quicksand";
   }
-  .unique-offers .-offers .check-points li .points h4 {
+  .unique-offers .all-offers .check-points li .points h4 {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .unique-offers .-offers .check-points li .points svg {
+  .unique-offers .all-offers .check-points li .points svg {
     margin-right: 30px;
   }
-  .unique-offers .-offers .check-points li:first-of-type {
+  .unique-offers .all-offers .check-points li:first-of-type {
     margin-bottom: 26px;
   }
-  .unique-offers .-offers .check-points li:nth-of-type(2) {
+  .unique-offers .all-offers .check-points li:nth-of-type(2) {
     margin-bottom: 13px;
   }
-  .unique-offers .-offers.active {
+  .unique-offers .all-offers.active {
     max-width: 100%;
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> Contact US <<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 .contact-us {
   margin-bottom: 143px;
 }
@@ -1137,6 +1174,9 @@ header .navbar ul li:last-of-type a:hover {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 footer {
   padding: 90px 0px 100px 0px;
   background: #ec6d75;
@@ -1146,7 +1186,7 @@ footer .container-fluid {
   max-width: 1277px;
 }
 
-footer .-footer-list-th {
+footer .footer-list-th {
   text-decoration: underline;
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
@@ -1166,7 +1206,7 @@ footer ul {
   list-style: none;
 }
 
-footer .-icons {
+footer .the-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1175,18 +1215,18 @@ footer .-icons {
           align-items: center;
 }
 
-footer .-icons li:first-of-type {
+footer .the-icons li:first-of-type {
   margin-right: 30px;
 }
 
-footer .-links li a {
+footer .the-links li a {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #ffffff;
   text-decoration: none;
 }
 
-footer .-links li a:hover {
+footer .the-links li a:hover {
   text-decoration: underline;
 }
 
@@ -1210,6 +1250,9 @@ footer .-links li a:hover {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>> Steps <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 .steps {
   padding: 75px 0px 63px 0px;
   height: 975px;
@@ -1220,12 +1263,12 @@ footer .-links li a:hover {
   max-width: 1670px;
 }
 
-.steps .-back,
-.steps .-steps-count {
+.steps .go-back,
+.steps .steps-count {
   margin-bottom: 28px;
 }
 
-.steps .-back a {
+.steps .go-back a {
   font: normal normal bold 18px/23px "Quicksand";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1239,7 +1282,7 @@ footer .-links li a:hover {
   text-decoration: underline;
 }
 
-.steps .-back a svg {
+.steps .go-back a svg {
   margin-right: 10px;
 }
 
@@ -1266,7 +1309,7 @@ footer .-links li a:hover {
   color: #ec6d75;
 }
 
-.steps .step .-steps-count h6 {
+.steps .step .steps-count h6 {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
@@ -1327,7 +1370,7 @@ footer .-links li a:hover {
 }
 
 .steps .step form button,
-.steps .step form .-actions {
+.steps .step form .all-actions {
   position: absolute;
   bottom: 63px;
 }
@@ -1351,11 +1394,11 @@ footer .-links li a:hover {
   margin-left: 15px;
 }
 
-.steps .step.step-2 form .-inputs {
+.steps .step.step-2 form .all-inputs {
   margin-bottom: 30px;
 }
 
-.steps .step.step-2 form .-inputs:last-of-type {
+.steps .step.step-2 form .all-inputs:last-of-type {
   margin-bottom: 0px;
 }
 
@@ -1366,7 +1409,7 @@ footer .-links li a:hover {
   /* Choose Department */
 }
 
-.steps .step.step-3 form .-address {
+.steps .step.step-3 form .complete-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,47 +1419,47 @@ footer .-links li a:hover {
   margin-bottom: 50px;
 }
 
-.steps .step.step-3 form .-address .-inputs.-get-street input {
+.steps .step.step-3 form .complete-address .all-inputs.get-street input {
   width: 249px;
 }
 
-.steps .step.step-3 form .-address .-inputs.-get-postal-code input {
+.steps .step.step-3 form .complete-address .all-inputs.get-postal-code input {
   width: 88px;
 }
 
-.steps .step.step-3 form .-address .-inputs.-get-city input {
+.steps .step.step-3 form .complete-address .all-inputs.get-city input {
   width: 88px;
 }
 
-.steps .step.step-3 form .-address .-inputs.-get-city input::-webkit-input-placeholder {
+.steps .step.step-3 form .complete-address .all-inputs.get-city input::-webkit-input-placeholder {
   font: normal normal bold 18px/23px "Quicksand";
   opacity: 1;
 }
 
-.steps .step.step-3 form .-address .-inputs.-get-city input:-ms-input-placeholder {
+.steps .step.step-3 form .complete-address .all-inputs.get-city input:-ms-input-placeholder {
   font: normal normal bold 18px/23px "Quicksand";
   opacity: 1;
 }
 
-.steps .step.step-3 form .-address .-inputs.-get-city input::-ms-input-placeholder {
+.steps .step.step-3 form .complete-address .all-inputs.get-city input::-ms-input-placeholder {
   font: normal normal bold 18px/23px "Quicksand";
   opacity: 1;
 }
 
-.steps .step.step-3 form .-address .-inputs.-get-city input::placeholder {
+.steps .step.step-3 form .complete-address .all-inputs.get-city input::placeholder {
   font: normal normal bold 18px/23px "Quicksand";
   opacity: 1;
 }
 
-.steps .step.step-3 form .-address .-inputs {
+.steps .step.step-3 form .complete-address .all-inputs {
   margin-right: 25px;
 }
 
-.steps .step.step-3 form .-address .-inputs:last-of-type {
+.steps .step.step-3 form .complete-address .all-inputs:last-of-type {
   margin-right: 0px;
 }
 
-.steps .step.step-3 form .-address .postal-code-and-city {
+.steps .step.step-3 form .complete-address .postal-code-and-city {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1425,7 +1468,7 @@ footer .-links li a:hover {
           align-items: flex-end;
 }
 
-.steps .step.step-3 form .-checkbox {
+.steps .step.step-3 form .the-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1435,18 +1478,18 @@ footer .-links li a:hover {
   margin-bottom: 20px;
 }
 
-.steps .step.step-3 form .-checkbox:last-of-type {
+.steps .step.step-3 form .the-checkbox:last-of-type {
   margin-bottom: 0px;
 }
 
-.steps .step.step-3 form .-checkbox input,
-.steps .step.step-3 form .-checkbox label {
+.steps .step.step-3 form .the-checkbox input,
+.steps .step.step-3 form .the-checkbox label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.steps .step.step-3 form .-checkbox input {
+.steps .step.step-3 form .the-checkbox input {
   margin-right: 17px;
   padding: 0;
   height: initial;
@@ -1456,13 +1499,13 @@ footer .-links li a:hover {
   cursor: pointer;
 }
 
-.steps .step.step-3 form .-checkbox label {
+.steps .step.step-3 form .the-checkbox label {
   position: relative;
   color: #777777;
   cursor: pointer;
 }
 
-.steps .step.step-3 form .-checkbox label::before {
+.steps .step.step-3 form .the-checkbox label::before {
   content: "";
   border: 1px solid #ec6d75;
   border-radius: 3px;
@@ -1475,15 +1518,15 @@ footer .-links li a:hover {
   margin-right: 15px;
 }
 
-.steps .step.step-3 form .-checkbox input:checked + label {
+.steps .step.step-3 form .the-checkbox input:checked + label {
   color: #ec6d75;
 }
 
-.steps .step.step-3 form .-checkbox input:checked + label::before {
+.steps .step.step-3 form .the-checkbox input:checked + label::before {
   background: #ec6d75;
 }
 
-.steps .step.step-3 form .-checkbox input:checked + label:after {
+.steps .step.step-3 form .the-checkbox input:checked + label:after {
   content: "";
   display: block;
   position: absolute;
@@ -1497,29 +1540,29 @@ footer .-links li a:hover {
           transform: rotate(45deg);
 }
 
-.steps .step.step-3 form .-ready-to-move p {
+.steps .step.step-3 form .ready-to-move p {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
   margin-bottom: 25px;
   color: #272727;
 }
 
-.steps .step.step-3 form .-choose-dep {
+.steps .step.step-3 form .choose-departments {
   margin-top: 14px;
 }
 
-.steps .step.step-3 form .-choose-dep p {
+.steps .step.step-3 form .choose-departments p {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #777777;
 }
 
-.steps .step.step-3 form .-choose-dep .-depatrtments {
+.steps .step.step-3 form .choose-departments .all-the-depatrtments {
   max-width: 1270px;
   margin-top: 28px;
 }
 
-.steps .step.step-4 .-offers {
+.steps .step.step-4 .all-offers {
   position: relative;
   max-width: 395px;
   height: 384px;
@@ -1534,13 +1577,13 @@ footer .-links li a:hover {
   /* 3rd Offer */
 }
 
-.steps .step.step-4 .-offers .-offer {
+.steps .step.step-4 .all-offers .single-offer {
   width: 287px;
   margin: 0 auto;
 }
 
-.steps .step.step-4 .-offers .-top,
-.steps .step.step-4 .-offers .-bottom {
+.steps .step.step-4 .all-offers .offer-top,
+.steps .step.step-4 .all-offers .offer-bottom {
   position: absolute;
   top: -26px;
   left: 50%;
@@ -1554,8 +1597,8 @@ footer .-links li a:hover {
   border-radius: 24px;
 }
 
-.steps .step.step-4 .-offers .-top h5,
-.steps .step.step-4 .-offers .-bottom h5 {
+.steps .step.step-4 .all-offers .offer-top h5,
+.steps .step.step-4 .all-offers .offer-bottom h5 {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #777777;
@@ -1563,7 +1606,7 @@ footer .-links li a:hover {
   margin: 0;
 }
 
-.steps .step.step-4 .-offers .-bottom {
+.steps .step.step-4 .all-offers .offer-bottom {
   top: unset;
   bottom: -20px;
   background: #ec6d75;
@@ -1572,35 +1615,35 @@ footer .-links li a:hover {
   left: 50%;
 }
 
-.steps .step.step-4 .-offers .-bottom h5 {
+.steps .step.step-4 .all-offers .offer-bottom h5 {
   color: #fff;
   text-decoration: underline;
   font: normal normal bold 18px/23px "Quicksand";
 }
 
-.steps .step.step-4 .-offers .-par-transaction {
+.steps .step.step-4 .all-offers .par-transaction {
   margin-bottom: 55px;
 }
 
-.steps .step.step-4 .-offers .-par-transaction h3 {
+.steps .step.step-4 .all-offers .par-transaction h3 {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #777777;
   text-transform: uppercase;
 }
 
-.steps .step.step-4 .-offers .-par-transaction h3 span {
+.steps .step.step-4 .all-offers .par-transaction h3 span {
   font: normal normal bold 48px/60px "Quicksand";
   margin-right: 12px;
 }
 
-.steps .step.step-4 .-offers .check-points {
+.steps .step.step-4 .all-offers .check-points {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.steps .step.step-4 .-offers .check-points li .points {
+.steps .step.step-4 .all-offers .check-points li .points {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1609,26 +1652,26 @@ footer .-links li a:hover {
           align-items: center;
 }
 
-.steps .step.step-4 .-offers .check-points li .points h4 {
+.steps .step.step-4 .all-offers .check-points li .points h4 {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   margin: 0;
   color: #272727;
 }
 
-.steps .step.step-4 .-offers .check-points li .points svg {
+.steps .step.step-4 .all-offers .check-points li .points svg {
   margin-right: 30px;
 }
 
-.steps .step.step-4 .-offers .check-points li:first-of-type {
+.steps .step.step-4 .all-offers .check-points li:first-of-type {
   margin-bottom: 25px;
 }
 
-.steps .step.step-4 .-offers .check-points li:nth-of-type(2) {
+.steps .step.step-4 .all-offers .check-points li:nth-of-type(2) {
   margin-bottom: 15px;
 }
 
-.steps .step.step-4 .-offers.active {
+.steps .step.step-4 .all-offers.active {
   max-width: 441px;
   height: 424px;
   -webkit-box-shadow: 0px 3px 40px #ec6d7529;
@@ -1636,36 +1679,36 @@ footer .-links li a:hover {
   padding-top: 80px;
 }
 
-.steps .step.step-4 .-offers.active .-top {
+.steps .step.step-4 .all-offers.active .offer-top {
   background: #ffeaea;
   padding: 15px 44px;
 }
 
-.steps .step.step-4 .-offers.active .-top h5 {
+.steps .step.step-4 .all-offers.active .offer-top h5 {
   color: #ec6d75;
 }
 
-.steps .step.step-4 .-offers.active .-par-transaction h3 {
+.steps .step.step-4 .all-offers.active .par-transaction h3 {
   color: #ec6d75;
 }
 
-.steps .step.step-4 .-offers.active .-par-transaction h3 span {
+.steps .step.step-4 .all-offers.active .par-transaction h3 span {
   margin-right: 6px;
 }
 
-.steps .step.step-4 .-offers.offer-3 .-top {
+.steps .step.step-4 .all-offers.offer-3 .offer-top {
   padding: 15px 36px;
 }
 
-.steps .step.step-4 .-offers.offer-3 .-par-transaction h3 {
+.steps .step.step-4 .all-offers.offer-3 .par-transaction h3 {
   text-align: center;
 }
 
-.steps .step.step-4 .-offers.offer-3 .-par-transaction h3 span {
+.steps .step.step-4 .all-offers.offer-3 .par-transaction h3 span {
   margin-right: 6px;
 }
 
-.steps .step.step-4 .-actions {
+.steps .step.step-4 .all-actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1678,7 +1721,7 @@ footer .-links li a:hover {
           align-items: center;
 }
 
-.steps .step.step-4 .-actions button {
+.steps .step.step-4 .all-actions button {
   position: unset;
   bottom: unset;
   margin: 0;
@@ -1687,7 +1730,7 @@ footer .-links li a:hover {
   opacity: 0.5;
 }
 
-.steps .step.step-4 .-actions a {
+.steps .step.step-4 .all-actions a {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #777777;
@@ -1700,10 +1743,10 @@ footer .-links li a:hover {
     padding: 41px 0px 63px 0px;
     height: calc(100vh - 87px);
   }
-  .steps .-back {
+  .steps .go-back {
     margin-bottom: 20px;
   }
-  .steps .-back a {
+  .steps .go-back a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1711,7 +1754,7 @@ footer .-links li a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .steps .-back a svg {
+  .steps .go-back a svg {
     margin-right: 10px;
   }
   .steps .step {
@@ -1728,10 +1771,10 @@ footer .-links li a:hover {
   .steps .step h1 {
     font: normal normal bold 32px/40px "Quicksand";
   }
-  .steps .step .-steps-count {
+  .steps .step .steps-count {
     margin-bottom: 16px;
   }
-  .steps .step .-steps-count h6 {
+  .steps .step .steps-count h6 {
     font: normal normal 500 14px/18px "Quicksand";
   }
   .steps .step p {
@@ -1750,7 +1793,7 @@ footer .-links li a:hover {
     padding-bottom: 40px;
   }
   .steps .step.step-2 button,
-  .steps .step.step-2 .-actions {
+  .steps .step.step-2 .all-actions {
     position: relative;
     margin-top: 74px;
     bottom: 0;
@@ -1762,7 +1805,7 @@ footer .-links li a:hover {
     padding-bottom: 40px;
   }
   .steps .step.step-3 button,
-  .steps .step.step-3 .-actions {
+  .steps .step.step-3 .all-actions {
     position: relative;
     margin-top: 54px;
     bottom: 0;
@@ -1773,51 +1816,51 @@ footer .-links li a:hover {
     /* Departments */
     /* Choose Department */
   }
-  .steps .step.step-3 form .-address {
+  .steps .step.step-3 form .complete-address {
     display: block;
     margin-bottom: 40px;
   }
-  .steps .step.step-3 form .-address .-inputs.-inputs.-get-street {
+  .steps .step.step-3 form .complete-address .all-inputs.get-street {
     margin-bottom: 30px;
   }
-  .steps .step.step-3 form .-address .-inputs.-get-postal-code {
+  .steps .step.step-3 form .complete-address .all-inputs.get-postal-code {
     margin-right: 24px;
   }
-  .steps .step.step-3 form .-address .-inputs.-get-postal-code input {
+  .steps .step.step-3 form .complete-address .all-inputs.get-postal-code input {
     width: 106px;
   }
-  .steps .step.step-3 form .-address .-inputs.-get-city input {
+  .steps .step.step-3 form .complete-address .all-inputs.get-city input {
     width: 118px;
   }
-  .steps .step.step-3 form .-address .-inputs.-get-city input::-webkit-input-placeholder {
+  .steps .step.step-3 form .complete-address .all-inputs.get-city input::-webkit-input-placeholder {
     font: normal normal bold 18px/23px "Quicksand";
     opacity: 1;
   }
-  .steps .step.step-3 form .-address .-inputs.-get-city input:-ms-input-placeholder {
+  .steps .step.step-3 form .complete-address .all-inputs.get-city input:-ms-input-placeholder {
     font: normal normal bold 18px/23px "Quicksand";
     opacity: 1;
   }
-  .steps .step.step-3 form .-address .-inputs.-get-city input::-ms-input-placeholder {
+  .steps .step.step-3 form .complete-address .all-inputs.get-city input::-ms-input-placeholder {
     font: normal normal bold 18px/23px "Quicksand";
     opacity: 1;
   }
-  .steps .step.step-3 form .-address .-inputs.-get-city input::placeholder {
+  .steps .step.step-3 form .complete-address .all-inputs.get-city input::placeholder {
     font: normal normal bold 18px/23px "Quicksand";
     opacity: 1;
   }
-  .steps .step.step-3 form .-address .-inputs {
+  .steps .step.step-3 form .complete-address .all-inputs {
     margin-right: 0px;
   }
-  .steps .step.step-3 form .-depatrtments .col-lg-2 {
+  .steps .step.step-3 form .all-the-depatrtments .col-lg-2 {
     margin-bottom: 20px;
   }
-  .steps .step.step-3 form .-choose-dep {
+  .steps .step.step-3 form .choose-departments {
     margin-top: 14px;
   }
-  .steps .step.step-3 form .-choose-dep p {
+  .steps .step.step-3 form .choose-departments p {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .steps .step.step-3 form .-choose-dep .-depatrtments {
+  .steps .step.step-3 form .choose-departments .all-the-depatrtments {
     margin-top: 25px;
   }
   .steps .step.step-4 {
@@ -1827,48 +1870,48 @@ footer .-links li a:hover {
     padding-bottom: 40px;
   }
   .steps .step.step-4 button,
-  .steps .step.step-4 .-actions {
+  .steps .step.step-4 .all-actions {
     position: relative;
     margin-top: 54px;
     bottom: 0;
   }
-  .steps .step.step-4 .-offers {
+  .steps .step.step-4 .all-offers {
     height: 353px !important;
     padding: 40px 20px 20px 20px !important;
   }
-  .steps .step.step-4 .-offers .-offer {
+  .steps .step.step-4 .all-offers .single-offer {
     width: 100%;
     max-width: 247px;
   }
-  .steps .step.step-4 .-offers .-par-transaction {
+  .steps .step.step-4 .all-offers .par-transaction {
     margin-bottom: 32px;
   }
-  .steps .step.step-4 .-offers .-par-transaction h3 {
+  .steps .step.step-4 .all-offers .par-transaction h3 {
     text-align: center;
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .steps .step.step-4 .-offers .-par-transaction h3 span {
+  .steps .step.step-4 .all-offers .par-transaction h3 span {
     font: normal normal bold 32px/40px "Quicksand";
   }
-  .steps .step.step-4 .-offers .check-points li .points h4 {
+  .steps .step.step-4 .all-offers .check-points li .points h4 {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .steps .step.step-4 .-offers .check-points li .points svg {
+  .steps .step.step-4 .all-offers .check-points li .points svg {
     margin-right: 30px;
   }
-  .steps .step.step-4 .-offers .check-points li:first-of-type {
+  .steps .step.step-4 .all-offers .check-points li:first-of-type {
     margin-bottom: 26px;
   }
-  .steps .step.step-4 .-offers .check-points li:nth-of-type(2) {
+  .steps .step.step-4 .all-offers .check-points li:nth-of-type(2) {
     margin-bottom: 13px;
   }
-  .steps .step.step-4 .-actions {
+  .steps .step.step-4 .all-actions {
     display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .steps .step.step-4 .-actions button {
+  .steps .step.step-4 .all-actions button {
     margin-top: 36px;
     opacity: 1;
   }
@@ -1878,10 +1921,10 @@ footer .-links li a:hover {
   .steps .step {
     /* Step # 4 */
   }
-  .steps .step.step-4 .-offers {
+  .steps .step.step-4 .all-offers {
     /* Active Offer */
   }
-  .steps .step.step-4 .-offers.active {
+  .steps .step.step-4 .all-offers.active {
     max-width: 100%;
   }
 }
@@ -1934,10 +1977,6 @@ footer .-links li a:hover {
     max-width: calc(100% - 72px);
     margin: 0 auto;
   }
-}
-
-a {
-  text-decoration: none !important;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */

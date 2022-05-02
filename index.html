@@ -10,31 +10,43 @@
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
 
     <!-- >>> meta Description <<< -->
-    <meta
-      name="description"
-      content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids, tissages etc."
-    />
+    <meta name="description" content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids etc." />
     <!-- >>>> meta Keywords <<<< -->
-    <meta
-      name="keywords"
-      content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids, tissages etc."
-    />
+    <meta name="keywords" content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids etc." />
 
-    <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
+    <!-- >>> Bootstrap v3.3.7 | Front End Framework <<< -->
     <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css" />
 
     <!-- >>> Custom CSS <<< -->
     <link rel="stylesheet" href="./sass/app.css" />
   </head>
   <body>
-    <img class="-bg" src="./images/bg.png" alt="" />
+    <!-- >>>>>>>>>>> Table of Contents <<<<<<<<<<<<-->
+    <!--==============================================
+      1. Header
+      2. Hero Banner
+      3. Scroll Down
+      4. Why Coiffeuse Afro
+      5. Mobile Image (Mobile Only)
+      6. How it Works
+      7. Unique Offers
+      8. Contact Us 
+      9. Footer
+      ================================================-->
 
     <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
 
+    <!-- >>> Setting up a Background <<< -->
+    <img class="bg-image" src="./images/bg.png" alt="bg" />
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
     <header>
-      <div class="-message">
+      <div class="mini-header">
         <p>NOUVEAU ! MCA FONCTIONNE PAR ABONNEMENT ➜</p>
       </div>
       <div class="navbar">
@@ -55,12 +67,16 @@
       </div>
     </header>
 
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>> Hero Banner <<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
     <section>
       <div class="hero-banner">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6">
-              <div class="-text-area">
+              <div class="main-text-area">
                 <h1 id="headings">Devenez <span>indépendant.e</span>,</h1>
                 <h6>avec Ma Coiffeuse Afro</h6>
               </div>
@@ -93,12 +109,20 @@
       </div>
     </section>
 
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>> Scroll Down <<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
     <div id="scroll-down">
       <span class="mouse">
         <span class="move"></span>
       </span>
       <h6>POURQUOI MA COIFFEUSE AFRO ?</h6>
     </div>
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>> Why Coiffeuse Afro <<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
 
     <section>
       <div class="why-ma-afro">
@@ -107,7 +131,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6">
               <!-- Reason # 1 -->
-              <div class="-reasons -reason-1">
+              <div class="reasons reason-1">
                 <img src="./images/money.png" alt="" />
                 <h5>Gagnez de l’argent</h5>
                 <p>
@@ -120,7 +144,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <!-- Reason # 2 -->
-              <div class="-reasons -reason-1">
+              <div class="reasons reason-2">
                 <img src="./images/clock.png" alt="" />
                 <h5>Coiffez selon vos disponibilités</h5>
                 <p>
@@ -134,7 +158,7 @@
             <div class="col-sm-3"></div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <!-- Reason # 3 -->
-              <div class="-reasons -reason-1">
+              <div class="reasons reason-3">
                 <img src="./images/lock.png" alt="" />
                 <h5>rémunération sécurisée</h5>
                 <p>
@@ -158,12 +182,20 @@
       </div>
     </section>
 
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>> Mobile Image (Mobile Only) <<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
     <section>
       <picture>
         <source media="(max-width:768px)" srcset="./images/how-it-works-mb.png" />
         <img src="" alt="" style="width: 100%" />
       </picture>
     </section>
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>> How it Works <<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
 
     <section>
       <div class="how-it-works">
@@ -174,9 +206,9 @@
               <ul>
                 <li>
                   <!-- Process # 1 -->
-                  <div class="-processes -process-1">
+                  <div class="processes -process-1">
                     <div class="process-number">
-                      <div class="-number">
+                      <div class="the-number">
                         <span>1</span>
                       </div>
                     </div>
@@ -192,9 +224,9 @@
                 </li>
                 <li>
                   <!-- Process # 2 -->
-                  <div class="-processes -process-1">
+                  <div class="processes -process-1">
                     <div class="process-number">
-                      <div class="-number">
+                      <div class="the-number">
                         <span>2</span>
                       </div>
                     </div>
@@ -209,9 +241,9 @@
                 </li>
                 <li>
                   <!-- Process # 3 -->
-                  <div class="-processes -process-1">
+                  <div class="processes -process-1">
                     <div class="process-number">
-                      <div class="-number">
+                      <div class="the-number">
                         <span>3</span>
                       </div>
                     </div>
@@ -225,7 +257,7 @@
                   </div>
                 </li>
               </ul>
-              <a class="-register">
+              <a class="register">
                 S’INSCRIRE
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                   <g id="Group_419" data-name="Group 419" transform="translate(-345 -625)">
@@ -251,6 +283,10 @@
       </div>
     </section>
 
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>> Unique Offers <<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
     <section>
       <div class="unique-offers">
         <div class="container-fluid">
@@ -262,12 +298,12 @@
           <div class="row">
             <div class="col-lg-4">
               <!-- Offer # 1 -->
-              <div class="-offers offer-1">
-                <div class="-offer">
-                  <div class="-top">
+              <div class="all-offers offer-1">
+                <div class="single-offer">
+                  <div class="offer-top">
                     <h5>AVANT</h5>
                   </div>
-                  <div class="-par-transaction">
+                  <div class="par-transaction">
                     <h3><span>18%</span>PAR TRANSACTION</h3>
                   </div>
                   <ul class="check-points">
@@ -334,16 +370,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="51" viewBox="0 0 39 51">
                           <defs>
                             <clipPath id="clip-path">
-                              <rect
-                                id="Rectangle_11"
-                                data-name="Rectangle 11"
-                                width="20"
-                                height="18"
-                                transform="translate(0 0)"
-                                fill="none"
-                                stroke="#707070"
-                                stroke-width="1"
-                              />
+                              <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="18" transform="translate(0 0)" fill="none" stroke="#707070" stroke-width="1" />
                             </clipPath>
                           </defs>
                           <g id="Group_59" data-name="Group 59" transform="translate(0 0)">
@@ -382,12 +409,12 @@
             </div>
             <div class="col-lg-4">
               <!-- Offer # 2 -->
-              <div class="-offers offer-2 active">
-                <div class="-offer">
-                  <div class="-top">
+              <div class="all-offers offer-2 active">
+                <div class="single-offer">
+                  <div class="offer-top">
                     <h5>MAINTENANT</h5>
                   </div>
-                  <div class="-par-transaction">
+                  <div class="par-transaction">
                     <h3><span>19,99€</span>/MOIS</h3>
                   </div>
                   <ul class="check-points">
@@ -454,16 +481,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="51" viewBox="0 0 39 51">
                           <defs>
                             <clipPath id="clip-path">
-                              <rect
-                                id="Rectangle_11"
-                                data-name="Rectangle 11"
-                                width="20"
-                                height="18"
-                                transform="translate(0 0.301)"
-                                fill="none"
-                                stroke="#707070"
-                                stroke-width="1"
-                              />
+                              <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="18" transform="translate(0 0.301)" fill="none" stroke="#707070" stroke-width="1" />
                             </clipPath>
                           </defs>
                           <g id="Group_59" data-name="Group 59" transform="translate(0 -0.301)">
@@ -498,12 +516,12 @@
             </div>
             <div class="col-lg-4">
               <!-- Offer # 3 -->
-              <div class="-offers offer-3">
-                <div class="-offer">
-                  <div class="-top">
+              <div class="all-offers offer-3">
+                <div class="single-offer">
+                  <div class="offer-top">
                     <h5>CONCURRENCE</h5>
                   </div>
-                  <div class="-par-transaction">
+                  <div class="par-transaction">
                     <h3><span>30€</span>/MOIS</h3>
                   </div>
                   <ul class="check-points">
@@ -570,16 +588,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="51" viewBox="0 0 39 51">
                           <defs>
                             <clipPath id="clip-path">
-                              <rect
-                                id="Rectangle_11"
-                                data-name="Rectangle 11"
-                                width="20"
-                                height="18"
-                                transform="translate(0 0)"
-                                fill="none"
-                                stroke="#707070"
-                                stroke-width="1"
-                              />
+                              <rect id="Rectangle_11" data-name="Rectangle 11" width="20" height="18" transform="translate(0 0)" fill="none" stroke="#707070" stroke-width="1" />
                             </clipPath>
                           </defs>
                           <g id="Group_59" data-name="Group 59" transform="translate(0 0)">
@@ -617,7 +626,7 @@
               </div>
             </div>
           </div>
-          <a class="-register">
+          <a class="register">
             S’INSCRIRE
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
               <g id="Group_419" data-name="Group 419" transform="translate(-345 -625)">
@@ -637,6 +646,10 @@
         </div>
       </div>
     </section>
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>> Contact Us <<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
 
     <section>
       <div class="contact-us">
@@ -673,45 +686,36 @@
       </div>
     </section>
 
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
     <footer>
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col-md-4">
-            <h6 class="-footer-list-th">Ma Coiffeuse Afro</h6>
+            <h6 class="footer-list-th">Ma Coiffeuse Afro</h6>
             <p>Rendre la beauté accessible à toutes.</p>
           </div>
           <div class="col-lg-3 col-md-3">
-            <h6 class="-footer-list-th">L’application</h6>
+            <h6 class="footer-list-th">L’application</h6>
             <!-- Where Find our App -->
-            <ul class="-icons the-app">
+            <ul class="the-icons the-app">
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33.763" height="33.763" viewBox="0 0 33.763 33.763">
-                    <path
-                      id="app-store"
-                      d="M17.437,8.248l.62-1.069a1.391,1.391,0,1,1,2.41,1.389L14.51,18.88h4.309a1.907,1.907,0,0,1,1.572,2.777H7.765a1.388,1.388,0,0,1,0-2.777H11.3l4.534-7.855L14.421,8.569a1.391,1.391,0,1,1,2.41-1.389l.606,1.069ZM12.079,23.087,10.745,25.4a1.391,1.391,0,1,1-2.41-1.389L9.33,22.3a2.372,2.372,0,0,1,2.75.79Zm11.5-4.2h3.615a1.388,1.388,0,0,1,0,2.777H25.184l1.354,2.349a1.391,1.391,0,1,1-2.41,1.389q-3.42-5.932-5.133-8.89a3.836,3.836,0,0,1,.49-4.7Q20.853,14.156,23.577,18.887ZM17.444.563A16.881,16.881,0,1,0,34.326,17.444,16.877,16.877,0,0,0,17.444.563Zm14.7,16.882a14.7,14.7,0,1,1-14.7-14.7A14.7,14.7,0,0,1,32.147,17.445Z"
-                      transform="translate(-0.563 -0.563)"
-                      fill="#fafcfc"
-                    />
-                  </svg>
+                  <img src="./images/appstore.png" alt="playstore" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="31.498" height="31.467" viewBox="0 0 31.498 31.467">
-                    <path
-                      id="playstore"
-                      d="M29.529,31.467H1.969A1.918,1.918,0,0,1,.584,30.9,1.877,1.877,0,0,1,0,29.5V9.812A1.892,1.892,0,0,1,.584,8.428a1.892,1.892,0,0,1,1.384-.584H5.906V3.937L9.843,0V7.844H21.655V0l3.937,3.937V7.844h3.937a1.878,1.878,0,0,1,1.4.584A1.913,1.913,0,0,1,31.5,9.812V29.5a1.942,1.942,0,0,1-1.969,1.969ZM9.843,11.781V27.53l13.78-7.874ZM11.812,0h7.874V3.937H11.812Z"
-                      fill="#fafcfc"
-                    />
-                  </svg>
+                  <img src="./images/playstore.png" alt="playstore" />
                 </a>
               </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-3">
-            <h6 class="-footer-list-th">Liens utiles</h6>
-            <ul class="-links">
+            <h6 class="footer-list-th">Liens utiles</h6>
+            <ul class="the-links">
               <li><a href="#">Qui sommes-nous ?</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Mentions légales</a></li>
@@ -724,31 +728,17 @@
             </ul>
           </div>
           <div class="col-lg-2 col-md-2">
-            <h6 class="-footer-list-th">La communauté</h6>
+            <h6 class="footer-list-th">La communauté</h6>
             <!-- Social Media Icons -->
-            <ul class="-icons social-media">
+            <ul class="the-icons social-media">
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.001" viewBox="0 0 30.002 30.001">
-                    <path
-                      id="instagram"
-                      d="M18,3c-4.074,0-4.584.018-6.184.09a11.04,11.04,0,0,0-3.641.7A7.666,7.666,0,0,0,3.787,8.175a11.06,11.06,0,0,0-.7,3.641C3.017,13.416,3,13.926,3,18s.017,4.584.09,6.184a11.04,11.04,0,0,0,.7,3.641,7.664,7.664,0,0,0,4.388,4.388,11.06,11.06,0,0,0,3.641.7c1.6.072,2.111.09,6.184.09s4.584-.018,6.184-.09a11.04,11.04,0,0,0,3.641-.7,7.664,7.664,0,0,0,4.388-4.388,11.06,11.06,0,0,0,.7-3.641c.072-1.6.09-2.111.09-6.184s-.018-4.584-.09-6.184a11.039,11.039,0,0,0-.7-3.641,7.664,7.664,0,0,0-4.388-4.388,11.06,11.06,0,0,0-3.641-.7C22.584,3.018,22.074,3,18,3m0,2.7c4.005,0,4.479.015,6.06.087a8.334,8.334,0,0,1,2.787.516,4.966,4.966,0,0,1,2.847,2.847,8.324,8.324,0,0,1,.516,2.785c.072,1.583.087,2.055.087,6.062s-.015,4.479-.087,6.06a8.386,8.386,0,0,1-.516,2.787,4.966,4.966,0,0,1-2.847,2.847,8.324,8.324,0,0,1-2.785.516c-1.581.072-2.055.087-6.062.087s-4.481-.015-6.06-.087a8.386,8.386,0,0,1-2.787-.516,4.966,4.966,0,0,1-2.847-2.847,8.272,8.272,0,0,1-.516-2.785C5.718,22.479,5.7,22.007,5.7,18s.015-4.479.087-6.06a8.334,8.334,0,0,1,.516-2.787A4.966,4.966,0,0,1,9.153,6.306a8.272,8.272,0,0,1,2.785-.516C13.521,5.718,13.993,5.7,18,5.7M18,23a5,5,0,1,1,5-5,5,5,0,0,1-5,5m0-12.7A7.7,7.7,0,1,0,25.7,18,7.7,7.7,0,0,0,18,10.3m9.807-.3a1.8,1.8,0,1,1-1.8-1.8,1.8,1.8,0,0,1,1.8,1.8"
-                      transform="translate(-3 -3)"
-                      fill="#fff"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
+                  <img src="./images/instagram.png" alt="instagram" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13.097" height="26.948" viewBox="0 0 13.097 26.948">
-                    <path
-                      id="facebook"
-                      d="M3.344,26.948V14.3H0V9.751H3.344V5.862C3.344,2.806,5.318,0,9.87,0a27.632,27.632,0,0,1,3.2.177l-.107,4.252s-1.389-.013-2.906-.013c-1.641,0-1.9.756-1.9,2.011V9.751H13.1L12.883,14.3H8.157V26.948H3.344"
-                      fill="#fff"
-                    />
-                  </svg>
+                  <img src="./images/facebook.png" alt="facebook" />
                 </a>
               </li>
             </ul>

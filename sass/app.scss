@@ -6,21 +6,46 @@
 /*===============================================
 1. Importing Fonts
 2. Common CSS 
-/*===============================================
+3. Header
+4. Hero Banner
+5. Scroll Down
+6. Why Coiffeuse Afro
+7. Mobile Image (Mobile Only)
+8. How it Works
+9. Unique Offers
+10. Contact Us 
+11. Footer
+12. Steps -> Step 1, 2, 3, 4
+=================================================*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Fonts <<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 /* >>>>>>>>> Quicksand <<<<<<<<< */
 @import url("../fonts/Quicksand/stylesheet.css");
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Common CSS <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
+  font-family: "Quicksand";
   overflow-x: hidden;
   /* Header Height */
   padding-top: 107px;
   background: #fafcfc;
+}
+input {
+  background: transparent !important;
+}
+a,
+svg {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -29,7 +54,11 @@ body {
   }
 }
 
-.-bg {
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Background <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.bg-image {
   z-index: -1;
   width: 3736px;
   height: 4481px;
@@ -39,12 +68,16 @@ body {
 }
 
 @media only screen and (max-width: 1900px) {
-  .-bg {
+  .bg-image {
     width: 100%;
   }
 }
 
-.-message {
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>> Message (Mini Header) <<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.mini-header {
   padding: 4px 20px;
   width: 100%;
   text-overflow: ellipsis;
@@ -60,55 +93,9 @@ body {
   }
 }
 
-#scroll-down {
-  text-align: center;
-  margin-top: 80px;
-  .mouse {
-    margin: 0 auto;
-    display: block;
-    cursor: pointer;
-    border-radius: 50px;
-    border: 3px solid #000;
-    height: 56px;
-    width: 31px;
-    position: relative;
-    .move {
-      position: absolute;
-      background-color: #000;
-      height: 5px;
-      width: 5px;
-      border-radius: 50%;
-      left: 50%;
-      transform: translateX(-50%);
-      animation: move 1.2s linear infinite;
-    }
-  }
-  h6 {
-    font: normal normal 500 14px/18px "Quicksand";
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 15px;
-    color: #272727;
-  }
-  @media only screen and (max-width: 1300px) {
-    display: none;
-  }
-}
-
-@keyframes move {
-  0% {
-    transform: translate(-50%, 5px);
-    opacity: 0;
-  }
-  50% {
-    transform: translate(-50%, 20px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, 40px);
-    opacity: 0;
-  }
-}
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 header {
   background: #fff;
@@ -323,6 +310,10 @@ header {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Hero Banner <<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
 .hero-banner {
   padding: 100px 0px;
   .container-fluid {
@@ -335,7 +326,7 @@ header {
   img {
     width: 100%;
   }
-  .-text-area {
+  .main-text-area {
     margin-bottom: 40px;
     h1 {
       font: normal normal bold 48px/60px "Quicksand";
@@ -404,7 +395,7 @@ header {
     img {
       margin-top: 60px;
     }
-    .-text-area {
+    .main-text-area {
       margin-bottom: 21px;
       h1 {
         font: normal normal bold 32px/40px "Quicksand";
@@ -421,7 +412,7 @@ header {
 @media only screen and (max-width: 567px) {
   .hero-banner {
     padding: 25px 0px 40px 0px;
-    .-text-area {
+    .main-text-area {
       h1 {
         br {
           display: block;
@@ -440,6 +431,64 @@ header {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Scroll Down <<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+#scroll-down {
+  text-align: center;
+  margin-top: 80px;
+  .mouse {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 3px solid #000;
+    height: 56px;
+    width: 31px;
+    position: relative;
+    .move {
+      position: absolute;
+      background-color: #000;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: move 1.2s linear infinite;
+    }
+  }
+  h6 {
+    font: normal normal 500 14px/18px "Quicksand";
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-top: 15px;
+    color: #272727;
+  }
+  @media only screen and (max-width: 1300px) {
+    display: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, 5px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 40px);
+    opacity: 0;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>><> Why Coiffeuse Afro <<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
 .why-ma-afro {
   padding: 35px 0px 100px 0px;
   text-align: center;
@@ -455,7 +504,7 @@ header {
     color: #272727;
     opacity: 1;
   }
-  .-reasons {
+  .reasons {
     img {
       margin-bottom: 10px;
       height: 52px;
@@ -488,7 +537,7 @@ header {
 
 @media only screen and (max-width: 1300px) {
   .why-ma-afro {
-    .-reasons {
+    .reasons {
       h5,
       p {
         br {
@@ -528,7 +577,7 @@ header {
     h2 {
       font: normal normal bold 32px/40px "Quicksand";
     }
-    .-reasons {
+    .reasons {
       img {
         margin-bottom: 10px;
         height: 42px;
@@ -548,6 +597,10 @@ header {
     }
   }
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> How it Works <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 .how-it-works {
   margin-top: 135px;
@@ -578,11 +631,11 @@ header {
       &:last-of-type {
         margin-bottom: 0px;
       }
-      .-processes {
+      .processes {
         display: flex;
         align-items: flex-start;
         .process-number {
-          .-number {
+          .the-number {
             width: 30px;
             height: 30px;
             background: #fff;
@@ -620,7 +673,7 @@ header {
       }
     }
   }
-  a.-register {
+  a.register {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -640,12 +693,38 @@ header {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .how-it-works {
+    img {
+      margin-top: 0px;
+      width: 100%;
+      margin-left: auto;
+    }
+    ul {
+      li {
+        .processes {
+          .process-description {
+            p {
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .how-it-works {
     margin-top: 0px;
     padding: 0;
     .container-fluid {
       padding: 40px 20px;
+    }
+    img {
+      display: none;
     }
     h2 {
       margin: 0;
@@ -659,7 +738,7 @@ header {
         &:last-of-type {
           margin-bottom: 0px;
         }
-        .-processes {
+        .processes {
           .process-description {
             margin-left: 25px;
             h5 {
@@ -672,20 +751,20 @@ header {
         }
       }
     }
-    a.-register {
+    a.register {
       margin: 60px 0px 0px 55px;
     }
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 567px) {
   .how-it-works {
     .container-fluid {
       padding: 40px 20px !important;
     }
     ul {
       li {
-        .-processes {
+        .processes {
           display: block;
           .process-description {
             margin-left: 0px;
@@ -696,7 +775,7 @@ header {
         }
       }
     }
-    a.-register {
+    a.register {
       margin: 0 auto;
       width: fit-content;
       margin-top: 60px;
@@ -704,58 +783,9 @@ header {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .how-it-works {
-    img {
-      margin-top: 0px;
-      width: 100%;
-      margin-left: auto;
-    }
-    ul {
-      li {
-        .-processes {
-          .process-description {
-            p {
-              br {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .how-it-works {
-    .col-lg-5 {
-      position: unset;
-    }
-    img {
-      display: none;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      background: red;
-      top: -200px;
-      z-index: -1;
-    }
-    ul {
-      li {
-        .-processes {
-          .process-description {
-            p {
-              br {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Unique Offers <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 .unique-offers {
   padding: 100px 0px;
@@ -780,7 +810,7 @@ header {
     margin-bottom: 70px;
     opacity: 1;
   }
-  .-offers {
+  .all-offers {
     position: relative;
     max-width: 395px;
     height: 384px;
@@ -796,11 +826,11 @@ header {
         display: none;
       }
     }
-    .-offer {
+    .single-offer {
       width: 287px;
       margin: 0 auto;
     }
-    .-top {
+    .offer-top {
       position: absolute;
       top: -26px;
       left: 50%;
@@ -817,7 +847,7 @@ header {
         margin: 0;
       }
     }
-    .-par-transaction {
+    .par-transaction {
       margin-bottom: 55px;
       h3 {
         font: normal normal 500 18px/23px "Quicksand";
@@ -862,14 +892,14 @@ header {
       height: 424px;
       box-shadow: 0px 3px 40px #ec6d7529;
       padding-top: 80px;
-      .-top {
+      .offer-top {
         background: #ffeaea;
         padding: 15px 44px;
         h5 {
           color: #ec6d75;
         }
       }
-      .-par-transaction {
+      .par-transaction {
         h3 {
           color: #ec6d75;
           span {
@@ -880,10 +910,10 @@ header {
     }
     /* 3rd Offer */
     &.offer-3 {
-      .-top {
+      .offer-top {
         padding: 15px 36px;
       }
-      .-par-transaction {
+      .par-transaction {
         h3 {
           text-align: center;
           span {
@@ -893,7 +923,7 @@ header {
       }
     }
   }
-  a.-register {
+  a.register {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -934,14 +964,14 @@ header {
 
 @media only screen and (max-width: 567px) {
   .unique-offers {
-    .-offers {
+    .all-offers {
       height: 339px !important;
       padding: 40px 20px 20px 20px !important;
-      .-offer {
+      .single-offer {
         width: 100%;
         max-width: 247px;
       }
-      .-par-transaction {
+      .par-transaction {
         margin-bottom: 32px;
         h3 {
           text-align: center;
@@ -976,6 +1006,10 @@ header {
     }
   }
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> Contact US <<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 .contact-us {
   margin-bottom: 143px;
@@ -1062,13 +1096,17 @@ header {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
 footer {
   padding: 90px 0px 100px 0px;
   background: #ec6d75;
   .container-fluid {
     max-width: 1277px;
   }
-  .-footer-list-th {
+  .footer-list-th {
     text-decoration: underline;
     font: normal normal bold 18px/23px "Quicksand";
     letter-spacing: 0px;
@@ -1085,7 +1123,7 @@ footer {
     padding: 0;
     list-style: none;
   }
-  .-icons {
+  .the-icons {
     display: flex;
     align-items: center;
     li {
@@ -1094,7 +1132,7 @@ footer {
       }
     }
   }
-  .-links {
+  .the-links {
     li {
       a {
         font: normal normal 500 18px/23px "Quicksand";
@@ -1133,6 +1171,10 @@ footer {
   }
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>> Steps <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
 .steps {
   padding: 75px 0px 63px 0px;
   height: 975px;
@@ -1140,11 +1182,11 @@ footer {
   .container-fluid {
     max-width: 1670px;
   }
-  .-back,
-  .-steps-count {
+  .go-back,
+  .steps-count {
     margin-bottom: 28px;
   }
-  .-back {
+  .go-back {
     a {
       font: normal normal bold 18px/23px "Quicksand";
       display: flex;
@@ -1173,7 +1215,7 @@ footer {
         color: #ec6d75;
       }
     }
-    .-steps-count {
+    .steps-count {
       h6 {
         font: normal normal 500 18px/23px "Quicksand";
         letter-spacing: 0px;
@@ -1213,7 +1255,7 @@ footer {
         }
       }
       button,
-      .-actions {
+      .all-actions {
         position: absolute;
         bottom: 63px;
       }
@@ -1234,7 +1276,7 @@ footer {
     /* Step # 2 */
     &.step-2 {
       form {
-        .-inputs {
+        .all-inputs {
           margin-bottom: 30px;
           &:last-of-type {
             margin-bottom: 0px;
@@ -1246,21 +1288,21 @@ footer {
     &.step-3 {
       form {
         /* Address */
-        .-address {
+        .complete-address {
           display: flex;
           align-items: flex-end;
           margin-bottom: 50px;
-          .-inputs.-get-street {
+          .all-inputs.get-street {
             input {
               width: 249px;
             }
           }
-          .-inputs.-get-postal-code {
+          .all-inputs.get-postal-code {
             input {
               width: 88px;
             }
           }
-          .-inputs.-get-city {
+          .all-inputs.get-city {
             input {
               width: 88px;
               &::placeholder {
@@ -1269,7 +1311,7 @@ footer {
               }
             }
           }
-          .-inputs {
+          .all-inputs {
             margin-right: 25px;
             &:last-of-type {
               margin-right: 0px;
@@ -1281,7 +1323,7 @@ footer {
           }
         }
         /* Checkbox */
-        .-checkbox {
+        .the-checkbox {
           display: flex;
           align-items: center;
           margin-bottom: 20px;
@@ -1338,7 +1380,7 @@ footer {
           }
         }
         /* Ready to Move */
-        .-ready-to-move {
+        .ready-to-move {
           p {
             font: normal normal bold 18px/23px "Quicksand";
             letter-spacing: 0px;
@@ -1347,14 +1389,14 @@ footer {
           }
         }
         /* Choose Department */
-        .-choose-dep {
+        .choose-departments {
           margin-top: 14px;
           p {
             font: normal normal 500 18px/23px "Quicksand";
             letter-spacing: 0px;
             color: #777777;
           }
-          .-depatrtments {
+          .all-the-depatrtments {
             max-width: 1270px;
             margin-top: 28px;
           }
@@ -1363,7 +1405,7 @@ footer {
     }
     /* Step # 4 */
     &.step-4 {
-      .-offers {
+      .all-offers {
         position: relative;
         max-width: 395px;
         height: 384px;
@@ -1373,12 +1415,12 @@ footer {
         text-align: left;
         padding: 60px 20px 20px 20px;
         margin-bottom: 100px;
-        .-offer {
+        .single-offer {
           width: 287px;
           margin: 0 auto;
         }
-        .-top,
-        .-bottom {
+        .offer-top,
+        .offer-bottom {
           position: absolute;
           top: -26px;
           left: 50%;
@@ -1395,7 +1437,7 @@ footer {
             margin: 0;
           }
         }
-        .-bottom {
+        .offer-bottom {
           top: unset;
           bottom: -20px;
           background: #ec6d75;
@@ -1408,7 +1450,7 @@ footer {
             font: normal normal bold 18px/23px "Quicksand";
           }
         }
-        .-par-transaction {
+        .par-transaction {
           margin-bottom: 55px;
           h3 {
             font: normal normal 500 18px/23px "Quicksand";
@@ -1453,14 +1495,14 @@ footer {
           height: 424px;
           box-shadow: 0px 3px 40px #ec6d7529;
           padding-top: 80px;
-          .-top {
+          .offer-top {
             background: #ffeaea;
             padding: 15px 44px;
             h5 {
               color: #ec6d75;
             }
           }
-          .-par-transaction {
+          .par-transaction {
             h3 {
               color: #ec6d75;
               span {
@@ -1471,10 +1513,10 @@ footer {
         }
         /* 3rd Offer */
         &.offer-3 {
-          .-top {
+          .offer-top {
             padding: 15px 36px;
           }
-          .-par-transaction {
+          .par-transaction {
             h3 {
               text-align: center;
               span {
@@ -1484,7 +1526,7 @@ footer {
           }
         }
       }
-      .-actions {
+      .all-actions {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -1512,7 +1554,7 @@ footer {
   .steps {
     padding: 41px 0px 63px 0px;
     height: calc(100vh - 87px);
-    .-back {
+    .go-back {
       margin-bottom: 20px;
       a {
         display: flex;
@@ -1532,7 +1574,7 @@ footer {
       h1 {
         font: normal normal bold 32px/40px "Quicksand";
       }
-      .-steps-count {
+      .steps-count {
         margin-bottom: 16px;
         h6 {
           font: normal normal 500 14px/18px "Quicksand";
@@ -1554,7 +1596,7 @@ footer {
         height: fit-content;
         padding-bottom: 40px;
         button,
-        .-actions {
+        .all-actions {
           position: relative;
           margin-top: 74px;
           bottom: 0;
@@ -1565,7 +1607,7 @@ footer {
         height: fit-content;
         padding-bottom: 40px;
         button,
-        .-actions {
+        .all-actions {
           position: relative;
           margin-top: 54px;
           bottom: 0;
@@ -1573,19 +1615,19 @@ footer {
         form {
           margin-top: 30px;
           /* Address */
-          .-address {
+          .complete-address {
             display: block;
             margin-bottom: 40px;
-            .-inputs.-inputs.-get-street {
+            .all-inputs.get-street {
               margin-bottom: 30px;
             }
-            .-inputs.-get-postal-code {
+            .all-inputs.get-postal-code {
               margin-right: 24px;
               input {
                 width: 106px;
               }
             }
-            .-inputs.-get-city {
+            .all-inputs.get-city {
               input {
                 width: 118px;
                 &::placeholder {
@@ -1594,23 +1636,23 @@ footer {
                 }
               }
             }
-            .-inputs {
+            .all-inputs {
               margin-right: 0px;
             }
           }
           /* Departments */
-          .-depatrtments {
+          .all-the-depatrtments {
             .col-lg-2 {
               margin-bottom: 20px;
             }
           }
           /* Choose Department */
-          .-choose-dep {
+          .choose-departments {
             margin-top: 14px;
             p {
               font: normal normal 500 14px/18px "Quicksand";
             }
-            .-depatrtments {
+            .all-the-depatrtments {
               margin-top: 25px;
             }
           }
@@ -1621,19 +1663,19 @@ footer {
         height: fit-content;
         padding-bottom: 40px;
         button,
-        .-actions {
+        .all-actions {
           position: relative;
           margin-top: 54px;
           bottom: 0;
         }
-        .-offers {
+        .all-offers {
           height: 353px !important;
           padding: 40px 20px 20px 20px !important;
-          .-offer {
+          .single-offer {
             width: 100%;
             max-width: 247px;
           }
-          .-par-transaction {
+          .par-transaction {
             margin-bottom: 32px;
             h3 {
               text-align: center;
@@ -1662,7 +1704,7 @@ footer {
             }
           }
         }
-        .-actions {
+        .all-actions {
           display: block;
           align-items: center;
           button {
@@ -1680,7 +1722,7 @@ footer {
     .step {
       /* Step # 4 */
       &.step-4 {
-        .-offers {
+        .all-offers {
           /* Active Offer */
           &.active {
             max-width: 100%;
@@ -1752,13 +1794,6 @@ footer {
     max-width: calc(100% - 72px);
     margin: 0 auto;
   }
-}
-
-a {
-  text-decoration: none !important;
-}
-input {
-  background: transparent !important;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */

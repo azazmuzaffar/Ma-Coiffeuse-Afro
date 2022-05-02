@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26.82" height="26.82" viewBox="0 0 26.82 26.82">
-  <g id="dashboard" transform="translate(0.2 0.2)">
-    <path id="Path_23" data-name="Path 23" d="M27,23.625h1.887v4.718H27Z" transform="translate(-6.241 -5.697)" stroke="#000" stroke-width="0.4"/>
-    <path id="Path_24" data-name="Path 24" d="M22.5,18h1.887v9.436H22.5Z" transform="translate(-5.516 -4.79)" stroke="#000" stroke-width="0.4"/>
-    <path id="Path_25" data-name="Path 25" d="M11.468,27.436A4.724,4.724,0,0,1,6.75,22.718H8.637a2.831,2.831,0,1,0,2.831-2.831V18a4.718,4.718,0,0,1,0,9.436Z" transform="translate(-2.976 -4.79)" stroke="#000" stroke-width="0.4"/>
-    <path id="Path_26" data-name="Path 26" d="M26.783,2.25H4.137A1.889,1.889,0,0,0,2.25,4.137V26.783A1.889,1.889,0,0,0,4.137,28.67H26.783a1.89,1.89,0,0,0,1.887-1.887V4.137A1.889,1.889,0,0,0,26.783,2.25Zm0,8.492H13.573V4.137h13.21Zm-15.1-6.605v6.605H4.137V4.137ZM4.137,26.783V12.629H26.783l0,14.154Z" transform="translate(-2.25 -2.25)" stroke="#000" stroke-width="0.4"/>
-  </g>
-</svg>

@@ -2,6 +2,24 @@
 /* >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Navbar <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+/* Mobile Menu Open/Closed */
+$(document).ready(function () {
+  $("#menu").click(function () {
+    $(this).toggleClass("open");
+    $(".navbar ul").slideToggle(400);
+    $(".navbar").toggleClass("open");
+  });
+});
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Banner <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+/* Fade out and fade in the text... */
 (function () {
   var headings = ["Devenez <br/> <span>indépendant.e</span>,", "Poursuivez <br/> <span>votre passion</span>,", "Valorisez <br/> <span>votre talent</span>,"],
     i = 0;
@@ -13,14 +31,12 @@
     });
   }, 3000);
 })();
-$(document).ready(function () {
-  $("#menu").click(function () {
-    $(this).toggleClass("open");
-    $(".navbar ul").slideToggle(400);
-    $(".navbar").toggleClass("open");
-  });
-});
 
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+/* Available timing Slick Slider */
 var $slickEl = $(".timings");
 
 $slickEl.slick({
