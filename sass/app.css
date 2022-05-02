@@ -21,6 +21,12 @@ body {
   background: #fafcfc;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    padding-top: 87px;
+  }
+}
+
 .-bg {
   z-index: -1;
   width: 3736px;
@@ -28,6 +34,12 @@ body {
   position: absolute;
   top: -643px;
   left: -1183px;
+}
+
+@media only screen and (max-width: 1900px) {
+  .-bg {
+    width: 100%;
+  }
 }
 
 .-message {
@@ -84,6 +96,12 @@ body {
   color: #272727;
 }
 
+@media only screen and (max-width: 1300px) {
+  #scroll-down {
+    display: none;
+  }
+}
+
 @-webkit-keyframes move {
   0% {
     -webkit-transform: translate(-50%, 5px);
@@ -126,18 +144,27 @@ header {
   z-index: 999;
   width: 100%;
   top: 0;
-  -webkit-box-shadow: 0 14px 7px -10px whitesmoke;
-          box-shadow: 0 14px 7px -10px whitesmoke;
+  -webkit-box-shadow: 0 8px 5px rgba(57, 63, 72, 0.021);
+          box-shadow: 0 8px 5px rgba(57, 63, 72, 0.021);
 }
 
 header .navbar {
   height: 84px;
-  max-width: 1664px;
+  max-width: 1670px;
+  padding: 0px 15px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar ul {
   margin: 0;
+  margin-left: auto;
+  margin-right: 0px;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -190,12 +217,141 @@ header .navbar ul li:last-of-type a:hover {
           box-shadow: 0.25em 0.25em 0 0 #ec6d75;
 }
 
+@media only screen and (max-width: 1470px) {
+  header .navbar ul li {
+    margin-right: 30px;
+  }
+  header .navbar ul li:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  header {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  header .navbar {
+    background: #fff;
+    -webkit-box-shadow: 0 8px 5px rgba(57, 63, 72, 0.015);
+            box-shadow: 0 8px 5px rgba(57, 63, 72, 0.015);
+    /* Icon 4 */
+  }
+  header .navbar ul {
+    display: none;
+    background: white;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 106px;
+    width: 100%;
+    padding: 36px;
+    margin: 0;
+  }
+  header .navbar ul li {
+    margin-bottom: 25px;
+  }
+  header .navbar ul li:last-of-type {
+    margin: 0px;
+  }
+  header .navbar #menu {
+    width: 25px;
+    height: 16px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  header .navbar #menu span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ec6d75;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  header .navbar #menu span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+  header .navbar #menu span:nth-child(2) {
+    top: 8px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+  header .navbar #menu span:nth-child(3) {
+    top: 16px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+  header .navbar #menu.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+  }
+  header .navbar #menu.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  header .navbar #menu.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 14.8px;
+    left: 8.1px;
+  }
+  header .navbar ul li a {
+    opacity: 0;
+    display: block;
+  }
+  header .navbar.open {
+    -webkit-box-shadow: 0 8px 5px rgba(57, 63, 72, 0.028);
+            box-shadow: 0 8px 5px rgba(57, 63, 72, 0.028);
+  }
+  header .navbar.open ul li a {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar {
+    height: 65px;
+  }
+  header .navbar a img {
+    height: 38px;
+  }
+  header .navbar ul {
+    top: 87px;
+  }
+}
+
 .hero-banner {
   padding: 100px 0px;
 }
 
-.hero-banner .container {
-  max-width: 1664px;
+.hero-banner .container-fluid {
+  max-width: 1670px;
+}
+
+.hero-banner .container-fluid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-banner img {
@@ -210,11 +366,15 @@ header .navbar ul li:last-of-type a:hover {
   font: normal normal bold 48px/60px "Quicksand";
   color: #272727;
   letter-spacing: 0px;
-  margin-bottom: 2px;
+  margin: 0 0 2px 0px;
 }
 
 .hero-banner .-text-area h1 span {
   color: #ec6d75;
+}
+
+.hero-banner .-text-area h1 br {
+  display: none;
 }
 
 .hero-banner .-text-area h6 {
@@ -232,6 +392,7 @@ header .navbar ul li:last-of-type a:hover {
 
 .hero-banner form input {
   width: 378px;
+  background: transparent;
   border-bottom: 2px solid #ec6d75;
   font: normal normal 500 18px/23px "Quicksand";
   padding-bottom: 6px;
@@ -280,16 +441,55 @@ header .navbar ul li:last-of-type a:hover {
   margin-left: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero-banner {
+    padding: 60px 0px;
+  }
+  .hero-banner .container-fluid .row {
+    display: block;
+  }
+  .hero-banner img {
+    margin-top: 60px;
+  }
+  .hero-banner .-text-area {
+    margin-bottom: 21px;
+  }
+  .hero-banner .-text-area h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+  .hero-banner form button {
+    margin-top: 33px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .hero-banner {
+    padding: 25px 0px 40px 0px;
+  }
+  .hero-banner .-text-area h1 {
+    margin-bottom: 6px;
+  }
+  .hero-banner .-text-area h1 br {
+    display: block;
+  }
+  .hero-banner .-text-area h6 {
+    font-size: 14px;
+  }
+  .hero-banner form input {
+    width: 100%;
+  }
+}
+
 .why-ma-afro {
   padding: 35px 0px 100px 0px;
   text-align: center;
 }
 
-.why-ma-afro .container {
-  max-width: 1664px;
+.why-ma-afro .container-fluid {
+  max-width: 1670px;
 }
 
-.why-ma-afro .container .row {
+.why-ma-afro .container-fluid .row {
   margin: 110px 0px 153px 0px;
 }
 
@@ -300,11 +500,13 @@ header .navbar ul li:last-of-type a:hover {
   opacity: 1;
 }
 
-.why-ma-afro .-reasons svg {
+.why-ma-afro .-reasons img {
   margin-bottom: 10px;
+  height: 52px;
 }
 
 .why-ma-afro .-reasons h5 {
+  margin: 0;
   margin-bottom: 20px;
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
@@ -327,13 +529,58 @@ header .navbar ul li:last-of-type a:hover {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 1300px) {
+  .why-ma-afro .-reasons h5 br,
+  .why-ma-afro .-reasons p br {
+    display: none;
+  }
+  .why-ma-afro .why-coiffeuse a br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .why-ma-afro .col-sm-6 {
+    margin-bottom: 40px;
+  }
+  .why-ma-afro .col-sm-6:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .why-ma-afro {
+    padding: 46px 0px 40px 0px;
+  }
+  .why-ma-afro .container-fluid .row {
+    margin: 40px 0px;
+  }
+  .why-ma-afro h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+  .why-ma-afro .-reasons img {
+    margin-bottom: 10px;
+    height: 42px;
+  }
+  .why-ma-afro .-reasons h5 {
+    margin-bottom: 10px;
+    font: normal normal bold 14px/18px "Quicksand";
+  }
+  .why-ma-afro .-reasons p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .why-ma-afro .why-coiffeuse a {
+    font: normal normal normal 22px/28px "Quicksand";
+  }
+}
+
 .how-it-works {
   margin-top: 135px;
   position: relative;
 }
 
-.how-it-works .container {
-  max-width: 1664px;
+.how-it-works .container-fluid {
+  max-width: 1670px;
   padding: 80px 120px;
   background: #ec6d75;
   position: relative;
@@ -402,6 +649,8 @@ header .navbar ul li:last-of-type a:hover {
 .how-it-works ul li .-processes .process-description h5 {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
+  margin: 0;
+  margin-bottom: 10px;
   color: #ffffff;
   opacity: 1;
 }
@@ -438,12 +687,99 @@ header .navbar ul li:last-of-type a:hover {
   margin-left: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .how-it-works {
+    margin-top: 0px;
+    padding: 0;
+  }
+  .how-it-works .container-fluid {
+    padding: 40px 20px;
+  }
+  .how-it-works h2 {
+    margin: 0;
+    font: normal normal bold 32px/40px "Quicksand";
+    text-align: center;
+  }
+  .how-it-works ul {
+    margin: 46px 0px 0px 0px;
+  }
+  .how-it-works ul li {
+    margin-bottom: 20px;
+  }
+  .how-it-works ul li:last-of-type {
+    margin-bottom: 0px;
+  }
+  .how-it-works ul li .-processes .process-description {
+    margin-left: 25px;
+  }
+  .how-it-works ul li .-processes .process-description h5 {
+    font: normal normal bold 14px/18px "Quicksand";
+  }
+  .how-it-works ul li .-processes .process-description p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .how-it-works a.-register {
+    margin: 60px 0px 0px 55px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .how-it-works .container-fluid {
+    padding: 40px 20px !important;
+  }
+  .how-it-works ul li .-processes {
+    display: block;
+  }
+  .how-it-works ul li .-processes .process-description {
+    margin-left: 0px;
+  }
+  .how-it-works ul li .-processes .process-description h5 {
+    margin-top: 12px;
+  }
+  .how-it-works a.-register {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .how-it-works img {
+    margin-top: 0px;
+    width: 100%;
+    margin-left: auto;
+  }
+  .how-it-works ul li .-processes .process-description p br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .how-it-works .col-lg-5 {
+    position: unset;
+  }
+  .how-it-works img {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: red;
+    top: -200px;
+    z-index: -1;
+  }
+  .how-it-works ul li .-processes .process-description p br {
+    display: none;
+  }
+}
+
 .unique-offers {
   padding: 100px 0px;
 }
 
-.unique-offers .container {
-  max-width: 1664px;
+.unique-offers .container-fluid {
+  max-width: 1670px;
   text-align: center;
 }
 
@@ -480,6 +816,12 @@ header .navbar ul li:last-of-type a:hover {
   padding: 60px 20px 20px 20px;
   /* Active Offer */
   /* 3rd Offer */
+}
+
+@media only screen and (max-width: 1200px) {
+  .unique-offers .-offers.offer-1, .unique-offers .-offers.offer-3 {
+    display: none;
+  }
 }
 
 .unique-offers .-offers .-offer {
@@ -625,12 +967,66 @@ header .navbar ul li:last-of-type a:hover {
   margin-left: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .unique-offers {
+    padding: 56px 0px;
+  }
+  .unique-offers h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .unique-offers p {
+    font: normal normal 500 14px/18px "Quicksand";
+    margin-bottom: 62px;
+  }
+  .unique-offers p br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .unique-offers .-offers {
+    height: 339px !important;
+    padding: 40px 20px 20px 20px !important;
+    /* Active Offer */
+  }
+  .unique-offers .-offers .-offer {
+    width: 100%;
+    max-width: 247px;
+  }
+  .unique-offers .-offers .-par-transaction {
+    margin-bottom: 32px;
+  }
+  .unique-offers .-offers .-par-transaction h3 {
+    text-align: center;
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .unique-offers .-offers .-par-transaction h3 span {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+  .unique-offers .-offers .check-points li .points h4 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .unique-offers .-offers .check-points li .points svg {
+    margin-right: 30px;
+  }
+  .unique-offers .-offers .check-points li:first-of-type {
+    margin-bottom: 26px;
+  }
+  .unique-offers .-offers .check-points li:nth-of-type(2) {
+    margin-bottom: 13px;
+  }
+  .unique-offers .-offers.active {
+    max-width: 100%;
+  }
+}
+
 .contact-us {
   margin-bottom: 143px;
 }
 
-.contact-us .container {
-  max-width: 1664px;
+.contact-us .container-fluid {
+  max-width: 1670px;
   text-align: center;
 }
 
@@ -639,6 +1035,10 @@ header .navbar ul li:last-of-type a:hover {
   letter-spacing: 0px;
   color: #272727;
   margin-bottom: 41px;
+}
+
+.contact-us h2 span {
+  color: #ec6d75;
 }
 
 .contact-us p {
@@ -712,17 +1112,38 @@ header .navbar ul li:last-of-type a:hover {
   margin-left: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact-us {
+    margin-bottom: 0px;
+    padding-bottom: 56px;
+  }
+  .contact-us h2 {
+    margin: 0;
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 15px;
+  }
+  .contact-us p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .contact-us p br {
+    display: none;
+  }
+  .contact-us form {
+    margin-top: 30px;
+  }
+  .contact-us form input {
+    width: 100%;
+    border-bottom: 2px solid #ec6d75;
+  }
+}
+
 footer {
   padding: 90px 0px 100px 0px;
   background: #ec6d75;
 }
 
-footer .container {
+footer .container-fluid {
   max-width: 1277px;
-}
-
-footer .container .col-lg-3:first-of-type {
-  background: yellow;
 }
 
 footer .-footer-list-th {
@@ -769,14 +1190,34 @@ footer .-links li a:hover {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 992px) {
+  footer .container-fluid {
+    padding: 0px 35px;
+  }
+  footer .container-fluid .col-md-3,
+  footer .container-fluid .col-md-4 {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 43px 0px 80px 0px;
+  }
+  footer .container-fluid .col-md-3,
+  footer .container-fluid .col-md-4 {
+    margin-bottom: 46px;
+  }
+}
+
 .steps {
   padding: 75px 0px 63px 0px;
   height: 975px;
   position: relative;
 }
 
-.steps .container {
-  max-width: 1664px;
+.steps .container-fluid {
+  max-width: 1670px;
 }
 
 .steps .-back,
@@ -786,10 +1227,20 @@ footer .-links li a:hover {
 
 .steps .-back a {
   font: normal normal bold 18px/23px "Quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   letter-spacing: 0px;
   color: #777777;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.steps .-back a svg {
+  margin-right: 10px;
 }
 
 .steps .step {
@@ -963,6 +1414,15 @@ footer .-links li a:hover {
 
 .steps .step.step-3 form .-address .-inputs:last-of-type {
   margin-right: 0px;
+}
+
+.steps .step.step-3 form .-address .postal-code-and-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .steps .step.step-3 form .-checkbox {
@@ -1209,6 +1669,10 @@ footer .-links li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1229,6 +1693,247 @@ footer .-links li a:hover {
   color: #777777;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .steps {
+    padding: 41px 0px 63px 0px;
+    height: calc(100vh - 87px);
+  }
+  .steps .-back {
+    margin-bottom: 20px;
+  }
+  .steps .-back a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .steps .-back a svg {
+    margin-right: 10px;
+  }
+  .steps .step {
+    /* Step # 2 */
+    /* Step # 3 */
+    /* Step # 4 */
+  }
+  .steps .step h1,
+  .steps .step p,
+  .steps .step h6,
+  .steps .step label {
+    margin: 0;
+  }
+  .steps .step h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+  .steps .step .-steps-count {
+    margin-bottom: 16px;
+  }
+  .steps .step .-steps-count h6 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .steps .step p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .steps .step p br {
+    display: none;
+  }
+  .steps .step form input {
+    width: 100%;
+  }
+  .steps .step.step-2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+  .steps .step.step-2 button,
+  .steps .step.step-2 .-actions {
+    position: relative;
+    margin-top: 74px;
+    bottom: 0;
+  }
+  .steps .step.step-3 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+  .steps .step.step-3 button,
+  .steps .step.step-3 .-actions {
+    position: relative;
+    margin-top: 54px;
+    bottom: 0;
+  }
+  .steps .step.step-3 form {
+    margin-top: 30px;
+    /* Address */
+    /* Departments */
+    /* Choose Department */
+  }
+  .steps .step.step-3 form .-address {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .steps .step.step-3 form .-address .-inputs.-inputs.-get-street {
+    margin-bottom: 30px;
+  }
+  .steps .step.step-3 form .-address .-inputs.-get-postal-code {
+    margin-right: 24px;
+  }
+  .steps .step.step-3 form .-address .-inputs.-get-postal-code input {
+    width: 106px;
+  }
+  .steps .step.step-3 form .-address .-inputs.-get-city input {
+    width: 118px;
+  }
+  .steps .step.step-3 form .-address .-inputs.-get-city input::-webkit-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .steps .step.step-3 form .-address .-inputs.-get-city input:-ms-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .steps .step.step-3 form .-address .-inputs.-get-city input::-ms-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .steps .step.step-3 form .-address .-inputs.-get-city input::placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .steps .step.step-3 form .-address .-inputs {
+    margin-right: 0px;
+  }
+  .steps .step.step-3 form .-depatrtments .col-lg-2 {
+    margin-bottom: 20px;
+  }
+  .steps .step.step-3 form .-choose-dep {
+    margin-top: 14px;
+  }
+  .steps .step.step-3 form .-choose-dep p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .steps .step.step-3 form .-choose-dep .-depatrtments {
+    margin-top: 25px;
+  }
+  .steps .step.step-4 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+  .steps .step.step-4 button,
+  .steps .step.step-4 .-actions {
+    position: relative;
+    margin-top: 54px;
+    bottom: 0;
+  }
+  .steps .step.step-4 .-offers {
+    height: 353px !important;
+    padding: 40px 20px 20px 20px !important;
+  }
+  .steps .step.step-4 .-offers .-offer {
+    width: 100%;
+    max-width: 247px;
+  }
+  .steps .step.step-4 .-offers .-par-transaction {
+    margin-bottom: 32px;
+  }
+  .steps .step.step-4 .-offers .-par-transaction h3 {
+    text-align: center;
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .steps .step.step-4 .-offers .-par-transaction h3 span {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+  .steps .step.step-4 .-offers .check-points li .points h4 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .steps .step.step-4 .-offers .check-points li .points svg {
+    margin-right: 30px;
+  }
+  .steps .step.step-4 .-offers .check-points li:first-of-type {
+    margin-bottom: 26px;
+  }
+  .steps .step.step-4 .-offers .check-points li:nth-of-type(2) {
+    margin-bottom: 13px;
+  }
+  .steps .step.step-4 .-actions {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .steps .step.step-4 .-actions button {
+    margin-top: 36px;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .steps .step {
+    /* Step # 4 */
+  }
+  .steps .step.step-4 .-offers {
+    /* Active Offer */
+  }
+  .steps .step.step-4 .-offers.active {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  header .navbar {
+    max-width: 1440px;
+  }
+  .hero-banner .container-fluid,
+  .why-ma-afro .container-fluid,
+  .how-it-works .container-fluid,
+  .unique-offers .container-fluid,
+  .contact-us .container-fluid,
+  .steps .container-fluid {
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  header .navbar {
+    max-width: 1300px;
+  }
+  .hero-banner .container-fluid,
+  .why-ma-afro .container-fluid,
+  .how-it-works .container-fluid,
+  .unique-offers .container-fluid,
+  .contact-us .container-fluid,
+  .steps .container-fluid {
+    max-width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  header .navbar {
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .hero-banner .container-fluid,
+  .why-ma-afro .container-fluid,
+  .how-it-works .container-fluid,
+  .unique-offers .container-fluid,
+  .contact-us .container-fluid,
+  .steps .container-fluid {
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .how-it-works {
+    max-width: calc(100% - 72px);
+    margin: 0 auto;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */

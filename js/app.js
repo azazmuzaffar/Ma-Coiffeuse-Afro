@@ -3,7 +3,7 @@
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 (function () {
-  var headings = ["Devenez <span>indépendant.e</span>,", "Poursuivez <span>votre passion</span>,", "Valorisez <span>votre talent</span>,"],
+  var headings = ["Devenez <br/> <span>indépendant.e</span>,", "Poursuivez <br/> <span>votre passion</span>,", "Valorisez <br/> <span>votre talent</span>,"],
     i = 0;
   setInterval(function () {
     $("#headings").fadeOut(function () {
@@ -13,6 +13,13 @@
     });
   }, 3000);
 })();
+$(document).ready(function () {
+  $("#menu").click(function () {
+    $(this).toggleClass("open");
+    $(".navbar ul").slideToggle(400);
+    $(".navbar").toggleClass("open");
+  });
+});
 
 var $slickEl = $(".timings");
 
