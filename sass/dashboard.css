@@ -1328,4 +1328,251 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   left: 0.5em;
   margin-right: -50%;
 }
+
+.message-box .type-message {
+  padding-top: 16px;
+  border-top: 1px solid #777777;
+}
+
+.message-box .type-message form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.message-box .type-message form input,
+.message-box .type-message form button {
+  border: none;
+  outline: none;
+}
+
+.message-box .type-message form input {
+  font: normal normal normal 16px/20px "Quicksand";
+  letter-spacing: 0px;
+  width: 100%;
+  color: #777777;
+}
+
+.message-box .type-message form .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.message-box .type-message form .actions a {
+  text-decoration: none;
+  margin: 0px 25px;
+}
+
+.message-box .type-message form .actions button {
+  background: unset;
+  cursor: pointer;
+}
+
+.inputs {
+  margin-bottom: 30px;
+}
+
+.inputs:last-of-type {
+  margin-bottom: 0px;
+}
+
+label {
+  display: block;
+  margin: 0;
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+input {
+  width: 378px;
+  border-bottom: 2px solid #ec6d75;
+  font: normal normal 500 18px/23px "Quicksand";
+  padding-bottom: 6px;
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input:-ms-input-placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input::-ms-input-placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input::placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input[type="file"] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.choose-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal 500 18px/23px "Quicksand";
+  text-decoration: underline;
+  cursor: pointer;
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.choose-picture img {
+  margin-left: 13px;
+}
+
+.service .add-picture {
+  margin-bottom: 40px;
+}
+
+.service .add-picture p {
+  margin: 0;
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.service .pictures .row .col-lg-4 {
+  margin-bottom: 40px;
+}
+
+.service .pictures .row .col-lg-4:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.service .pictures .choosed {
+  position: relative;
+}
+
+.service .pictures .choosed img {
+  width: 100%;
+}
+
+.service .pictures .choosed .delete-image {
+  top: -18px;
+  right: -18px;
+}
+
+.service .pictures .choosed .delete-image img {
+  position: absolute;
+  width: unset;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.service .delete-image,
+.service .add-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  background: #ec6d75;
+}
+
+.service .delete-image span,
+.service .add-image span {
+  position: absolute;
+  display: block;
+  width: unset;
+  margin: 0;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: normal normal bold 32px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #e6e6e6;
+}
+
+.service .add-more-pictures {
+  height: 100%;
+  cursor: pointer;
+  background: #e6e6e6;
+}
+
+.service .choose-picture-grid .center-content {
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.service .choose-picture-grid .center-content .add-image {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 7.5px;
+}
+
+.service .choose-picture-grid .center-content p {
+  font: normal normal 600 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.service .cancel-update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.service .cancel-update button {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  display: block;
+  width: 200px;
+  padding: 8px 26px;
+  border: 2px solid #ec6d75;
+  border-radius: 15px;
+  background: transparent;
+}
+
+.service .cancel-update button.update {
+  margin-left: 20px;
+  background: #ec6d75;
+  color: #fff;
+}
 /*# sourceMappingURL=dashboard.css.map */
