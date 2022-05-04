@@ -1,6 +1,17 @@
 @charset "UTF-8";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 header .navbar {
   padding: 0;
+  max-width: 1670px;
+  padding: 0px 15px;
 }
 
 header .navbar ul li {
@@ -145,7 +156,7 @@ header .navbar ul.-profile li .show-messages .-messages-count {
   background: #ec6d75;
   border-radius: 50%;
   position: absolute;
-  top: -12px;
+  top: -23px;
   right: -12px;
 }
 
@@ -160,22 +171,167 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
           transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 1330px) {
+  header .navbar a img {
+    display: none;
+  }
+  header .navbar #menu {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  header .navbar ul.-links {
+    padding: 0px;
+  }
+  header .navbar ul.-links li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+  }
+  header .navbar ul.-links li a,
+  header .navbar ul.-links li a.active,
+  header .navbar ul.-links li a:hover {
+    margin: 0;
+    padding: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: 0px;
+    background: transparent;
+    padding: 20px 36px;
+  }
+  header .navbar ul.-links li a.active,
+  header .navbar ul.-links li a:hover {
+    background: #ffeaea;
+    border-bottom: 0.5px solid #ec6d75;
+  }
+  header .navbar ul.-links li a {
+    text-align: left;
+    line-height: 18px;
+    display: block;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  header .navbar ul.-links li a span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header .navbar ul.-links li a span .-count {
+    position: relative;
+    margin-left: auto;
+    margin-right: 22px;
+    top: unset;
+    left: unset;
+  }
+  header .navbar ul.-links li a span .-count span {
+    display: block;
+    width: unset;
+  }
+  header .navbar ul.-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  header .navbar ul.-profile li {
+    margin: 0;
+  }
+  header .navbar ul.-profile li img {
+    margin-left: 43px;
+  }
+  header .navbar ul li a {
+    opacity: 0;
+    display: block;
+  }
+  header .navbar ul li a.show-messages {
+    opacity: 1;
+  }
+  header .navbar.open {
+    -webkit-box-shadow: 0 8px 5px rgba(57, 63, 72, 0.028);
+            box-shadow: 0 8px 5px rgba(57, 63, 72, 0.028);
+  }
+  header .navbar.open ul li a {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar ul:first-of-type {
+    top: 87px;
+  }
+  header .navbar ul.-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  header .navbar ul.-profile li {
+    margin: 0;
+  }
+  header .navbar ul.-profile li img {
+    width: auto;
+    height: 46px;
+    margin-left: 33px;
+  }
+}
+
 /* Dashboard */
 .-dashboard {
   padding: 80px 0px 138px 0px;
+  overflow: hidden;
 }
 
-.-dashboard .container {
+@media only screen and (max-width: 768px) {
+  .-dashboard {
+    padding: 40px 0px 100px 0px;
+  }
+}
+
+.-dashboard .container-fluid {
   max-width: 1695px;
   /* Main Content */
 }
 
-.-dashboard .container .main-content {
-  padding-left: 22px;
+@media only screen and (max-width: 1330px) {
+  .-dashboard .container-fluid .row.except-my-images {
+    display: -ms-grid;
+    display: grid;
+  }
+  .-dashboard .container-fluid .row.except-my-images .col-lg-3,
+  .-dashboard .container-fluid .row.except-my-images .col-lg-9 {
+    width: 100%;
+  }
+}
+
+.-dashboard .container-fluid .main-content {
+  padding-left: 20px;
   /* See All */
 }
 
-.-dashboard .container .main-content .see-all {
+@media only screen and (max-width: 1330px) {
+  .-dashboard .container-fluid .main-content {
+    padding-left: 0px;
+  }
+}
+
+.-dashboard .container-fluid .main-content .see-all {
+  display: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,9 +347,15 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   text-decoration: underline;
 }
 
-.-dashboard .container .main-content .see-all svg {
+.-dashboard .container-fluid .main-content .see-all svg {
   margin-left: 15px;
   margin-top: -11px;
+}
+
+@media only screen and (max-width: 768px) {
+  .-dashboard .container-fluid .main-content .see-all {
+    display: none;
+  }
 }
 
 /* Left Menu */
@@ -278,6 +440,49 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   color: #272727;
 }
 
+@media only screen and (max-width: 1330px) {
+  .-left-menu .-options.-my-options {
+    position: fixed;
+    top: 87px;
+    text-align: right;
+    display: none;
+    right: 35px;
+  }
+  .-left-menu .-options.-my-options li a {
+    text-align: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .-left-menu .-options.-my-options li a svg,
+  .-left-menu .-options.-my-options li a .-stats {
+    margin-right: 0px;
+    margin-left: 17px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .-left-menu .-options.-my-options {
+    padding: 28px 36px 28px 50px;
+  }
+  .-left-menu .-options li {
+    margin-bottom: 20px;
+  }
+  .-left-menu .-options li:first-of-type {
+    margin-bottom: 18px;
+  }
+  .-left-menu .-options li a h5 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .-left-menu .-options.-my-stats {
+    display: none;
+  }
+}
+
 .-left-menu .-options.-my-stats li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,6 +538,44 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 1470px) {
+  .dashboard-banner .row .col-lg-8,
+  .dashboard-banner .row .col-lg-4 {
+    width: 100%;
+  }
+  .dashboard-banner .row .col-lg-8 .-last-step,
+  .dashboard-banner .row .col-lg-4 .-last-step {
+    width: 100%;
+  }
+  .dashboard-banner .row .col-lg-4 {
+    display: none;
+  }
+  .dashboard-banner .row .col-lg-4.visible-sm {
+    display: block !important;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-banner {
+    margin-bottom: 97px;
+  }
+  .dashboard-banner .col-lg-4 {
+    display: none;
+  }
+  .dashboard-banner .col-lg-4.visible-sm {
+    display: block !important;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .dashboard-banner .col-lg-4.visible-sm .edit-profile {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .dashboard-banner .-last-step {
   padding: 30px 33px;
   background: #fff;
@@ -369,6 +612,28 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   width: fit-content;
   background: #ec6d75;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-banner .-last-step h1 {
+    font: normal normal bold 22px/28px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .dashboard-banner .-last-step p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .-last-step p br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .dashboard-banner .-last-step {
+    text-align: center;
+  }
+  .dashboard-banner .-last-step a {
+    margin: 0 auto;
+  }
 }
 
 .dashboard-banner .-offer-ad {
@@ -461,7 +726,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   color: #272727;
 }
 
-.dashboard-banner .-offer-ad .check-points li .points svg {
+.dashboard-banner .-offer-ad .check-points li .points img {
   margin-right: 30px;
 }
 
@@ -471,6 +736,93 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 
 .dashboard-banner .-offer-ad .check-points li:nth-of-type(2) {
   margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .dashboard-banner .-offer-ad .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dashboard-banner .-offer-ad .row .col-lg-6 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .dashboard-banner .-offer-ad .row .col-lg-6:last-of-type {
+    margin-left: auto;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-banner .-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 0px;
+  }
+  .dashboard-banner .-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .-offer-ad h2 {
+    font: normal normal bold 24px/40px "Quicksand";
+    margin-bottom: 50px;
+  }
+  .dashboard-banner .-offer-ad .check-points li .points h4 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .-offer-ad .check-points li .points img {
+    margin-right: 30px;
+  }
+  .dashboard-banner .-offer-ad .check-points li:first-of-type {
+    margin-bottom: 26px;
+  }
+  .dashboard-banner .-offer-ad .check-points li:nth-of-type(2) {
+    margin-bottom: 13px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .dashboard-banner .-offer-ad {
+    height: 325px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .dashboard-banner .-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 30px;
+  }
+  .dashboard-banner .-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .-offer-ad h2 {
+    display: none;
+  }
+  .dashboard-banner .-offer-ad .row {
+    display: -ms-grid;
+    display: grid;
+  }
+  .dashboard-banner .-offer-ad .row .col-lg-6 {
+    position: unset;
+    width: calc(100% - 32px);
+  }
+  .dashboard-banner .-offer-ad a {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .dashboard-banner .-offer-ad .-top {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .dashboard-banner .-offer-ad .check-points {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 
 .dashboard-banner .edit-profile {
@@ -488,21 +840,44 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   width: fit-content;
   background: #ec6d75;
   border-radius: 15px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1470px) {
+  .dashboard-banner .edit-profile {
+    margin: 0;
+  }
 }
 
 /* Availability */
 .availability {
   margin-bottom: 100px;
+  width: 100%;
   /* Timing Slider */
 }
 
-.availability h2 {
+@media only screen and (max-width: 1330px) {
+  .availability {
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .availability {
+    margin-bottom: 75px;
+  }
+}
+
+.availability .availability-hint h2 {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
 }
 
-.availability .hint {
+.availability .availability-hint .hint {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +893,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin: 20px 0px 45px 0px;
 }
 
-.availability .hint .circle {
+.availability .availability-hint .hint .circle {
   width: 16px;
   height: 16px;
   margin-right: 11px;
@@ -526,26 +901,46 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   border-radius: 50%;
 }
 
-.availability .hint span {
+.availability .availability-hint .hint span {
   font: normal normal normal 16px/20px "Quicksand";
   letter-spacing: 0px;
   color: #68c8c7;
   margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .availability .availability-hint h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
 .availability .timings {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1045px;
-  padding: 0px 56px;
+  max-width: 968px;
+  border-radius: 15px;
+  margin: 0px 56px;
+  -webkit-box-shadow: 0px -4px 7px #f1f1f1;
+          box-shadow: 0px -4px 7px #f1f1f1;
+}
+
+@media only screen and (max-width: 1330px) {
+  .availability .timings {
+    margin: 0;
+    margin-top: 88px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .availability .timings {
+    margin-top: 80px;
+  }
 }
 
 .availability .timings ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 187px;
+  display: block;
   text-align: center;
 }
 
@@ -586,6 +981,22 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .availability .timings ul li {
+    padding: 8px 0px 0px 0px;
+  }
+  .availability .timings ul li:first-of-type {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+  .availability .timings ul li:first-of-type span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .availability .timings ul li:first-of-type span:first-of-type {
+    margin-bottom: 0px;
+  }
+}
+
 .availability .timings ul li .time-period {
   display: block;
   width: -webkit-fit-content;
@@ -622,6 +1033,23 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   position: absolute;
   top: -10px;
   right: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .availability .timings ul li .time-period.-availed::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .availability .timings ul li .time-period span {
+    padding: 13px 18px;
+    font: normal normal bold 14px/18px "Quicksand";
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .availability .timings ul li:nth-of-type(2) {
@@ -678,6 +1106,21 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 1330px) {
+  .reservation {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation {
+    margin-bottom: 75px;
+  }
+}
+
 .reservation .-reservation-reserved {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,6 +1163,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  .reservation .-reservation-reserved h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
 .reservation .-reserved-by {
   /* All Reservation */
 }
@@ -741,6 +1190,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   padding: 0px 36px;
 }
 
+@media only screen and (max-width: 1470px) {
+  .reservation .-reserved-by ul.th {
+    display: none;
+  }
+}
+
 .reservation .-reserved-by ul.th li {
   width: 156px;
   font: normal normal 500 18px/23px "Quicksand";
@@ -750,6 +1205,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 
 .reservation .-reserved-by .all-reservation .-by {
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .-reserved-by .all-reservation .-by {
+    margin-bottom: 25px;
+  }
 }
 
 .reservation .-reserved-by .all-reservation .-by:last-of-type {
@@ -782,6 +1243,19 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .reservation .-reserved-by .all-reservation .-by .-when {
+    width: 100%;
+    padding: 6px 0px 26px 10px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .-when svg {
+    display: none;
+  }
+  .reservation .-reserved-by .all-reservation .-by .-when h5 {
+    font: normal normal bold 14px/18px "Quicksand";
+  }
+}
+
 .reservation .-reserved-by .all-reservation .-by .by {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,6 +1282,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   color: #272727;
 }
 
+@media only screen and (max-width: 768px) {
+  .reservation .-reserved-by .all-reservation .-by .by li:first-of-type {
+    margin-bottom: 19px;
+  }
+}
+
 .reservation .-reserved-by .all-reservation .-by .by li .show-messages {
   position: relative;
 }
@@ -818,7 +1298,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   background: #ec6d75;
   border-radius: 50%;
   position: absolute;
-  top: -12px;
+  top: -23px;
   right: -12px;
 }
 
@@ -834,7 +1314,75 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 }
 
 .reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
-  width: 98px;
+  width: 74px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .reservation .-reserved-by .all-reservation .-by .by {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li {
+    width: 100%;
+    margin-bottom: 14px;
+    margin-left: 12px;
+    padding-left: 45px;
+    position: relative;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li br {
+    display: none;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li:before {
+    content: attr(content);
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 0;
+    width: 30px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(1), .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(2), .reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
+    padding-left: 0px !important;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(2) {
+    font-weight: bold;
+    position: absolute;
+    top: 45px;
+    left: 136px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
+    position: absolute;
+    top: 43px;
+    right: 36px;
+    width: 34px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .-reserved-by .all-reservation .-by .by {
+    padding: 17px 0px 7px 0px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li {
+    font: normal normal 500 14px/18px "Quicksand";
+    padding-left: 59px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li a img {
+    width: auto;
+    height: 59px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li:before {
+    color: #777777;
+    margin-left: 12px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(2) {
+    top: 35px;
+    left: 76px;
+  }
+  .reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
+    top: 33px;
+    right: 28px;
+  }
 }
 
 /* My Messages */
@@ -842,6 +1390,21 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   max-width: 1077px;
   margin-bottom: 100px;
   /* All Messages */
+}
+
+@media only screen and (max-width: 1330px) {
+  .my-messages {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-messages {
+    margin-bottom: 75px;
+  }
 }
 
 .my-messages .-inpox {
@@ -886,6 +1449,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  .my-messages .-inpox h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
 .my-messages .-messages {
   /* Message */
 }
@@ -894,6 +1463,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -906,8 +1476,28 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   background: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .my-messages .-messages .-message {
+    margin-bottom: 25px;
+  }
+}
+
 .my-messages .-messages .-message:last-of-type {
   margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .my-messages .-messages .-message.check::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    width: 26px;
+    height: 26px;
+    background: #ec6d75;
+    border-radius: 50%;
+  }
 }
 
 .my-messages .-messages .-message .-details {
@@ -921,6 +1511,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 
 .my-messages .-messages .-message .-details a {
   margin-right: 78px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .my-messages .-messages .-message .-details a {
+    margin-right: 70px;
+  }
 }
 
 .my-messages .-messages .-message .-details .-message-text h5 {
@@ -937,10 +1533,22 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   text-transform: unset;
 }
 
+@media only screen and (max-width: 1470px) {
+  .my-messages .-messages .-message .-details .-message-text p br {
+    display: none;
+  }
+}
+
 .my-messages .-messages .-message .show-messages {
   position: relative;
   margin-left: auto;
   margin-right: 0px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .my-messages .-messages .-message .show-messages {
+    display: none;
+  }
 }
 
 .my-messages .-messages .-message .show-messages .-messages-count {
@@ -964,9 +1572,40 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
           transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 768px) {
+  .my-messages .-messages .-message {
+    padding: 17px 20px 14px 20px;
+  }
+  .my-messages .-messages .-message .-details {
+    display: block;
+  }
+  .my-messages .-messages .-message .-details a {
+    margin-right: 0px;
+  }
+  .my-messages .-messages .-message .-details a img {
+    width: auto;
+    height: 59px;
+  }
+  .my-messages .-messages .-message .-details .-message-text {
+    margin-top: 12px;
+  }
+  .my-messages .-messages .-message .-details .-message-text p {
+    font: normal normal 500 14px/18px "Quicksand";
+    margin: 0;
+  }
+}
+
 /* Presentations */
 .presentations {
   max-width: 1077px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .presentations {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+  }
 }
 
 .presentations h2 {
@@ -1058,6 +1697,41 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-right: 0px;
 }
 
+@media only screen and (max-width: 768px) {
+  .presentations h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+    margin-bottom: 22px;
+  }
+  .presentations .about-presentations {
+    display: none;
+  }
+  .presentations .all-presentations {
+    padding: 18px;
+  }
+  .presentations .all-presentations .presentation {
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    margin-top: 20.5px;
+  }
+  .presentations .all-presentations .presentation h5 {
+    font: normal normal 500 14px/18px "Quicksand";
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .presentations .all-presentations .presentation .prix h5 {
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    top: 0;
+  }
+  .presentations .all-presentations .presentation .prix a {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
 /* Custom Slick Arrows */
 .slick-prev,
 .slick-next {
@@ -1081,15 +1755,43 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   outline: none;
 }
 
+@media only screen and (max-width: 1330px) {
+  .slick-prev,
+  .slick-next {
+    top: -40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    top: -30px;
+  }
+}
+
 .slick-prev {
-  left: 0;
+  left: -56px;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   margin-top: -13px;
 }
 
+@media only screen and (max-width: 1330px) {
+  .slick-prev {
+    left: 0;
+  }
+}
+
 .slick-next {
-  right: 0;
+  right: -56px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .slick-next {
+    right: 0;
+  }
 }
 
 .slick-prev:before,
@@ -1099,8 +1801,21 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 14px;
+  }
+}
+
 .slick-active:nth-child(5n) li:first-of-type {
   border-top-right-radius: 18px;
+}
+
+@media only screen and (max-width: 567px) {
+  .slick-active:nth-child(2n) li:first-of-type {
+    border-top-right-radius: 18px;
+  }
 }
 
 .-back {
@@ -1109,14 +1824,37 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 
 .-back a {
   font: normal normal bold 18px/23px "Quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   letter-spacing: 0px;
   color: #777777;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.-back a span.text {
   text-decoration: underline;
+}
+
+.-back a span.icon {
+  margin-right: 10px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  text-decoration: none;
 }
 
 .heading-repeat {
   margin-bottom: 45px;
+}
+
+.heading-repeat h1 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
 }
 
 .heading-repeat a {
@@ -1127,6 +1865,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 768px) {
+  .heading-repeat h1 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
 .heading-repeat a.this-weak {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1134,14 +1878,24 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .heading-repeat a.this-weak h5 {
   margin: 0;
+  font: normal normal 500 18px/23px "Quicksand";
 }
 
 .heading-repeat a.this-weak svg {
   margin-left: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat a.this-weak.visible-none {
+    display: none;
+  }
 }
 
 .heading-repeat .-heading {
@@ -1151,7 +1905,18 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   margin-bottom: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat .-heading {
+    display: block;
+    margin-bottom: 6px;
+  }
 }
 
 .heading-repeat .-heading .-inpox {
@@ -1172,6 +1937,12 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat .-heading .-inpox h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
 }
 
 .heading-repeat .-heading .-inpox .-reserved {
@@ -1205,30 +1976,167 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   padding: 8px 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .heading-repeat .-heading a {
+    margin: 0;
+    margin-bottom: 50px;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .heading-repeat .-heading a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.my-images-page .heading-repeat .-heading .-inpox h2 span {
+  color: #ec6d75;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-images-page .heading-repeat .-heading a {
+    display: none;
+  }
+  .my-images-page .heading-repeat .-heading .-inpox h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-services-page .-dashboard {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-messages-page .heading-repeat {
+    margin-bottom: 30px !important;
+  }
+}
+
 .my-availability-page .heading-repeat {
-  margin-bottom: 75px;
+  margin-bottom: 45px;
 }
 
 .my-availability-page .availability {
   margin-bottom: 125px;
 }
 
+@media only screen and (max-width: 768px) {
+  .my-availability-page .availability {
+    margin-bottom: 0px;
+  }
+}
+
 .my-availability-page .-dashboard .reservation {
   margin-bottom: 0px;
 }
 
-.my-messages-page .my-messages {
+@media only screen and (max-width: 768px) {
+  .my-availability-page .-dashboard {
+    padding: 40px 0px;
+  }
+  .my-availability-page .-dashboard .reservation {
+    display: none;
+  }
+}
+
+.my-availability-page .registration {
+  margin-top: 40px;
+}
+
+.my-availability-page .registration a {
+  font-size: 18px;
+  text-decoration: underline;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #ec6d75;
+  border-radius: 15px;
+  padding: 8px 25px;
+}
+
+.my-reservation-page .-dashboard .reservation {
   margin-bottom: 0px;
 }
 
-.message-box .container {
+.messages-page .my-messages {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .messages-page .-dashboard {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .messages-page .heading-repeat {
+    margin-bottom: 20px !important;
+  }
+}
+
+.message-box .all-of-the-messages {
   background: #fff;
   max-width: 1077px;
   -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
           box-shadow: 0px 3px 30px #b2b2b23d;
   border-radius: 15px;
-  padding: 49px 33px 26px 33px;
+  padding: 0;
   margin: 0;
+}
+
+@media only screen and (max-width: 1330px) {
+  .message-box .all-of-the-messages {
+    max-width: 100%;
+  }
+}
+
+.message-box .messages {
+  height: 670px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: 50px 20px 0px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages {
+    padding: 20px 20px 0px 20px;
+  }
+}
+
+.message-box .messages * {
+  scrollbar-width: auto;
+  scrollbar-color: #ffeaea #ffffff;
+}
+
+.message-box .messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+.message-box .messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.message-box .messages::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #ffeaea;
+  border-radius: 10px;
 }
 
 .message-box .messages .message {
@@ -1248,9 +2156,27 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message {
+    margin-bottom: 20px;
+  }
+  .message-box .messages .message:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
 .message-box .messages .message img {
   width: 77px;
   height: 77px;
+  min-width: 77px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message img {
+    width: 47px;
+    height: 47px;
+    min-width: 47px;
+  }
 }
 
 .message-box .messages .message .text {
@@ -1267,8 +2193,20 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   color: #272727;
 }
 
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message .text p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
 .message-box .messages .message.-received img {
   margin-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message.-received img {
+    margin-right: 20px;
+  }
 }
 
 .message-box .messages .message.-sent {
@@ -1280,8 +2218,10 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-right: 0;
 }
 
-.message-box .messages .message.-sent img {
-  margin-left: 30px;
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message.-sent img {
+    margin-left: 20px;
+  }
 }
 
 .message-box .messages .message.-sent .text {
@@ -1309,6 +2249,26 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   display: block;
 }
 
+.message-box .messages .-new-message span.ds {
+  display: block;
+}
+
+.message-box .messages .-new-message span.mb {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .-new-message span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .message-box .messages .-new-message span.ds {
+    display: none;
+  }
+  .message-box .messages .-new-message span.mb {
+    display: block;
+  }
+}
+
 .message-box .messages .-new-message span:before, .message-box .messages .-new-message span:after {
   background-color: #ec6d75;
   content: "";
@@ -1330,17 +2290,25 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 }
 
 .message-box .type-message {
-  padding-top: 16px;
-  border-top: 1px solid #777777;
+  padding: 0px 30px 26px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message {
+    padding: 0px 20px 20px 20px;
+  }
 }
 
 .message-box .type-message form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  border-top: 1px solid #777777;
+  padding-top: 17px;
 }
 
 .message-box .type-message form input,
@@ -1352,7 +2320,30 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 .message-box .type-message form input {
   font: normal normal normal 16px/20px "Quicksand";
   letter-spacing: 0px;
+  text-transform: none;
   width: 100%;
+  color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message form input {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+.message-box .type-message form input::-webkit-input-placeholder {
+  color: #777777;
+}
+
+.message-box .type-message form input:-ms-input-placeholder {
+  color: #777777;
+}
+
+.message-box .type-message form input::-ms-input-placeholder {
+  color: #777777;
+}
+
+.message-box .type-message form input::placeholder {
   color: #777777;
 }
 
@@ -1365,16 +2356,37 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
           align-items: center;
   margin-left: auto;
   margin-right: 0px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .message-box .type-message form .actions a {
   text-decoration: none;
-  margin: 0px 25px;
+  margin-right: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message form .actions a {
+    margin: 0;
+    margin-right: 13px;
+  }
+  .message-box .type-message form .actions a img {
+    width: 21px;
+    height: auto;
+  }
 }
 
 .message-box .type-message form .actions button {
   background: unset;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message form .actions button img {
+    width: 24px;
+    height: auto;
+  }
 }
 
 .inputs {
@@ -1435,14 +2447,17 @@ input[type="file"] {
 }
 
 .choose-picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font: normal normal 500 18px/23px "Quicksand";
   text-decoration: underline;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   cursor: pointer;
   letter-spacing: 0px;
   color: #ec6d75;
@@ -1450,6 +2465,10 @@ input[type="file"] {
 
 .choose-picture img {
   margin-left: 13px;
+}
+
+.choose-picture input {
+  display: none;
 }
 
 .service .add-picture {
@@ -1463,12 +2482,8 @@ input[type="file"] {
   color: #ec6d75;
 }
 
-.service .pictures .row .col-lg-4 {
-  margin-bottom: 40px;
-}
-
-.service .pictures .row .col-lg-4:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+.service .pictures .row .col-md-4 {
+  margin-bottom: 30px;
 }
 
 .service .pictures .choosed {
@@ -1520,12 +2535,16 @@ input[type="file"] {
 .service .add-more-pictures {
   height: 100%;
   cursor: pointer;
-  background: #e6e6e6;
+  display: block;
+  position: relative;
+  width: 100%;
+  background: yellow;
 }
 
-.service .choose-picture-grid .center-content {
+.service .center-content {
   width: 100%;
   position: absolute;
+  cursor: pointer;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -1534,13 +2553,13 @@ input[type="file"] {
   text-align: center;
 }
 
-.service .choose-picture-grid .center-content .add-image {
+.service .center-content .add-image {
   position: relative;
   margin: 0 auto;
   margin-bottom: 7.5px;
 }
 
-.service .choose-picture-grid .center-content p {
+.service .center-content p {
   font: normal normal 600 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #ec6d75;
@@ -1574,5 +2593,51 @@ input[type="file"] {
   margin-left: 20px;
   background: #ec6d75;
   color: #fff;
+}
+
+@media only screen and (max-width: 1700px) {
+  header .navbar {
+    max-width: 1440px;
+  }
+  .-dashboard .container-fluid {
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  header .navbar {
+    max-width: 1300px;
+  }
+  .-dashboard .container-fluid {
+    max-width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  header .navbar {
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .-dashboard .container-fluid {
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+* {
+  min-height: 0;
+  min-width: 0;
 }
 /*# sourceMappingURL=dashboard.css.map */

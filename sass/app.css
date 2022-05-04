@@ -185,7 +185,7 @@ header .navbar ul li:last-of-type a:hover {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1330px) {
   header {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -196,7 +196,7 @@ header .navbar ul li:last-of-type a:hover {
             box-shadow: 0 8px 5px rgba(57, 63, 72, 0.015);
     /* Icon 4 */
   }
-  header .navbar ul {
+  header .navbar ul:first-of-type {
     display: none;
     background: white;
     height: 100%;
@@ -208,10 +208,10 @@ header .navbar ul li:last-of-type a:hover {
     padding: 36px;
     margin: 0;
   }
-  header .navbar ul li {
+  header .navbar ul:first-of-type li {
     margin-bottom: 25px;
   }
-  header .navbar ul li:last-of-type {
+  header .navbar ul:first-of-type li:last-of-type {
     margin: 0px;
   }
   header .navbar #menu {
@@ -292,7 +292,7 @@ header .navbar ul li:last-of-type a:hover {
     height: 38px;
   }
   header .navbar ul {
-    top: 87px;
+    top: 87px !important;
   }
 }
 

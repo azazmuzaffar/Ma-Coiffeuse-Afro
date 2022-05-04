@@ -6,25 +6,16 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
     <!-- >>> Title & Favicon <<< -->
-    <title>Ma Coiffeuse Afro</title>
+    <title>Dashboard - Ma Coiffeuse Afro</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
 
     <!-- >>> meta Description <<< -->
-    <meta
-      name="description"
-      content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids, tissages etc."
-    />
+    <meta name="description" content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids etc." />
     <!-- >>>> meta Keywords <<<< -->
-    <meta
-      name="keywords"
-      content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids, tissages etc."
-    />
+    <meta name="keywords" content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids etc." />
 
-    <!-- >>>  Slick Slider  <<<<-->
-    <link href="./slick/slick.css" rel="stylesheet" />
-
-    <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <!-- >>> Bootstrap v3.3.7 | Front End Framework <<< -->
+    <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css" />
 
     <!-- >>> Custom CSS <<< -->
     <link rel="stylesheet" href="./sass/app.css" />
@@ -36,14 +27,19 @@
     <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
 
     <header>
-      <div class="-message">
+      <div class="mini-header">
         <p>NOUVEAU ! MCA FONCTIONNE PAR ABONNEMENT ➜</p>
       </div>
-      <div class="navbar">
-        <img src="./images/logo.png" alt="logo" />
+      <div class="navbar slide-right">
+        <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <div id="menu" class="slide-right">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="-links">
           <li>
-            <a href="#"><span>TABLEAU DE BORD</span></a>
+            <a href="#" class="active"><span>TABLEAU DE BORD</span></a>
           </li>
           <li>
             <a href="#">
@@ -66,7 +62,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="active"><span>MES PRESTATIONS</span></a>
+            <a href="#"><span>MES PRESTATIONS</span></a>
           </li>
         </ul>
         <ul class="-profile">
@@ -98,8 +94,8 @@
     </header>
 
     <div class="-dashboard">
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid">
+        <div class="row except-my-images">
           <div class="col-lg-3">
             <!-- Left Menu -->
             <div class="-left-menu">
@@ -245,7 +241,7 @@
           <div class="col-lg-9">
             <div class="main-content">
               <div class="heading-repeat">
-                <div class="-heading">
+                <div class="-heading" style="flex-direction: unset">
                   <div class="-inpox">
                     <h2>Mes messages</h2>
                     <div class="-reserved">
@@ -253,7 +249,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="this-weak">
+                <a href="#" class="this-weak visible-none">
                   <h5>CETTE SEMAINE</h5>
                   <svg xmlns="http://www.w3.org/2000/svg" width="15.71" height="10.063" viewBox="0 0 15.71 10.063">
                     <path
@@ -274,7 +270,7 @@
                 <!-- All Messages -->
                 <div class="-messages">
                   <!-- Messages # 1 -->
-                  <div class="-message">
+                  <div class="-message check">
                     <div class="-details">
                       <a href="#"><img src="./images/by-1.png" alt="" /></a>
                       <div class="-message-text">
@@ -307,7 +303,7 @@
                   <!-- Messages # 2 -->
                   <div class="-message">
                     <div class="-details">
-                      <a href="#"><img src="./images/by-3.png" alt="" /></a>
+                      <a href="#"><img src="./images/by-2.png" alt="" /></a>
                       <div class="-message-text">
                         <h5><span class="name">Océane</span> - <span class="date">12/04/2022</span></h5>
                         <p>
@@ -335,7 +331,7 @@
                   <!-- Messages # 3 -->
                   <div class="-message">
                     <div class="-details">
-                      <a href="#"><img src="./images/by-2.png" alt="" /></a>
+                      <a href="#"><img src="./images/by-3.png" alt="" /></a>
                       <div class="-message-text">
                         <h5><span class="name">Prisci</span> - <span class="date">12/04/2022</span></h5>
                         <p>
@@ -360,7 +356,7 @@
                       </svg>
                     </a>
                   </div>
-                  <!-- Messages # 4 -->
+                  <!-- Messages # 2 -->
                   <div class="-message">
                     <div class="-details">
                       <a href="#"><img src="./images/by-4.png" alt="" /></a>
@@ -388,7 +384,7 @@
                       </svg>
                     </a>
                   </div>
-                  <!-- Messages # 5 -->
+                  <!-- Messages # 2 -->
                   <div class="-message">
                     <div class="-details">
                       <a href="#"><img src="./images/by-1.png" alt="" /></a>
@@ -416,10 +412,10 @@
                       </svg>
                     </a>
                   </div>
-                  <!-- Messages # 6 -->
+                  <!-- Messages # 2 -->
                   <div class="-message">
                     <div class="-details">
-                      <a href="#"><img src="./images/by-3.png" alt="" /></a>
+                      <a href="#"><img src="./images/by-2.png" alt="" /></a>
                       <div class="-message-text">
                         <h5><span class="name">Océane</span> - <span class="date">12/04/2022</span></h5>
                         <p>
@@ -444,10 +440,10 @@
                       </svg>
                     </a>
                   </div>
-                  <!-- Messages # 7 -->
+                  <!-- Messages # 2 -->
                   <div class="-message">
                     <div class="-details">
-                      <a href="#"><img src="./images/by-2.png" alt="" /></a>
+                      <a href="#"><img src="./images/by-3.png" alt="" /></a>
                       <div class="-message-text">
                         <h5><span class="name">Prisci</span> - <span class="date">12/04/2022</span></h5>
                         <p>
@@ -481,44 +477,31 @@
     </div>
 
     <footer>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4">
-            <h6 class="-footer-list-th">Ma Coiffeuse Afro</h6>
+          <div class="col-lg-4 col-md-4">
+            <h6 class="footer-list-th">Ma Coiffeuse Afro</h6>
             <p>Rendre la beauté accessible à toutes.</p>
           </div>
-          <div class="col-lg-3">
-            <h6 class="-footer-list-th">L’application</h6>
+          <div class="col-lg-3 col-md-3">
+            <h6 class="footer-list-th">L’application</h6>
             <!-- Where Find our App -->
-            <ul class="-icons the-app">
+            <ul class="the-icons the-app">
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33.763" height="33.763" viewBox="0 0 33.763 33.763">
-                    <path
-                      id="app-store"
-                      d="M17.437,8.248l.62-1.069a1.391,1.391,0,1,1,2.41,1.389L14.51,18.88h4.309a1.907,1.907,0,0,1,1.572,2.777H7.765a1.388,1.388,0,0,1,0-2.777H11.3l4.534-7.855L14.421,8.569a1.391,1.391,0,1,1,2.41-1.389l.606,1.069ZM12.079,23.087,10.745,25.4a1.391,1.391,0,1,1-2.41-1.389L9.33,22.3a2.372,2.372,0,0,1,2.75.79Zm11.5-4.2h3.615a1.388,1.388,0,0,1,0,2.777H25.184l1.354,2.349a1.391,1.391,0,1,1-2.41,1.389q-3.42-5.932-5.133-8.89a3.836,3.836,0,0,1,.49-4.7Q20.853,14.156,23.577,18.887ZM17.444.563A16.881,16.881,0,1,0,34.326,17.444,16.877,16.877,0,0,0,17.444.563Zm14.7,16.882a14.7,14.7,0,1,1-14.7-14.7A14.7,14.7,0,0,1,32.147,17.445Z"
-                      transform="translate(-0.563 -0.563)"
-                      fill="#fafcfc"
-                    />
-                  </svg>
+                  <img src="./images/appstore.png" alt="playstore" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="31.498" height="31.467" viewBox="0 0 31.498 31.467">
-                    <path
-                      id="playstore"
-                      d="M29.529,31.467H1.969A1.918,1.918,0,0,1,.584,30.9,1.877,1.877,0,0,1,0,29.5V9.812A1.892,1.892,0,0,1,.584,8.428a1.892,1.892,0,0,1,1.384-.584H5.906V3.937L9.843,0V7.844H21.655V0l3.937,3.937V7.844h3.937a1.878,1.878,0,0,1,1.4.584A1.913,1.913,0,0,1,31.5,9.812V29.5a1.942,1.942,0,0,1-1.969,1.969ZM9.843,11.781V27.53l13.78-7.874ZM11.812,0h7.874V3.937H11.812Z"
-                      fill="#fafcfc"
-                    />
-                  </svg>
+                  <img src="./images/playstore.png" alt="playstore" />
                 </a>
               </li>
             </ul>
           </div>
-          <div class="col-lg-3">
-            <h6 class="-footer-list-th">Liens utiles</h6>
-            <ul class="-links">
+          <div class="col-lg-3 col-md-3">
+            <h6 class="footer-list-th">Liens utiles</h6>
+            <ul class="the-links">
               <li><a href="#">Qui sommes-nous ?</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Mentions légales</a></li>
@@ -530,32 +513,18 @@
               <li><a href="#">Salon de coiffure afro à Paris</a></li>
             </ul>
           </div>
-          <div class="col-lg-2">
-            <h6 class="-footer-list-th">La communauté</h6>
+          <div class="col-lg-2 col-md-2">
+            <h6 class="footer-list-th">La communauté</h6>
             <!-- Social Media Icons -->
-            <ul class="-icons social-media">
+            <ul class="the-icons social-media">
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.001" viewBox="0 0 30.002 30.001">
-                    <path
-                      id="instagram"
-                      d="M18,3c-4.074,0-4.584.018-6.184.09a11.04,11.04,0,0,0-3.641.7A7.666,7.666,0,0,0,3.787,8.175a11.06,11.06,0,0,0-.7,3.641C3.017,13.416,3,13.926,3,18s.017,4.584.09,6.184a11.04,11.04,0,0,0,.7,3.641,7.664,7.664,0,0,0,4.388,4.388,11.06,11.06,0,0,0,3.641.7c1.6.072,2.111.09,6.184.09s4.584-.018,6.184-.09a11.04,11.04,0,0,0,3.641-.7,7.664,7.664,0,0,0,4.388-4.388,11.06,11.06,0,0,0,.7-3.641c.072-1.6.09-2.111.09-6.184s-.018-4.584-.09-6.184a11.039,11.039,0,0,0-.7-3.641,7.664,7.664,0,0,0-4.388-4.388,11.06,11.06,0,0,0-3.641-.7C22.584,3.018,22.074,3,18,3m0,2.7c4.005,0,4.479.015,6.06.087a8.334,8.334,0,0,1,2.787.516,4.966,4.966,0,0,1,2.847,2.847,8.324,8.324,0,0,1,.516,2.785c.072,1.583.087,2.055.087,6.062s-.015,4.479-.087,6.06a8.386,8.386,0,0,1-.516,2.787,4.966,4.966,0,0,1-2.847,2.847,8.324,8.324,0,0,1-2.785.516c-1.581.072-2.055.087-6.062.087s-4.481-.015-6.06-.087a8.386,8.386,0,0,1-2.787-.516,4.966,4.966,0,0,1-2.847-2.847,8.272,8.272,0,0,1-.516-2.785C5.718,22.479,5.7,22.007,5.7,18s.015-4.479.087-6.06a8.334,8.334,0,0,1,.516-2.787A4.966,4.966,0,0,1,9.153,6.306a8.272,8.272,0,0,1,2.785-.516C13.521,5.718,13.993,5.7,18,5.7M18,23a5,5,0,1,1,5-5,5,5,0,0,1-5,5m0-12.7A7.7,7.7,0,1,0,25.7,18,7.7,7.7,0,0,0,18,10.3m9.807-.3a1.8,1.8,0,1,1-1.8-1.8,1.8,1.8,0,0,1,1.8,1.8"
-                      transform="translate(-3 -3)"
-                      fill="#fff"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
+                  <img src="./images/instagram.png" alt="instagram" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13.097" height="26.948" viewBox="0 0 13.097 26.948">
-                    <path
-                      id="facebook"
-                      d="M3.344,26.948V14.3H0V9.751H3.344V5.862C3.344,2.806,5.318,0,9.87,0a27.632,27.632,0,0,1,3.2.177l-.107,4.252s-1.389-.013-2.906-.013c-1.641,0-1.9.756-1.9,2.011V9.751H13.1L12.883,14.3H8.157V26.948H3.344"
-                      fill="#fff"
-                    />
-                  </svg>
+                  <img src="./images/facebook.png" alt="facebook" />
                 </a>
               </li>
             </ul>
@@ -572,10 +541,7 @@
     <script src="./jquery/jquery.min.js"></script>
 
     <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- >>>  SLICK SLIDERS <<<-->
-    <script src="./slick/slick.min.js"></script>
+    <script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
     <!-- >>> CUSTOM JS <<< -->
     <script src="./js/app.js"></script>

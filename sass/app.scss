@@ -174,13 +174,13 @@ header {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1330px) {
   header {
     box-shadow: none;
     .navbar {
       background: #fff;
       box-shadow: 0 8px 5px rgba(57, 63, 72, 0.015);
-      ul {
+      ul:first-of-type {
         display: none;
         background: white;
         height: 100%;
@@ -307,7 +307,7 @@ header {
         }
       }
       ul {
-        top: 87px;
+        top: 87px !important;
       }
     }
   }
