@@ -46,10 +46,10 @@
         </div>
         <ul class="header-links">
           <li>
-            <a href="#" class="active"><span>TABLEAU DE BORD</span></a>
+            <a href="./dashboard.html" class="active"><span>TABLEAU DE BORD</span></a>
           </li>
           <li>
-            <a href="#">
+            <a href="my-reservation.html">
               <span>
                 MES RÉSERVATIONS
                 <div class="counter -reservations">
@@ -59,7 +59,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="my-availabilities.html">
               <span>
                 MES DISPONIBILITÉS
                 <div class="counter -availability">
@@ -69,7 +69,7 @@
             </a>
           </li>
           <li>
-            <a href="#"><span>MES PRESTATIONS</span></a>
+            <a href="my-services.html"><span>MES PRESTATIONS</span></a>
           </li>
         </ul>
         <ul class="header-profile">
@@ -77,7 +77,7 @@
             <img src="./images/profile-60.png" alt="" />
           </li>
           <li>
-            <a href="#" class="show-messages">
+            <a href="./messages.html" class="show-messages">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                 <path
                   id="Icon_feather-message-square"
@@ -111,7 +111,7 @@
             <!-- Left Menu -->
             <div class="dashboard-menu">
               <!-- Profile Options -->
-              <ul class="-options -my-options">
+              <ul class="dashboard-menu-options all-my-options">
                 <li>
                   <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26.82" height="26.82" viewBox="0 0 26.82 26.82">
@@ -187,7 +187,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="./my-images.html">
                     <svg id="image" xmlns="http://www.w3.org/2000/svg" width="30.194" height="22.646" viewBox="0 0 30.194 22.646">
                       <path
                         id="Path_31"
@@ -209,7 +209,7 @@
                 </li>
               </ul>
               <!-- Profile Stats -->
-              <ul class="-options -my-stats">
+              <ul class="dashboard-menu-options all-my-stats">
                 <li>
                   <a href="#">
                     <h5>CETTE SEMAINE</h5>
@@ -228,26 +228,26 @@
                   </a>
                 </li>
                 <li>
-                  <div class="-stats Views">
+                  <div class="profile-stats Views">
                     <span>289</span>
                   </div>
                   <h5>Vues</h5>
                 </li>
                 <li>
-                  <div class="-stats Views">
+                  <div class="profile-stats Views">
                     <span>12</span>
                   </div>
                   <h5>Mon profil</h5>
                 </li>
                 <li>
-                  <div class="-stats Views">
+                  <div class="profile-stats Views">
                     <span>4</span>
                   </div>
                   <h5>Mes paiements</h5>
                 </li>
               </ul>
               <!-- Profile Completion -->
-              <ul class="-options profile-completion">
+              <ul class="dashboard-menu-options profile-completion">
                 <h2>Complétion du profil</h2>
                 <div class="progress" data-max="100%">
                   <div class="progress-so-far" data-value="40%"></div>
@@ -297,7 +297,7 @@
                     <a href="#" class="edit-profile">VOIR MON PROFIL PUBLIC</a>
                   </div>
                   <div class="col-lg-8">
-                    <div class="-offer-ad">
+                    <div class="dashboard-offer-ad">
                       <div class="row">
                         <div class="col-lg-6">
                           <h1>19,99€<span>/MOIS</span></h1>
@@ -330,7 +330,7 @@
                           </ul>
                         </div>
                       </div>
-                      <div class="-top">
+                      <div class="offer-top">
                         <h5>NOUVEAU !</h5>
                       </div>
                     </div>
@@ -504,14 +504,14 @@
               </div>
               <!-- Reservation -->
               <div class="reservation">
-                <div class="-reservation-reserved">
+                <div class="all-reserved-reservations">
                   <h2>Réservation à venir</h2>
-                  <div class="-reserved">
+                  <div class="all-reserved">
                     <span>12</span>
                   </div>
                 </div>
                 <!-- About Reserved -->
-                <div class="-reserved-by">
+                <div class="reservation-reserved-by">
                   <ul class="th">
                     <li>Profil</li>
                     <li>Prénom</li>
@@ -523,9 +523,9 @@
                   <!-- All Reservation -->
                   <div class="all-reservation">
                     <!-- Reserved By # 1  -->
-                    <div class="-by">
+                    <div class="reserved-by">
                       <!-- Reserved When  -->
-                      <div class="-when">
+                      <div class="the-date">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
                           <g id="Group_58" data-name="Group 58" transform="translate(0 -0.301)">
                             <g id="Group_11" data-name="Group 11" transform="translate(0 0.301)">
@@ -585,9 +585,9 @@
                       </ul>
                     </div>
                     <!-- Reserved By # 2  -->
-                    <div class="-by">
+                    <div class="reserved-by">
                       <!-- Reserved When  -->
-                      <div class="-when">
+                      <div class="the-date">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
                           <g id="Group_58" data-name="Group 58" transform="translate(0 -0.301)">
                             <g id="Group_11" data-name="Group 11" transform="translate(0 0.301)">
@@ -666,19 +666,19 @@
               </div>
               <!-- My Messages -->
               <div class="my-messages">
-                <div class="-inpox">
+                <div class="message-inbox">
                   <h2>Mes messages</h2>
-                  <div class="-reserved">
+                  <div class="all-reserved">
                     <span>1</span>
                   </div>
                 </div>
                 <!-- All Messages -->
-                <div class="-messages">
+                <div class="all-the-messages">
                   <!-- Messages # 1 -->
-                  <div class="-message check">
-                    <div class="-details">
+                  <div class="the-message check">
+                    <div class="message-details">
                       <a href="#"><img src="./images/by-1.png" alt="" /></a>
-                      <div class="-message-text">
+                      <div class="message-text">
                         <h5><span class="name">Prisci</span> - <span class="date">12/04/2022</span></h5>
                         <p>
                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br />
@@ -706,10 +706,10 @@
                     </a>
                   </div>
                   <!-- Messages # 2 -->
-                  <div class="-message">
-                    <div class="-details">
+                  <div class="the-message">
+                    <div class="message-details">
                       <a href="#"><img src="./images/by-3.png" alt="" /></a>
-                      <div class="-message-text">
+                      <div class="message-text">
                         <h5><span class="name">Océane</span> - <span class="date">12/04/2022</span></h5>
                         <p>
                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br />

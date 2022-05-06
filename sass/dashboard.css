@@ -226,6 +226,19 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 1330px) {
+  header .navbar ul.header-profile li .show-messages svg {
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  header .navbar ul.header-profile li .show-messages .all-messages-count {
+    width: 19px;
+    height: 19px;
+    top: -15px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
   header .navbar a img {
     display: none;
   }
@@ -289,9 +302,9 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -327,9 +340,9 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -419,7 +432,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   /* Profile Options */
 }
 
-.dashboard-menu .-options {
+.dashboard-menu .dashboard-menu-options {
   padding: 35px 40px;
   -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
           box-shadow: 0px 3px 30px #b2b2b23d;
@@ -432,17 +445,17 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   /* My Stats */
 }
 
-.dashboard-menu .-options:last-of-type {
+.dashboard-menu .dashboard-menu-options:last-of-type {
   margin-bottom: 0px;
 }
 
-.dashboard-menu .-options h2 {
+.dashboard-menu .dashboard-menu-options h2 {
   font: normal normal bold 18px/18px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
 }
 
-.dashboard-menu .-options .progress {
+.dashboard-menu .dashboard-menu-options .progress {
   position: relative;
   width: 100%;
   margin: 27px 0px;
@@ -451,7 +464,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   border-radius: 10px;
 }
 
-.dashboard-menu .-options .progress::before {
+.dashboard-menu .dashboard-menu-options .progress::before {
   display: block;
   width: 100%;
   content: attr(data-max);
@@ -462,7 +475,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   letter-spacing: 0px;
 }
 
-.dashboard-menu .-options .progress .progress-so-far {
+.dashboard-menu .dashboard-menu-options .progress .progress-so-far {
   content: attr(data-value);
   display: block;
   border-radius: 10px;
@@ -474,7 +487,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   left: 0;
 }
 
-.dashboard-menu .-options .progress .progress-so-far::before {
+.dashboard-menu .dashboard-menu-options .progress .progress-so-far::before {
   display: block;
   width: unset;
   content: attr(data-value);
@@ -485,7 +498,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   letter-spacing: 0px;
 }
 
-.dashboard-menu .-options .the-checkbox {
+.dashboard-menu .dashboard-menu-options .the-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,18 +508,18 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-bottom: 20px;
 }
 
-.dashboard-menu .-options .the-checkbox:last-of-type {
+.dashboard-menu .dashboard-menu-options .the-checkbox:last-of-type {
   margin-bottom: 0px;
 }
 
-.dashboard-menu .-options .the-checkbox input,
-.dashboard-menu .-options .the-checkbox label {
+.dashboard-menu .dashboard-menu-options .the-checkbox input,
+.dashboard-menu .dashboard-menu-options .the-checkbox label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.dashboard-menu .-options .the-checkbox input {
+.dashboard-menu .dashboard-menu-options .the-checkbox input {
   margin-right: 17px;
   padding: 0;
   height: initial;
@@ -516,13 +529,13 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   cursor: pointer;
 }
 
-.dashboard-menu .-options .the-checkbox label {
+.dashboard-menu .dashboard-menu-options .the-checkbox label {
   position: relative;
   color: #777777;
   cursor: pointer;
 }
 
-.dashboard-menu .-options .the-checkbox label::before {
+.dashboard-menu .dashboard-menu-options .the-checkbox label::before {
   content: "";
   border: 1px solid #68c8c7;
   border-radius: 3px;
@@ -536,11 +549,11 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-right: 15px;
 }
 
-.dashboard-menu .-options .the-checkbox input:checked + label::before {
+.dashboard-menu .dashboard-menu-options .the-checkbox input:checked + label::before {
   background: #68c8c7;
 }
 
-.dashboard-menu .-options .the-checkbox input:checked + label:after {
+.dashboard-menu .dashboard-menu-options .the-checkbox input:checked + label:after {
   content: "";
   display: block;
   position: absolute;
@@ -554,15 +567,15 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
           transform: rotate(45deg);
 }
 
-.dashboard-menu .-options li {
+.dashboard-menu .dashboard-menu-options li {
   margin-bottom: 28px;
 }
 
-.dashboard-menu .-options li:last-of-type {
+.dashboard-menu .dashboard-menu-options li:last-of-type {
   margin-bottom: 0px;
 }
 
-.dashboard-menu .-options li a {
+.dashboard-menu .dashboard-menu-options li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,104 +588,104 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   transition: 0.3s;
 }
 
-.dashboard-menu .-options li a svg,
-.dashboard-menu .-options li a .-stats {
+.dashboard-menu .dashboard-menu-options li a svg,
+.dashboard-menu .dashboard-menu-options li a .profile-stats {
   margin-right: 17px;
 }
 
-.dashboard-menu .-options li a svg,
-.dashboard-menu .-options li a h5 {
+.dashboard-menu .dashboard-menu-options li a svg,
+.dashboard-menu .dashboard-menu-options li a h5 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.dashboard-menu .-options li a:hover svg,
-.dashboard-menu .-options li a:hover h5 {
+.dashboard-menu .dashboard-menu-options li a:hover svg,
+.dashboard-menu .dashboard-menu-options li a:hover h5 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.dashboard-menu .-options li a:hover svg {
+.dashboard-menu .dashboard-menu-options li a:hover svg {
   fill: #ec6d75;
 }
 
-.dashboard-menu .-options li a:hover h5 {
+.dashboard-menu .dashboard-menu-options li a:hover h5 {
   color: #ec6d75;
 }
 
-.dashboard-menu .-options li h5 {
+.dashboard-menu .dashboard-menu-options li h5 {
   font: normal normal 500 18px/18px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
   margin: 0;
 }
 
-.dashboard-menu .-options li:first-of-type a:hover svg {
+.dashboard-menu .dashboard-menu-options li:first-of-type a:hover svg {
   fill: #272727;
 }
 
-.dashboard-menu .-options li:first-of-type a:hover h5 {
+.dashboard-menu .dashboard-menu-options li:first-of-type a:hover h5 {
   color: #272727;
 }
 
-.dashboard-menu .-options form li {
+.dashboard-menu .dashboard-menu-options form li {
   margin-bottom: 20px;
 }
 
-.dashboard-menu .-options form li:last-of-type {
+.dashboard-menu .dashboard-menu-options form li:last-of-type {
   margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 1330px) {
-  .dashboard-menu .-options.-my-options {
+  .dashboard-menu .dashboard-menu-options.all-my-options {
     position: fixed;
     top: 87px;
     text-align: right;
     display: none;
     right: 35px;
   }
-  .dashboard-menu .-options.-my-options li a {
+  .dashboard-menu .dashboard-menu-options.all-my-options li a {
     text-align: right;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .dashboard-menu .-options.-my-options li a svg,
-  .dashboard-menu .-options.-my-options li a .-stats {
+  .dashboard-menu .dashboard-menu-options.all-my-options li a svg,
+  .dashboard-menu .dashboard-menu-options.all-my-options li a .profile-stats {
     margin-right: 0px;
     margin-left: 17px;
   }
 }
 
 @media only screen and (max-width: 1330px) {
-  .dashboard-menu .-options.profile-completion {
+  .dashboard-menu .dashboard-menu-options.profile-completion {
     display: none;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .dashboard-menu .-options.-my-options {
+  .dashboard-menu .dashboard-menu-options.all-my-options {
     padding: 28px 36px 28px 50px;
   }
-  .dashboard-menu .-options li {
+  .dashboard-menu .dashboard-menu-options li {
     margin-bottom: 20px;
   }
-  .dashboard-menu .-options li:first-of-type {
+  .dashboard-menu .dashboard-menu-options li:first-of-type {
     margin-bottom: 18px;
   }
-  .dashboard-menu .-options li a h5 {
+  .dashboard-menu .dashboard-menu-options li a h5 {
     font: normal normal 500 14px/18px "Quicksand";
   }
 }
 
 @media only screen and (max-width: 1330px) {
-  .dashboard-menu .-options.-my-stats {
+  .dashboard-menu .dashboard-menu-options.all-my-stats {
     display: none;
   }
 }
 
-.dashboard-menu .-options.-my-stats li {
+.dashboard-menu .dashboard-menu-options.all-my-stats li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,19 +695,19 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-bottom: 16px;
 }
 
-.dashboard-menu .-options.-my-stats li h5 {
+.dashboard-menu .dashboard-menu-options.all-my-stats li h5 {
   color: #272727;
 }
 
-.dashboard-menu .-options.-my-stats li:last-of-type {
+.dashboard-menu .dashboard-menu-options.all-my-stats li:last-of-type {
   margin-bottom: 0px;
 }
 
-.dashboard-menu .-options.-my-stats li:first-of-type {
+.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type {
   margin-bottom: 40px;
 }
 
-.dashboard-menu .-options.-my-stats li:first-of-type a {
+.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type a {
   text-decoration: underline;
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
@@ -702,11 +715,11 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   text-transform: uppercase;
 }
 
-.dashboard-menu .-options.-my-stats li:first-of-type a svg {
+.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type a svg {
   margin-left: 11px;
 }
 
-.dashboard-menu .-options.-my-stats li .-stats {
+.dashboard-menu .dashboard-menu-options.all-my-stats li .profile-stats {
   padding: 2px;
   background: #ededed;
   text-align: center;
@@ -715,7 +728,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-right: 17px;
 }
 
-.dashboard-menu .-options.-my-stats li .-stats span {
+.dashboard-menu .dashboard-menu-options.all-my-stats li .profile-stats span {
   font: normal normal bold 18px/18px "Quicksand";
   letter-spacing: 0px;
   margin: 0;
@@ -734,8 +747,8 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   .dashboard-banner .row .col-lg-4 {
     width: 100%;
   }
-  .dashboard-banner .row .col-lg-8 .-last-step,
-  .dashboard-banner .row .col-lg-4 .-last-step {
+  .dashboard-banner .row .col-lg-8 .one-last-step,
+  .dashboard-banner .row .col-lg-4 .one-last-step {
     width: 100%;
   }
   .dashboard-banner .row .col-lg-4 {
@@ -767,7 +780,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
-.dashboard-banner .-last-step {
+.dashboard-banner .one-last-step {
   padding: 30px 33px;
   background: #fff;
   -webkit-box-shadow: 0px 3px 40px #ec6d7529;
@@ -775,21 +788,21 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   border-radius: 4px;
 }
 
-.dashboard-banner .-last-step h1 {
+.dashboard-banner .one-last-step h1 {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
   margin-bottom: 19px;
 }
 
-.dashboard-banner .-last-step p {
+.dashboard-banner .one-last-step p {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   margin-bottom: 41px;
   color: #777777;
 }
 
-.dashboard-banner .-last-step a {
+.dashboard-banner .one-last-step a {
   text-decoration: underline;
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
@@ -806,28 +819,28 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .dashboard-banner .-last-step h1 {
+  .dashboard-banner .one-last-step h1 {
     font: normal normal bold 22px/28px "Quicksand";
     margin-bottom: 10px;
   }
-  .dashboard-banner .-last-step p {
+  .dashboard-banner .one-last-step p {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .dashboard-banner .-last-step p br {
+  .dashboard-banner .one-last-step p br {
     display: none;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .dashboard-banner .-last-step {
+  .dashboard-banner .one-last-step {
     text-align: center;
   }
-  .dashboard-banner .-last-step a {
+  .dashboard-banner .one-last-step a {
     margin: 0 auto;
   }
 }
 
-.dashboard-banner .-offer-ad {
+.dashboard-banner .dashboard-offer-ad {
   padding: 41px 0px 36px 33px;
   background: #fff;
   -webkit-box-shadow: 0px 3px 40px #ec6d7529;
@@ -837,30 +850,30 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-top: 26px;
 }
 
-.dashboard-banner .-offer-ad h1 {
+.dashboard-banner .dashboard-offer-ad h1 {
   font: normal normal bold 48px/60px "Quicksand";
   letter-spacing: 0px;
   color: #ec6d75;
   margin-bottom: 10px;
 }
 
-.dashboard-banner .-offer-ad h1 span {
+.dashboard-banner .dashboard-offer-ad h1 span {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
 }
 
-.dashboard-banner .-offer-ad h2 {
+.dashboard-banner .dashboard-offer-ad h2 {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
   margin-bottom: 20px;
 }
 
-.dashboard-banner .-offer-ad h2 span {
+.dashboard-banner .dashboard-offer-ad h2 span {
   color: #ec6d75;
 }
 
-.dashboard-banner .-offer-ad a {
+.dashboard-banner .dashboard-offer-ad a {
   text-decoration: underline;
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
@@ -875,7 +888,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   border-radius: 15px;
 }
 
-.dashboard-banner .-offer-ad .-top {
+.dashboard-banner .dashboard-offer-ad .offer-top {
   position: absolute;
   top: -26px;
   left: 36px;
@@ -887,7 +900,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   border-radius: 24px;
 }
 
-.dashboard-banner .-offer-ad .-top h5 {
+.dashboard-banner .dashboard-offer-ad .offer-top h5 {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #ec6d75;
@@ -895,13 +908,13 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin: 0;
 }
 
-.dashboard-banner .-offer-ad .check-points {
+.dashboard-banner .dashboard-offer-ad .check-points {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.dashboard-banner .-offer-ad .check-points li .points {
+.dashboard-banner .dashboard-offer-ad .check-points li .points {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,105 +923,105 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
           align-items: center;
 }
 
-.dashboard-banner .-offer-ad .check-points li .points h4 {
+.dashboard-banner .dashboard-offer-ad .check-points li .points h4 {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   margin: 0;
   color: #272727;
 }
 
-.dashboard-banner .-offer-ad .check-points li .points img {
+.dashboard-banner .dashboard-offer-ad .check-points li .points img {
   margin-right: 30px;
 }
 
-.dashboard-banner .-offer-ad .check-points li:first-of-type {
+.dashboard-banner .dashboard-offer-ad .check-points li:first-of-type {
   margin-bottom: 25px;
 }
 
-.dashboard-banner .-offer-ad .check-points li:nth-of-type(2) {
+.dashboard-banner .dashboard-offer-ad .check-points li:nth-of-type(2) {
   margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 1330px) {
-  .dashboard-banner .-offer-ad .row {
+  .dashboard-banner .dashboard-offer-ad .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .dashboard-banner .-offer-ad .row .col-lg-6 {
+  .dashboard-banner .dashboard-offer-ad .row .col-lg-6 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-  .dashboard-banner .-offer-ad .row .col-lg-6:last-of-type {
+  .dashboard-banner .dashboard-offer-ad .row .col-lg-6:last-of-type {
     margin-left: auto;
     margin-right: 10%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .dashboard-banner .-offer-ad h1 {
+  .dashboard-banner .dashboard-offer-ad h1 {
     font: normal normal bold 32px/40px "Quicksand";
     margin-bottom: 0px;
   }
-  .dashboard-banner .-offer-ad h1 span {
+  .dashboard-banner .dashboard-offer-ad h1 span {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .dashboard-banner .-offer-ad h2 {
+  .dashboard-banner .dashboard-offer-ad h2 {
     font: normal normal bold 24px/40px "Quicksand";
     margin-bottom: 50px;
   }
-  .dashboard-banner .-offer-ad .check-points li .points h4 {
+  .dashboard-banner .dashboard-offer-ad .check-points li .points h4 {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .dashboard-banner .-offer-ad .check-points li .points img {
+  .dashboard-banner .dashboard-offer-ad .check-points li .points img {
     margin-right: 30px;
   }
-  .dashboard-banner .-offer-ad .check-points li:first-of-type {
+  .dashboard-banner .dashboard-offer-ad .check-points li:first-of-type {
     margin-bottom: 26px;
   }
-  .dashboard-banner .-offer-ad .check-points li:nth-of-type(2) {
+  .dashboard-banner .dashboard-offer-ad .check-points li:nth-of-type(2) {
     margin-bottom: 13px;
   }
 }
 
 @media only screen and (max-width: 567px) {
-  .dashboard-banner .-offer-ad {
+  .dashboard-banner .dashboard-offer-ad {
     height: 325px;
     text-align: center;
     padding-top: 50px;
   }
-  .dashboard-banner .-offer-ad h1 {
+  .dashboard-banner .dashboard-offer-ad h1 {
     font: normal normal bold 32px/40px "Quicksand";
     margin-bottom: 30px;
   }
-  .dashboard-banner .-offer-ad h1 span {
+  .dashboard-banner .dashboard-offer-ad h1 span {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .dashboard-banner .-offer-ad h2 {
+  .dashboard-banner .dashboard-offer-ad h2 {
     display: none;
   }
-  .dashboard-banner .-offer-ad .row {
+  .dashboard-banner .dashboard-offer-ad .row {
     display: -ms-grid;
     display: grid;
   }
-  .dashboard-banner .-offer-ad .row .col-lg-6 {
+  .dashboard-banner .dashboard-offer-ad .row .col-lg-6 {
     position: unset;
     width: calc(100% - 32px);
   }
-  .dashboard-banner .-offer-ad a {
+  .dashboard-banner .dashboard-offer-ad a {
     position: absolute;
     bottom: -20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  .dashboard-banner .-offer-ad .-top {
+  .dashboard-banner .dashboard-offer-ad .offer-top {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  .dashboard-banner .-offer-ad .check-points {
+  .dashboard-banner .dashboard-offer-ad .check-points {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -1317,7 +1330,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
-.reservation .-reservation-reserved {
+.reservation .all-reserved-reservations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1327,18 +1340,18 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-bottom: 28px;
 }
 
-.reservation .-reservation-reserved h2,
-.reservation .-reservation-reserved span {
+.reservation .all-reserved-reservations h2,
+.reservation .all-reserved-reservations span {
   margin: 0;
 }
 
-.reservation .-reservation-reserved h2 {
+.reservation .all-reserved-reservations h2 {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
 }
 
-.reservation .-reservation-reserved .-reserved {
+.reservation .all-reserved-reservations .all-reserved {
   width: 28px;
   height: 28px;
   position: relative;
@@ -1347,7 +1360,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-left: 13px;
 }
 
-.reservation .-reservation-reserved .-reserved span {
+.reservation .all-reserved-reservations .all-reserved span {
   display: block;
   position: absolute;
   top: 50%;
@@ -1360,22 +1373,22 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .reservation .-reservation-reserved h2 {
+  .reservation .all-reserved-reservations h2 {
     font: normal normal bold 22px/28px "Quicksand";
   }
 }
 
-.reservation .-reserved-by {
+.reservation .reservation-reserved-by {
   /* All Reservation */
 }
 
-.reservation .-reserved-by ul {
+.reservation .reservation-reserved-by ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.reservation .-reserved-by ul.th {
+.reservation .reservation-reserved-by ul.th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1387,33 +1400,33 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 1470px) {
-  .reservation .-reserved-by ul.th {
+  .reservation .reservation-reserved-by ul.th {
     display: none;
   }
 }
 
-.reservation .-reserved-by ul.th li {
+.reservation .reservation-reserved-by ul.th li {
   width: 156px;
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #707070;
 }
 
-.reservation .-reserved-by .all-reservation .-by {
+.reservation .reservation-reserved-by .all-reservation .reserved-by {
   margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 768px) {
-  .reservation .-reserved-by .all-reservation .-by {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by {
     margin-bottom: 25px;
   }
 }
 
-.reservation .-reserved-by .all-reservation .-by:last-of-type {
+.reservation .reservation-reserved-by .all-reservation .reserved-by:last-of-type {
   margin-bottom: 0px;
 }
 
-.reservation .-reserved-by .all-reservation .-by .-when {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1428,11 +1441,11 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-bottom: -20px;
 }
 
-.reservation .-reserved-by .all-reservation .-by .-when svg {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date svg {
   margin-right: 13px;
 }
 
-.reservation .-reserved-by .all-reservation .-by .-when h5 {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date h5 {
   font: normal normal bold 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #ec6d75;
@@ -1440,19 +1453,19 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .reservation .-reserved-by .all-reservation .-by .-when {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date {
     width: 100%;
     padding: 6px 0px 26px 10px;
   }
-  .reservation .-reserved-by .all-reservation .-by .-when svg {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date svg {
     display: none;
   }
-  .reservation .-reserved-by .all-reservation .-by .-when h5 {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date h5 {
     font: normal normal bold 14px/18px "Quicksand";
   }
 }
 
-.reservation .-reserved-by .all-reservation .-by .by {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1470,7 +1483,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   width: fit-content;
 }
 
-.reservation .-reserved-by .all-reservation .-by .by li {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li {
   width: 156px;
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
@@ -1479,16 +1492,16 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .reservation .-reserved-by .all-reservation .-by .by li:first-of-type {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:first-of-type {
     margin-bottom: 19px;
   }
 }
 
-.reservation .-reserved-by .all-reservation .-by .by li .show-messages {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages {
   position: relative;
 }
 
-.reservation .-reserved-by .all-reservation .-by .by li .show-messages .all-messages-count {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages .all-messages-count {
   width: 22px;
   height: 22px;
   background: #ec6d75;
@@ -1498,7 +1511,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   right: -12px;
 }
 
-.reservation .-reserved-by .all-reservation .-by .by li .show-messages .all-messages-count span {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages .all-messages-count span {
   color: #fff;
   font: normal normal 600 18px/56px "Quicksand";
   letter-spacing: 0px;
@@ -1509,27 +1522,27 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
           transform: translate(-50%, -50%);
 }
 
-.reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
   width: 74px;
 }
 
 @media only screen and (max-width: 1470px) {
-  .reservation .-reserved-by .all-reservation .-by .by {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by {
     display: block;
     position: relative;
     width: 100%;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li {
     width: 100%;
     margin-bottom: 14px;
     margin-left: 12px;
     padding-left: 45px;
     position: relative;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li br {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li br {
     display: none;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li:before {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:before {
     content: attr(content);
     position: absolute;
     display: -webkit-box;
@@ -1538,16 +1551,16 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
     left: 0;
     width: 30px;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(1), .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(2), .reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(1), .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(2), .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
     padding-left: 0px !important;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(2) {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(2) {
     font-weight: bold;
     position: absolute;
     top: 45px;
     left: 136px;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
     position: absolute;
     top: 43px;
     right: 36px;
@@ -1556,26 +1569,26 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .reservation .-reserved-by .all-reservation .-by .by {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by {
     padding: 17px 0px 7px 0px;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li {
     font: normal normal 500 14px/18px "Quicksand";
     padding-left: 59px;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li a img {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li a img {
     width: auto;
     height: 59px;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li:before {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:before {
     color: #777777;
     margin-left: 12px;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li:nth-of-type(2) {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(2) {
     top: 35px;
     left: 76px;
   }
-  .reservation .-reserved-by .all-reservation .-by .by li:last-of-type {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
     top: 33px;
     right: 28px;
   }
@@ -1603,7 +1616,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
-.my-messages .-inpox {
+.my-messages .message-inbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1613,18 +1626,18 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-bottom: 28px;
 }
 
-.my-messages .-inpox h2,
-.my-messages .-inpox span {
+.my-messages .message-inbox h2,
+.my-messages .message-inbox span {
   margin: 0;
 }
 
-.my-messages .-inpox h2 {
+.my-messages .message-inbox h2 {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
 }
 
-.my-messages .-inpox .-reserved {
+.my-messages .message-inbox .all-reserved {
   width: 28px;
   height: 28px;
   position: relative;
@@ -1633,7 +1646,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-left: 13px;
 }
 
-.my-messages .-inpox .-reserved span {
+.my-messages .message-inbox .all-reserved span {
   display: block;
   position: absolute;
   top: 50%;
@@ -1646,16 +1659,16 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .my-messages .-inpox h2 {
+  .my-messages .message-inbox h2 {
     font: normal normal bold 22px/28px "Quicksand";
   }
 }
 
-.my-messages .-messages {
+.my-messages .all-the-messages {
   /* Message */
 }
 
-.my-messages .-messages .-message {
+.my-messages .all-the-messages .the-message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1673,17 +1686,17 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .my-messages .-messages .-message {
+  .my-messages .all-the-messages .the-message {
     margin-bottom: 25px;
   }
 }
 
-.my-messages .-messages .-message:last-of-type {
+.my-messages .all-the-messages .the-message:last-of-type {
   margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 1470px) {
-  .my-messages .-messages .-message.check::after {
+  .my-messages .all-the-messages .the-message.check::after {
     content: "";
     display: block;
     position: absolute;
@@ -1696,7 +1709,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
-.my-messages .-messages .-message .-details {
+.my-messages .all-the-messages .the-message .message-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1705,24 +1718,24 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
           align-items: flex-start;
 }
 
-.my-messages .-messages .-message .-details a {
+.my-messages .all-the-messages .the-message .message-details a {
   margin-right: 78px;
 }
 
 @media only screen and (max-width: 1470px) {
-  .my-messages .-messages .-message .-details a {
+  .my-messages .all-the-messages .the-message .message-details a {
     margin-right: 70px;
   }
 }
 
-.my-messages .-messages .-message .-details .-message-text h5 {
+.my-messages .all-the-messages .the-message .message-details .message-text h5 {
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
   margin-bottom: 4px;
 }
 
-.my-messages .-messages .-message .-details .-message-text p {
+.my-messages .all-the-messages .the-message .message-details .message-text p {
   font: normal normal normal 16px/20px "Quicksand";
   letter-spacing: 0px;
   color: #777777;
@@ -1730,24 +1743,24 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 1470px) {
-  .my-messages .-messages .-message .-details .-message-text p br {
+  .my-messages .all-the-messages .the-message .message-details .message-text p br {
     display: none;
   }
 }
 
-.my-messages .-messages .-message .show-messages {
+.my-messages .all-the-messages .the-message .show-messages {
   position: relative;
   margin-left: auto;
   margin-right: 0px;
 }
 
 @media only screen and (max-width: 1470px) {
-  .my-messages .-messages .-message .show-messages {
+  .my-messages .all-the-messages .the-message .show-messages {
     display: none;
   }
 }
 
-.my-messages .-messages .-message .show-messages .all-messages-count {
+.my-messages .all-the-messages .the-message .show-messages .all-messages-count {
   width: 22px;
   height: 22px;
   background: #ec6d75;
@@ -1757,7 +1770,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   right: -12px;
 }
 
-.my-messages .-messages .-message .show-messages .all-messages-count span {
+.my-messages .all-the-messages .the-message .show-messages .all-messages-count span {
   color: #fff;
   font: normal normal 600 18px/56px "Quicksand";
   letter-spacing: 0px;
@@ -1769,23 +1782,23 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .my-messages .-messages .-message {
+  .my-messages .all-the-messages .the-message {
     padding: 17px 20px 14px 20px;
   }
-  .my-messages .-messages .-message .-details {
+  .my-messages .all-the-messages .the-message .message-details {
     display: block;
   }
-  .my-messages .-messages .-message .-details a {
+  .my-messages .all-the-messages .the-message .message-details a {
     margin-right: 0px;
   }
-  .my-messages .-messages .-message .-details a img {
+  .my-messages .all-the-messages .the-message .message-details a img {
     width: auto;
     height: 59px;
   }
-  .my-messages .-messages .-message .-details .-message-text {
+  .my-messages .all-the-messages .the-message .message-details .message-text {
     margin-top: 12px;
   }
-  .my-messages .-messages .-message .-details .-message-text p {
+  .my-messages .all-the-messages .the-message .message-details .message-text p {
     font: normal normal 500 14px/18px "Quicksand";
     margin: 0;
   }
@@ -2015,11 +2028,11 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 /* Go Back */
-.-back {
+.way-back {
   margin-bottom: 17px;
 }
 
-.-back a {
+.way-back a {
   font: normal normal bold 18px/23px "Quicksand";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2033,11 +2046,11 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   text-decoration: none;
 }
 
-.-back a span.text {
+.way-back a span.text {
   text-decoration: underline;
 }
 
-.-back a span.icon {
+.way-back a span.icon {
   margin-right: 10px;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -2097,7 +2110,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
-.heading-repeat .-heading {
+.heading-repeat .heading-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2112,13 +2125,13 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .heading-repeat .-heading {
+  .heading-repeat .heading-area {
     display: block;
     margin-bottom: 6px;
   }
 }
 
-.heading-repeat .-heading .-inpox {
+.heading-repeat .heading-area .message-inbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2127,24 +2140,24 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
           align-items: center;
 }
 
-.heading-repeat .-heading .-inpox h2,
-.heading-repeat .-heading .-inpox span {
+.heading-repeat .heading-area .message-inbox h2,
+.heading-repeat .heading-area .message-inbox span {
   margin: 0;
 }
 
-.heading-repeat .-heading .-inpox h2 {
+.heading-repeat .heading-area .message-inbox h2 {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
 }
 
 @media only screen and (max-width: 768px) {
-  .heading-repeat .-heading .-inpox h2 {
+  .heading-repeat .heading-area .message-inbox h2 {
     font: normal normal bold 22px/28px "Quicksand";
   }
 }
 
-.heading-repeat .-heading .-inpox .-reserved {
+.heading-repeat .heading-area .message-inbox .all-reserved {
   width: 28px;
   height: 28px;
   position: relative;
@@ -2153,7 +2166,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-left: 13px;
 }
 
-.heading-repeat .-heading .-inpox .-reserved span {
+.heading-repeat .heading-area .message-inbox .all-reserved span {
   display: block;
   position: absolute;
   top: 50%;
@@ -2165,7 +2178,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   color: #ffffff;
 }
 
-.heading-repeat .-heading a {
+.heading-repeat .heading-area a {
   margin-left: auto;
   margin-right: 0;
   font-weight: bold;
@@ -2176,7 +2189,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .heading-repeat .-heading a {
+  .heading-repeat .heading-area a {
     margin: 0;
     margin-bottom: 50px;
     display: block;
@@ -2187,7 +2200,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 567px) {
-  .heading-repeat .-heading a {
+  .heading-repeat .heading-area a {
     width: 100%;
     text-align: center;
   }
@@ -2315,17 +2328,17 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
-.message-box .messages .message.-received img {
+.message-box .messages .message.received-message img {
   margin-right: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  .message-box .messages .message.-received img {
+  .message-box .messages .message.received-message img {
     margin-right: 20px;
   }
 }
 
-.message-box .messages .message.-sent {
+.message-box .messages .message.sent-messages {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -2335,27 +2348,27 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 768px) {
-  .message-box .messages .message.-sent img {
+  .message-box .messages .message.sent-messages img {
     margin-left: 20px;
   }
 }
 
-.message-box .messages .message.-sent .text {
+.message-box .messages .message.sent-messages .text {
   background: #f8f8f8;
 }
 
-.message-box .messages .message.-sent .text p {
+.message-box .messages .message.sent-messages .text p {
   text-align: right;
 }
 
-.message-box .messages .-new-message {
+.message-box .messages .new-message {
   margin: 24px 0px;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.message-box .messages .-new-message span {
+.message-box .messages .new-message span {
   margin: 0;
   font: normal normal normal 15px/19px "Quicksand";
   letter-spacing: 0px;
@@ -2365,27 +2378,27 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   display: block;
 }
 
-.message-box .messages .-new-message span.ds {
+.message-box .messages .new-message span.ds {
   display: block;
 }
 
-.message-box .messages .-new-message span.mb {
+.message-box .messages .new-message span.mb {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .message-box .messages .-new-message span {
+  .message-box .messages .new-message span {
     font: normal normal 500 14px/18px "Quicksand";
   }
-  .message-box .messages .-new-message span.ds {
+  .message-box .messages .new-message span.ds {
     display: none;
   }
-  .message-box .messages .-new-message span.mb {
+  .message-box .messages .new-message span.mb {
     display: block;
   }
 }
 
-.message-box .messages .-new-message span:before, .message-box .messages .-new-message span:after {
+.message-box .messages .new-message span:before, .message-box .messages .new-message span:after {
   background-color: #ec6d75;
   content: "";
   display: inline-block;
@@ -2395,12 +2408,12 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   width: 50%;
 }
 
-.message-box .messages .-new-message span:before {
+.message-box .messages .new-message span:before {
   right: 0.5em;
   margin-left: -50%;
 }
 
-.message-box .messages .-new-message span:after {
+.message-box .messages .new-message span:after {
   left: 0.5em;
   margin-right: -50%;
 }
@@ -2769,7 +2782,7 @@ input[type="file"] {
 /* >>>>>>>>>>>>>>> My Service Page <<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 @media only screen and (max-width: 768px) {
-  .my-service-page .heading-repeat .-heading .-inpox h2 {
+  .my-service-page .heading-repeat .heading-area .message-inbox h2 {
     margin-bottom: 30px;
   }
   .my-service-page input {
@@ -2783,24 +2796,24 @@ input[type="file"] {
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>>> My Images Page <<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
-.my-images-page .-back {
+.my-images-page .way-back {
   display: none;
 }
 
-.my-images-page .heading-repeat .-heading .-inpox h2 span {
+.my-images-page .heading-repeat .heading-area .message-inbox h2 span {
   color: #ec6d75;
 }
 
 @media only screen and (max-width: 768px) {
-  .my-images-page .-back {
+  .my-images-page .way-back {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .my-images-page .heading-repeat .-heading a {
+  .my-images-page .heading-repeat .heading-area a {
     display: none;
   }
-  .my-images-page .heading-repeat .-heading .-inpox h2 {
+  .my-images-page .heading-repeat .heading-area .message-inbox h2 {
     font: normal normal bold 32px/40px "Quicksand";
     margin-bottom: 10px;
   }

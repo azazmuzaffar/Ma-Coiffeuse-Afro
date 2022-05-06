@@ -195,6 +195,18 @@ header {
                 transform: translate(-50%, -50%);
               }
             }
+            @media only screen and (max-width: 1330px) {
+              svg {
+                margin-top: 10px;
+                width: 24px;
+                height: 24px;
+              }
+              .all-messages-count {
+                width: 19px;
+                height: 19px;
+                top: -15px;
+              }
+            }
           }
         }
       }
@@ -261,10 +273,9 @@ header {
             }
           }
         }
-
         &.header-profile {
           display: flex;
-          align-items: flex-end;
+          align-items: center;
           flex-direction: row-reverse;
           li {
             margin: 0;
@@ -308,7 +319,7 @@ header {
       ul {
         &.header-profile {
           display: flex;
-          align-items: flex-end;
+          align-items: center;
           flex-direction: row-reverse;
           li {
             margin: 0;
@@ -378,7 +389,7 @@ header {
 /* Left Menu */
 .dashboard-menu {
   /* Profile Options */
-  .-options {
+  .dashboard-menu-options {
     padding: 35px 40px;
     box-shadow: 0px 3px 30px #b2b2b23d;
     margin: 0;
@@ -500,7 +511,7 @@ header {
         color: unset;
         transition: 0.3s;
         svg,
-        .-stats {
+        .profile-stats {
           margin-right: 17px;
         }
         svg,
@@ -548,7 +559,7 @@ header {
       }
     }
     @media only screen and (max-width: 1330px) {
-      &.-my-options {
+      &.all-my-options {
         position: fixed;
         top: 87px;
         text-align: right;
@@ -559,7 +570,7 @@ header {
             text-align: right;
             flex-direction: row-reverse;
             svg,
-            .-stats {
+            .profile-stats {
               margin-right: 0px;
               margin-left: 17px;
             }
@@ -573,7 +584,7 @@ header {
       }
     }
     @media only screen and (max-width: 768px) {
-      &.-my-options {
+      &.all-my-options {
         padding: 28px 36px 28px 50px;
       }
       li {
@@ -589,7 +600,7 @@ header {
       }
     }
     /* My Stats */
-    &.-my-stats {
+    &.all-my-stats {
       @media only screen and (max-width: 1330px) {
         display: none;
       }
@@ -616,7 +627,7 @@ header {
             }
           }
         }
-        .-stats {
+        .profile-stats {
           padding: 2px;
           background: #ededed;
           text-align: center;
@@ -643,7 +654,7 @@ header {
       .col-lg-8,
       .col-lg-4 {
         width: 100%;
-        .-last-step {
+        .one-last-step {
           width: 100%;
         }
       }
@@ -677,7 +688,7 @@ header {
     }
   }
   /* Main Banner Ad */
-  .-last-step {
+  .one-last-step {
     padding: 30px 33px;
     background: #fff;
     box-shadow: 0px 3px 40px #ec6d7529;
@@ -727,7 +738,7 @@ header {
     }
   }
   /* Offer Ad */
-  .-offer-ad {
+  .dashboard-offer-ad {
     padding: 41px 0px 36px 33px;
     background: #fff;
     box-shadow: 0px 3px 40px #ec6d7529;
@@ -767,7 +778,7 @@ header {
       background: #ec6d75;
       border-radius: 15px;
     }
-    .-top {
+    .offer-top {
       position: absolute;
       top: -26px;
       left: 36px;
@@ -879,7 +890,7 @@ header {
         left: 50%;
         transform: translateX(-50%);
       }
-      .-top {
+      .offer-top {
         left: 50%;
         transform: translateX(-50%);
       }
@@ -1140,7 +1151,7 @@ header {
   @media only screen and (max-width: 768px) {
     margin-bottom: 75px;
   }
-  .-reservation-reserved {
+  .all-reserved-reservations {
     display: flex;
     align-items: center;
     margin-bottom: 28px;
@@ -1153,7 +1164,7 @@ header {
       letter-spacing: 0px;
       color: #272727;
     }
-    .-reserved {
+    .all-reserved {
       width: 28px;
       height: 28px;
       position: relative;
@@ -1177,7 +1188,7 @@ header {
       }
     }
   }
-  .-reserved-by {
+  .reservation-reserved-by {
     ul {
       margin: 0;
       padding: 0;
@@ -1200,7 +1211,7 @@ header {
     }
     /* All Reservation */
     .all-reservation {
-      .-by {
+      .reserved-by {
         margin-bottom: 50px;
         @media only screen and (max-width: 768px) {
           margin-bottom: 25px;
@@ -1208,7 +1219,7 @@ header {
         &:last-of-type {
           margin-bottom: 0px;
         }
-        .-when {
+        .the-date {
           display: flex;
           align-items: center;
           width: 450px;
@@ -1365,7 +1376,7 @@ header {
   @media only screen and (max-width: 768px) {
     margin-bottom: 75px;
   }
-  .-inpox {
+  .message-inbox {
     display: flex;
     align-items: center;
     margin-bottom: 28px;
@@ -1378,7 +1389,7 @@ header {
       letter-spacing: 0px;
       color: #272727;
     }
-    .-reserved {
+    .all-reserved {
       width: 28px;
       height: 28px;
       position: relative;
@@ -1403,9 +1414,9 @@ header {
     }
   }
   /* All Messages */
-  .-messages {
+  .all-the-messages {
     /* Message */
-    .-message {
+    .the-message {
       display: flex;
       position: relative;
       align-items: center;
@@ -1436,7 +1447,7 @@ header {
           }
         }
       }
-      .-details {
+      .message-details {
         display: flex;
         align-items: flex-start;
         a {
@@ -1445,7 +1456,7 @@ header {
             margin-right: 70px;
           }
         }
-        .-message-text {
+        .message-text {
           h5 {
             font: normal normal 500 18px/23px "Quicksand";
             letter-spacing: 0px;
@@ -1493,7 +1504,7 @@ header {
       }
       @media only screen and (max-width: 768px) {
         padding: 17px 20px 14px 20px;
-        .-details {
+        .message-details {
           display: block;
           a {
             margin-right: 0px;
@@ -1502,7 +1513,7 @@ header {
               height: 59px;
             }
           }
-          .-message-text {
+          .message-text {
             margin-top: 12px;
             p {
               font: normal normal 500 14px/18px "Quicksand";
@@ -1693,7 +1704,7 @@ header {
 }
 
 /* Go Back */
-.-back {
+.way-back {
   margin-bottom: 17px;
   a {
     font: normal normal bold 18px/23px "Quicksand";
@@ -1753,7 +1764,7 @@ header {
     }
   }
   /* Heading */
-  .-heading {
+  .heading-area {
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
@@ -1762,7 +1773,7 @@ header {
       display: block;
       margin-bottom: 6px;
     }
-    .-inpox {
+    .message-inbox {
       display: flex;
       align-items: center;
       h2,
@@ -1777,7 +1788,7 @@ header {
           font: normal normal bold 22px/28px "Quicksand";
         }
       }
-      .-reserved {
+      .all-reserved {
         width: 28px;
         height: 28px;
         position: relative;
@@ -1898,7 +1909,7 @@ header {
           }
         }
       }
-      &.-received {
+      &.received-message {
         img {
           margin-right: 30px;
           @media only screen and (max-width: 768px) {
@@ -1906,7 +1917,7 @@ header {
           }
         }
       }
-      &.-sent {
+      &.sent-messages {
         flex-direction: row-reverse;
         margin-left: auto;
         margin-right: 0;
@@ -1924,7 +1935,7 @@ header {
       }
     }
     /* New Message Line */
-    .-new-message {
+    .new-message {
       margin: 24px 0px;
       position: relative;
       width: 100%;
@@ -2269,8 +2280,8 @@ input[type="file"] {
 .my-service-page {
   @media only screen and (max-width: 768px) {
     .heading-repeat {
-      .-heading {
-        .-inpox {
+      .heading-area {
+        .message-inbox {
           h2 {
             margin-bottom: 30px;
           }
@@ -2291,12 +2302,12 @@ input[type="file"] {
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
 .my-images-page {
-  .-back {
+  .way-back {
     display: none;
   }
   .heading-repeat {
-    .-heading {
-      .-inpox {
+    .heading-area {
+      .message-inbox {
         h2 {
           span {
             color: #ec6d75;
@@ -2306,15 +2317,15 @@ input[type="file"] {
     }
   }
   @media only screen and (max-width: 768px) {
-    .-back {
+    .way-back {
       display: flex;
     }
     .heading-repeat {
-      .-heading {
+      .heading-area {
         a {
           display: none;
         }
-        .-inpox {
+        .message-inbox {
           h2 {
             font: normal normal bold 32px/40px "Quicksand";
             margin-bottom: 10px;
