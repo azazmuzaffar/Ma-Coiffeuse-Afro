@@ -27,8 +27,8 @@ $(document).ready(function () {
 function myFunction(x) {
   if (x.matches) {
     // If media query matches
-    $(".-profile li img").click(function () {
-      $(".-my-options").fadeToggle(200);
+    $(".header-profile li img").click(function () {
+      $(".all-my-options").fadeToggle(200);
     });
   }
 }
