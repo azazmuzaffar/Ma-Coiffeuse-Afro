@@ -74,6 +74,12 @@ svg {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .bg-image {
+    display: none;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>> Message (Mini Header) <<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
@@ -110,7 +116,6 @@ header {
 header .navbar {
   height: 84px;
   max-width: 1670px;
-  padding: 0px 15px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,12 +131,17 @@ header .navbar ul {
   margin-right: 0px;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 1330px) {
+  header .navbar ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 
 header .navbar ul li {
@@ -304,7 +314,7 @@ header .navbar ul li:last-of-type a:hover {
 }
 
 .hero-banner .container-fluid {
-  max-width: 1670px;
+  max-width: 1700px;
 }
 
 .hero-banner .container-fluid .row {
@@ -2029,9 +2039,10 @@ footer .the-links li a:hover {
   }
 }
 
+/* Setting up the desktop layout according to it's width */
 @media only screen and (max-width: 1700px) {
   header .navbar {
-    max-width: 1440px;
+    max-width: 1410px;
   }
   .hero-banner .container-fluid,
   .why-ma-afro .container-fluid,
@@ -2045,7 +2056,7 @@ footer .the-links li a:hover {
 
 @media only screen and (max-width: 1470px) {
   header .navbar {
-    max-width: 1300px;
+    max-width: 1270px;
   }
   .hero-banner .container-fluid,
   .why-ma-afro .container-fluid,

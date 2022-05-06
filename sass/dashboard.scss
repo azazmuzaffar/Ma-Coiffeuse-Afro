@@ -1,3 +1,25 @@
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+/* Table of Contents */
+/*===============================================
+1. Header
+2. Hero Banner
+3. Scroll Down
+6. Why Coiffeuse Afro
+7. Mobile Image (Mobile Only)
+8. How it Works
+9. Unique Offers
+10. Contact Us 
+11. Footer
+12. Steps -> Step 1, 2, 3, 4
+=================================================*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Common CSS <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
 h1,
 h2,
 h3,
@@ -7,11 +29,45 @@ h6 {
   margin: 0;
 }
 
+* {
+  min-height: 0;
+  min-width: 0;
+}
+.slick-track {
+  display: flex !important;
+}
+.slick-slide {
+  height: auto;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> Notifications <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.any-notification {
+  background: #ededed;
+  h5 {
+    font: normal normal bold 12px/15px "Quicksand";
+    display: block;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0px;
+    color: #272727;
+  }
+  @media only screen and (max-width: 768px) {
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
 header {
   .navbar {
     padding: 0;
-    max-width: 1670px;
-    padding: 0px 15px;
+    max-width: 1700px;
+    padding: 0 15px;
     ul {
       li {
         a {
@@ -46,7 +102,7 @@ header {
           }
         }
       }
-      &.-links {
+      &.header-links {
         margin-left: auto;
         margin-right: 0;
         li {
@@ -57,7 +113,7 @@ header {
             display: block;
             span {
               position: relative;
-              .-count {
+              .counter {
                 width: 22px;
                 height: 22px;
                 background: #272727;
@@ -83,7 +139,7 @@ header {
               font: normal normal bold 18px/23px "Quicksand";
               border-bottom: 4px solid #ec6d75;
               span {
-                .-count {
+                .counter {
                   background: #ec6d75;
                   transition: 0.3s;
                 }
@@ -95,7 +151,7 @@ header {
               font: normal normal bold 18px/23px "Quicksand";
               border-bottom: 4px solid #ec6d75;
               span {
-                .-count {
+                .counter {
                   background: #ec6d75;
                   transition: 0.3s;
                 }
@@ -104,7 +160,7 @@ header {
           }
         }
       }
-      &.-profile {
+      &.header-profile {
         margin-left: 43px;
         li {
           margin-right: 43px;
@@ -121,7 +177,7 @@ header {
           }
           .show-messages {
             position: relative;
-            .-messages-count {
+            .all-messages-count {
               width: 22px;
               height: 22px;
               background: #ec6d75;
@@ -159,7 +215,7 @@ header {
         margin-left: 0;
       }
       ul {
-        &.-links {
+        &.header-links {
           padding: 0px;
           li {
             margin: 0;
@@ -190,7 +246,7 @@ header {
                 display: flex;
                 align-items: center;
                 width: 100%;
-                .-count {
+                .counter {
                   position: relative;
                   margin-left: auto;
                   margin-right: 22px;
@@ -206,7 +262,7 @@ header {
           }
         }
 
-        &.-profile {
+        &.header-profile {
           display: flex;
           align-items: flex-end;
           flex-direction: row-reverse;
@@ -250,7 +306,7 @@ header {
         top: 87px;
       }
       ul {
-        &.-profile {
+        &.header-profile {
           display: flex;
           align-items: flex-end;
           flex-direction: row-reverse;
@@ -268,8 +324,11 @@ header {
   }
 }
 
-/* Dashboard */
-.-dashboard {
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.dashboard {
   padding: 80px 0px 138px 0px;
   @media only screen and (max-width: 768px) {
     padding: 40px 0px 100px 0px;
@@ -286,7 +345,7 @@ header {
         }
       }
     }
-    /* Main Content */
+    /* Main Content (Right Column of Dashboard) */
     .main-content {
       padding-left: 20px;
       @media only screen and (max-width: 1330px) {
@@ -317,7 +376,7 @@ header {
 }
 
 /* Left Menu */
-.-left-menu {
+.dashboard-menu {
   /* Profile Options */
   .-options {
     padding: 35px 40px;
@@ -329,6 +388,105 @@ header {
     z-index: 999;
     &:last-of-type {
       margin-bottom: 0px;
+    }
+    h2 {
+      font: normal normal bold 18px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    .progress {
+      position: relative;
+      width: 100%;
+      margin: 27px 0px;
+      height: 28px;
+      background: #ededed;
+      border-radius: 10px;
+      &::before {
+        display: block;
+        width: 100%;
+        content: attr(data-max);
+        text-align: right;
+        padding: 0px 11px;
+        color: #777777;
+        font: normal normal 500 14px/28px "Quicksand";
+        letter-spacing: 0px;
+      }
+      .progress-so-far {
+        content: attr(data-value);
+        display: block;
+        border-radius: 10px;
+        padding: 0px 11px;
+        position: absolute;
+        height: 28px;
+        background: #68c8c7;
+        top: 0;
+        left: 0;
+        &::before {
+          display: block;
+          width: unset;
+          content: attr(data-value);
+          text-align: left;
+          color: #777777;
+          font: normal normal bold 18px/28px "Quicksand";
+          color: #fff;
+          letter-spacing: 0px;
+        }
+      }
+    }
+    /* Checkbox */
+    .the-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      input,
+      label {
+        width: fit-content;
+      }
+      input {
+        margin-right: 17px;
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      label {
+        position: relative;
+        color: #777777;
+        cursor: pointer;
+        &::before {
+          content: "";
+          border: 1px solid #68c8c7;
+          border-radius: 3px;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 15px;
+        }
+      }
+      input:checked + label::before {
+        background: #68c8c7;
+      }
+      input:checked + label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        width: 6px;
+        height: 10px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
     }
     li {
       margin-bottom: 28px;
@@ -381,6 +539,14 @@ header {
         }
       }
     }
+    form {
+      li {
+        margin-bottom: 20px;
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+    }
     @media only screen and (max-width: 1330px) {
       &.-my-options {
         position: fixed;
@@ -399,6 +565,11 @@ header {
             }
           }
         }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      &.profile-completion {
+        display: none;
       }
     }
     @media only screen and (max-width: 768px) {
@@ -505,6 +676,7 @@ header {
       }
     }
   }
+  /* Main Banner Ad */
   .-last-step {
     padding: 30px 33px;
     background: #fff;
@@ -554,6 +726,7 @@ header {
       }
     }
   }
+  /* Offer Ad */
   .-offer-ad {
     padding: 41px 0px 36px 33px;
     background: #fff;
@@ -845,6 +1018,9 @@ header {
           color: #272727;
           margin: 0;
         }
+        input {
+          display: none;
+        }
         @media only screen and (max-width: 768px) {
           padding: 8px 0px 0px 0px;
           &:first-of-type {
@@ -871,28 +1047,6 @@ header {
             text-align: center;
             width: 141px;
           }
-          &.-availed {
-            position: relative;
-            span {
-              background: #e3f5f4;
-            }
-            &::before {
-              content: "";
-              display: block;
-              width: 25px;
-              height: 25px;
-              background: #68c8c7;
-              border-radius: 50%;
-              position: absolute;
-              top: -10px;
-              right: -10px;
-              @media only screen and (max-width: 768px) {
-                width: 20px;
-                height: 20px;
-              }
-            }
-          }
-
           @media only screen and (max-width: 768px) {
             span {
               padding: 13px 18px;
@@ -947,6 +1101,29 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+/* Checked the available time */
+.availability .timings .slide li input:checked + label .time-period {
+  position: relative;
+  span {
+    background: #e3f5f4;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #68c8c7;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    @media only screen and (max-width: 768px) {
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -1082,7 +1259,7 @@ header {
             }
             .show-messages {
               position: relative;
-              .-messages-count {
+              .all-messages-count {
                 width: 22px;
                 height: 22px;
                 background: #ec6d75;
@@ -1295,7 +1472,7 @@ header {
         position: relative;
         margin-left: auto;
         margin-right: 0px;
-        .-messages-count {
+        .all-messages-count {
           width: 22px;
           height: 22px;
           background: #ec6d75;
@@ -1515,6 +1692,7 @@ header {
   }
 }
 
+/* Go Back */
 .-back {
   margin-bottom: 17px;
   a {
@@ -1535,6 +1713,8 @@ header {
     }
   }
 }
+
+/* Heading repeat on all sections */
 .heading-repeat {
   margin-bottom: 45px;
   h1 {
@@ -1572,7 +1752,7 @@ header {
       }
     }
   }
-
+  /* Heading */
   .-heading {
     display: flex;
     align-items: flex-start;
@@ -1638,113 +1818,7 @@ header {
   }
 }
 
-.my-images-page {
-  .heading-repeat {
-    .-heading {
-      .-inpox {
-        h2 {
-          span {
-            color: #ec6d75;
-          }
-        }
-      }
-    }
-  }
-}
-.my-images-page {
-  @media only screen and (max-width: 768px) {
-    .heading-repeat {
-      .-heading {
-        a {
-          display: none;
-        }
-        .-inpox {
-          h2 {
-            font: normal normal bold 32px/40px "Quicksand";
-          }
-        }
-      }
-    }
-  }
-}
-
-.my-services-page {
-  .-dashboard {
-    @media only screen and (max-width: 768px) {
-      padding: 40px 0px;
-    }
-  }
-}
-
-.my-messages-page {
-  .heading-repeat {
-    @media only screen and (max-width: 768px) {
-      margin-bottom: 30px !important;
-    }
-  }
-}
-.my-availability-page {
-  .heading-repeat {
-    margin-bottom: 45px;
-  }
-  .availability {
-    margin-bottom: 125px;
-    @media only screen and (max-width: 768px) {
-      margin-bottom: 0px;
-    }
-  }
-  .-dashboard {
-    .reservation {
-      margin-bottom: 0px;
-    }
-    @media only screen and (max-width: 768px) {
-      padding: 40px 0px;
-      .reservation {
-        display: none;
-      }
-    }
-  }
-  .registration {
-    margin-top: 40px;
-  }
-  .registration a {
-    font-size: 18px;
-    text-decoration: underline;
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: 0;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    background: #ec6d75;
-    border-radius: 15px;
-    padding: 8px 25px;
-  }
-}
-.my-reservation-page {
-  .-dashboard {
-    .reservation {
-      margin-bottom: 0px;
-    }
-  }
-}
-.messages-page {
-  .my-messages {
-    margin-bottom: 0px;
-  }
-  .-dashboard {
-    @media only screen and (max-width: 768px) {
-      padding: 40px 0px;
-    }
-  }
-  .heading-repeat {
-    @media only screen and (max-width: 768px) {
-      margin-bottom: 20px !important;
-    }
-  }
-}
-
+/* Message Box */
 .message-box {
   .all-of-the-messages {
     background: #fff;
@@ -1757,6 +1831,7 @@ header {
       max-width: 100%;
     }
   }
+  /* All Messages */
   .messages {
     height: 670px;
     overflow-y: scroll;
@@ -1764,13 +1839,14 @@ header {
     padding: 50px 20px 0px 30px;
     @media only screen and (max-width: 768px) {
       padding: 20px 20px 0px 20px;
+      height: 588px;
     }
     * {
       scrollbar-width: auto;
       scrollbar-color: #ffeaea #ffffff;
     }
     &::-webkit-scrollbar {
-      width: 6px;
+      width: 5px;
       @media only screen and (max-width: 768px) {
         width: 4px;
       }
@@ -1847,6 +1923,7 @@ header {
         }
       }
     }
+    /* New Message Line */
     .-new-message {
       margin: 24px 0px;
       position: relative;
@@ -1896,9 +1973,9 @@ header {
       }
     }
   }
+  /* Type Messages */
   .type-message {
     padding: 0px 30px 26px 30px;
-
     @media only screen and (max-width: 768px) {
       padding: 0px 20px 20px 20px;
     }
@@ -1995,7 +2072,6 @@ input[type="file"] {
   visibility: hidden;
   opacity: 0;
 }
-
 .choose-picture {
   align-items: center;
   font: normal normal 500 18px/23px "Quicksand";
@@ -2013,10 +2089,10 @@ input[type="file"] {
   }
 }
 
+/* Service */
 .service {
   .add-picture {
     margin-bottom: 40px;
-
     p {
       margin: 0;
       font: normal normal 500 14px/18px "Quicksand";
@@ -2068,14 +2144,12 @@ input[type="file"] {
       color: #e6e6e6;
     }
   }
-
   .add-more-pictures {
     height: 100%;
     cursor: pointer;
     display: block;
     position: relative;
     width: 100%;
-    background: yellow;
   }
   .center-content {
     width: 100%;
@@ -2100,7 +2174,7 @@ input[type="file"] {
   .cancel-update {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 0px;
     button {
       text-decoration: underline;
       font: normal normal bold 18px/23px "Quicksand";
@@ -2119,16 +2193,27 @@ input[type="file"] {
         color: #fff;
       }
     }
+    @media only screen and (max-width: 576px) {
+      display: block;
+      button {
+        width: 100%;
+        &.update {
+          margin-left: 0;
+          margin-top: 15px;
+        }
+      }
+    }
   }
 }
 
+/* Setting up the desktop layout according to it's width */
 @media only screen and (max-width: 1700px) {
   header {
     .navbar {
       max-width: 1440px;
     }
   }
-  .-dashboard {
+  .dashboard {
     .container-fluid {
       max-width: 1440px;
     }
@@ -2141,7 +2226,7 @@ input[type="file"] {
       max-width: 1300px;
     }
   }
-  .-dashboard {
+  .dashboard {
     .container-fluid {
       max-width: 1300px;
     }
@@ -2156,7 +2241,7 @@ input[type="file"] {
       padding-right: 35px;
     }
   }
-  .-dashboard {
+  .dashboard {
     .container-fluid {
       max-width: 100%;
       padding-left: 35px;
@@ -2164,14 +2249,173 @@ input[type="file"] {
     }
   }
 }
-.slick-track {
-  display: flex !important;
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Services Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-services-page {
+  .dashboard {
+    @media only screen and (max-width: 768px) {
+      padding: 40px 0px;
+    }
+  }
 }
 
-.slick-slide {
-  height: auto;
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Service Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-service-page {
+  @media only screen and (max-width: 768px) {
+    .heading-repeat {
+      .-heading {
+        .-inpox {
+          h2 {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    input {
+      width: 100%;
+    }
+    .dashboard {
+      padding-bottom: 40px;
+    }
+  }
 }
-* {
-  min-height: 0;
-  min-width: 0;
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Images Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-images-page {
+  .-back {
+    display: none;
+  }
+  .heading-repeat {
+    .-heading {
+      .-inpox {
+        h2 {
+          span {
+            color: #ec6d75;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .-back {
+      display: flex;
+    }
+    .heading-repeat {
+      .-heading {
+        a {
+          display: none;
+        }
+        .-inpox {
+          h2 {
+            font: normal normal bold 32px/40px "Quicksand";
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .dashboard {
+      padding-bottom: 40px;
+    }
+  }
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Messages Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.messages-page {
+  .my-messages {
+    margin-bottom: 0px;
+  }
+  .dashboard {
+    @media only screen and (max-width: 768px) {
+      padding: 40px 0px;
+    }
+  }
+  .heading-repeat {
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 20px !important;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Messages Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-messages-page {
+  .heading-repeat {
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 30px !important;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> My Availability Page <<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-availability-page {
+  .heading-repeat {
+    margin-bottom: 45px;
+  }
+  .availability {
+    margin-bottom: 125px;
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+  .dashboard {
+    .reservation {
+      margin-bottom: 0px;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 40px 0px;
+      .reservation {
+        display: none;
+      }
+    }
+  }
+  .registration {
+    margin-top: 40px;
+  }
+  .registration a {
+    font-size: 18px;
+    text-decoration: underline;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #ec6d75;
+    border-radius: 15px;
+    padding: 8px 25px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>> My Reservation Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-reservation-page {
+  .dashboard {
+    .reservation {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */

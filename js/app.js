@@ -10,7 +10,7 @@
 $(document).ready(function () {
   $("#menu.slide-bottom").click(function () {
     $(this).toggleClass("open");
-    $(".navbar ul:first-of-type").slideToggle(250);
+    $(".navbar ul:first-of-type").animate({ height: "toggle" }, 200);
     $(".navbar").toggleClass("open");
   });
 });
@@ -64,11 +64,14 @@ $(".messages").animate({ scrollTop: $(".messages").prop("scrollHeight") }, 400);
 /* >>>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
+/* Setting width to a progress bar */
+$(".progress .progress-so-far").width($(".progress .progress-so-far").attr("data-value"));
+
 /* Available timing Slick Slider */
 var $slickEl = $(".timings");
 
 $slickEl.slick({
-  focusOnSelect: true,
+  focusOnSelect: false,
   dots: false,
   arrows: true,
   prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",

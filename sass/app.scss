@@ -76,6 +76,12 @@ svg {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .bg-image {
+    display: none;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>> Message (Mini Header) <<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
@@ -110,7 +116,6 @@ header {
   .navbar {
     height: 84px;
     max-width: 1670px;
-    padding: 0px 15px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -120,7 +125,9 @@ header {
       margin-right: 0px;
       padding: 0;
       list-style: none;
-      display: flex;
+      @media only screen and (min-width: 1330px) {
+        display: flex !important;
+      }
       align-items: center;
       li {
         a {
@@ -320,7 +327,7 @@ header {
 .hero-banner {
   padding: 100px 0px;
   .container-fluid {
-    max-width: 1670px;
+    max-width: 1700px;
     .row {
       display: flex;
       align-items: center;
@@ -1820,10 +1827,12 @@ footer {
   }
 }
 
+/* Setting up the desktop layout according to it's width */
+
 @media only screen and (max-width: 1700px) {
   header {
     .navbar {
-      max-width: 1440px;
+      max-width: 1410px;
     }
   }
   .hero-banner,
@@ -1841,7 +1850,7 @@ footer {
 @media only screen and (max-width: 1470px) {
   header {
     .navbar {
-      max-width: 1300px;
+      max-width: 1270px;
     }
   }
   .hero-banner,

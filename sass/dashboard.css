@@ -1,4 +1,23 @@
 @charset "UTF-8";
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* Table of Contents */
+/*===============================================
+1. Header
+2. Hero Banner
+3. Scroll Down
+6. Why Coiffeuse Afro
+7. Mobile Image (Mobile Only)
+8. How it Works
+9. Unique Offers
+10. Contact Us 
+11. Footer
+12. Steps -> Step 1, 2, 3, 4
+=================================================*/
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Common CSS <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 h1,
 h2,
 h3,
@@ -8,10 +27,45 @@ h6 {
   margin: 0;
 }
 
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
+.slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> Notifications <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.any-notification {
+  background: #ededed;
+}
+
+.any-notification h5 {
+  font: normal normal bold 12px/15px "Quicksand";
+  display: block;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 header .navbar {
   padding: 0;
-  max-width: 1670px;
-  padding: 0px 15px;
+  max-width: 1700px;
+  padding: 0 15px;
 }
 
 header .navbar ul li {
@@ -56,26 +110,26 @@ header .navbar ul li:last-of-type a:hover {
           box-shadow: unset;
 }
 
-header .navbar ul.-links {
+header .navbar ul.header-links {
   margin-left: auto;
   margin-right: 0;
 }
 
-header .navbar ul.-links li {
+header .navbar ul.header-links li {
   margin: 0;
 }
 
-header .navbar ul.-links li a {
+header .navbar ul.header-links li a {
   height: 84px;
   padding: 30px 34px;
   display: block;
 }
 
-header .navbar ul.-links li a span {
+header .navbar ul.header-links li a span {
   position: relative;
 }
 
-header .navbar ul.-links li a span .-count {
+header .navbar ul.header-links li a span .counter {
   width: 22px;
   height: 22px;
   background: #272727;
@@ -87,7 +141,7 @@ header .navbar ul.-links li a span .-count {
   right: -20px;
 }
 
-header .navbar ul.-links li a span .-count span {
+header .navbar ul.header-links li a span .counter span {
   color: #fff;
   font: normal normal 600 18px/56px "Quicksand";
   letter-spacing: 0px;
@@ -98,59 +152,59 @@ header .navbar ul.-links li a span .-count span {
           transform: translate(-50%, -50%);
 }
 
-header .navbar ul.-links li a.active {
+header .navbar ul.header-links li a.active {
   background: #ffeaea;
   color: #ec6d75;
   font: normal normal bold 18px/23px "Quicksand";
   border-bottom: 4px solid #ec6d75;
 }
 
-header .navbar ul.-links li a.active span .-count {
+header .navbar ul.header-links li a.active span .counter {
   background: #ec6d75;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-header .navbar ul.-links li a:hover {
+header .navbar ul.header-links li a:hover {
   background: #ffeaea;
   color: #ec6d75;
   font: normal normal bold 18px/23px "Quicksand";
   border-bottom: 4px solid #ec6d75;
 }
 
-header .navbar ul.-links li a:hover span .-count {
+header .navbar ul.header-links li a:hover span .counter {
   background: #ec6d75;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-header .navbar ul.-profile {
+header .navbar ul.header-profile {
   margin-left: 43px;
 }
 
-header .navbar ul.-profile li {
+header .navbar ul.header-profile li {
   margin-right: 43px;
 }
 
-header .navbar ul.-profile li:last-of-type {
+header .navbar ul.header-profile li:last-of-type {
   margin-right: 0px;
 }
 
-header .navbar ul.-profile li svg,
-header .navbar ul.-profile li img {
+header .navbar ul.header-profile li svg,
+header .navbar ul.header-profile li img {
   cursor: pointer;
 }
 
-header .navbar ul.-profile li img {
+header .navbar ul.header-profile li img {
   width: 60px;
   height: 60px;
 }
 
-header .navbar ul.-profile li .show-messages {
+header .navbar ul.header-profile li .show-messages {
   position: relative;
 }
 
-header .navbar ul.-profile li .show-messages .-messages-count {
+header .navbar ul.header-profile li .show-messages .all-messages-count {
   width: 22px;
   height: 22px;
   background: #ec6d75;
@@ -160,7 +214,7 @@ header .navbar ul.-profile li .show-messages .-messages-count {
   right: -12px;
 }
 
-header .navbar ul.-profile li .show-messages .-messages-count span {
+header .navbar ul.header-profile li .show-messages .all-messages-count span {
   color: #fff;
   font: normal normal 600 18px/56px "Quicksand";
   letter-spacing: 0px;
@@ -179,17 +233,17 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
     margin-right: auto;
     margin-left: 0;
   }
-  header .navbar ul.-links {
+  header .navbar ul.header-links {
     padding: 0px;
   }
-  header .navbar ul.-links li {
+  header .navbar ul.header-links li {
     margin: 0;
     padding: 0;
     margin-bottom: 0px;
   }
-  header .navbar ul.-links li a,
-  header .navbar ul.-links li a.active,
-  header .navbar ul.-links li a:hover {
+  header .navbar ul.header-links li a,
+  header .navbar ul.header-links li a.active,
+  header .navbar ul.header-links li a:hover {
     margin: 0;
     padding: 0;
     height: -webkit-fit-content;
@@ -199,19 +253,19 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
     background: transparent;
     padding: 20px 36px;
   }
-  header .navbar ul.-links li a.active,
-  header .navbar ul.-links li a:hover {
+  header .navbar ul.header-links li a.active,
+  header .navbar ul.header-links li a:hover {
     background: #ffeaea;
     border-bottom: 0.5px solid #ec6d75;
   }
-  header .navbar ul.-links li a {
+  header .navbar ul.header-links li a {
     text-align: left;
     line-height: 18px;
     display: block;
     font-weight: 500;
     white-space: nowrap;
   }
-  header .navbar ul.-links li a span {
+  header .navbar ul.header-links li a span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -220,18 +274,18 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
             align-items: center;
     width: 100%;
   }
-  header .navbar ul.-links li a span .-count {
+  header .navbar ul.header-links li a span .counter {
     position: relative;
     margin-left: auto;
     margin-right: 22px;
     top: unset;
     left: unset;
   }
-  header .navbar ul.-links li a span .-count span {
+  header .navbar ul.header-links li a span .counter span {
     display: block;
     width: unset;
   }
-  header .navbar ul.-profile {
+  header .navbar ul.header-profile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,10 +297,10 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  header .navbar ul.-profile li {
+  header .navbar ul.header-profile li {
     margin: 0;
   }
-  header .navbar ul.-profile li img {
+  header .navbar ul.header-profile li img {
     margin-left: 43px;
   }
   header .navbar ul li a {
@@ -269,7 +323,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   header .navbar ul:first-of-type {
     top: 87px;
   }
-  header .navbar ul.-profile {
+  header .navbar ul.header-profile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -281,56 +335,58 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  header .navbar ul.-profile li {
+  header .navbar ul.header-profile li {
     margin: 0;
   }
-  header .navbar ul.-profile li img {
+  header .navbar ul.header-profile li img {
     width: auto;
     height: 46px;
     margin-left: 33px;
   }
 }
 
-/* Dashboard */
-.-dashboard {
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.dashboard {
   padding: 80px 0px 138px 0px;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-  .-dashboard {
+  .dashboard {
     padding: 40px 0px 100px 0px;
   }
 }
 
-.-dashboard .container-fluid {
+.dashboard .container-fluid {
   max-width: 1695px;
-  /* Main Content */
+  /* Main Content (Right Column of Dashboard) */
 }
 
 @media only screen and (max-width: 1330px) {
-  .-dashboard .container-fluid .row.except-my-images {
+  .dashboard .container-fluid .row.except-my-images {
     display: -ms-grid;
     display: grid;
   }
-  .-dashboard .container-fluid .row.except-my-images .col-lg-3,
-  .-dashboard .container-fluid .row.except-my-images .col-lg-9 {
+  .dashboard .container-fluid .row.except-my-images .col-lg-3,
+  .dashboard .container-fluid .row.except-my-images .col-lg-9 {
     width: 100%;
   }
 }
 
-.-dashboard .container-fluid .main-content {
+.dashboard .container-fluid .main-content {
   padding-left: 20px;
   /* See All */
 }
 
 @media only screen and (max-width: 1330px) {
-  .-dashboard .container-fluid .main-content {
+  .dashboard .container-fluid .main-content {
     padding-left: 0px;
   }
 }
 
-.-dashboard .container-fluid .main-content .see-all {
+.dashboard .container-fluid .main-content .see-all {
   display: unset;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,23 +403,23 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   text-decoration: underline;
 }
 
-.-dashboard .container-fluid .main-content .see-all svg {
+.dashboard .container-fluid .main-content .see-all svg {
   margin-left: 15px;
   margin-top: -11px;
 }
 
 @media only screen and (max-width: 768px) {
-  .-dashboard .container-fluid .main-content .see-all {
+  .dashboard .container-fluid .main-content .see-all {
     display: none;
   }
 }
 
 /* Left Menu */
-.-left-menu {
+.dashboard-menu {
   /* Profile Options */
 }
 
-.-left-menu .-options {
+.dashboard-menu .-options {
   padding: 35px 40px;
   -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
           box-shadow: 0px 3px 30px #b2b2b23d;
@@ -372,22 +428,141 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-bottom: 50px;
   background: #fff;
   z-index: 999;
+  /* Checkbox */
   /* My Stats */
 }
 
-.-left-menu .-options:last-of-type {
+.dashboard-menu .-options:last-of-type {
   margin-bottom: 0px;
 }
 
-.-left-menu .-options li {
+.dashboard-menu .-options h2 {
+  font: normal normal bold 18px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.dashboard-menu .-options .progress {
+  position: relative;
+  width: 100%;
+  margin: 27px 0px;
+  height: 28px;
+  background: #ededed;
+  border-radius: 10px;
+}
+
+.dashboard-menu .-options .progress::before {
+  display: block;
+  width: 100%;
+  content: attr(data-max);
+  text-align: right;
+  padding: 0px 11px;
+  color: #777777;
+  font: normal normal 500 14px/28px "Quicksand";
+  letter-spacing: 0px;
+}
+
+.dashboard-menu .-options .progress .progress-so-far {
+  content: attr(data-value);
+  display: block;
+  border-radius: 10px;
+  padding: 0px 11px;
+  position: absolute;
+  height: 28px;
+  background: #68c8c7;
+  top: 0;
+  left: 0;
+}
+
+.dashboard-menu .-options .progress .progress-so-far::before {
+  display: block;
+  width: unset;
+  content: attr(data-value);
+  text-align: left;
+  color: #777777;
+  font: normal normal bold 18px/28px "Quicksand";
+  color: #fff;
+  letter-spacing: 0px;
+}
+
+.dashboard-menu .-options .the-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-menu .-options .the-checkbox:last-of-type {
+  margin-bottom: 0px;
+}
+
+.dashboard-menu .-options .the-checkbox input,
+.dashboard-menu .-options .the-checkbox label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.dashboard-menu .-options .the-checkbox input {
+  margin-right: 17px;
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.dashboard-menu .-options .the-checkbox label {
+  position: relative;
+  color: #777777;
+  cursor: pointer;
+}
+
+.dashboard-menu .-options .the-checkbox label::before {
+  content: "";
+  border: 1px solid #68c8c7;
+  border-radius: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.dashboard-menu .-options .the-checkbox input:checked + label::before {
+  background: #68c8c7;
+}
+
+.dashboard-menu .-options .the-checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.dashboard-menu .-options li {
   margin-bottom: 28px;
 }
 
-.-left-menu .-options li:last-of-type {
+.dashboard-menu .-options li:last-of-type {
   margin-bottom: 0px;
 }
 
-.-left-menu .-options li a {
+.dashboard-menu .-options li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,90 +575,104 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   transition: 0.3s;
 }
 
-.-left-menu .-options li a svg,
-.-left-menu .-options li a .-stats {
+.dashboard-menu .-options li a svg,
+.dashboard-menu .-options li a .-stats {
   margin-right: 17px;
 }
 
-.-left-menu .-options li a svg,
-.-left-menu .-options li a h5 {
+.dashboard-menu .-options li a svg,
+.dashboard-menu .-options li a h5 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.-left-menu .-options li a:hover svg,
-.-left-menu .-options li a:hover h5 {
+.dashboard-menu .-options li a:hover svg,
+.dashboard-menu .-options li a:hover h5 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.-left-menu .-options li a:hover svg {
+.dashboard-menu .-options li a:hover svg {
   fill: #ec6d75;
 }
 
-.-left-menu .-options li a:hover h5 {
+.dashboard-menu .-options li a:hover h5 {
   color: #ec6d75;
 }
 
-.-left-menu .-options li h5 {
+.dashboard-menu .-options li h5 {
   font: normal normal 500 18px/18px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
   margin: 0;
 }
 
-.-left-menu .-options li:first-of-type a:hover svg {
+.dashboard-menu .-options li:first-of-type a:hover svg {
   fill: #272727;
 }
 
-.-left-menu .-options li:first-of-type a:hover h5 {
+.dashboard-menu .-options li:first-of-type a:hover h5 {
   color: #272727;
 }
 
+.dashboard-menu .-options form li {
+  margin-bottom: 20px;
+}
+
+.dashboard-menu .-options form li:last-of-type {
+  margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 1330px) {
-  .-left-menu .-options.-my-options {
+  .dashboard-menu .-options.-my-options {
     position: fixed;
     top: 87px;
     text-align: right;
     display: none;
     right: 35px;
   }
-  .-left-menu .-options.-my-options li a {
+  .dashboard-menu .-options.-my-options li a {
     text-align: right;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .-left-menu .-options.-my-options li a svg,
-  .-left-menu .-options.-my-options li a .-stats {
+  .dashboard-menu .-options.-my-options li a svg,
+  .dashboard-menu .-options.-my-options li a .-stats {
     margin-right: 0px;
     margin-left: 17px;
   }
 }
 
+@media only screen and (max-width: 1330px) {
+  .dashboard-menu .-options.profile-completion {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  .-left-menu .-options.-my-options {
+  .dashboard-menu .-options.-my-options {
     padding: 28px 36px 28px 50px;
   }
-  .-left-menu .-options li {
+  .dashboard-menu .-options li {
     margin-bottom: 20px;
   }
-  .-left-menu .-options li:first-of-type {
+  .dashboard-menu .-options li:first-of-type {
     margin-bottom: 18px;
   }
-  .-left-menu .-options li a h5 {
+  .dashboard-menu .-options li a h5 {
     font: normal normal 500 14px/18px "Quicksand";
   }
 }
 
 @media only screen and (max-width: 1330px) {
-  .-left-menu .-options.-my-stats {
+  .dashboard-menu .-options.-my-stats {
     display: none;
   }
 }
 
-.-left-menu .-options.-my-stats li {
+.dashboard-menu .-options.-my-stats li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,19 +682,19 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-bottom: 16px;
 }
 
-.-left-menu .-options.-my-stats li h5 {
+.dashboard-menu .-options.-my-stats li h5 {
   color: #272727;
 }
 
-.-left-menu .-options.-my-stats li:last-of-type {
+.dashboard-menu .-options.-my-stats li:last-of-type {
   margin-bottom: 0px;
 }
 
-.-left-menu .-options.-my-stats li:first-of-type {
+.dashboard-menu .-options.-my-stats li:first-of-type {
   margin-bottom: 40px;
 }
 
-.-left-menu .-options.-my-stats li:first-of-type a {
+.dashboard-menu .-options.-my-stats li:first-of-type a {
   text-decoration: underline;
   font: normal normal 500 18px/23px "Quicksand";
   letter-spacing: 0px;
@@ -513,11 +702,11 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   text-transform: uppercase;
 }
 
-.-left-menu .-options.-my-stats li:first-of-type a svg {
+.dashboard-menu .-options.-my-stats li:first-of-type a svg {
   margin-left: 11px;
 }
 
-.-left-menu .-options.-my-stats li .-stats {
+.dashboard-menu .-options.-my-stats li .-stats {
   padding: 2px;
   background: #ededed;
   text-align: center;
@@ -526,7 +715,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin-right: 17px;
 }
 
-.-left-menu .-options.-my-stats li .-stats span {
+.dashboard-menu .-options.-my-stats li .-stats span {
   font: normal normal bold 18px/18px "Quicksand";
   letter-spacing: 0px;
   margin: 0;
@@ -536,6 +725,8 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 /* Dashboard Banner */
 .dashboard-banner {
   margin-bottom: 100px;
+  /* Main Banner Ad */
+  /* Offer Ad */
 }
 
 @media only screen and (max-width: 1470px) {
@@ -981,6 +1172,10 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   margin: 0;
 }
 
+.availability .timings ul li input {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .availability .timings ul li {
     padding: 8px 0px 0px 0px;
@@ -1013,33 +1208,6 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   border-radius: 10px;
   text-align: center;
   width: 141px;
-}
-
-.availability .timings ul li .time-period.-availed {
-  position: relative;
-}
-
-.availability .timings ul li .time-period.-availed span {
-  background: #e3f5f4;
-}
-
-.availability .timings ul li .time-period.-availed::before {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  background: #68c8c7;
-  border-radius: 50%;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-}
-
-@media only screen and (max-width: 768px) {
-  .availability .timings ul li .time-period.-availed::before {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1099,6 +1267,34 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 
 .availability .timings table tbody tr th.today span {
   color: #fff;
+}
+
+/* Checked the available time */
+.availability .timings .slide li input:checked + label .time-period {
+  position: relative;
+}
+
+.availability .timings .slide li input:checked + label .time-period span {
+  background: #e3f5f4;
+}
+
+.availability .timings .slide li input:checked + label .time-period::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #68c8c7;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .availability .timings .slide li input:checked + label .time-period::before {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Reservation */
@@ -1292,7 +1488,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   position: relative;
 }
 
-.reservation .-reserved-by .all-reservation .-by .by li .show-messages .-messages-count {
+.reservation .-reserved-by .all-reservation .-by .by li .show-messages .all-messages-count {
   width: 22px;
   height: 22px;
   background: #ec6d75;
@@ -1302,7 +1498,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   right: -12px;
 }
 
-.reservation .-reserved-by .all-reservation .-by .by li .show-messages .-messages-count span {
+.reservation .-reserved-by .all-reservation .-by .by li .show-messages .all-messages-count span {
   color: #fff;
   font: normal normal 600 18px/56px "Quicksand";
   letter-spacing: 0px;
@@ -1551,7 +1747,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   }
 }
 
-.my-messages .-messages .-message .show-messages .-messages-count {
+.my-messages .-messages .-message .show-messages .all-messages-count {
   width: 22px;
   height: 22px;
   background: #ec6d75;
@@ -1561,7 +1757,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   right: -12px;
 }
 
-.my-messages .-messages .-message .show-messages .-messages-count span {
+.my-messages .-messages .-message .show-messages .all-messages-count span {
   color: #fff;
   font: normal normal 600 18px/56px "Quicksand";
   letter-spacing: 0px;
@@ -1818,6 +2014,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   }
 }
 
+/* Go Back */
 .-back {
   margin-bottom: 17px;
 }
@@ -1847,8 +2044,10 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   text-decoration: none;
 }
 
+/* Heading repeat on all sections */
 .heading-repeat {
   margin-bottom: 45px;
+  /* Heading */
 }
 
 .heading-repeat h1 {
@@ -1994,95 +2193,10 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   }
 }
 
-.my-images-page .heading-repeat .-heading .-inpox h2 span {
-  color: #ec6d75;
-}
-
-@media only screen and (max-width: 768px) {
-  .my-images-page .heading-repeat .-heading a {
-    display: none;
-  }
-  .my-images-page .heading-repeat .-heading .-inpox h2 {
-    font: normal normal bold 32px/40px "Quicksand";
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .my-services-page .-dashboard {
-    padding: 40px 0px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .my-messages-page .heading-repeat {
-    margin-bottom: 30px !important;
-  }
-}
-
-.my-availability-page .heading-repeat {
-  margin-bottom: 45px;
-}
-
-.my-availability-page .availability {
-  margin-bottom: 125px;
-}
-
-@media only screen and (max-width: 768px) {
-  .my-availability-page .availability {
-    margin-bottom: 0px;
-  }
-}
-
-.my-availability-page .-dashboard .reservation {
-  margin-bottom: 0px;
-}
-
-@media only screen and (max-width: 768px) {
-  .my-availability-page .-dashboard {
-    padding: 40px 0px;
-  }
-  .my-availability-page .-dashboard .reservation {
-    display: none;
-  }
-}
-
-.my-availability-page .registration {
-  margin-top: 40px;
-}
-
-.my-availability-page .registration a {
-  font-size: 18px;
-  text-decoration: underline;
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: 0;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-  background: #ec6d75;
-  border-radius: 15px;
-  padding: 8px 25px;
-}
-
-.my-reservation-page .-dashboard .reservation {
-  margin-bottom: 0px;
-}
-
-.messages-page .my-messages {
-  margin-bottom: 0px;
-}
-
-@media only screen and (max-width: 768px) {
-  .messages-page .-dashboard {
-    padding: 40px 0px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .messages-page .heading-repeat {
-    margin-bottom: 20px !important;
-  }
+/* Message Box */
+.message-box {
+  /* All Messages */
+  /* Type Messages */
 }
 
 .message-box .all-of-the-messages {
@@ -2106,11 +2220,13 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
   overflow-y: scroll;
   scroll-behavior: smooth;
   padding: 50px 20px 0px 30px;
+  /* New Message Line */
 }
 
 @media only screen and (max-width: 768px) {
   .message-box .messages {
     padding: 20px 20px 0px 20px;
+    height: 588px;
   }
 }
 
@@ -2120,7 +2236,7 @@ header .navbar ul.-profile li .show-messages .-messages-count span {
 }
 
 .message-box .messages::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2471,6 +2587,7 @@ input[type="file"] {
   display: none;
 }
 
+/* Service */
 .service .add-picture {
   margin-bottom: 40px;
 }
@@ -2538,7 +2655,6 @@ input[type="file"] {
   display: block;
   position: relative;
   width: 100%;
-  background: yellow;
 }
 
 .service .center-content {
@@ -2572,7 +2688,7 @@ input[type="file"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .service .cancel-update button {
@@ -2595,11 +2711,25 @@ input[type="file"] {
   color: #fff;
 }
 
+@media only screen and (max-width: 576px) {
+  .service .cancel-update {
+    display: block;
+  }
+  .service .cancel-update button {
+    width: 100%;
+  }
+  .service .cancel-update button.update {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+/* Setting up the desktop layout according to it's width */
 @media only screen and (max-width: 1700px) {
   header .navbar {
     max-width: 1440px;
   }
-  .-dashboard .container-fluid {
+  .dashboard .container-fluid {
     max-width: 1440px;
   }
 }
@@ -2608,7 +2738,7 @@ input[type="file"] {
   header .navbar {
     max-width: 1300px;
   }
-  .-dashboard .container-fluid {
+  .dashboard .container-fluid {
     max-width: 1300px;
   }
 }
@@ -2619,25 +2749,151 @@ input[type="file"] {
     padding-left: 35px;
     padding-right: 35px;
   }
-  .-dashboard .container-fluid {
+  .dashboard .container-fluid {
     max-width: 100%;
     padding-left: 35px;
     padding-right: 35px;
   }
 }
 
-.slick-track {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Services Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+@media only screen and (max-width: 768px) {
+  .my-services-page .dashboard {
+    padding: 40px 0px;
+  }
 }
 
-.slick-slide {
-  height: auto;
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Service Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+@media only screen and (max-width: 768px) {
+  .my-service-page .heading-repeat .-heading .-inpox h2 {
+    margin-bottom: 30px;
+  }
+  .my-service-page input {
+    width: 100%;
+  }
+  .my-service-page .dashboard {
+    padding-bottom: 40px;
+  }
 }
 
-* {
-  min-height: 0;
-  min-width: 0;
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Images Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-images-page .-back {
+  display: none;
 }
+
+.my-images-page .heading-repeat .-heading .-inpox h2 span {
+  color: #ec6d75;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-images-page .-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .my-images-page .heading-repeat .-heading a {
+    display: none;
+  }
+  .my-images-page .heading-repeat .-heading .-inpox h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .my-images-page .dashboard {
+    padding-bottom: 40px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Messages Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.messages-page .my-messages {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .messages-page .dashboard {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .messages-page .heading-repeat {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Messages Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+@media only screen and (max-width: 768px) {
+  .my-messages-page .heading-repeat {
+    margin-bottom: 30px !important;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> My Availability Page <<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-availability-page .heading-repeat {
+  margin-bottom: 45px;
+}
+
+.my-availability-page .availability {
+  margin-bottom: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-availability-page .availability {
+    margin-bottom: 0px;
+  }
+}
+
+.my-availability-page .dashboard .reservation {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-availability-page .dashboard {
+    padding: 40px 0px;
+  }
+  .my-availability-page .dashboard .reservation {
+    display: none;
+  }
+}
+
+.my-availability-page .registration {
+  margin-top: 40px;
+}
+
+.my-availability-page .registration a {
+  font-size: 18px;
+  text-decoration: underline;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #ec6d75;
+  border-radius: 15px;
+  padding: 8px 25px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>> My Reservation Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-reservation-page .dashboard .reservation {
+  margin-bottom: 0px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 /*# sourceMappingURL=dashboard.css.map */

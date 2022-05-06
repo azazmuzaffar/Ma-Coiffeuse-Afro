@@ -6,7 +6,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
     <!-- >>> Title & Favicon <<< -->
-    <title>Dashboard - Ma Coiffeuse Afro</title>
+    <title>Tableau De Bord Non Abonné - Dashboard</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
 
     <!-- >>> meta Description <<< -->
@@ -29,6 +29,10 @@
     <!-- >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
 
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
     <header>
       <div class="mini-header">
         <p>NOUVEAU ! MCA FONCTIONNE PAR ABONNEMENT ➜</p>
@@ -40,7 +44,7 @@
           <span></span>
           <span></span>
         </div>
-        <ul class="-links">
+        <ul class="header-links">
           <li>
             <a href="#" class="active"><span>TABLEAU DE BORD</span></a>
           </li>
@@ -48,7 +52,7 @@
             <a href="#">
               <span>
                 MES RÉSERVATIONS
-                <div class="-count -reservations">
+                <div class="counter -reservations">
                   <span>1</span>
                 </div>
               </span>
@@ -58,7 +62,7 @@
             <a href="#">
               <span>
                 MES DISPONIBILITÉS
-                <div class="-count -availability">
+                <div class="counter -availability">
                   <span>!</span>
                 </div>
               </span>
@@ -68,7 +72,7 @@
             <a href="#"><span>MES PRESTATIONS</span></a>
           </li>
         </ul>
-        <ul class="-profile">
+        <ul class="header-profile">
           <li>
             <img src="./images/profile-60.png" alt="" />
           </li>
@@ -87,7 +91,7 @@
                   stroke-width="3"
                 />
               </svg>
-              <div class="-messages-count">
+              <div class="all-messages-count">
                 <span>1</span>
               </div>
             </a>
@@ -96,12 +100,16 @@
       </div>
     </header>
 
-    <div class="-dashboard">
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
+    <div class="dashboard">
       <div class="container-fluid">
         <div class="row except-my-images">
           <div class="col-lg-3">
             <!-- Left Menu -->
-            <div class="-left-menu">
+            <div class="dashboard-menu">
               <!-- Profile Options -->
               <ul class="-options -my-options">
                 <li>
@@ -238,6 +246,45 @@
                   <h5>Mes paiements</h5>
                 </li>
               </ul>
+              <!-- Profile Completion -->
+              <ul class="-options profile-completion">
+                <h2>Complétion du profil</h2>
+                <div class="progress" data-max="100%">
+                  <div class="progress-so-far" data-value="40%"></div>
+                </div>
+                <form action="">
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="add-picture" name="add-picture" checked />
+                      <label for="add-picture">Add profile picture</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox2" name="checkbox2" checked />
+                      <label for="checkbox2">????</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox3" name="checkbox3" />
+                      <label for="checkbox3">????</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox4" name="checkbox4" />
+                      <label for="checkbox4">????</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox5" name="checkbox5" />
+                      <label for="checkbox5">????</label>
+                    </div>
+                  </li>
+                </form>
+              </ul>
             </div>
           </div>
           <!-- Content -->
@@ -303,164 +350,154 @@
                   </div>
                 </div>
                 <div class="timings">
-                  <!-- Row # 1 -->
+                  <!-- Column # 1 -->
                   <ul class="slide">
                     <li>
                       <span class="-day">L</span>
                       <span class="-date">11 AVR.</span>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>6H ➜ 12H</span></div>
+                      <input type="checkbox" id="available-1" checked />
+                      <label for="available-1">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period"><span>12H ➜ 18H</span></div>
+                      <input type="checkbox" id="available-2" />
+                      <label for="available-2">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
+                      <input type="checkbox" id="available-3" checked />
+                      <label for="available-3">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                   </ul>
-                  <!-- Row # 2 -->
-                  <ul class="slide">
-                    <li>
-                      <span class="-day">M</span>
-                      <span class="-date">12 AVR.</span>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>6H ➜ 12H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period"><span>12H ➜ 18H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
-                    </li>
-                  </ul>
-                  <!-- Row # 3 -->
-                  <ul class="slide">
-                    <li>
-                      <span class="-day">M</span>
-                      <span class="-date">13 AVR.</span>
-                    </li>
-                    <li>
-                      <div class="time-period"><span>6H ➜ 12H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>12H ➜ 18H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
-                    </li>
-                  </ul>
-                  <!-- Row # 4 -->
-                  <ul class="slide">
-                    <li>
-                      <span class="-day">J</span>
-                      <span class="-date">14 AVR.</span>
-                    </li>
-                    <li>
-                      <div class="time-period"><span>6H ➜ 12H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>12H ➜ 18H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
-                    </li>
-                  </ul>
-                  <!-- Row # 5 -->
-                  <ul class="slide">
-                    <li>
-                      <span class="-day">V</span>
-                      <span class="-date">15 AVR.</span>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>6H ➜ 12H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>12H ➜ 18H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period"><span>18H ➜ 22H</span></div>
-                    </li>
-                  </ul>
-                  <!-- Row # 6 -->
+                  <!-- Column # 2 -->
                   <ul class="slide">
                     <li>
                       <span class="-day">L</span>
                       <span class="-date">11 AVR.</span>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>6H ➜ 12H</span></div>
+                      <input type="checkbox" id="available-4" checked />
+                      <label for="available-4">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period"><span>12H ➜ 18H</span></div>
+                      <input type="checkbox" id="available-5" />
+                      <label for="available-5">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
-                    </li>
-                  </ul>
-                  <!-- Row # 7 -->
-                  <ul class="slide">
-                    <li>
-                      <span class="-day">M</span>
-                      <span class="-date">12 AVR.</span>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>6H ➜ 12H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period"><span>12H ➜ 18H</span></div>
-                    </li>
-                    <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
+                      <input type="checkbox" id="available-6" checked />
+                      <label for="available-6">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                   </ul>
-                  <!-- Row # 8 -->
+                  <!-- Column # 3 -->
                   <ul class="slide">
                     <li>
-                      <span class="-day">M</span>
-                      <span class="-date">13 AVR.</span>
+                      <span class="-day">L</span>
+                      <span class="-date">11 AVR.</span>
                     </li>
                     <li>
-                      <div class="time-period"><span>6H ➜ 12H</span></div>
+                      <input type="checkbox" id="available-7" />
+                      <label for="available-7">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>12H ➜ 18H</span></div>
+                      <input type="checkbox" id="available-8" checked />
+                      <label for="available-8">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
+                      <input type="checkbox" id="available-9" checked />
+                      <label for="available-9">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                   </ul>
-                  <!-- Row # 9 -->
+                  <!-- Column # 4 -->
                   <ul class="slide">
                     <li>
-                      <span class="-day">J</span>
-                      <span class="-date">14 AVR.</span>
+                      <span class="-day">L</span>
+                      <span class="-date">11 AVR.</span>
                     </li>
                     <li>
-                      <div class="time-period"><span>6H ➜ 12H</span></div>
+                      <input type="checkbox" id="available-11" />
+                      <label for="available-11">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>12H ➜ 18H</span></div>
+                      <input type="checkbox" id="available-12" checked />
+                      <label for="available-12">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>18H ➜ 22H</span></div>
+                      <input type="checkbox" id="available-13" checked />
+                      <label for="available-13">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                   </ul>
-                  <!-- Row # 10 -->
+                  <!-- Column # 5 -->
                   <ul class="slide">
                     <li>
-                      <span class="-day">V</span>
-                      <span class="-date">15 AVR.</span>
+                      <span class="-day">L</span>
+                      <span class="-date">11 AVR.</span>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>6H ➜ 12H</span></div>
+                      <input type="checkbox" id="available-14" checked />
+                      <label for="available-14">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period -availed"><span>12H ➜ 18H</span></div>
+                      <input type="checkbox" id="available-15" checked />
+                      <label for="available-15">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                     <li>
-                      <div class="time-period"><span>18H ➜ 22H</span></div>
+                      <input type="checkbox" id="available-16" />
+                      <label for="available-16">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
+                    </li>
+                  </ul>
+                  <!-- Column # 6 -->
+                  <ul class="slide">
+                    <li>
+                      <span class="-day">L</span>
+                      <span class="-date">11 AVR.</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="available-17" />
+                      <label for="available-17">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="available-18" checked />
+                      <label for="available-18">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="available-19" checked />
+                      <label for="available-19">
+                        <div class="time-period"><span>6H ➜ 12H</span></div>
+                      </label>
                     </li>
                   </ul>
                 </div>
@@ -540,7 +577,7 @@
                                 stroke-width="3"
                               />
                             </svg>
-                            <div class="-messages-count">
+                            <div class="all-messages-count">
                               <span>1</span>
                             </div>
                           </a>
@@ -663,7 +700,7 @@
                           stroke-width="3"
                         />
                       </svg>
-                      <div class="-messages-count">
+                      <div class="all-messages-count">
                         <span>1</span>
                       </div>
                     </a>
