@@ -10,7 +10,7 @@
 $(document).ready(function () {
   $("#menu.slide-bottom").click(function () {
     $(this).toggleClass("open");
-    $(".navbar ul:first-of-type").animate({ height: "toggle" }, 200);
+    $(".navbar ul:first-of-type").slideToggle(250);
     $(".navbar").toggleClass("open");
   });
 });
