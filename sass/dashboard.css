@@ -1941,6 +1941,679 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
+/* My Payments */
+.my-payments table {
+  width: 100%;
+  max-width: 1010px;
+}
+
+.my-payments table tbody tr {
+  padding-top: 30px;
+}
+
+.my-payments table tbody tr th {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+.my-payments table tbody tr td {
+  padding: 30px 0px 20px 0px;
+  border-bottom: 1px solid #272727;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.my-payments table tbody tr td span {
+  display: none;
+}
+
+.my-payments table tbody tr td:last-of-type {
+  text-align: right;
+}
+
+.my-payments table tbody tr td a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+@media only screen and (max-width: 1330px) {
+  .my-payments table {
+    max-width: 100%;
+  }
+  .my-payments table tbody tr th,
+  .my-payments table tbody tr td {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-payments table tbody tr th:nth-of-type(2),
+  .my-payments table tbody tr td:nth-of-type(2) {
+    display: none;
+  }
+  .my-payments table tbody tr td {
+    padding: 20px 0px 6px 0px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .my-payments table tbody tr td a {
+    font: normal normal 700 14px/18px "Quicksand";
+  }
+  .my-payments table tbody tr td span {
+    display: block;
+  }
+}
+
+/* Profile Details */
+.profile-details button {
+  margin: 0;
+  padding: 8px 25px;
+  border: none;
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  background: #ec6d75 !important;
+  border-radius: 15px;
+  display: block;
+}
+
+@media only screen and (max-width: 567px) {
+  .profile-details button {
+    display: block;
+    width: 100%;
+  }
+  .profile-details button span {
+    display: none;
+  }
+}
+
+/* My Profile */
+.my-profile {
+  /* Save Time */
+  /* Complete Address */
+  /* Ready to Move */
+  /* Departments (Checkbox) */
+  /* Offer Ad */
+  /* Billing */
+  /* Personal Info Section */
+  /* Activities Section */
+  /* My Location Section */
+  /* Activities Section */
+  /* My Location Section */
+}
+
+.my-profile h2 {
+  font: normal normal bold 48px/60px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 20px;
+}
+
+.my-profile h2 span {
+  color: #ec6d75;
+}
+
+.my-profile .profile-picture {
+  margin-bottom: 15px;
+}
+
+.my-profile .profile-picture img {
+  width: 112px;
+  height: 112px;
+}
+
+.my-profile .add-picture {
+  margin-bottom: 25px;
+}
+
+.my-profile .add-picture p {
+  margin: 0;
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+  .my-profile .add-picture input {
+    display: none !important;
+  }
+}
+
+.my-profile .profile-description {
+  margin-bottom: 30px;
+}
+
+.my-profile .profile-description h5 {
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.my-profile .profile-description p {
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  margin: 0;
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+.my-profile .save-time {
+  margin-top: 50px;
+  padding: 30px 33px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 40px #ec6d7529;
+          box-shadow: 0px 3px 40px #ec6d7529;
+  border-radius: 4px;
+  max-width: 791px;
+}
+
+.my-profile .save-time h1 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 19px;
+}
+
+.my-profile .save-time p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin-bottom: 41px;
+  color: #777777;
+}
+
+.my-profile .save-time a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 2px solid #ec6d75;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ec6d75;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile .save-time h1 {
+    font: normal normal bold 22px/28px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .my-profile .save-time p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .save-time p br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .my-profile .save-time {
+    text-align: center;
+  }
+  .my-profile .save-time a {
+    margin: 0 auto;
+  }
+}
+
+.my-profile .complete-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.my-profile .complete-address .all-inputs.get-street input {
+  width: 249px;
+}
+
+.my-profile .complete-address .all-inputs.get-postal-code input {
+  width: 88px;
+}
+
+.my-profile .complete-address .all-inputs.get-city input {
+  width: 88px;
+}
+
+.my-profile .complete-address .all-inputs.get-city input::-webkit-input-placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs.get-city input:-ms-input-placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs.get-city input::-ms-input-placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs.get-city input::placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs {
+  margin-right: 25px;
+}
+
+.my-profile .complete-address .all-inputs:last-of-type {
+  margin-right: 0px;
+}
+
+.my-profile .complete-address .postal-code-and-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile .complete-address {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .my-profile .complete-address .all-inputs.get-street {
+    margin-bottom: 30px;
+  }
+  .my-profile .complete-address .all-inputs.get-postal-code {
+    margin-right: 24px;
+  }
+  .my-profile .complete-address .all-inputs.get-postal-code input {
+    width: 106px;
+  }
+  .my-profile .complete-address .all-inputs.get-city input {
+    width: 118px;
+  }
+  .my-profile .complete-address .all-inputs.get-city input::-webkit-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs.get-city input:-ms-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs.get-city input::-ms-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs.get-city input::placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs {
+    margin-right: 0px;
+  }
+}
+
+.my-profile .ready-to-move {
+  margin-bottom: 50px;
+}
+
+.my-profile .ready-to-move p {
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+  color: #272727;
+}
+
+.my-profile .the-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.my-profile .the-checkbox:last-of-type {
+  margin-bottom: 0px;
+}
+
+.my-profile .the-checkbox input,
+.my-profile .the-checkbox label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.my-profile .the-checkbox input {
+  margin-right: 17px;
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.my-profile .the-checkbox label {
+  position: relative;
+  color: #777777;
+  cursor: pointer;
+}
+
+.my-profile .the-checkbox label::before {
+  content: "";
+  border: 1px solid #ec6d75;
+  border-radius: 3px;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.my-profile .the-checkbox input:checked + label {
+  color: #ec6d75;
+}
+
+.my-profile .the-checkbox input:checked + label::before {
+  background: #ec6d75;
+}
+
+.my-profile .the-checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 8px;
+  height: 13px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile {
+    /* Departments */
+    /* Choose Department */
+  }
+  .my-profile .all-the-depatrtments .col-lg-2 {
+    margin-bottom: 20px;
+  }
+  .my-profile .choose-departments {
+    margin-top: 14px;
+  }
+  .my-profile .choose-departments p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .choose-departments .all-the-depatrtments {
+    margin-top: 25px;
+  }
+}
+
+.my-profile .dashboard-offer-ad {
+  padding: 41px 0px 36px 33px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 40px #ec6d7529;
+          box-shadow: 0px 3px 40px #ec6d7529;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 26px;
+  width: 100%;
+  max-width: 791px;
+  margin-top: 63px;
+}
+
+.my-profile .dashboard-offer-ad h1 {
+  font: normal normal bold 48px/60px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  margin-bottom: 10px;
+}
+
+.my-profile .dashboard-offer-ad h1 span {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+}
+
+.my-profile .dashboard-offer-ad h2 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 20px;
+}
+
+.my-profile .dashboard-offer-ad h2 span {
+  color: #ec6d75;
+}
+
+.my-profile .dashboard-offer-ad a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 23px;
+  text-align: center;
+  border: 2px solid #ec6d75;
+  display: block;
+  width: 209px;
+  background: #ec6d75;
+  border-radius: 15px;
+}
+
+.my-profile .dashboard-offer-ad .offer-top {
+  position: absolute;
+  top: -26px;
+  left: 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 73px;
+  background: #ffeaea;
+  border-radius: 24px;
+}
+
+.my-profile .dashboard-offer-ad .offer-top h5 {
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.my-profile .dashboard-offer-ad .check-points {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-profile .dashboard-offer-ad .check-points li .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-profile .dashboard-offer-ad .check-points li .points h4 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin: 0;
+  color: #272727;
+}
+
+.my-profile .dashboard-offer-ad .check-points li .points img {
+  margin-right: 30px;
+}
+
+.my-profile .dashboard-offer-ad .check-points li:first-of-type {
+  margin-bottom: 25px;
+}
+
+.my-profile .dashboard-offer-ad .check-points li:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .my-profile .dashboard-offer-ad .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .my-profile .dashboard-offer-ad .row .col-lg-6 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .my-profile .dashboard-offer-ad .row .col-lg-6:last-of-type {
+    margin-left: auto;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile .dashboard-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 0px;
+  }
+  .my-profile .dashboard-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .dashboard-offer-ad h2 {
+    font: normal normal bold 24px/40px "Quicksand";
+    margin-bottom: 50px;
+  }
+  .my-profile .dashboard-offer-ad .check-points li .points h4 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .dashboard-offer-ad .check-points li .points img {
+    margin-right: 30px;
+  }
+  .my-profile .dashboard-offer-ad .check-points li:first-of-type {
+    margin-bottom: 26px;
+  }
+  .my-profile .dashboard-offer-ad .check-points li:nth-of-type(2) {
+    margin-bottom: 13px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .my-profile .dashboard-offer-ad {
+    height: 325px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .my-profile .dashboard-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 30px;
+  }
+  .my-profile .dashboard-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .dashboard-offer-ad h2 {
+    display: none;
+  }
+  .my-profile .dashboard-offer-ad .row {
+    display: -ms-grid;
+    display: grid;
+  }
+  .my-profile .dashboard-offer-ad .row .col-lg-6 {
+    position: unset;
+    width: calc(100% - 32px);
+  }
+  .my-profile .dashboard-offer-ad a {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .my-profile .dashboard-offer-ad .offer-top {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .my-profile .dashboard-offer-ad .check-points {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.my-profile .billing {
+  margin-top: 25px;
+}
+
+.my-profile .billing a {
+  display: block;
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.my-profile .billing a:last-of-type {
+  margin-bottom: 0px;
+}
+
+.my-profile .billing a.terminate {
+  color: #777777;
+}
+
+.my-profile.personal-info, .my-profile.my-activities, .my-profile.my-location {
+  margin-bottom: 65px;
+}
+
+@media only screen and (max-width: 567px) {
+  .my-profile.personal-info input, .my-profile.my-activities input {
+    display: block;
+    width: 100%;
+  }
+}
+
+.my-profile.my-activities h2 {
+  margin-bottom: 20px;
+}
+
+.my-profile.my-subscriptions {
+  margin-bottom: 100px;
+}
+
+.my-profile.my-subscriptions p {
+  font: normal normal 500 18px/23px "Quicksand";
+  color: #777777;
+}
+
+@media only screen and (max-width: 567px) {
+  .my-profile.my-subscriptions p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile.my-subscriptions p br {
+    display: none;
+  }
+}
+
 /* Custom Slick Arrows */
 .slick-prev,
 .slick-next {
@@ -2040,6 +2713,9 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   letter-spacing: 0px;
   color: #777777;
   text-transform: uppercase;
@@ -2067,6 +2743,28 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   font: normal normal bold 32px/40px "Quicksand";
   letter-spacing: 0px;
   color: #272727;
+}
+
+.heading-repeat h1 span {
+  color: #ec6d75;
+}
+
+.heading-repeat p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .heading-repeat p span {
+    display: block;
+  }
 }
 
 .heading-repeat a {
@@ -2155,6 +2853,10 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   .heading-repeat .heading-area .message-inbox h2 {
     font: normal normal bold 22px/28px "Quicksand";
   }
+}
+
+.heading-repeat .heading-area .message-inbox h2 span {
+  color: #ec6d75;
 }
 
 .heading-repeat .heading-area .message-inbox .all-reserved {
@@ -2790,6 +3492,62 @@ input[type="file"] {
   }
   .my-service-page .dashboard {
     padding-bottom: 40px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> My Peyments Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-payments-page .way-back {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-payments-page .heading-repeat .heading-area a {
+    display: none;
+  }
+  .my-payments-page .way-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Profile Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.profile-page .heading-repeat .heading-area {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-page .heading-repeat .heading-area .message-inbox h2 {
+  font: normal normal bold 48px/60px "Quicksand";
+}
+
+.profile-page .way-back {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-page .heading-repeat {
+    margin-bottom: 20px;
+  }
+  .profile-page .heading-repeat .heading-area a {
+    display: none;
+  }
+  .profile-page .heading-repeat .heading-area .message-inbox h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .profile-page .heading-repeat .heading-area .message-inbox h2 span {
+    display: block;
+  }
+  .profile-page .way-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

@@ -55,8 +55,6 @@ h6 {
     letter-spacing: 0px;
     color: #272727;
   }
-  @media only screen and (max-width: 768px) {
-  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
@@ -1637,6 +1635,569 @@ header {
   }
 }
 
+/* My Payments */
+.my-payments {
+  table {
+    width: 100%;
+    max-width: 1010px;
+    tbody {
+      tr {
+        padding-top: 30px;
+        th {
+          font: normal normal 500 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #777777;
+        }
+        td {
+          padding: 30px 0px 20px 0px;
+          border-bottom: 1px solid #272727;
+          font: normal normal 500 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #272727;
+          span {
+            display: none;
+          }
+          &:last-of-type {
+            text-align: right;
+          }
+          a {
+            text-decoration: underline;
+            font: normal normal bold 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #ec6d75;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      max-width: 100%;
+      tbody {
+        tr {
+          th,
+          td {
+            font: normal normal 500 14px/18px "Quicksand";
+            &:nth-of-type(2) {
+              display: none;
+            }
+          }
+          td {
+            padding: 20px 0px 6px 0px;
+            align-items: flex-end;
+            a {
+              font: normal normal 700 14px/18px "Quicksand";
+            }
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Profile Details */
+.profile-details {
+  button {
+    margin: 0;
+    padding: 8px 25px;
+    border: none;
+    text-decoration: underline;
+    font: normal normal bold 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #ec6d75 !important;
+    border-radius: 15px;
+    display: block;
+    @media only screen and (max-width: 567px) {
+      display: block;
+      width: 100%;
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+/* My Profile */
+.my-profile {
+  h2 {
+    font: normal normal bold 48px/60px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+    margin-bottom: 20px;
+    span {
+      color: #ec6d75;
+    }
+  }
+  .profile-picture {
+    margin-bottom: 15px;
+    img {
+      width: 112px;
+      height: 112px;
+    }
+  }
+  .add-picture {
+    margin-bottom: 25px;
+    p {
+      margin: 0;
+      font: normal normal 500 14px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+    }
+    .add-picture {
+      input {
+        display: none !important;
+      }
+    }
+  }
+  .profile-description {
+    margin-bottom: 30px;
+    h5 {
+      font: normal normal 500 14px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+    }
+    p {
+      font: normal normal 500 14px/18px "Quicksand";
+      letter-spacing: 0px;
+      margin: 0;
+      color: #ec6d75;
+      opacity: 0.55;
+    }
+  }
+  /* Save Time */
+  .save-time {
+    margin-top: 50px;
+    padding: 30px 33px;
+    background: #fff;
+    box-shadow: 0px 3px 40px #ec6d7529;
+    border-radius: 4px;
+    max-width: 791px;
+    h1 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin-bottom: 19px;
+    }
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      margin-bottom: 41px;
+      color: #777777;
+    }
+    a {
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border: 2px solid #ec6d75;
+      display: block;
+      width: fit-content;
+      background: #ec6d75;
+      border-radius: 15px;
+    }
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font: normal normal bold 22px/28px "Quicksand";
+        margin-bottom: 10px;
+      }
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+        br {
+          display: none;
+        }
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      text-align: center;
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+  /* Complete Address */
+  .complete-address {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    .all-inputs.get-street {
+      input {
+        width: 249px;
+      }
+    }
+    .all-inputs.get-postal-code {
+      input {
+        width: 88px;
+      }
+    }
+    .all-inputs.get-city {
+      input {
+        width: 88px;
+        &::placeholder {
+          font: normal normal bold 18px/23px "Quicksand";
+          opacity: 1;
+        }
+      }
+    }
+    .all-inputs {
+      margin-right: 25px;
+      &:last-of-type {
+        margin-right: 0px;
+      }
+    }
+    .postal-code-and-city {
+      display: flex;
+      align-items: flex-end;
+    }
+    @media only screen and (max-width: 768px) {
+      display: block;
+      margin-bottom: 40px;
+      .all-inputs.get-street {
+        margin-bottom: 30px;
+      }
+      .all-inputs.get-postal-code {
+        margin-right: 24px;
+        input {
+          width: 106px;
+        }
+      }
+      .all-inputs.get-city {
+        input {
+          width: 118px;
+          &::placeholder {
+            font: normal normal bold 18px/23px "Quicksand";
+            opacity: 1;
+          }
+        }
+      }
+      .all-inputs {
+        margin-right: 0px;
+      }
+    }
+  }
+  /* Ready to Move */
+  .ready-to-move {
+    margin-bottom: 50px;
+    p {
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      margin-bottom: 25px;
+      color: #272727;
+    }
+  }
+  /* Departments (Checkbox) */
+  .the-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    input,
+    label {
+      width: fit-content;
+    }
+    input {
+      margin-right: 17px;
+      padding: 0;
+      height: initial;
+      width: initial;
+      margin-bottom: 0;
+      display: none;
+      cursor: pointer;
+    }
+    label {
+      position: relative;
+      color: #777777;
+      cursor: pointer;
+      &::before {
+        content: "";
+        border: 1px solid #ec6d75;
+        border-radius: 3px;
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 15px;
+      }
+    }
+    input:checked + label {
+      color: #ec6d75;
+    }
+    input:checked + label::before {
+      background: #ec6d75;
+    }
+    input:checked + label:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 6px;
+      width: 8px;
+      height: 13px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* Departments */
+    .all-the-depatrtments {
+      .col-lg-2 {
+        margin-bottom: 20px;
+      }
+    }
+    /* Choose Department */
+    .choose-departments {
+      margin-top: 14px;
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+      }
+      .all-the-depatrtments {
+        margin-top: 25px;
+      }
+    }
+  }
+  /* Offer Ad */
+  .dashboard-offer-ad {
+    padding: 41px 0px 36px 33px;
+    background: #fff;
+    box-shadow: 0px 3px 40px #ec6d7529;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 26px;
+    width: 100%;
+    max-width: 791px;
+    margin-top: 63px;
+    h1 {
+      font: normal normal bold 48px/60px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      span {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+      }
+      margin-bottom: 10px;
+    }
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin-bottom: 20px;
+      span {
+        color: #ec6d75;
+      }
+    }
+    a {
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 8px 23px;
+      text-align: center;
+      border: 2px solid #ec6d75;
+      display: block;
+      width: 209px;
+      background: #ec6d75;
+      border-radius: 15px;
+    }
+    .offer-top {
+      position: absolute;
+      top: -26px;
+      left: 36px;
+      width: fit-content;
+      padding: 15px 73px;
+      background: #ffeaea;
+      border-radius: 24px;
+      h5 {
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #ec6d75;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+    .check-points {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        .points {
+          display: flex;
+          align-items: center;
+          h4 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            margin: 0;
+            color: #272727;
+          }
+          img {
+            margin-right: 30px;
+          }
+        }
+        &:first-of-type {
+          margin-bottom: 25px;
+        }
+        &:nth-of-type(2) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      .row {
+        display: flex;
+        .col-lg-6 {
+          width: fit-content;
+          &:last-of-type {
+            margin-left: auto;
+            margin-right: 10%;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 0px;
+        span {
+          font: normal normal 500 14px/18px "Quicksand";
+        }
+      }
+      h2 {
+        font: normal normal bold 24px/40px "Quicksand";
+        margin-bottom: 50px;
+      }
+      .check-points {
+        li {
+          .points {
+            h4 {
+              font: normal normal 500 14px/18px "Quicksand";
+            }
+            img {
+              margin-right: 30px;
+            }
+          }
+          &:first-of-type {
+            margin-bottom: 26px;
+          }
+          &:nth-of-type(2) {
+            margin-bottom: 13px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 567px) {
+      height: 325px;
+      text-align: center;
+      padding-top: 50px;
+      h1 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 30px;
+        span {
+          font: normal normal 500 14px/18px "Quicksand";
+        }
+      }
+      h2 {
+        display: none;
+      }
+      .row {
+        display: grid;
+        .col-lg-6 {
+          position: unset;
+          width: calc(100% - 32px);
+        }
+      }
+      a {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .offer-top {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .check-points {
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  /* Billing */
+  .billing {
+    margin-top: 25px;
+    a {
+      display: block;
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      width: fit-content;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      &.terminate {
+        color: #777777;
+      }
+    }
+  }
+
+  /* Personal Info Section */
+  /* Activities Section */
+  /* My Location Section */
+  &.personal-info,
+  &.my-activities,
+  &.my-location {
+    margin-bottom: 65px;
+  }
+
+  &.personal-info,
+  &.my-activities {
+    @media only screen and (max-width: 567px) {
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  /* Activities Section */
+  &.my-activities {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  /* My Location Section */
+  &.my-subscriptions {
+    margin-bottom: 100px;
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      color: #777777;
+    }
+    @media only screen and (max-width: 567px) {
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 /* Custom Slick Arrows */
 .slick-prev,
 .slick-next {
@@ -1710,6 +2271,7 @@ header {
     font: normal normal bold 18px/23px "Quicksand";
     display: flex;
     align-items: center;
+    width: fit-content;
     letter-spacing: 0px;
     color: #777777;
     text-transform: uppercase;
@@ -1732,6 +2294,22 @@ header {
     font: normal normal bold 32px/40px "Quicksand";
     letter-spacing: 0px;
     color: #272727;
+    span {
+      color: #ec6d75;
+    }
+  }
+  p {
+    font: normal normal 500 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #777777;
+    @media only screen and (max-width: 768px) {
+      font: normal normal 500 14px/18px "Quicksand";
+    }
+    @media only screen and (max-width: 567px) {
+      span {
+        display: block;
+      }
+    }
   }
   a {
     text-decoration: underline;
@@ -1786,6 +2364,9 @@ header {
         color: #272727;
         @media only screen and (max-width: 768px) {
           font: normal normal bold 22px/28px "Quicksand";
+        }
+        span {
+          color: #ec6d75;
         }
       }
       .all-reserved {
@@ -2293,6 +2874,70 @@ input[type="file"] {
     }
     .dashboard {
       padding-bottom: 40px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> My Peyments Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-payments-page {
+  .way-back {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .heading-repeat {
+      .heading-area {
+        a {
+          display: none;
+        }
+      }
+    }
+    .way-back {
+      display: flex;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Profile Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.profile-page {
+  .heading-repeat {
+    .heading-area {
+      align-items: center;
+      .message-inbox {
+        h2 {
+          font: normal normal bold 48px/60px "Quicksand";
+        }
+      }
+    }
+  }
+  .way-back {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .heading-repeat {
+      margin-bottom: 20px;
+      .heading-area {
+        a {
+          display: none;
+        }
+        .message-inbox {
+          h2 {
+            font: normal normal bold 32px/40px "Quicksand";
+            margin-bottom: 10px;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .way-back {
+      display: flex;
     }
   }
 }
