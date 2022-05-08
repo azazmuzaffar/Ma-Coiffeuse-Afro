@@ -2007,7 +2007,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 /* Profile Details */
-.profile-details button {
+.profile-details button[type="submit"] {
   margin: 0;
   padding: 8px 25px;
   border: none;
@@ -2021,11 +2021,11 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
 }
 
 @media only screen and (max-width: 567px) {
-  .profile-details button {
+  .profile-details button[type="submit"] {
     display: block;
     width: 100%;
   }
-  .profile-details button span {
+  .profile-details button[type="submit"] span {
     display: none;
   }
 }
@@ -2614,89 +2614,388 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   }
 }
 
-/* Custom Slick Arrows */
-.slick-prev,
-.slick-next {
-  border: none;
-  outline: none;
+/* Public Profile Page */
+.public-profile-page {
+  /* Profile Picture */
+  /* Profile Info */
+  /* Profile Services */
+  /* Availability Section # 1 */
+  /* Availability Section # 2 */
+  /* Profile Services */
+  /* Availability Section # 1 */
+  /* Ratings */
+}
+
+.public-profile-page .heading-repeat {
+  margin: 0;
+  padding: 0;
+}
+
+.public-profile-page .profile-picture img {
+  width: 197px;
+  height: 197px;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-picture img {
+    width: 112px;
+    height: 112px;
+  }
+}
+
+.public-profile-page .profile-info {
+  margin-bottom: 63px;
+}
+
+.public-profile-page .profile-info h2 {
+  font: normal normal bold 48px/60px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin: 0;
+}
+
+.public-profile-page .profile-info span {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.public-profile-page .profile-info .availability-date {
   display: block;
+  margin-bottom: 5px;
+}
+
+.public-profile-page .profile-info .availability-date span {
+  color: #ec6d75;
+}
+
+.public-profile-page .profile-info .availability-place {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.public-profile-page .profile-info p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-info {
+    margin-bottom: 40px;
+  }
+  .public-profile-page .profile-info h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 5px;
+  }
+  .public-profile-page .profile-info span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .public-profile-page .profile-info p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .public-profile-page .profile-info p br {
+    display: none;
+  }
+}
+
+.public-profile-page .profile-services h3,
+.public-profile-page .availability-section-1 h3,
+.public-profile-page .availability-section-2 h3 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-services h3,
+  .public-profile-page .availability-section-1 h3,
+  .public-profile-page .availability-section-2 h3 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
+.public-profile-page .profile-services .all-of-services {
+  padding: 0;
+}
+
+.public-profile-page .profile-services .all-of-services:first-of-type {
+  margin: 63px 0px 30px 0px;
+}
+
+.public-profile-page .profile-services .all-of-services:last-of-type {
+  margin: 0px 0px 63px 0px;
+}
+
+.public-profile-page .profile-services .all-of-services .col-lg-4 {
+  padding: 0;
+}
+
+.public-profile-page .profile-services .all-of-services .col-lg-4:first-of-type {
+  margin-right: 50px;
+}
+
+.public-profile-page .profile-services .all-of-services input,
+.public-profile-page .profile-services .all-of-services label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.public-profile-page .profile-services .all-of-services input {
+  margin-right: 17px;
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check {
+  width: 100%;
+  padding: 22px 30px;
+  -webkit-box-shadow: 0px 3px 30px #91919100;
+          box-shadow: 0px 3px 30px #91919100;
+  border-radius: 15px;
+  background: #ededed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .services-details span {
+  display: block;
+  color: #272727;
+  font: normal normal 500 18px/20px "Quicksand";
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .services-details span:first-of-type {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .check-this-service {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .check-this-service label {
+  position: relative;
+  color: #777777;
+  cursor: pointer;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .check-this-service label::before {
+  content: "";
+  border: 2px solid #7777773d;
+  border-radius: 3px;
   width: 34px;
   height: 34px;
-  background: #68c8c7;
-  top: 50%;
-  cursor: pointer;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
   border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
-.slick-prev:focus,
-.slick-next:focus {
-  border: none;
-  outline: none;
+.public-profile-page .profile-services .all-of-services input:checked + .service-check {
+  background: #ffeaea;
 }
 
-@media only screen and (max-width: 1330px) {
-  .slick-prev,
-  .slick-next {
-    top: -40px;
+.public-profile-page .profile-services .all-of-services input:checked + .service-check .services-details span {
+  color: #ec6d75;
+}
+
+.public-profile-page .profile-services .all-of-services input:checked + .service-check .check-this-service label:before {
+  border: 2px solid #ec6d75;
+  background: #ec6d75;
+}
+
+.public-profile-page .profile-services .all-of-services input:checked + .service-check .check-this-service label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  width: 11px;
+  height: 20px;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-services .all-of-services {
+    padding: 0;
+  }
+  .public-profile-page .profile-services .all-of-services:first-of-type {
+    margin: 25px 0px 0px 0px;
+  }
+  .public-profile-page .profile-services .all-of-services:last-of-type {
+    margin: 0px 0px 60px 0px;
+  }
+  .public-profile-page .profile-services .all-of-services:last-of-type .col-lg-4:last-of-type {
+    margin-bottom: 0px;
+  }
+  .public-profile-page .profile-services .all-of-services .col-lg-4 {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .public-profile-page .profile-services .all-of-services .col-lg-4:first-of-type {
+    margin-right: 0px;
+  }
+}
+
+.public-profile-page .availability-section-1 {
+  margin-bottom: 100px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col {
+  padding: 0px 30px;
+  min-width: 211px;
+  border-right: 1px solid #272727;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .day {
+  margin-bottom: 22px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .day h5 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col:first-of-type {
+  padding-left: 0px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .the-checkbox label {
+  font: normal normal 500 18px/23px "Quicksand";
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .the-checkbox label:after {
+  top: 5px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col {
+    padding: 0;
+    border: 0px;
+    min-width: 20%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .slick-prev,
-  .slick-next {
-    width: 30px;
-    height: 30px;
-    top: -30px;
+  .public-profile-page .availability-section-1 {
+    display: none;
   }
 }
 
-.slick-prev {
-  left: -56px;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  margin-top: -13px;
-}
-
-@media only screen and (max-width: 1330px) {
-  .slick-prev {
-    left: 0;
+@media only screen and (max-width: 1470px) {
+  .public-profile-page .availability-section-2 .availability {
+    max-width: 100%;
   }
 }
 
-.slick-next {
-  right: -56px;
+.public-profile-page .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media only screen and (max-width: 1330px) {
-  .slick-next {
-    right: 0;
-  }
+.public-profile-page .profile-reviews {
+  /* Reviews */
 }
 
-.slick-prev:before,
-.slick-next:before {
-  content: "➜";
-  color: #fff;
-  font-size: 16px;
+.public-profile-page .profile-reviews .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.public-profile-page .profile-reviews .intro h3 {
+  font: normal normal bold 32px/32px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-right: 15px;
 }
 
 @media only screen and (max-width: 768px) {
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 14px;
+  .public-profile-page .profile-reviews .intro h3 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+  .public-profile-page .profile-reviews .intro .rating svg {
+    width: 27px;
   }
 }
 
-.slick-active:nth-child(5n) li:first-of-type {
-  border-top-right-radius: 18px;
+.public-profile-page .profile-reviews .review .rating {
+  margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 567px) {
-  .slick-active:nth-child(2n) li:first-of-type {
-    border-top-right-radius: 18px;
+.public-profile-page .profile-reviews .review h6 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin-bottom: 8px;
+  color: #272727;
+}
+
+.public-profile-page .profile-reviews .review p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+.public-profile-page .profile-reviews .see-more-reviews {
+  margin: 22px 0px 100px 0px;
+}
+
+.public-profile-page .profile-reviews .see-more-reviews a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page h3 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+  .public-profile-page .profile-reviews .review {
+    margin-bottom: 50px;
+  }
+  .public-profile-page .profile-reviews .review .rating svg {
+    width: 24px;
+  }
+  .public-profile-page .profile-reviews .review p br {
+    display: none;
+  }
+  .public-profile-page .profile-reviews .see-more-reviews {
+    margin-top: 0px;
   }
 }
 
@@ -2906,6 +3205,37 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
     width: 100%;
     text-align: center;
   }
+}
+
+.heading-repeat .heading-area .way-back a {
+  margin: 0;
+  padding: 0;
+  font: normal normal bold 18px/23px "Quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0px;
+  color: #777777;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+}
+
+.heading-repeat .heading-area .way-back a span.text {
+  text-decoration: underline;
+}
+
+.heading-repeat .heading-area .way-back a span.icon {
+  margin-right: 10px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  text-decoration: none;
 }
 
 /* Message Box */
@@ -3468,6 +3798,92 @@ input[type="file"] {
     max-width: 100%;
     padding-left: 35px;
     padding-right: 35px;
+  }
+}
+
+/* Custom Slick Arrows */
+.slick-prev,
+.slick-next {
+  border: none;
+  outline: none;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: #68c8c7;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 1330px) {
+  .slick-prev,
+  .slick-next {
+    top: -40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    top: -30px;
+  }
+}
+
+.slick-prev {
+  left: -56px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin-top: -13px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .slick-prev {
+    left: 0;
+  }
+}
+
+.slick-next {
+  right: -56px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .slick-next {
+    right: 0;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "➜";
+  color: #fff;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 14px;
+  }
+}
+
+.slick-active:nth-child(5n) li:first-of-type {
+  border-top-right-radius: 18px;
+}
+
+@media only screen and (max-width: 567px) {
+  .slick-active:nth-child(2n) li:first-of-type {
+    border-top-right-radius: 18px;
   }
 }
 

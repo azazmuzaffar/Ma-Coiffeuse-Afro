@@ -1698,7 +1698,7 @@ header {
 
 /* Profile Details */
 .profile-details {
-  button {
+  button[type="submit"] {
     margin: 0;
     padding: 8px 25px;
     border: none;
@@ -2198,68 +2198,339 @@ header {
   }
 }
 
-/* Custom Slick Arrows */
-.slick-prev,
-.slick-next {
-  border: none;
-  outline: none;
-  display: block;
-  width: 34px;
-  height: 34px;
-  background: #68c8c7;
-  top: 50%;
-  cursor: pointer;
-  transform: translateY(-50%);
-  position: absolute;
-  border-radius: 50%;
-  &:focus {
-    border: none;
-    outline: none;
+/* Public Profile Page */
+.public-profile-page {
+  .heading-repeat {
+    margin: 0;
+    padding: 0;
   }
-  @media only screen and (max-width: 1330px) {
-    top: -40px;
+  /* Profile Picture */
+  .profile-picture {
+    img {
+      width: 197px;
+      height: 197px;
+    }
+    @media only screen and (max-width: 768px) {
+      img {
+        width: 112px;
+        height: 112px;
+      }
+    }
+  }
+  /* Profile Info */
+  .profile-info {
+    margin-bottom: 63px;
+    h2 {
+      font: normal normal bold 48px/60px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin: 0;
+    }
+    span {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    .availability-date {
+      display: block;
+      margin-bottom: 5px;
+      span {
+        color: #ec6d75;
+      }
+    }
+    .availability-place {
+      margin-bottom: 15px;
+      display: block;
+    }
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #777777;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 40px;
+      h2 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 5px;
+      }
+      span {
+        font: normal normal 500 14px/18px "Quicksand";
+      }
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  /* Profile Services */
+  /* Availability Section # 1 */
+  /* Availability Section # 2 */
+  .profile-services,
+  .availability-section-1,
+  .availability-section-2 {
+    h3 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    @media only screen and (max-width: 768px) {
+      h3 {
+        font: normal normal bold 22px/28px "Quicksand";
+      }
+    }
+  }
+  /* Profile Services */
+  .profile-services {
+    .all-of-services {
+      &:first-of-type {
+        margin: 63px 0px 30px 0px;
+      }
+      &:last-of-type {
+        margin: 0px 0px 63px 0px;
+      }
+      padding: 0;
+      .col-lg-4 {
+        padding: 0;
+        &:first-of-type {
+          margin-right: 50px;
+        }
+      }
+      input,
+      label {
+        width: fit-content;
+      }
+      input {
+        margin-right: 17px;
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      .service-check {
+        width: 100%;
+        padding: 22px 30px;
+        box-shadow: 0px 3px 30px #91919100;
+        border-radius: 15px;
+        background: #ededed;
+        display: flex;
+        align-items: center;
+        .services-details {
+          span {
+            display: block;
+            color: #272727;
+            font: normal normal 500 18px/20px "Quicksand";
+            &:first-of-type {
+              margin-bottom: 10px;
+              font-weight: bold;
+            }
+          }
+        }
+        .check-this-service {
+          margin-left: auto;
+          margin-right: 0;
+          label {
+            position: relative;
+            color: #777777;
+            cursor: pointer;
+            &::before {
+              content: "";
+              border: 2px solid #7777773d;
+              border-radius: 3px;
+              width: 34px;
+              height: 34px;
+              border-radius: 50%;
+              display: inline-block;
+              position: relative;
+              vertical-align: middle;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      input:checked + .service-check {
+        background: #ffeaea;
+        .services-details {
+          span {
+            color: #ec6d75;
+          }
+        }
+        .check-this-service {
+          label:before {
+            border: 2px solid #ec6d75;
+            background: #ec6d75;
+          }
+          label:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 11px;
+            width: 11px;
+            height: 20px;
+            border: solid #fff;
+            border-width: 0 4px 4px 0;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .all-of-services {
+        &:first-of-type {
+          margin: 25px 0px 0px 0px;
+        }
+        &:last-of-type {
+          margin: 0px 0px 60px 0px;
+          .col-lg-4 {
+            &:last-of-type {
+              margin-bottom: 0px;
+            }
+          }
+        }
+        padding: 0;
+        .col-lg-4 {
+          padding: 0;
+          margin-bottom: 20px;
+
+          &:first-of-type {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+  /* Availability Section # 1 */
+  .availability-section-1 {
+    margin-bottom: 100px;
+    .my-availabilities-2 {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      .my-availability-col {
+        .day {
+          margin-bottom: 22px;
+          h5 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #272727;
+          }
+        }
+        padding: 0px 30px;
+        min-width: 211px;
+        &:first-of-type {
+          padding-left: 0px;
+        }
+        border-right: 1px solid #272727;
+        .the-checkbox {
+          label {
+            font: normal normal 500 18px/23px "Quicksand";
+            &:after {
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1470px) {
+      .my-availabilities-2 {
+        .my-availability-col {
+          padding: 0;
+          border: 0px;
+          min-width: 20%;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .availability-section-2 {
+    .availability {
+      @media only screen and (max-width: 1470px) {
+        max-width: 100%;
+      }
+    }
+  }
+  /* Ratings */
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  .profile-reviews {
+    .intro {
+      display: flex;
+      align-items: center;
+      margin-bottom: 35px;
+      h3 {
+        font: normal normal bold 32px/32px "Quicksand";
+        letter-spacing: 0px;
+        color: #272727;
+        margin-right: 15px;
+      }
+      @media only screen and (max-width: 768px) {
+        h3 {
+          font: normal normal bold 22px/28px "Quicksand";
+        }
+        .rating {
+          svg {
+            width: 27px;
+          }
+        }
+      }
+    }
+    /* Reviews */
+    .review {
+      .rating {
+        margin-bottom: 15px;
+      }
+      h6 {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        margin-bottom: 8px;
+        color: #272727;
+      }
+      p {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #777777;
+      }
+    }
+    .see-more-reviews {
+      margin: 22px 0px 100px 0px;
+      a {
+        text-decoration: underline;
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #777777;
+        text-transform: uppercase;
+      }
+    }
   }
   @media only screen and (max-width: 768px) {
-    width: 30px;
-    height: 30px;
-    top: -30px;
-  }
-}
-.slick-prev {
-  left: -56px;
-  transform: rotate(-180deg);
-  margin-top: -13px;
-  @media only screen and (max-width: 1330px) {
-    left: 0;
-  }
-}
-.slick-next {
-  right: -56px;
-  @media only screen and (max-width: 1330px) {
-    right: 0;
-  }
-}
-
-.slick-prev:before,
-.slick-next:before {
-  content: "➜";
-  color: #fff;
-  font-size: 16px;
-  @media only screen and (max-width: 768px) {
-    font-size: 14px;
-  }
-}
-
-.slick-active:nth-child(5n) li {
-  &:first-of-type {
-    border-top-right-radius: 18px;
-  }
-}
-
-@media only screen and (max-width: 567px) {
-  .slick-active:nth-child(2n) li {
-    &:first-of-type {
-      border-top-right-radius: 18px;
+    h3 {
+      font: normal normal bold 22px/28px "Quicksand";
+    }
+    .profile-reviews {
+      .review {
+        margin-bottom: 50px;
+        .rating {
+          svg {
+            width: 24px;
+          }
+        }
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+      .see-more-reviews {
+        margin-top: 0px;
+      }
     }
   }
 }
@@ -2405,6 +2676,27 @@ header {
       @media only screen and (max-width: 567px) {
         width: 100%;
         text-align: center;
+      }
+    }
+    .way-back a {
+      margin: 0;
+      padding: 0;
+      font: normal normal bold 18px/23px "Quicksand";
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      letter-spacing: 0px;
+      color: #777777;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: transparent;
+      span.text {
+        text-decoration: underline;
+      }
+      span.icon {
+        margin-right: 10px;
+        transform: rotate(-180deg);
+        text-decoration: none;
       }
     }
   }
@@ -2838,6 +3130,72 @@ input[type="file"] {
       max-width: 100%;
       padding-left: 35px;
       padding-right: 35px;
+    }
+  }
+}
+
+/* Custom Slick Arrows */
+.slick-prev,
+.slick-next {
+  border: none;
+  outline: none;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: #68c8c7;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  position: absolute;
+  border-radius: 50%;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  @media only screen and (max-width: 1330px) {
+    top: -40px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+    top: -30px;
+  }
+}
+.slick-prev {
+  left: -56px;
+  transform: rotate(-180deg);
+  margin-top: -13px;
+  @media only screen and (max-width: 1330px) {
+    left: 0;
+  }
+}
+.slick-next {
+  right: -56px;
+  @media only screen and (max-width: 1330px) {
+    right: 0;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "➜";
+  color: #fff;
+  font-size: 16px;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.slick-active:nth-child(5n) li {
+  &:first-of-type {
+    border-top-right-radius: 18px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .slick-active:nth-child(2n) li {
+    &:first-of-type {
+      border-top-right-radius: 18px;
     }
   }
 }
