@@ -1,0 +1,4137 @@
+@charset "UTF-8";
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* Table of Contents */
+/*===============================================
+1. Header
+2. Hero Banner
+3. Scroll Down
+6. Why Coiffeuse Afro
+7. Mobile Image (Mobile Only)
+8. How it Works
+9. Unique Offers
+10. Contact Us 
+11. Footer
+12. Steps -> Step 1, 2, 3, 4
+=================================================*/
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Common CSS <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
+.slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> Notifications <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.any-notification {
+  background: #ededed;
+}
+
+.any-notification h5 {
+  font: normal normal bold 12px/15px "Quicksand";
+  display: block;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+header .navbar {
+  padding: 0;
+  max-width: 1700px;
+  padding: 0 15px;
+}
+
+header .navbar ul li {
+  margin-right: 50px;
+}
+
+header .navbar ul li a {
+  font: normal normal 500 18px/23px "Quicksand";
+  text-decoration: none;
+  letter-spacing: 0px;
+  color: #272727;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+header .navbar ul li a:hover {
+  color: #ec6d75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .navbar ul li:last-of-type {
+  margin-right: unset;
+  margin-left: unset;
+}
+
+header .navbar ul li:last-of-type a {
+  font: normal normal 500 18px/23px "Quicksand";
+  display: unset;
+  text-align: unset;
+  border: unset;
+  border-radius: unset;
+  padding: unset;
+  color: unset;
+  width: unset;
+}
+
+header .navbar ul li:last-of-type a:hover {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+header .navbar ul.header-links {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+header .navbar ul.header-links li {
+  margin: 0;
+}
+
+header .navbar ul.header-links li a {
+  height: 84px;
+  padding: 30px 34px;
+  display: block;
+}
+
+header .navbar ul.header-links li a span {
+  position: relative;
+}
+
+header .navbar ul.header-links li a span .counter {
+  width: 22px;
+  height: 22px;
+  background: #272727;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: -20px;
+  right: -20px;
+}
+
+header .navbar ul.header-links li a span .counter span {
+  color: #fff;
+  font: normal normal 600 18px/56px "Quicksand";
+  letter-spacing: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .navbar ul.header-links li a.active {
+  background: #ffeaea;
+  color: #ec6d75;
+  font: normal normal bold 18px/23px "Quicksand";
+  border-bottom: 4px solid #ec6d75;
+}
+
+header .navbar ul.header-links li a.active span .counter {
+  background: #ec6d75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .navbar ul.header-links li a:hover {
+  background: #ffeaea;
+  color: #ec6d75;
+  font: normal normal bold 18px/23px "Quicksand";
+  border-bottom: 4px solid #ec6d75;
+}
+
+header .navbar ul.header-links li a:hover span .counter {
+  background: #ec6d75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .navbar ul.header-profile {
+  margin-left: 43px;
+}
+
+header .navbar ul.header-profile li {
+  margin-right: 43px;
+}
+
+header .navbar ul.header-profile li:last-of-type {
+  margin-right: 0px;
+}
+
+header .navbar ul.header-profile li svg,
+header .navbar ul.header-profile li img {
+  cursor: pointer;
+}
+
+header .navbar ul.header-profile li img {
+  width: 60px;
+  height: 60px;
+}
+
+header .navbar ul.header-profile li .show-messages {
+  position: relative;
+}
+
+header .navbar ul.header-profile li .show-messages .all-messages-count {
+  width: 22px;
+  height: 22px;
+  background: #ec6d75;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+header .navbar ul.header-profile li .show-messages .all-messages-count span {
+  color: #fff;
+  font: normal normal 600 18px/56px "Quicksand";
+  letter-spacing: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .navbar ul.header-profile li .show-messages img {
+  width: 27px;
+  height: 27px;
+}
+
+@media only screen and (max-width: 1025px) {
+  header .navbar ul.header-profile li .show-messages img {
+    display: block;
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+  header .navbar ul.header-profile li .show-messages .all-messages-count {
+    width: 19px;
+    height: 19px;
+    right: -11px;
+    top: -9px;
+  }
+}
+
+@media only screen and (max-width: 1330px) and (min-width: 1200px) {
+  header .navbar ul li a {
+    font: normal normal 500 16px/20px "Quicksand";
+  }
+  header .navbar ul.header-links li a {
+    padding: 34px 24px;
+  }
+  header .navbar ul.header-links li a:hover, header .navbar ul.header-links li a.active {
+    font: normal normal bold 16px/20px "Quicksand";
+  }
+  header .navbar ul.header-links li:last-of-type a {
+    font: normal normal 500 16px/20px "Quicksand";
+  }
+  header .navbar ul.header-links li:last-of-type a:hover {
+    font-weight: bold;
+  }
+  header .navbar ul.header-profile {
+    margin-left: 24px;
+  }
+  header .navbar ul.header-profile li {
+    margin-right: 36px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  header .navbar ul li a {
+    font: normal normal 500 14px/16px "Quicksand";
+  }
+  header .navbar ul.header-links li a {
+    padding: 34px 20px;
+  }
+  header .navbar ul.header-links li a:hover, header .navbar ul.header-links li a.active {
+    font: normal normal bold 14px/16px "Quicksand";
+  }
+  header .navbar ul.header-links li:last-of-type a {
+    font: normal normal 500 14px/16px "Quicksand";
+  }
+  header .navbar ul.header-links li:last-of-type a:hover {
+    font-weight: bold;
+  }
+  header .navbar ul.header-profile {
+    margin-left: 20px;
+  }
+  header .navbar ul.header-profile li {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  header .navbar a img {
+    display: none;
+  }
+  header .navbar #menu {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  header .navbar ul.header-links {
+    padding: 0px;
+  }
+  header .navbar ul.header-links li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+  }
+  header .navbar ul.header-links li a,
+  header .navbar ul.header-links li a.active,
+  header .navbar ul.header-links li a:hover {
+    margin: 0;
+    padding: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: 0px;
+    background: transparent;
+    padding: 20px 36px;
+  }
+  header .navbar ul.header-links li a.active,
+  header .navbar ul.header-links li a:hover {
+    background: #ffeaea;
+    border-bottom: 0.5px solid #ec6d75;
+  }
+  header .navbar ul.header-links li a {
+    text-align: left;
+    line-height: 18px;
+    display: block;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  header .navbar ul.header-links li a span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header .navbar ul.header-links li a span .counter {
+    position: relative;
+    margin-left: auto;
+    margin-right: 22px;
+    top: unset;
+    left: unset;
+  }
+  header .navbar ul.header-links li a span .counter span {
+    display: block;
+    width: unset;
+  }
+  header .navbar ul.header-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  header .navbar ul.header-profile li {
+    margin: 0;
+  }
+  header .navbar ul.header-profile li img {
+    margin-left: 43px;
+  }
+  header .navbar ul li a {
+    opacity: 0;
+    display: block;
+  }
+  header .navbar ul li a.show-messages {
+    opacity: 1;
+  }
+  header .navbar.open {
+    -webkit-box-shadow: 0 8px 5px rgba(57, 63, 72, 0.028);
+            box-shadow: 0 8px 5px rgba(57, 63, 72, 0.028);
+  }
+  header .navbar.open ul li a {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar ul:first-of-type {
+    top: 87px;
+  }
+  header .navbar ul.header-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  header .navbar ul.header-profile li {
+    margin: 0;
+  }
+  header .navbar ul.header-profile li img {
+    width: auto;
+    height: 46px;
+    margin-left: 33px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.dashboard {
+  padding: 80px 0px 138px 0px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    padding: 40px 0px 100px 0px;
+  }
+}
+
+.dashboard .container-fluid {
+  max-width: 1695px;
+  /* Main Content (Right Column of Dashboard) */
+}
+
+@media only screen and (max-width: 1330px) {
+  .dashboard .container-fluid .row.except-my-images {
+    display: -ms-grid;
+    display: grid;
+  }
+  .dashboard .container-fluid .row.except-my-images .col-lg-3,
+  .dashboard .container-fluid .row.except-my-images .col-lg-9 {
+    width: 100%;
+  }
+}
+
+.dashboard .container-fluid .main-content {
+  padding-left: 20px;
+  /* See All */
+}
+
+@media only screen and (max-width: 1330px) {
+  .dashboard .container-fluid .main-content {
+    padding-left: 0px;
+  }
+}
+
+.dashboard .container-fluid .main-content .see-all {
+  display: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 35px;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  background: transparent;
+  text-decoration: underline;
+}
+
+.dashboard .container-fluid .main-content .see-all img {
+  margin-left: 15px;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard .container-fluid .main-content .see-all {
+    display: block;
+  }
+  .dashboard .container-fluid .main-content .see-all.hide-mb {
+    display: none;
+  }
+}
+
+/* Left Menu */
+.dashboard-menu {
+  /* Profile Options */
+}
+
+.dashboard-menu .dashboard-menu-options {
+  padding: 35px 40px;
+  -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
+          box-shadow: 0px 3px 30px #b2b2b23d;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 50px;
+  background: #fff;
+  z-index: 999;
+  /* Checkbox */
+  /* My Stats */
+}
+
+.dashboard-menu .dashboard-menu-options:last-of-type {
+  margin-bottom: 0px;
+}
+
+.dashboard-menu .dashboard-menu-options h2 {
+  font: normal normal bold 18px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.dashboard-menu .dashboard-menu-options .progress {
+  position: relative;
+  width: 100%;
+  margin: 27px 0px;
+  height: 28px;
+  background: #ededed;
+  border-radius: 10px;
+}
+
+.dashboard-menu .dashboard-menu-options .progress::before {
+  display: block;
+  width: 100%;
+  content: attr(data-max);
+  text-align: right;
+  padding: 0px 11px;
+  color: #777777;
+  font: normal normal 500 14px/28px "Quicksand";
+  letter-spacing: 0px;
+}
+
+.dashboard-menu .dashboard-menu-options .progress .progress-so-far {
+  content: attr(data-value);
+  display: block;
+  border-radius: 10px;
+  padding: 0px 11px;
+  position: absolute;
+  height: 28px;
+  background: #68c8c7;
+  top: 0;
+  left: 0;
+}
+
+.dashboard-menu .dashboard-menu-options .progress .progress-so-far::before {
+  display: block;
+  width: unset;
+  content: attr(data-value);
+  text-align: left;
+  color: #777777;
+  font: normal normal bold 18px/28px "Quicksand";
+  color: #fff;
+  letter-spacing: 0px;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox:last-of-type {
+  margin-bottom: 0px;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox input,
+.dashboard-menu .dashboard-menu-options .the-checkbox label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox input {
+  margin-right: 17px;
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox label {
+  position: relative;
+  color: #777777;
+  cursor: pointer;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox label::before {
+  content: "";
+  border: 1px solid #68c8c7;
+  border-radius: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox input:checked + label::before {
+  background: #68c8c7;
+}
+
+.dashboard-menu .dashboard-menu-options .the-checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.dashboard-menu .dashboard-menu-options li {
+  margin-bottom: 28px;
+}
+
+.dashboard-menu .dashboard-menu-options li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.dashboard-menu .dashboard-menu-options li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: unset;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dashboard-menu .dashboard-menu-options li a img,
+.dashboard-menu .dashboard-menu-options li a .profile-stats {
+  margin-right: 17px;
+}
+
+.dashboard-menu .dashboard-menu-options li a h5 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dashboard-menu .dashboard-menu-options li a:hover h5 {
+  color: #ec6d75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dashboard-menu .dashboard-menu-options li h5 {
+  font: normal normal 500 18px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin: 0;
+}
+
+.dashboard-menu .dashboard-menu-options li:first-of-type a:hover h5 {
+  color: #272727;
+}
+
+.dashboard-menu .dashboard-menu-options form li {
+  margin-bottom: 20px;
+}
+
+.dashboard-menu .dashboard-menu-options form li:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .dashboard-menu .dashboard-menu-options.all-my-options {
+    position: fixed;
+    top: 87px;
+    text-align: right;
+    display: none;
+    right: 35px;
+  }
+  .dashboard-menu .dashboard-menu-options.all-my-options li a {
+    text-align: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .dashboard-menu .dashboard-menu-options.all-my-options li a img,
+  .dashboard-menu .dashboard-menu-options.all-my-options li a .profile-stats {
+    margin-right: 0px;
+    margin-left: 17px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .dashboard-menu .dashboard-menu-options.profile-completion {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-menu .dashboard-menu-options.all-my-options {
+    padding: 28px 36px 28px 50px;
+  }
+  .dashboard-menu .dashboard-menu-options li {
+    margin-bottom: 20px;
+  }
+  .dashboard-menu .dashboard-menu-options li:first-of-type {
+    margin-bottom: 18px;
+  }
+  .dashboard-menu .dashboard-menu-options li a h5 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .dashboard-menu .dashboard-menu-options.all-my-stats {
+    display: none;
+  }
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li h5 {
+  color: #272727;
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type {
+  margin-bottom: 40px;
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type a {
+  text-decoration: underline;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type a img {
+  margin-left: 11px;
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li .profile-stats {
+  padding: 2px;
+  background: #ededed;
+  text-align: center;
+  width: 48px;
+  border-radius: 15px;
+  margin-right: 17px;
+}
+
+.dashboard-menu .dashboard-menu-options.all-my-stats li .profile-stats span {
+  font: normal normal bold 18px/18px "Quicksand";
+  letter-spacing: 0px;
+  margin: 0;
+  color: #272727;
+}
+
+/* Dashboard Banner */
+.dashboard-banner {
+  margin-bottom: 100px;
+  /* Main Banner Ad */
+  /* Offer Ad */
+}
+
+@media only screen and (max-width: 1470px) {
+  .dashboard-banner .row .col-lg-8,
+  .dashboard-banner .row .col-lg-4 {
+    width: 100%;
+  }
+  .dashboard-banner .row .col-lg-8 .one-last-step,
+  .dashboard-banner .row .col-lg-4 .one-last-step {
+    width: 100%;
+  }
+  .dashboard-banner .row .col-lg-4 {
+    display: none;
+  }
+  .dashboard-banner .row .col-lg-4.visible-sm {
+    display: block !important;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-banner {
+    margin-bottom: 97px;
+  }
+  .dashboard-banner .col-lg-4 {
+    display: none;
+  }
+  .dashboard-banner .col-lg-4.visible-sm {
+    display: block !important;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .dashboard-banner .col-lg-4.visible-sm .edit-profile {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.dashboard-banner .one-last-step {
+  padding: 30px 33px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 40px #ec6d7529;
+          box-shadow: 0px 3px 40px #ec6d7529;
+  border-radius: 4px;
+}
+
+.dashboard-banner .one-last-step h1 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 19px;
+}
+
+.dashboard-banner .one-last-step p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin-bottom: 41px;
+  color: #777777;
+}
+
+.dashboard-banner .one-last-step a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 2px solid #ec6d75;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ec6d75;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-banner .one-last-step h1 {
+    font: normal normal bold 22px/28px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .dashboard-banner .one-last-step p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .one-last-step p br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .dashboard-banner .one-last-step {
+    text-align: center;
+  }
+  .dashboard-banner .one-last-step a {
+    margin: 0 auto;
+  }
+}
+
+.dashboard-banner .dashboard-offer-ad {
+  padding: 41px 0px 36px 33px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 40px #ec6d7529;
+          box-shadow: 0px 3px 40px #ec6d7529;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 26px;
+}
+
+.dashboard-banner .dashboard-offer-ad h1 {
+  font: normal normal bold 48px/60px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  margin-bottom: 10px;
+}
+
+.dashboard-banner .dashboard-offer-ad h1 span {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+}
+
+.dashboard-banner .dashboard-offer-ad h2 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 20px;
+}
+
+.dashboard-banner .dashboard-offer-ad h2 span {
+  color: #ec6d75;
+}
+
+.dashboard-banner .dashboard-offer-ad a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 23px;
+  text-align: center;
+  border: 2px solid #ec6d75;
+  display: block;
+  width: 209px;
+  background: #ec6d75;
+  border-radius: 15px;
+}
+
+.dashboard-banner .dashboard-offer-ad .offer-top {
+  position: absolute;
+  top: -26px;
+  left: 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 73px;
+  background: #ffeaea;
+  border-radius: 24px;
+}
+
+.dashboard-banner .dashboard-offer-ad .offer-top h5 {
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.dashboard-banner .dashboard-offer-ad .check-points {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dashboard-banner .dashboard-offer-ad .check-points li .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-banner .dashboard-offer-ad .check-points li .points h4 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin: 0;
+  color: #272727;
+}
+
+.dashboard-banner .dashboard-offer-ad .check-points li .points img {
+  margin-right: 30px;
+}
+
+.dashboard-banner .dashboard-offer-ad .check-points li:first-of-type {
+  margin-bottom: 25px;
+}
+
+.dashboard-banner .dashboard-offer-ad .check-points li:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .dashboard-banner .dashboard-offer-ad .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dashboard-banner .dashboard-offer-ad .row .col-lg-6 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .dashboard-banner .dashboard-offer-ad .row .col-lg-6:last-of-type {
+    margin-left: auto;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-banner .dashboard-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 0px;
+  }
+  .dashboard-banner .dashboard-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .dashboard-offer-ad h2 {
+    font: normal normal bold 24px/40px "Quicksand";
+    margin-bottom: 50px;
+  }
+  .dashboard-banner .dashboard-offer-ad .check-points li .points h4 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .dashboard-offer-ad .check-points li .points img {
+    margin-right: 30px;
+  }
+  .dashboard-banner .dashboard-offer-ad .check-points li:first-of-type {
+    margin-bottom: 26px;
+  }
+  .dashboard-banner .dashboard-offer-ad .check-points li:nth-of-type(2) {
+    margin-bottom: 13px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .dashboard-banner .dashboard-offer-ad {
+    height: 325px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .dashboard-banner .dashboard-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 30px;
+  }
+  .dashboard-banner .dashboard-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .dashboard-banner .dashboard-offer-ad h2 {
+    display: none;
+  }
+  .dashboard-banner .dashboard-offer-ad .row {
+    display: -ms-grid;
+    display: grid;
+  }
+  .dashboard-banner .dashboard-offer-ad .row .col-lg-6 {
+    position: unset;
+    width: calc(100% - 32px);
+  }
+  .dashboard-banner .dashboard-offer-ad a {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .dashboard-banner .dashboard-offer-ad .offer-top {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .dashboard-banner .dashboard-offer-ad .check-points {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.dashboard-banner .edit-profile {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 25px;
+  margin: 0 auto;
+  border: 2px solid #ec6d75;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ec6d75;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1470px) {
+  .dashboard-banner .edit-profile {
+    margin: 0;
+  }
+}
+
+/* Availability */
+.availability {
+  margin-bottom: 100px;
+  width: 100%;
+  /* Timing Slider */
+}
+
+@media only screen and (max-width: 1330px) {
+  .availability {
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .availability {
+    margin-bottom: 75px;
+  }
+}
+
+.availability .availability-hint h2 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.availability .availability-hint .hint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 12px 4px 6px;
+  background: #68c8c625;
+  border-radius: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px 0px 45px 0px;
+}
+
+.availability .availability-hint .hint .circle {
+  width: 16px;
+  height: 16px;
+  margin-right: 11px;
+  background: #68c8c7;
+  border-radius: 50%;
+}
+
+.availability .availability-hint .hint span {
+  font: normal normal normal 16px/20px "Quicksand";
+  letter-spacing: 0px;
+  color: #68c8c7;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .availability .availability-hint h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
+.availability .timings {
+  max-width: 968px;
+  border-radius: 15px;
+  margin: 0px 56px;
+  -webkit-box-shadow: 0px -4px 7px #f1f1f1;
+          box-shadow: 0px -4px 7px #f1f1f1;
+}
+
+@media only screen and (max-width: 1330px) {
+  .availability .timings {
+    margin: 0;
+    margin-top: 88px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .availability .timings {
+    margin-top: 80px;
+  }
+}
+
+.availability .timings ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
+.availability .timings ul:first-of-type li:first-of-type {
+  border-top-left-radius: 15px;
+  background: #68c8c7;
+}
+
+.availability .timings ul:first-of-type li:first-of-type span {
+  color: #fff;
+}
+
+.availability .timings ul:last-of-type li:first-of-type {
+  border-top-right-radius: 15px;
+}
+
+.availability .timings ul li {
+  padding: 9px 0px;
+  border-right: 1px solid #777777;
+}
+
+.availability .timings ul li:first-of-type {
+  background: #ededed;
+  padding: 8px 8px 9px 8px;
+  margin-bottom: 14px;
+  border-right: 0px;
+}
+
+.availability .timings ul li:first-of-type span:first-of-type {
+  margin-bottom: 10px;
+}
+
+.availability .timings ul li span {
+  display: block;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin: 0;
+}
+
+.availability .timings ul li input {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .availability .timings ul li {
+    padding: 8px 0px 0px 0px;
+  }
+  .availability .timings ul li:first-of-type {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+  .availability .timings ul li:first-of-type span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .availability .timings ul li:first-of-type span:first-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.availability .timings ul li .time-period {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.availability .timings ul li .time-period span {
+  font: normal normal bold 18px/23px "Quicksand";
+  padding: 13px 20px;
+  background: #ededed;
+  border-radius: 10px;
+  text-align: center;
+  width: 141px;
+}
+
+@media only screen and (max-width: 768px) {
+  .availability .timings ul li .time-period span {
+    padding: 13px 18px;
+    font: normal normal bold 14px/18px "Quicksand";
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.availability .timings ul li:nth-of-type(2) {
+  padding-top: 19px;
+}
+
+.availability .timings ul:last-of-type li {
+  border-right: 0px;
+}
+
+.availability .timings table {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.availability .timings table tbody tr th {
+  width: 187px;
+  padding: 8px 10px;
+  background: #ededed;
+  text-align: center;
+}
+
+.availability .timings table tbody tr th:first-of-type {
+  border-top-left-radius: 15px;
+}
+
+.availability .timings table tbody tr th:last-of-type {
+  border-top-right-radius: 15px;
+}
+
+.availability .timings table tbody tr th span {
+  display: block;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin: 0;
+}
+
+.availability .timings table tbody tr th span:first-of-type {
+  margin-bottom: 10px;
+}
+
+.availability .timings table tbody tr th.today {
+  background: #68c8c7;
+}
+
+.availability .timings table tbody tr th.today span {
+  color: #fff;
+}
+
+/* Checked the available time */
+.availability .timings .slide li input:checked + label .time-period {
+  position: relative;
+}
+
+.availability .timings .slide li input:checked + label .time-period span {
+  background: #e3f5f4;
+}
+
+.availability .timings .slide li input:checked + label .time-period::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #68c8c7;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .availability .timings .slide li input:checked + label .time-period::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Reservation */
+.reservation {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .reservation {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation {
+    margin-bottom: 75px;
+  }
+}
+
+.reservation .all-reserved-reservations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28px;
+}
+
+.reservation .all-reserved-reservations h2,
+.reservation .all-reserved-reservations span {
+  margin: 0;
+}
+
+.reservation .all-reserved-reservations h2 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.reservation .all-reserved-reservations .all-reserved {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #ec6d75;
+  border-radius: 50%;
+  margin-left: 13px;
+}
+
+.reservation .all-reserved-reservations .all-reserved span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: normal normal 600 18px/56px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .all-reserved-reservations h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
+.reservation .reservation-reserved-by {
+  /* All Reservation */
+}
+
+.reservation .reservation-reserved-by ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reservation .reservation-reserved-by ul.th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+  padding: 0px 36px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .reservation .reservation-reserved-by ul.th {
+    display: none;
+  }
+}
+
+.reservation .reservation-reserved-by ul.th li {
+  width: 156px;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by {
+    margin-bottom: 25px;
+  }
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by:last-of-type {
+  margin-bottom: 0px;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+  padding: 6px 36px 26px 36px;
+  background: #ffeaea;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-bottom: -20px;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date img {
+  margin-right: 13px;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date h5 {
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date {
+    width: 100%;
+    padding: 6px 0px 26px 10px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date img {
+    display: none;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date h5 {
+    font: normal normal bold 14px/18px "Quicksand";
+  }
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 19px 36px 16px 36px;
+  -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
+          box-shadow: 0px 3px 30px #b2b2b23d;
+  max-width: 1077px;
+  border-radius: 15px;
+  background: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li {
+  width: 156px;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  padding-right: 20px;
+  color: #272727;
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:first-of-type {
+    margin-bottom: 19px;
+  }
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages {
+  position: relative;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages img {
+  width: 27px;
+  height: 27px;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages .all-messages-count {
+  width: 22px;
+  height: 22px;
+  background: #ec6d75;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages .all-messages-count span {
+  color: #fff;
+  font: normal normal 600 18px/56px "Quicksand";
+  letter-spacing: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
+  width: 74px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li {
+    width: 100%;
+    margin-bottom: 14px;
+    margin-left: 12px;
+    padding-left: 45px;
+    position: relative;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li br {
+    display: none;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:before {
+    content: attr(content);
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 0;
+    width: 30px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(1), .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(2), .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
+    padding-left: 0px !important;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(2) {
+    font-weight: bold;
+    position: absolute;
+    top: 45px;
+    left: 136px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
+    position: absolute;
+    top: 43px;
+    right: 36px;
+    width: 34px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by {
+    padding: 17px 0px 7px 0px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li {
+    font: normal normal 500 14px/18px "Quicksand";
+    padding-left: 59px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li a img {
+    width: auto;
+    height: 59px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:before {
+    color: #777777;
+    margin-left: 12px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:nth-of-type(2) {
+    top: 35px;
+    left: 76px;
+  }
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .by li:last-of-type {
+    top: 33px;
+    right: 28px;
+  }
+}
+
+/* My Messages */
+.my-messages {
+  max-width: 1077px;
+  margin-bottom: 100px;
+  /* All Messages */
+}
+
+@media only screen and (max-width: 1330px) {
+  .my-messages {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-messages {
+    margin-bottom: 75px;
+  }
+}
+
+.my-messages .message-inbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28px;
+}
+
+.my-messages .message-inbox h2,
+.my-messages .message-inbox span {
+  margin: 0;
+}
+
+.my-messages .message-inbox h2 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.my-messages .message-inbox .all-reserved {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #ec6d75;
+  border-radius: 50%;
+  margin-left: 13px;
+}
+
+.my-messages .message-inbox .all-reserved span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: normal normal 600 18px/56px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-messages .message-inbox h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
+.my-messages .all-the-messages {
+  /* Message */
+}
+
+.my-messages .all-the-messages .the-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  padding: 19px 56px 16px 36px;
+  -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
+          box-shadow: 0px 3px 30px #b2b2b23d;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-messages .all-the-messages .the-message {
+    margin-bottom: 25px;
+  }
+}
+
+.my-messages .all-the-messages .the-message:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .my-messages .all-the-messages .the-message.check::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    width: 26px;
+    height: 26px;
+    background: #ec6d75;
+    border-radius: 50%;
+  }
+}
+
+.my-messages .all-the-messages .the-message .message-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.my-messages .all-the-messages .the-message .message-details a {
+  margin-right: 78px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .my-messages .all-the-messages .the-message .message-details a {
+    margin-right: 70px;
+  }
+}
+
+.my-messages .all-the-messages .the-message .message-details .message-text h5 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 4px;
+}
+
+.my-messages .all-the-messages .the-message .message-details .message-text p {
+  font: normal normal normal 16px/20px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+  text-transform: unset;
+}
+
+@media only screen and (max-width: 1470px) {
+  .my-messages .all-the-messages .the-message .message-details .message-text p br {
+    display: none;
+  }
+}
+
+.my-messages .all-the-messages .the-message .show-messages {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .my-messages .all-the-messages .the-message .show-messages {
+    display: none;
+  }
+}
+
+.my-messages .all-the-messages .the-message .show-messages .all-messages-count {
+  width: 22px;
+  height: 22px;
+  background: #ec6d75;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+.my-messages .all-the-messages .the-message .show-messages .all-messages-count span {
+  color: #fff;
+  font: normal normal 600 18px/56px "Quicksand";
+  letter-spacing: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .my-messages .all-the-messages .the-message {
+    padding: 17px 20px 14px 20px;
+  }
+  .my-messages .all-the-messages .the-message .message-details {
+    display: block;
+  }
+  .my-messages .all-the-messages .the-message .message-details a {
+    margin-right: 0px;
+  }
+  .my-messages .all-the-messages .the-message .message-details a img {
+    width: auto;
+    height: 59px;
+  }
+  .my-messages .all-the-messages .the-message .message-details .message-text {
+    margin-top: 12px;
+  }
+  .my-messages .all-the-messages .the-message .message-details .message-text p {
+    font: normal normal 500 14px/18px "Quicksand";
+    margin: 0;
+  }
+}
+
+/* Presentations */
+.presentations {
+  max-width: 1077px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .presentations {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+  }
+}
+
+.presentations h2 {
+  margin-bottom: 40px;
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.presentations .about-presentations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0px 36px;
+  margin-bottom: 14px;
+  list-style: none;
+}
+
+.presentations .about-presentations li {
+  width: 229px;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+.presentations .about-presentations li:last-of-type {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.presentations .all-presentations {
+  padding: 30px 36px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
+          box-shadow: 0px 3px 30px #b2b2b23d;
+  border-radius: 15px;
+}
+
+.presentations .all-presentations .presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #777777;
+  margin-top: 30px;
+}
+
+.presentations .all-presentations .presentation:first-of-type {
+  margin-top: 0px;
+}
+
+.presentations .all-presentations .presentation h5,
+.presentations .all-presentations .presentation a {
+  margin: 0;
+}
+
+.presentations .all-presentations .presentation h5 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.presentations .all-presentations .presentation .prix {
+  margin-left: auto;
+  margin-right: 0px;
+  width: 229px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentations .all-presentations .presentation .prix a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .presentations h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+    margin-bottom: 22px;
+  }
+  .presentations .about-presentations {
+    display: none;
+  }
+  .presentations .all-presentations {
+    padding: 18px;
+  }
+  .presentations .all-presentations .presentation {
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    margin-top: 20.5px;
+  }
+  .presentations .all-presentations .presentation h5 {
+    font: normal normal 500 14px/18px "Quicksand";
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .presentations .all-presentations .presentation .prix h5 {
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    top: 0;
+  }
+  .presentations .all-presentations .presentation .prix a {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+/* My Payments */
+.my-payments table {
+  width: 100%;
+  max-width: 1010px;
+}
+
+.my-payments table tbody tr {
+  padding-top: 30px;
+}
+
+.my-payments table tbody tr th {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+.my-payments table tbody tr td {
+  padding: 30px 0px 20px 0px;
+  border-bottom: 1px solid #272727;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.my-payments table tbody tr td span {
+  display: none;
+}
+
+.my-payments table tbody tr td:last-of-type {
+  text-align: right;
+}
+
+.my-payments table tbody tr td a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+@media only screen and (max-width: 1330px) {
+  .my-payments table {
+    max-width: 100%;
+  }
+  .my-payments table tbody tr th,
+  .my-payments table tbody tr td {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-payments table tbody tr th:nth-of-type(2),
+  .my-payments table tbody tr td:nth-of-type(2) {
+    display: none;
+  }
+  .my-payments table tbody tr td {
+    padding: 20px 0px 6px 0px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .my-payments table tbody tr td a {
+    font: normal normal 700 14px/18px "Quicksand";
+  }
+  .my-payments table tbody tr td span {
+    display: block;
+  }
+}
+
+/* Profile Details */
+.profile-details button[type="submit"] {
+  margin: 0;
+  padding: 8px 25px;
+  border: none;
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  background: #ec6d75 !important;
+  border-radius: 15px;
+  display: block;
+}
+
+@media only screen and (max-width: 567px) {
+  .profile-details button[type="submit"] {
+    display: block;
+    width: 100%;
+  }
+  .profile-details button[type="submit"] span {
+    display: none;
+  }
+}
+
+/* My Profile */
+.my-profile {
+  /* Save Time */
+  /* Complete Address */
+  /* Ready to Move */
+  /* Departments (Checkbox) */
+  /* Offer Ad */
+  /* Billing */
+  /* Personal Info Section */
+  /* Activities Section */
+  /* My Location Section */
+  /* Activities Section */
+  /* My Location Section */
+}
+
+.my-profile h2 {
+  font: normal normal bold 48px/60px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 20px;
+}
+
+.my-profile h2 span {
+  color: #ec6d75;
+}
+
+.my-profile .profile-picture {
+  margin-bottom: 15px;
+}
+
+.my-profile .profile-picture img {
+  width: 112px;
+  height: 112px;
+}
+
+.my-profile .add-picture {
+  margin-bottom: 25px;
+}
+
+.my-profile .add-picture p {
+  margin: 0;
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+  }
+  .my-profile .add-picture input {
+    display: none !important;
+  }
+}
+
+.my-profile .profile-description {
+  margin-bottom: 30px;
+}
+
+.my-profile .profile-description h5 {
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.my-profile .profile-description p {
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  margin: 0;
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+.my-profile .save-time {
+  margin-top: 50px;
+  padding: 30px 33px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 40px #ec6d7529;
+          box-shadow: 0px 3px 40px #ec6d7529;
+  border-radius: 4px;
+  max-width: 791px;
+}
+
+.my-profile .save-time h1 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 19px;
+}
+
+.my-profile .save-time p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin-bottom: 41px;
+  color: #777777;
+}
+
+.my-profile .save-time a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 2px solid #ec6d75;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ec6d75;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile .save-time h1 {
+    font: normal normal bold 22px/28px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .my-profile .save-time p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .save-time p br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .my-profile .save-time {
+    text-align: center;
+  }
+  .my-profile .save-time a {
+    margin: 0 auto;
+  }
+}
+
+.my-profile .complete-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.my-profile .complete-address .all-inputs.get-street input {
+  width: 249px;
+}
+
+.my-profile .complete-address .all-inputs.get-postal-code input {
+  width: 88px;
+}
+
+.my-profile .complete-address .all-inputs.get-city input {
+  width: 88px;
+}
+
+.my-profile .complete-address .all-inputs.get-city input::-webkit-input-placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs.get-city input:-ms-input-placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs.get-city input::-ms-input-placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs.get-city input::placeholder {
+  font: normal normal bold 18px/23px "Quicksand";
+  opacity: 1;
+}
+
+.my-profile .complete-address .all-inputs {
+  margin-right: 25px;
+}
+
+.my-profile .complete-address .all-inputs:last-of-type {
+  margin-right: 0px;
+}
+
+.my-profile .complete-address .postal-code-and-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile .complete-address {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .my-profile .complete-address .all-inputs.get-street {
+    margin-bottom: 30px;
+  }
+  .my-profile .complete-address .all-inputs.get-postal-code {
+    margin-right: 24px;
+  }
+  .my-profile .complete-address .all-inputs.get-postal-code input {
+    width: 106px;
+  }
+  .my-profile .complete-address .all-inputs.get-city input {
+    width: 118px;
+  }
+  .my-profile .complete-address .all-inputs.get-city input::-webkit-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs.get-city input:-ms-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs.get-city input::-ms-input-placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs.get-city input::placeholder {
+    font: normal normal bold 18px/23px "Quicksand";
+    opacity: 1;
+  }
+  .my-profile .complete-address .all-inputs {
+    margin-right: 0px;
+  }
+}
+
+.my-profile .ready-to-move {
+  margin-bottom: 50px;
+}
+
+.my-profile .ready-to-move p {
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+  color: #272727;
+}
+
+.my-profile .the-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.my-profile .the-checkbox:last-of-type {
+  margin-bottom: 0px;
+}
+
+.my-profile .the-checkbox input,
+.my-profile .the-checkbox label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.my-profile .the-checkbox input {
+  margin-right: 17px;
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.my-profile .the-checkbox label {
+  position: relative;
+  color: #777777;
+  cursor: pointer;
+}
+
+.my-profile .the-checkbox label::before {
+  content: "";
+  border: 1px solid #ec6d75;
+  border-radius: 3px;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.my-profile .the-checkbox input:checked + label {
+  color: #ec6d75;
+}
+
+.my-profile .the-checkbox input:checked + label::before {
+  background: #ec6d75;
+}
+
+.my-profile .the-checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 8px;
+  height: 13px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile {
+    /* Departments */
+    /* Choose Department */
+  }
+  .my-profile .all-the-depatrtments .col-lg-2 {
+    margin-bottom: 20px;
+  }
+  .my-profile .choose-departments {
+    margin-top: 14px;
+  }
+  .my-profile .choose-departments p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .choose-departments .all-the-depatrtments {
+    margin-top: 25px;
+  }
+}
+
+.my-profile .dashboard-offer-ad {
+  padding: 41px 0px 36px 33px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 40px #ec6d7529;
+          box-shadow: 0px 3px 40px #ec6d7529;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 26px;
+  width: 100%;
+  max-width: 791px;
+  margin-top: 63px;
+}
+
+.my-profile .dashboard-offer-ad h1 {
+  font: normal normal bold 48px/60px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  margin-bottom: 10px;
+}
+
+.my-profile .dashboard-offer-ad h1 span {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+}
+
+.my-profile .dashboard-offer-ad h2 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-bottom: 20px;
+}
+
+.my-profile .dashboard-offer-ad h2 span {
+  color: #ec6d75;
+}
+
+.my-profile .dashboard-offer-ad a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 23px;
+  text-align: center;
+  border: 2px solid #ec6d75;
+  display: block;
+  width: 209px;
+  background: #ec6d75;
+  border-radius: 15px;
+}
+
+.my-profile .dashboard-offer-ad .offer-top {
+  position: absolute;
+  top: -26px;
+  left: 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 73px;
+  background: #ffeaea;
+  border-radius: 24px;
+}
+
+.my-profile .dashboard-offer-ad .offer-top h5 {
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.my-profile .dashboard-offer-ad .check-points {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-profile .dashboard-offer-ad .check-points li .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-profile .dashboard-offer-ad .check-points li .points h4 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin: 0;
+  color: #272727;
+}
+
+.my-profile .dashboard-offer-ad .check-points li .points img {
+  margin-right: 30px;
+}
+
+.my-profile .dashboard-offer-ad .check-points li:first-of-type {
+  margin-bottom: 25px;
+}
+
+.my-profile .dashboard-offer-ad .check-points li:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .my-profile .dashboard-offer-ad .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .my-profile .dashboard-offer-ad .row .col-lg-6 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .my-profile .dashboard-offer-ad .row .col-lg-6:last-of-type {
+    margin-left: auto;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-profile .dashboard-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 0px;
+  }
+  .my-profile .dashboard-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .dashboard-offer-ad h2 {
+    font: normal normal bold 24px/40px "Quicksand";
+    margin-bottom: 50px;
+  }
+  .my-profile .dashboard-offer-ad .check-points li .points h4 {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .dashboard-offer-ad .check-points li .points img {
+    margin-right: 30px;
+  }
+  .my-profile .dashboard-offer-ad .check-points li:first-of-type {
+    margin-bottom: 26px;
+  }
+  .my-profile .dashboard-offer-ad .check-points li:nth-of-type(2) {
+    margin-bottom: 13px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .my-profile .dashboard-offer-ad {
+    height: 325px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .my-profile .dashboard-offer-ad h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 30px;
+  }
+  .my-profile .dashboard-offer-ad h1 span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile .dashboard-offer-ad h2 {
+    display: none;
+  }
+  .my-profile .dashboard-offer-ad .row {
+    display: -ms-grid;
+    display: grid;
+  }
+  .my-profile .dashboard-offer-ad .row .col-lg-6 {
+    position: unset;
+    width: calc(100% - 32px);
+  }
+  .my-profile .dashboard-offer-ad a {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .my-profile .dashboard-offer-ad .offer-top {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .my-profile .dashboard-offer-ad .check-points {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.my-profile .billing {
+  margin-top: 25px;
+}
+
+.my-profile .billing a {
+  display: block;
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.my-profile .billing a:last-of-type {
+  margin-bottom: 0px;
+}
+
+.my-profile .billing a.terminate {
+  color: #777777;
+}
+
+.my-profile.personal-info, .my-profile.my-activities, .my-profile.my-location {
+  margin-bottom: 65px;
+}
+
+@media only screen and (max-width: 567px) {
+  .my-profile.personal-info input, .my-profile.my-activities input {
+    display: block;
+    width: 100%;
+  }
+}
+
+.my-profile.my-activities h2 {
+  margin-bottom: 20px;
+}
+
+.my-profile.my-subscriptions {
+  margin-bottom: 100px;
+}
+
+.my-profile.my-subscriptions p {
+  font: normal normal 500 18px/23px "Quicksand";
+  color: #777777;
+}
+
+@media only screen and (max-width: 567px) {
+  .my-profile.my-subscriptions p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .my-profile.my-subscriptions p br {
+    display: none;
+  }
+}
+
+/* Public Profile Page */
+.public-profile-page {
+  /* Profile Picture */
+  /* Profile Info */
+  /* Profile Services */
+  /* Availability Section # 1 */
+  /* Availability Section # 2 */
+  /* Profile Services */
+  /* Availability Section # 1 */
+  /* Ratings */
+}
+
+.public-profile-page .heading-repeat {
+  margin: 0;
+  padding: 0;
+}
+
+.public-profile-page .profile-picture img {
+  width: 197px;
+  height: 197px;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-picture img {
+    width: 112px;
+    height: 112px;
+  }
+}
+
+.public-profile-page .profile-info {
+  margin-bottom: 63px;
+}
+
+.public-profile-page .profile-info h2 {
+  font: normal normal bold 48px/60px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin: 0;
+}
+
+.public-profile-page .profile-info span {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.public-profile-page .profile-info .availability-date {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.public-profile-page .profile-info .availability-date span {
+  color: #ec6d75;
+}
+
+.public-profile-page .profile-info .availability-place {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.public-profile-page .profile-info p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-info {
+    margin-bottom: 40px;
+  }
+  .public-profile-page .profile-info h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 5px;
+  }
+  .public-profile-page .profile-info span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .public-profile-page .profile-info p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .public-profile-page .profile-info p br {
+    display: none;
+  }
+}
+
+.public-profile-page .profile-services h3,
+.public-profile-page .availability-section-1 h3,
+.public-profile-page .availability-section-2 h3 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-services h3,
+  .public-profile-page .availability-section-1 h3,
+  .public-profile-page .availability-section-2 h3 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
+.public-profile-page .profile-services .all-of-services {
+  padding: 0;
+}
+
+.public-profile-page .profile-services .all-of-services:first-of-type {
+  margin: 63px 0px 30px 0px;
+}
+
+.public-profile-page .profile-services .all-of-services:last-of-type {
+  margin: 0px 0px 63px 0px;
+}
+
+.public-profile-page .profile-services .all-of-services .col-lg-4 {
+  padding: 0;
+}
+
+.public-profile-page .profile-services .all-of-services .col-lg-4:first-of-type {
+  margin-right: 50px;
+}
+
+.public-profile-page .profile-services .all-of-services input,
+.public-profile-page .profile-services .all-of-services label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.public-profile-page .profile-services .all-of-services input {
+  margin-right: 17px;
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check {
+  width: 100%;
+  padding: 22px 30px;
+  -webkit-box-shadow: 0px 3px 30px #91919100;
+          box-shadow: 0px 3px 30px #91919100;
+  border-radius: 15px;
+  background: #ededed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .services-details span {
+  display: block;
+  color: #272727;
+  font: normal normal 500 18px/20px "Quicksand";
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .services-details span:first-of-type {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .check-this-service {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .check-this-service label {
+  position: relative;
+  color: #777777;
+  cursor: pointer;
+}
+
+.public-profile-page .profile-services .all-of-services .service-check .check-this-service label::before {
+  content: "";
+  border: 2px solid #7777773d;
+  border-radius: 3px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.public-profile-page .profile-services .all-of-services input:checked + .service-check {
+  background: #ffeaea;
+}
+
+.public-profile-page .profile-services .all-of-services input:checked + .service-check .services-details span {
+  color: #ec6d75;
+}
+
+.public-profile-page .profile-services .all-of-services input:checked + .service-check .check-this-service label:before {
+  border: 2px solid #ec6d75;
+  background: #ec6d75;
+}
+
+.public-profile-page .profile-services .all-of-services input:checked + .service-check .check-this-service label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  width: 11px;
+  height: 20px;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-services .all-of-services {
+    padding: 0;
+  }
+  .public-profile-page .profile-services .all-of-services:first-of-type {
+    margin: 25px 0px 0px 0px;
+  }
+  .public-profile-page .profile-services .all-of-services:last-of-type {
+    margin: 0px 0px 60px 0px;
+  }
+  .public-profile-page .profile-services .all-of-services:last-of-type .col-lg-4:last-of-type {
+    margin-bottom: 0px;
+  }
+  .public-profile-page .profile-services .all-of-services .col-lg-4 {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .public-profile-page .profile-services .all-of-services .col-lg-4:first-of-type {
+    margin-right: 0px;
+  }
+}
+
+.public-profile-page .availability-section-1 {
+  margin-bottom: 100px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col {
+  padding: 0px 30px;
+  min-width: 211px;
+  border-right: 1px solid #272727;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .day {
+  margin-bottom: 22px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .day h5 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col:first-of-type {
+  padding-left: 0px;
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .the-checkbox label {
+  font: normal normal 500 18px/23px "Quicksand";
+}
+
+.public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col .the-checkbox label:after {
+  top: 5px;
+}
+
+@media only screen and (max-width: 1470px) {
+  .public-profile-page .availability-section-1 .my-availabilities-2 .my-availability-col {
+    padding: 0;
+    border: 0px;
+    min-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .availability-section-1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .public-profile-page .availability-section-2 .availability {
+    max-width: 100%;
+  }
+}
+
+.public-profile-page .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.public-profile-page .profile-reviews {
+  /* Reviews */
+}
+
+.public-profile-page .profile-reviews .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.public-profile-page .profile-reviews .intro h3 {
+  font: normal normal bold 32px/32px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page .profile-reviews .intro h3 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+  .public-profile-page .profile-reviews .intro .rating img {
+    width: 27px;
+  }
+}
+
+.public-profile-page .profile-reviews .review .rating {
+  margin-bottom: 15px;
+}
+
+.public-profile-page .profile-reviews .review h6 {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  margin-bottom: 8px;
+  color: #272727;
+}
+
+.public-profile-page .profile-reviews .review p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+.public-profile-page .profile-reviews .see-more-reviews {
+  margin: 22px 0px 100px 0px;
+}
+
+.public-profile-page .profile-reviews .see-more-reviews a {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .public-profile-page h3 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+  .public-profile-page .profile-reviews .review {
+    margin-bottom: 50px;
+  }
+  .public-profile-page .profile-reviews .review .rating img {
+    width: 24px;
+  }
+  .public-profile-page .profile-reviews .review p br {
+    display: none;
+  }
+  .public-profile-page .profile-reviews .see-more-reviews {
+    margin-top: 0px;
+  }
+}
+
+/* Go Back */
+.way-back {
+  margin-bottom: 17px;
+}
+
+.way-back a {
+  font: normal normal bold 18px/23px "Quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0px;
+  color: #777777;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.way-back a span.text {
+  text-decoration: underline;
+}
+
+.way-back a span.icon {
+  margin-right: 10px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  text-decoration: none;
+}
+
+/* Heading repeat on all sections */
+.heading-repeat {
+  margin-bottom: 45px;
+  /* Heading */
+}
+
+.heading-repeat h1 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+.heading-repeat h1 span {
+  color: #ec6d75;
+}
+
+.heading-repeat p {
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .heading-repeat p span {
+    display: block;
+  }
+}
+
+.heading-repeat a {
+  text-decoration: underline;
+  font: normal normal 500 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat h1 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
+.heading-repeat a.this-weak {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.heading-repeat a.this-weak h5 {
+  margin: 0;
+  font: normal normal 500 18px/23px "Quicksand";
+}
+
+.heading-repeat a.this-weak img {
+  margin-left: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat a.this-weak.visible-none {
+    display: none;
+  }
+}
+
+.heading-repeat .heading-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat .heading-area {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
+
+.heading-repeat .heading-area .message-inbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading-repeat .heading-area .message-inbox h2,
+.heading-repeat .heading-area .message-inbox span {
+  margin: 0;
+}
+
+.heading-repeat .heading-area .message-inbox h2 {
+  font: normal normal bold 32px/40px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat .heading-area .message-inbox h2 {
+    font: normal normal bold 22px/28px "Quicksand";
+  }
+}
+
+.heading-repeat .heading-area .message-inbox h2 span {
+  color: #ec6d75;
+}
+
+.heading-repeat .heading-area .message-inbox .all-reserved {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #ec6d75;
+  border-radius: 50%;
+  margin-left: 13px;
+}
+
+.heading-repeat .heading-area .message-inbox .all-reserved span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: normal normal 600 18px/56px "Quicksand";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.heading-repeat .heading-area a {
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: bold;
+  color: #ffffff;
+  background: #ec6d75;
+  border-radius: 15px;
+  padding: 8px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-repeat .heading-area a {
+    margin: 0;
+    margin-bottom: 50px;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .heading-repeat .heading-area a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.heading-repeat .heading-area .way-back a {
+  margin: 0;
+  padding: 0;
+  font: normal normal bold 18px/23px "Quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0px;
+  color: #777777;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+}
+
+.heading-repeat .heading-area .way-back a span.text {
+  text-decoration: underline;
+}
+
+.heading-repeat .heading-area .way-back a span.icon {
+  margin-right: 10px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  text-decoration: none;
+}
+
+/* Message Box */
+.message-box {
+  /* All Messages */
+  /* Type Messages */
+}
+
+.message-box .all-of-the-messages {
+  background: #fff;
+  max-width: 1077px;
+  -webkit-box-shadow: 0px 3px 30px #b2b2b23d;
+          box-shadow: 0px 3px 30px #b2b2b23d;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1330px) {
+  .message-box .all-of-the-messages {
+    max-width: 100%;
+  }
+}
+
+.message-box .messages {
+  height: 670px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: 50px 20px 0px 30px;
+  /* New Message Line */
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages {
+    padding: 20px 20px 0px 20px;
+    height: 588px;
+  }
+}
+
+.message-box .messages * {
+  scrollbar-width: auto;
+  scrollbar-color: #ffeaea #ffffff;
+}
+
+.message-box .messages::-webkit-scrollbar {
+  width: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+.message-box .messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.message-box .messages::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #ffeaea;
+  border-radius: 10px;
+}
+
+.message-box .messages .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.message-box .messages .message:last-of-type {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message {
+    margin-bottom: 20px;
+  }
+  .message-box .messages .message:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.message-box .messages .message img {
+  width: 77px;
+  height: 77px;
+  min-width: 77px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message img {
+    width: 47px;
+    height: 47px;
+    min-width: 47px;
+  }
+}
+
+.message-box .messages .message .text {
+  padding: 15px 23px;
+  background: #ffeaea;
+  border-radius: 15px;
+  max-width: 655px;
+}
+
+.message-box .messages .message .text p {
+  margin: 0;
+  font: normal normal normal 16px/20px "Quicksand";
+  letter-spacing: 0px;
+  color: #272727;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message .text p {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+.message-box .messages .message.received-message img {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message.received-message img {
+    margin-right: 20px;
+  }
+}
+
+.message-box .messages .message.sent-messages {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .message.sent-messages img {
+    margin-left: 20px;
+  }
+}
+
+.message-box .messages .message.sent-messages .text {
+  background: #f8f8f8;
+}
+
+.message-box .messages .message.sent-messages .text p {
+  text-align: right;
+}
+
+.message-box .messages .new-message {
+  margin: 24px 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.message-box .messages .new-message span {
+  margin: 0;
+  font: normal normal normal 15px/19px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+}
+
+.message-box .messages .new-message span.ds {
+  display: block;
+}
+
+.message-box .messages .new-message span.mb {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .messages .new-message span {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+  .message-box .messages .new-message span.ds {
+    display: none;
+  }
+  .message-box .messages .new-message span.mb {
+    display: block;
+  }
+}
+
+.message-box .messages .new-message span:before, .message-box .messages .new-message span:after {
+  background-color: #ec6d75;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.message-box .messages .new-message span:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.message-box .messages .new-message span:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.message-box .type-message {
+  padding: 0px 30px 26px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message {
+    padding: 0px 20px 20px 20px;
+  }
+}
+
+.message-box .type-message form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-top: 1px solid #777777;
+  padding-top: 17px;
+}
+
+.message-box .type-message form input,
+.message-box .type-message form button {
+  border: none;
+  outline: none;
+}
+
+.message-box .type-message form input {
+  font: normal normal normal 16px/20px "Quicksand";
+  letter-spacing: 0px;
+  text-transform: none;
+  width: 100%;
+  color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message form input {
+    font: normal normal 500 14px/18px "Quicksand";
+  }
+}
+
+.message-box .type-message form input::-webkit-input-placeholder {
+  color: #777777;
+}
+
+.message-box .type-message form input:-ms-input-placeholder {
+  color: #777777;
+}
+
+.message-box .type-message form input::-ms-input-placeholder {
+  color: #777777;
+}
+
+.message-box .type-message form input::placeholder {
+  color: #777777;
+}
+
+.message-box .type-message form .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: 0px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.message-box .type-message form .actions a {
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message form .actions a {
+    margin: 0;
+    margin-right: 13px;
+  }
+  .message-box .type-message form .actions a img {
+    width: 21px;
+    height: auto;
+  }
+}
+
+.message-box .type-message form .actions button {
+  background: unset;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .message-box .type-message form .actions button img {
+    width: 24px;
+    height: auto;
+  }
+}
+
+.inputs {
+  margin-bottom: 30px;
+}
+
+.inputs:last-of-type {
+  margin-bottom: 0px;
+}
+
+label {
+  display: block;
+  margin: 0;
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+input {
+  width: 378px;
+  border-bottom: 2px solid #ec6d75;
+  font: normal normal 500 18px/23px "Quicksand";
+  padding-bottom: 6px;
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input:-ms-input-placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input::-ms-input-placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input::placeholder {
+  color: #ec6d75;
+  opacity: 0.55;
+}
+
+input[type="file"] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.choose-picture {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal 500 18px/23px "Quicksand";
+  text-decoration: underline;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.choose-picture img {
+  margin-left: 13px;
+}
+
+.choose-picture input {
+  display: none;
+}
+
+/* Service */
+.service .add-picture {
+  margin-bottom: 40px;
+}
+
+.service .add-picture p {
+  margin: 0;
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.service .pictures .row .col-md-4 {
+  margin-bottom: 30px;
+}
+
+.service .pictures .choosed {
+  position: relative;
+}
+
+.service .pictures .choosed img {
+  width: 100%;
+}
+
+.service .pictures .choosed .delete-image {
+  top: -18px;
+  right: -18px;
+}
+
+.service .pictures .choosed .delete-image img {
+  position: absolute;
+  width: unset;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.service .delete-image,
+.service .add-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  background: #ec6d75;
+}
+
+.service .delete-image span,
+.service .add-image span {
+  position: absolute;
+  display: block;
+  width: unset;
+  margin: 0;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: normal normal bold 32px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #e6e6e6;
+}
+
+.service .add-more-pictures {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.service .center-content {
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.service .center-content .add-image {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 7.5px;
+}
+
+.service .center-content p {
+  font: normal normal 600 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+
+.service .cancel-update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0px;
+}
+
+.service .cancel-update button {
+  text-decoration: underline;
+  font: normal normal bold 18px/23px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  display: block;
+  width: 200px;
+  padding: 8px 26px;
+  border: 2px solid #ec6d75;
+  border-radius: 15px;
+  background: transparent;
+}
+
+.service .cancel-update button.update {
+  margin-left: 20px;
+  background: #ec6d75;
+  color: #fff;
+}
+
+@media only screen and (max-width: 576px) {
+  .service .cancel-update {
+    display: block;
+  }
+  .service .cancel-update button {
+    width: 100%;
+  }
+  .service .cancel-update button.update {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+/* Setting up the desktop layout according to it's width */
+@media only screen and (max-width: 1700px) {
+  header .navbar {
+    max-width: 1440px;
+  }
+  .dashboard .container-fluid {
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  header .navbar {
+    max-width: 1300px;
+  }
+  .dashboard .container-fluid {
+    max-width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  header .navbar {
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .dashboard .container-fluid {
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+/* Custom Slick Arrows */
+.slick-prev,
+.slick-next {
+  border: none;
+  outline: none;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: #68c8c7;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 1330px) {
+  .slick-prev,
+  .slick-next {
+    top: -40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    top: -30px;
+  }
+}
+
+.slick-prev {
+  left: -56px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin-top: -13px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .slick-prev {
+    left: 0;
+  }
+}
+
+.slick-next {
+  right: -56px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .slick-next {
+    right: 0;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "➜";
+  color: #fff;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 14px;
+  }
+}
+
+.slick-active:nth-child(5n) li:first-of-type {
+  border-top-right-radius: 18px;
+}
+
+@media only screen and (max-width: 567px) {
+  .slick-active:nth-child(2n) li:first-of-type {
+    border-top-right-radius: 18px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Services Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+@media only screen and (max-width: 768px) {
+  .my-services-page .dashboard {
+    padding: 40px 0px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Service Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+@media only screen and (max-width: 768px) {
+  .my-service-page .heading-repeat .heading-area .message-inbox h2 {
+    margin-bottom: 30px;
+  }
+  .my-service-page input {
+    width: 100%;
+  }
+  .my-service-page .dashboard {
+    padding-bottom: 40px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> My Peyments Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-payments-page .way-back {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-payments-page .heading-repeat .heading-area a {
+    display: none;
+  }
+  .my-payments-page .way-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Profile Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.profile-page .heading-repeat .heading-area {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-page .heading-repeat .heading-area .message-inbox h2 {
+  font: normal normal bold 48px/60px "Quicksand";
+}
+
+.profile-page .way-back {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-page .heading-repeat {
+    margin-bottom: 20px;
+  }
+  .profile-page .heading-repeat .heading-area a {
+    display: none;
+  }
+  .profile-page .heading-repeat .heading-area .message-inbox h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .profile-page .heading-repeat .heading-area .message-inbox h2 span {
+    display: block;
+  }
+  .profile-page .way-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Images Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-images-page .way-back {
+  display: none;
+}
+
+.my-images-page .heading-repeat .heading-area .message-inbox h2 span {
+  color: #ec6d75;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-images-page .way-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .my-images-page .heading-repeat .heading-area a {
+    display: none;
+  }
+  .my-images-page .heading-repeat .heading-area .message-inbox h2 {
+    font: normal normal bold 32px/40px "Quicksand";
+    margin-bottom: 10px;
+  }
+  .my-images-page .dashboard {
+    padding-bottom: 40px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Messages Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.messages-page .my-messages {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .messages-page .dashboard {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .messages-page .heading-repeat {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Messages Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+@media only screen and (max-width: 768px) {
+  .my-messages-page .heading-repeat {
+    margin-bottom: 30px !important;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> My Availability Page <<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-availability-page .heading-repeat {
+  margin-bottom: 45px;
+}
+
+.my-availability-page .availability {
+  margin-bottom: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-availability-page .availability {
+    margin-bottom: 0px;
+  }
+}
+
+.my-availability-page .dashboard .reservation {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-availability-page .dashboard {
+    padding: 40px 0px;
+  }
+  .my-availability-page .dashboard .reservation {
+    display: none;
+  }
+}
+
+.my-availability-page .registration {
+  margin-top: 40px;
+}
+
+.my-availability-page .registration a {
+  font-size: 18px;
+  text-decoration: underline;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #ec6d75;
+  border-radius: 15px;
+  padding: 8px 25px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>> My Reservation Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+.my-reservation-page .dashboard .reservation {
+  margin-bottom: 0px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content=" width=device-width, initial-scale=1" name="viewport" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <!-- >>> Title & Favicon <<< -->
+    <title>Mes Réservations - Dashboard</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+
+    <!-- >>> meta Description <<< -->
+    <meta name="description" content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids etc." />
+    <!-- >>>> meta Keywords <<<< -->
+    <meta name="keywords" content="Ma Coiffeuse Afro - Réservez un Coiffeur pour une coiffure Afro à domicile 7j/7 à Paris : Tresse africaine, box braids, crochet braids etc." />
+
+    <!-- >>> Bootstrap v3.3.7 | Front End Framework <<< -->
+    <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css" />
+
+    <!-- >>> Custom CSS <<< -->
+    <link rel="stylesheet" href="./sass/app.css" />
+    <link rel="stylesheet" href="./sass/dashboard.css" />
+  </head>
+  <body class="my-reservation-page">
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
+    <header>
+      <div class="mini-header">
+        <p>NOUVEAU ! MCA FONCTIONNE PAR ABONNEMENT ➜</p>
+      </div>
+      <div class="navbar slide-right">
+        <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <div id="menu" class="slide-right">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="header-links">
+          <li>
+            <a href="./dashboard.html"><span>TABLEAU DE BORD</span></a>
+          </li>
+          <li>
+            <a href="my-reservation.html" class="active">
+              <span>
+                MES RÉSERVATIONS
+                <div class="counter -reservations">
+                  <span>1</span>
+                </div>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="my-availabilities.html">
+              <span>
+                MES DISPONIBILITÉS
+                <div class="counter -availability">
+                  <span>!</span>
+                </div>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="my-services.html"><span>MES PRESTATIONS</span></a>
+          </li>
+        </ul>
+        <ul class="header-profile">
+          <li>
+            <img src="./images/profile-60.png" alt="" />
+          </li>
+          <li>
+            <a href="./messages.html" class="show-messages">
+              <img src="./images/message.png" alt="message" />
+              <div class="all-messages-count">
+                <span>1</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
+    <div class="dashboard">
+      <div class="container-fluid">
+        <div class="row except-my-images">
+          <div class="col-lg-3">
+            <!-- Left Menu -->
+            <div class="dashboard-menu">
+              <!-- Profile Options -->
+              <ul class="dashboard-menu-options all-my-options">
+                <li>
+                  <a href="#">
+                    <img src="./images/dashboard.png" alt="dashboard" />
+                    <h5><b>Tableau de bord</b></h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/profile.png" alt="profile" />
+                    <h5>Mon profil</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/cash.png" alt="paiements" />
+                    <h5>Mes paiements</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="./my-images.html">
+                    <img src="./images/image.png" alt="photos" />
+                    <h5>Mes photos</h5>
+                  </a>
+                </li>
+              </ul>
+              <!-- Profile Stats -->
+              <ul class="dashboard-menu-options all-my-stats">
+                <li>
+                  <a href="#">
+                    <h5>CETTE SEMAINE</h5>
+                    <img src="./images/cheveron-d-b.png" alt="CETTE SEMAINE" />
+                  </a>
+                </li>
+                <li>
+                  <div class="profile-stats Views">
+                    <span>289</span>
+                  </div>
+                  <h5>Vues</h5>
+                </li>
+                <li>
+                  <div class="profile-stats Views">
+                    <span>12</span>
+                  </div>
+                  <h5>Mon profil</h5>
+                </li>
+                <li>
+                  <div class="profile-stats Views">
+                    <span>4</span>
+                  </div>
+                  <h5>Mes paiements</h5>
+                </li>
+              </ul>
+              <!-- Profile Completion -->
+              <ul class="dashboard-menu-options profile-completion">
+                <h2>Complétion du profil</h2>
+                <div class="progress" data-max="100%">
+                  <div class="progress-so-far" data-value="40%"></div>
+                </div>
+                <form action="">
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="add-picture" name="add-picture" checked />
+                      <label for="add-picture">Add profile picture</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox2" name="checkbox2" checked />
+                      <label for="checkbox2">????</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox3" name="checkbox3" />
+                      <label for="checkbox3">????</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox4" name="checkbox4" />
+                      <label for="checkbox4">????</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="the-checkbox">
+                      <input type="checkbox" id="checkbox5" name="checkbox5" />
+                      <label for="checkbox5">????</label>
+                    </div>
+                  </li>
+                </form>
+              </ul>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="col-lg-9">
+            <div class="main-content">
+              <div class="heading-repeat">
+                <div class="heading-area">
+                  <a href="#">VOIR MON PROFIL PUBLIC</a>
+                  <h1>Réservation à venir</h1>
+                </div>
+                <a href="#" class="this-weak">
+                  <h5>CETTE SEMAINE</h5>
+                  <img src="./images/cheveron-d-b.png" alt="CETTE SEMAINE" />
+                </a>
+              </div>
+              <!-- Reservation -->
+              <div class="reservation">
+                <!-- About Reserved -->
+                <div class="reservation-reserved-by">
+                  <ul class="th">
+                    <li>Profil</li>
+                    <li>Prénom</li>
+                    <li>Téléphone</li>
+                    <li>Prestation</li>
+                    <li>État</li>
+                    <li>Prix</li>
+                  </ul>
+                  <!-- All Reservation -->
+                  <div class="all-reservation">
+                    <!-- Reserved By # 1  -->
+                    <div class="reserved-by">
+                      <!-- Reserved When  -->
+                      <div class="the-date">
+                        <img src="./images/date-time.png" alt="date-time" />
+                        <h5>Date : Vendredi 22 Avril - 15h</h5>
+                      </div>
+                      <!-- By -->
+                      <ul class="by">
+                        <li>
+                          <a href="#"><img src="./images/by-1.png" alt="" /></a>
+                        </li>
+                        <li>Prisci</li>
+                        <li content="Tél.">06 02 30 21 22</li>
+                        <li content="Obj.">Cornrows ponytail</li>
+                        <li content="État">
+                          <b>Payé</b> <br />
+                          Confirmé
+                        </li>
+                        <li content="Prix">90€</li>
+                        <li>
+                          <a href="#" class="show-messages">
+                            <img src="./images/message.png" alt="message" />
+                            <div class="all-messages-count">
+                              <span>1</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Reserved By # 2  -->
+                    <div class="reserved-by">
+                      <!-- Reserved When  -->
+                      <div class="the-date">
+                        <img src="./images/date-time.png" alt="date-time" />
+                        <h5>Date : Vendredi 22 Avril - 15h</h5>
+                      </div>
+                      <!-- By -->
+                      <ul class="by">
+                        <li>
+                          <a href="#"><img src="./images/by-2.png" alt="" /></a>
+                        </li>
+                        <li>Océane</li>
+                        <li></li>
+                        <li content="Obj.">Vanilles effet mi-long</li>
+                        <li content="État">
+                          <b>Payé</b> <br />
+                          Confirmé
+                        </li>
+                        <li content="Prix">67€</li>
+                        <li>
+                          <a href="#" class="show-messages">
+                            <img src="./images/message.png" alt="message" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Reserved By # 3 -->
+                    <div class="reserved-by">
+                      <!-- Reserved When  -->
+                      <div class="the-date">
+                        <img src="./images/date-time.png" alt="date-time" />
+                        <h5>Date : Vendredi 22 Avril - 15h</h5>
+                      </div>
+                      <!-- By -->
+                      <ul class="by">
+                        <li>
+                          <a href="#"><img src="./images/by-3.png" alt="" /></a>
+                        </li>
+                        <li>Prisci</li>
+                        <li content="Tél.">06 02 30 21 22</li>
+                        <li content="Obj.">Cornrows ponytail</li>
+                        <li content="État">
+                          <b>Payé</b> <br />
+                          Confirmé
+                        </li>
+                        <li content="Prix">90€</li>
+                        <li>
+                          <a href="#" class="show-messages">
+                            <img src="./images/message.png" alt="message" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Reserved By # 4  -->
+                    <div class="reserved-by">
+                      <!-- Reserved When  -->
+                      <div class="the-date">
+                        <img src="./images/date-time.png" alt="date-time" />
+                        <h5>Date : Vendredi 22 Avril - 15h</h5>
+                      </div>
+                      <!-- By -->
+                      <ul class="by">
+                        <li>
+                          <a href="#"><img src="./images/by-4.png" alt="" /></a>
+                        </li>
+                        <li>Océane</li>
+                        <li></li>
+                        <li content="Obj.">Vanilles effet mi-long</li>
+                        <li content="État">
+                          <b>Payé</b> <br />
+                          Confirmé
+                        </li>
+                        <li content="Prix">67€</li>
+                        <li>
+                          <a href="#" class="show-messages">
+                            <img src="./images/message.png" alt="message" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Reserved By # 5 -->
+                    <div class="reserved-by">
+                      <!-- Reserved When  -->
+                      <div class="the-date">
+                        <img src="./images/date-time.png" alt="date-time" />
+                        <h5>Date : Vendredi 22 Avril - 15h</h5>
+                      </div>
+                      <!-- By -->
+                      <ul class="by">
+                        <li>
+                          <a href="#"><img src="./images/by-1.png" alt="" /></a>
+                        </li>
+                        <li>Océane</li>
+                        <li></li>
+                        <li content="Obj.">Vanilles effet mi-long</li>
+                        <li content="État">
+                          <b>Payé</b> <br />
+                          Confirmé
+                        </li>
+                        <li content="Prix">67€</li>
+                        <li>
+                          <a href="#" class="show-messages">
+                            <img src="./images/message.png" alt="message" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <h6 class="footer-list-th">Ma Coiffeuse Afro</h6>
+            <p>Rendre la beauté accessible à toutes.</p>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <h6 class="footer-list-th">L’application</h6>
+            <!-- Where Find our App -->
+            <ul class="the-icons the-app">
+              <li>
+                <a href="#">
+                  <img src="./images/appstore.png" alt="playstore" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/playstore.png" alt="playstore" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <h6 class="footer-list-th">Liens utiles</h6>
+            <ul class="the-links">
+              <li><a href="#">Qui sommes-nous ?</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">CGU</a></li>
+              <li><a href="#">On recrute</a></li>
+              <li><a href="#">Inspirations coiffure afro</a></li>
+              <li><a href="#">Coiffeur afro à Paris</a></li>
+              <li><a href="#">Salon de coiffure afro à Paris</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <h6 class="footer-list-th">La communauté</h6>
+            <!-- Social Media Icons -->
+            <ul class="the-icons social-media">
+              <li>
+                <a href="#">
+                  <img src="./images/instagram.png" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/facebook.png" alt="facebook" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< -->
+
+    <!-- >>> JQUERY <<< -->
+    <script src="./jquery/jquery.min.js"></script>
+
+    <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
+    <script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- >>> CUSTOM JS <<< -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

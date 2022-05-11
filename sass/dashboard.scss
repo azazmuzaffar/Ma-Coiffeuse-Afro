@@ -1,0 +1,3517 @@
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+/* Table of Contents */
+/*===============================================
+1. Header
+2. Hero Banner
+3. Scroll Down
+6. Why Coiffeuse Afro
+7. Mobile Image (Mobile Only)
+8. How it Works
+9. Unique Offers
+10. Contact Us 
+11. Footer
+12. Steps -> Step 1, 2, 3, 4
+=================================================*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Common CSS <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+* {
+  min-height: 0;
+  min-width: 0;
+}
+.slick-track {
+  display: flex !important;
+}
+.slick-slide {
+  height: auto;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> Notifications <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.any-notification {
+  background: #ededed;
+  h5 {
+    font: normal normal bold 12px/15px "Quicksand";
+    display: block;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0px;
+    color: #272727;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+header {
+  .navbar {
+    padding: 0;
+    max-width: 1700px;
+    padding: 0 15px;
+    ul {
+      li {
+        a {
+          font: normal normal 500 18px/23px "Quicksand";
+          text-decoration: none;
+          letter-spacing: 0px;
+          color: #272727;
+          text-transform: uppercase;
+          transition: 0.3s;
+          opacity: 1;
+          &:hover {
+            color: #ec6d75;
+            transition: 0.3s;
+          }
+        }
+        margin-right: 50px;
+        &:last-of-type {
+          margin-right: unset;
+          margin-left: unset;
+          a {
+            font: normal normal 500 18px/23px "Quicksand";
+            display: unset;
+            text-align: unset;
+            border: unset;
+            border-radius: unset;
+            padding: unset;
+            color: unset;
+            width: unset;
+            &:hover {
+              box-shadow: unset;
+            }
+          }
+        }
+      }
+      &.header-links {
+        margin-left: auto;
+        margin-right: 0;
+        li {
+          margin: 0;
+          a {
+            height: 84px;
+            padding: 30px 34px;
+            display: block;
+            span {
+              position: relative;
+              .counter {
+                width: 22px;
+                height: 22px;
+                background: #272727;
+                border-radius: 50%;
+                position: absolute;
+                transition: 0.3s;
+                top: -20px;
+                right: -20px;
+                span {
+                  color: #fff;
+                  font: normal normal 600 18px/56px "Quicksand";
+                  letter-spacing: 0px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+              }
+            }
+            &.active {
+              background: #ffeaea;
+              color: #ec6d75;
+              font: normal normal bold 18px/23px "Quicksand";
+              border-bottom: 4px solid #ec6d75;
+              span {
+                .counter {
+                  background: #ec6d75;
+                  transition: 0.3s;
+                }
+              }
+            }
+            &:hover {
+              background: #ffeaea;
+              color: #ec6d75;
+              font: normal normal bold 18px/23px "Quicksand";
+              border-bottom: 4px solid #ec6d75;
+              span {
+                .counter {
+                  background: #ec6d75;
+                  transition: 0.3s;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.header-profile {
+        margin-left: 43px;
+        li {
+          margin-right: 43px;
+          &:last-of-type {
+            margin-right: 0px;
+          }
+          svg,
+          img {
+            cursor: pointer;
+          }
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          .show-messages {
+            position: relative;
+            .all-messages-count {
+              width: 22px;
+              height: 22px;
+              background: #ec6d75;
+              border-radius: 50%;
+              position: absolute;
+              top: -12px;
+              right: -12px;
+              span {
+                color: #fff;
+                font: normal normal 600 18px/56px "Quicksand";
+                letter-spacing: 0px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+            img {
+              width: 27px;
+              height: 27px;
+            }
+            @media only screen and (max-width: 1025px) {
+              img {
+                display: block;
+                margin-top: 10px;
+                width: 24px;
+                height: 24px;
+                margin: 0;
+              }
+              .all-messages-count {
+                width: 19px;
+                height: 19px;
+                right: -11px;
+                top: -9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1330px) and (min-width: 1200px) {
+  header {
+    .navbar {
+      ul {
+        li {
+          a {
+            font: normal normal 500 16px/20px "Quicksand";
+          }
+        }
+        &.header-links {
+          li {
+            a {
+              padding: 34px 24px;
+              &:hover,
+              &.active {
+                font: normal normal bold 16px/20px "Quicksand";
+              }
+            }
+            &:last-of-type {
+              a {
+                font: normal normal 500 16px/20px "Quicksand";
+                &:hover {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+        &.header-profile {
+          margin-left: 24px;
+          li {
+            margin-right: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  header {
+    .navbar {
+      ul {
+        li {
+          a {
+            font: normal normal 500 14px/16px "Quicksand";
+          }
+        }
+        &.header-links {
+          li {
+            a {
+              padding: 34px 20px;
+              &:hover,
+              &.active {
+                font: normal normal bold 14px/16px "Quicksand";
+              }
+            }
+            &:last-of-type {
+              a {
+                font: normal normal 500 14px/16px "Quicksand";
+                &:hover {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+        &.header-profile {
+          margin-left: 20px;
+          li {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  header {
+    .navbar {
+      a {
+        img {
+          display: none;
+        }
+      }
+      #menu {
+        margin-right: auto;
+        margin-left: 0;
+      }
+      ul {
+        &.header-links {
+          padding: 0px;
+          li {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 0px;
+            a,
+            a.active,
+            a:hover {
+              margin: 0;
+              padding: 0;
+              height: fit-content;
+              border: 0px;
+              background: transparent;
+              padding: 20px 36px;
+            }
+            a.active,
+            a:hover {
+              background: #ffeaea;
+              border-bottom: 0.5px solid #ec6d75;
+            }
+            a {
+              text-align: left;
+              line-height: 18px;
+              display: block;
+              font-weight: 500;
+              white-space: nowrap;
+              span {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .counter {
+                  position: relative;
+                  margin-left: auto;
+                  margin-right: 22px;
+                  top: unset;
+                  left: unset;
+                  span {
+                    display: block;
+                    width: unset;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.header-profile {
+          display: flex;
+          align-items: center;
+          flex-direction: row-reverse;
+          li {
+            margin: 0;
+            img {
+              margin-left: 43px;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          a {
+            opacity: 0;
+            display: block;
+            &.show-messages {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      &.open {
+        box-shadow: 0 8px 5px rgba(57, 63, 72, 0.028);
+        ul {
+          li {
+            a {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    .navbar {
+      ul:first-of-type {
+        top: 87px;
+      }
+      ul {
+        &.header-profile {
+          display: flex;
+          align-items: center;
+          flex-direction: row-reverse;
+          li {
+            margin: 0;
+            img {
+              width: auto;
+              height: 46px;
+              margin-left: 33px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>> Dashboard <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.dashboard {
+  padding: 80px 0px 138px 0px;
+  @media only screen and (max-width: 768px) {
+    padding: 40px 0px 100px 0px;
+  }
+  overflow: hidden;
+  .container-fluid {
+    max-width: 1695px;
+    @media only screen and (max-width: 1330px) {
+      .row.except-my-images {
+        display: grid;
+        .col-lg-3,
+        .col-lg-9 {
+          width: 100%;
+        }
+      }
+    }
+    /* Main Content (Right Column of Dashboard) */
+    .main-content {
+      padding-left: 20px;
+      @media only screen and (max-width: 1330px) {
+        padding-left: 0px;
+      }
+      /* See All */
+      .see-all {
+        display: unset;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 35px;
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #ec6d75;
+        background: transparent;
+        text-decoration: underline;
+        img {
+          margin-left: 15px;
+          margin-top: -10px;
+        }
+        @media only screen and (max-width: 768px) {
+          display: block;
+          &.hide-mb {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Left Menu */
+.dashboard-menu {
+  /* Profile Options */
+  .dashboard-menu-options {
+    padding: 35px 40px;
+    box-shadow: 0px 3px 30px #b2b2b23d;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 50px;
+    background: #fff;
+    z-index: 999;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    h2 {
+      font: normal normal bold 18px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    .progress {
+      position: relative;
+      width: 100%;
+      margin: 27px 0px;
+      height: 28px;
+      background: #ededed;
+      border-radius: 10px;
+      &::before {
+        display: block;
+        width: 100%;
+        content: attr(data-max);
+        text-align: right;
+        padding: 0px 11px;
+        color: #777777;
+        font: normal normal 500 14px/28px "Quicksand";
+        letter-spacing: 0px;
+      }
+      .progress-so-far {
+        content: attr(data-value);
+        display: block;
+        border-radius: 10px;
+        padding: 0px 11px;
+        position: absolute;
+        height: 28px;
+        background: #68c8c7;
+        top: 0;
+        left: 0;
+        &::before {
+          display: block;
+          width: unset;
+          content: attr(data-value);
+          text-align: left;
+          color: #777777;
+          font: normal normal bold 18px/28px "Quicksand";
+          color: #fff;
+          letter-spacing: 0px;
+        }
+      }
+    }
+    /* Checkbox */
+    .the-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      input,
+      label {
+        width: fit-content;
+      }
+      input {
+        margin-right: 17px;
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      label {
+        position: relative;
+        color: #777777;
+        cursor: pointer;
+        &::before {
+          content: "";
+          border: 1px solid #68c8c7;
+          border-radius: 3px;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 15px;
+        }
+      }
+      input:checked + label::before {
+        background: #68c8c7;
+      }
+      input:checked + label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        width: 6px;
+        height: 10px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+    li {
+      margin-bottom: 28px;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: unset;
+        transition: 0.3s;
+        img,
+        .profile-stats {
+          margin-right: 17px;
+        }
+        h5 {
+          transition: 0.3s;
+        }
+        &:hover {
+          h5 {
+            color: #ec6d75;
+            transition: 0.3s;
+          }
+        }
+      }
+      h5 {
+        font: normal normal 500 18px/18px "Quicksand";
+        letter-spacing: 0px;
+        color: #272727;
+        margin: 0;
+      }
+      &:first-of-type {
+        a {
+          &:hover {
+            h5 {
+              color: #272727;
+            }
+          }
+        }
+      }
+    }
+    form {
+      li {
+        margin-bottom: 20px;
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      &.all-my-options {
+        position: fixed;
+        top: 87px;
+        text-align: right;
+        display: none;
+        right: 35px;
+        li {
+          a {
+            text-align: right;
+            flex-direction: row-reverse;
+            img,
+            .profile-stats {
+              margin-right: 0px;
+              margin-left: 17px;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      &.profile-completion {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      &.all-my-options {
+        padding: 28px 36px 28px 50px;
+      }
+      li {
+        margin-bottom: 20px;
+        &:first-of-type {
+          margin-bottom: 18px;
+        }
+        a {
+          h5 {
+            font: normal normal 500 14px/18px "Quicksand";
+          }
+        }
+      }
+    }
+    /* My Stats */
+    &.all-my-stats {
+      @media only screen and (max-width: 1330px) {
+        display: none;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        h5 {
+          color: #272727;
+        }
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+        &:first-of-type {
+          margin-bottom: 40px;
+          a {
+            text-decoration: underline;
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #272727;
+            text-transform: uppercase;
+            img {
+              margin-left: 11px;
+            }
+          }
+        }
+        .profile-stats {
+          padding: 2px;
+          background: #ededed;
+          text-align: center;
+          width: 48px;
+          border-radius: 15px;
+          margin-right: 17px;
+          span {
+            font: normal normal bold 18px/18px "Quicksand";
+            letter-spacing: 0px;
+            margin: 0;
+            color: #272727;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Dashboard Banner */
+.dashboard-banner {
+  margin-bottom: 100px;
+  @media only screen and (max-width: 1470px) {
+    .row {
+      .col-lg-8,
+      .col-lg-4 {
+        width: 100%;
+        .one-last-step {
+          width: 100%;
+        }
+      }
+      .col-lg-4 {
+        display: none;
+        &.visible-sm {
+          display: block !important;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 97px;
+    .col-lg-4 {
+      display: none;
+      &.visible-sm {
+        display: block !important;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  @media only screen and (max-width: 567px) {
+    .col-lg-4 {
+      &.visible-sm {
+        .edit-profile {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  /* Main Banner Ad */
+  .one-last-step {
+    padding: 30px 33px;
+    background: #fff;
+    box-shadow: 0px 3px 40px #ec6d7529;
+    border-radius: 4px;
+    h1 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin-bottom: 19px;
+    }
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      margin-bottom: 41px;
+      color: #777777;
+    }
+    a {
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border: 2px solid #ec6d75;
+      display: block;
+      width: fit-content;
+      background: #ec6d75;
+      border-radius: 15px;
+    }
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font: normal normal bold 22px/28px "Quicksand";
+        margin-bottom: 10px;
+      }
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+        br {
+          display: none;
+        }
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      text-align: center;
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+  /* Offer Ad */
+  .dashboard-offer-ad {
+    padding: 41px 0px 36px 33px;
+    background: #fff;
+    box-shadow: 0px 3px 40px #ec6d7529;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 26px;
+    h1 {
+      font: normal normal bold 48px/60px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      span {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+      }
+      margin-bottom: 10px;
+    }
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin-bottom: 20px;
+      span {
+        color: #ec6d75;
+      }
+    }
+    a {
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 8px 23px;
+      text-align: center;
+      border: 2px solid #ec6d75;
+      display: block;
+      width: 209px;
+      background: #ec6d75;
+      border-radius: 15px;
+    }
+    .offer-top {
+      position: absolute;
+      top: -26px;
+      left: 36px;
+      width: fit-content;
+      padding: 15px 73px;
+      background: #ffeaea;
+      border-radius: 24px;
+      h5 {
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #ec6d75;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+    .check-points {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        .points {
+          display: flex;
+          align-items: center;
+          h4 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            margin: 0;
+            color: #272727;
+          }
+          img {
+            margin-right: 30px;
+          }
+        }
+        &:first-of-type {
+          margin-bottom: 25px;
+        }
+        &:nth-of-type(2) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      .row {
+        display: flex;
+        .col-lg-6 {
+          width: fit-content;
+          &:last-of-type {
+            margin-left: auto;
+            margin-right: 10%;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 0px;
+        span {
+          font: normal normal 500 14px/18px "Quicksand";
+        }
+      }
+      h2 {
+        font: normal normal bold 24px/40px "Quicksand";
+        margin-bottom: 50px;
+      }
+      .check-points {
+        li {
+          .points {
+            h4 {
+              font: normal normal 500 14px/18px "Quicksand";
+            }
+            img {
+              margin-right: 30px;
+            }
+          }
+          &:first-of-type {
+            margin-bottom: 26px;
+          }
+          &:nth-of-type(2) {
+            margin-bottom: 13px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 567px) {
+      height: 325px;
+      text-align: center;
+      padding-top: 50px;
+      h1 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 30px;
+        span {
+          font: normal normal 500 14px/18px "Quicksand";
+        }
+      }
+      h2 {
+        display: none;
+      }
+      .row {
+        display: grid;
+        .col-lg-6 {
+          position: unset;
+          width: calc(100% - 32px);
+        }
+      }
+      a {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .offer-top {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .check-points {
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+  }
+  .edit-profile {
+    text-decoration: underline;
+    font: normal normal bold 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    margin: 0 auto;
+    border: 2px solid #ec6d75;
+    display: block;
+    width: fit-content;
+    background: #ec6d75;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: 0;
+    @media only screen and (max-width: 1470px) {
+      margin: 0;
+    }
+  }
+}
+
+/* Availability */
+.availability {
+  margin-bottom: 100px;
+  width: 100%;
+  @media only screen and (max-width: 1330px) {
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 75px;
+  }
+
+  .availability-hint {
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    .hint {
+      display: flex;
+      align-items: center;
+      padding: 4px 12px 4px 6px;
+      background: #68c8c625;
+      border-radius: 15px;
+      width: fit-content;
+      margin: 20px 0px 45px 0px;
+      .circle {
+        width: 16px;
+        height: 16px;
+        margin-right: 11px;
+        background: #68c8c7;
+        border-radius: 50%;
+      }
+      span {
+        font: normal normal normal 16px/20px "Quicksand";
+        letter-spacing: 0px;
+        color: #68c8c7;
+        margin: 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .availability-hint {
+      h2 {
+        font: normal normal bold 22px/28px "Quicksand";
+      }
+    }
+  }
+  /* Timing Slider */
+  .timings {
+    max-width: 968px;
+    border-radius: 15px;
+    margin: 0px 56px;
+    box-shadow: 0px -4px 7px #f1f1f1;
+    @media only screen and (max-width: 1330px) {
+      margin: 0;
+      margin-top: 88px;
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 1330px) {
+      margin-top: 80px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: block;
+      text-align: center;
+      &:first-of-type {
+        li {
+          &:first-of-type {
+            border-top-left-radius: 15px;
+            background: #68c8c7;
+            span {
+              color: #fff;
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        li {
+          &:first-of-type {
+            border-top-right-radius: 15px;
+          }
+        }
+      }
+      li {
+        padding: 9px 0px;
+        border-right: 1px solid #777777;
+        &:first-of-type {
+          background: #ededed;
+          padding: 8px 8px 9px 8px;
+          margin-bottom: 14px;
+          border-right: 0px;
+          span {
+            &:first-of-type {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        span {
+          display: block;
+          font: normal normal 500 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #272727;
+          margin: 0;
+        }
+        input {
+          display: none;
+        }
+        @media only screen and (max-width: 768px) {
+          padding: 8px 0px 0px 0px;
+          &:first-of-type {
+            font-size: 14px;
+            padding: 10px 0px;
+            span {
+              font: normal normal 500 14px/18px "Quicksand";
+              &:first-of-type {
+                margin-bottom: 0px;
+              }
+            }
+          }
+        }
+        .time-period {
+          display: block;
+          width: fit-content;
+          cursor: pointer;
+          margin: 0 auto;
+          span {
+            font: normal normal bold 18px/23px "Quicksand";
+            padding: 13px 20px;
+            background: #ededed;
+            border-radius: 10px;
+            text-align: center;
+            width: 141px;
+          }
+          @media only screen and (max-width: 768px) {
+            span {
+              padding: 13px 18px;
+              font: normal normal bold 14px/18px "Quicksand";
+              width: fit-content;
+            }
+          }
+        }
+      }
+      li {
+        &:nth-of-type(2) {
+          padding-top: 19px;
+        }
+      }
+      &:last-of-type {
+        li {
+          border-right: 0px;
+        }
+      }
+    }
+    table {
+      width: fit-content;
+      tbody {
+        tr {
+          th {
+            width: 187px;
+            padding: 8px 10px;
+            background: #ededed;
+            text-align: center;
+            &:first-of-type {
+              border-top-left-radius: 15px;
+            }
+            &:last-of-type {
+              border-top-right-radius: 15px;
+            }
+            span {
+              display: block;
+              font: normal normal 500 18px/23px "Quicksand";
+              letter-spacing: 0px;
+              color: #272727;
+              margin: 0;
+              &:first-of-type {
+                margin-bottom: 10px;
+              }
+            }
+          }
+          th.today {
+            background: #68c8c7;
+            span {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Checked the available time */
+.availability .timings .slide li input:checked + label .time-period {
+  position: relative;
+  span {
+    background: #e3f5f4;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #68c8c7;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    @media only screen and (max-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+/* Reservation */
+.reservation {
+  margin-bottom: 100px;
+  @media only screen and (max-width: 1330px) {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 75px;
+  }
+  .all-reserved-reservations {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+    h2,
+    span {
+      margin: 0;
+    }
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    .all-reserved {
+      width: 28px;
+      height: 28px;
+      position: relative;
+      background: #ec6d75;
+      border-radius: 50%;
+      margin-left: 13px;
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: normal normal 600 18px/56px "Quicksand";
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      h2 {
+        font: normal normal bold 22px/28px "Quicksand";
+      }
+    }
+  }
+  .reservation-reserved-by {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      &.th {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        padding: 0px 36px;
+        @media only screen and (max-width: 1470px) {
+          display: none;
+        }
+        li {
+          width: 156px;
+          font: normal normal 500 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #707070;
+        }
+      }
+    }
+    /* All Reservation */
+    .all-reservation {
+      .reserved-by {
+        margin-bottom: 50px;
+        @media only screen and (max-width: 768px) {
+          margin-bottom: 25px;
+        }
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+        .the-date {
+          display: flex;
+          align-items: center;
+          width: 450px;
+          padding: 6px 36px 26px 36px;
+          background: #ffeaea;
+          border-top-right-radius: 15px;
+          border-top-left-radius: 15px;
+          margin-bottom: -20px;
+          img {
+            margin-right: 13px;
+          }
+          h5 {
+            font: normal normal bold 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #ec6d75;
+            margin: 0;
+          }
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+            padding: 6px 0px 26px 10px;
+            img {
+              display: none;
+            }
+            h5 {
+              font: normal normal bold 14px/18px "Quicksand";
+            }
+          }
+        }
+        .by {
+          display: flex;
+          align-items: center;
+          padding: 19px 36px 16px 36px;
+          box-shadow: 0px 3px 30px #b2b2b23d;
+          max-width: 1077px;
+          border-radius: 15px;
+          background: #fff;
+          width: fit-content;
+          li {
+            width: 156px;
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            padding-right: 20px;
+            color: #272727;
+            &:first-of-type {
+              @media only screen and (max-width: 768px) {
+                margin-bottom: 19px;
+              }
+            }
+            .show-messages {
+              position: relative;
+              img {
+                width: 27px;
+                height: 27px;
+              }
+              .all-messages-count {
+                width: 22px;
+                height: 22px;
+                background: #ec6d75;
+                border-radius: 50%;
+                position: absolute;
+                top: -12px;
+                right: -12px;
+                span {
+                  color: #fff;
+                  font: normal normal 600 18px/56px "Quicksand";
+                  letter-spacing: 0px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+              }
+            }
+            &:last-of-type {
+              width: 74px;
+            }
+          }
+          @media only screen and (max-width: 1470px) {
+            display: block;
+            position: relative;
+            width: 100%;
+            li {
+              width: 100%;
+              margin-bottom: 14px;
+              margin-left: 12px;
+              padding-left: 45px;
+              position: relative;
+              br {
+                display: none;
+              }
+              &:before {
+                content: attr(content);
+                position: absolute;
+                display: flex;
+                left: 0;
+                width: 30px;
+              }
+              &:nth-of-type(1),
+              &:nth-of-type(2),
+              &:last-of-type {
+                padding-left: 0px !important;
+              }
+              &:nth-of-type(2) {
+                font-weight: bold;
+                position: absolute;
+                top: 45px;
+                left: 136px;
+              }
+              &:last-of-type {
+                position: absolute;
+                top: 43px;
+                right: 36px;
+                width: 34px;
+              }
+            }
+          }
+          @media only screen and (max-width: 768px) {
+            padding: 17px 0px 7px 0px;
+            li {
+              font: normal normal 500 14px/18px "Quicksand";
+              a {
+                img {
+                  width: auto;
+                  height: 59px;
+                }
+              }
+              padding-left: 59px;
+              &:before {
+                color: #777777;
+                margin-left: 12px;
+              }
+              &:nth-of-type(2) {
+                top: 35px;
+                left: 76px;
+              }
+              &:last-of-type {
+                top: 33px;
+                right: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* My Messages */
+.my-messages {
+  max-width: 1077px;
+  margin-bottom: 100px;
+  @media only screen and (max-width: 1330px) {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 75px;
+  }
+  .message-inbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+    h2,
+    span {
+      margin: 0;
+    }
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    .all-reserved {
+      width: 28px;
+      height: 28px;
+      position: relative;
+      background: #ec6d75;
+      border-radius: 50%;
+      margin-left: 13px;
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: normal normal 600 18px/56px "Quicksand";
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      h2 {
+        font: normal normal bold 22px/28px "Quicksand";
+      }
+    }
+  }
+  /* All Messages */
+  .all-the-messages {
+    /* Message */
+    .the-message {
+      display: flex;
+      position: relative;
+      align-items: center;
+      text-align: left;
+      padding: 19px 56px 16px 36px;
+      box-shadow: 0px 3px 30px #b2b2b23d;
+      border-radius: 15px;
+      margin-bottom: 50px;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 25px;
+      }
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      background: #fff;
+      @media only screen and (max-width: 1470px) {
+        &.check {
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -13px;
+            right: -13px;
+            width: 26px;
+            height: 26px;
+            background: #ec6d75;
+            border-radius: 50%;
+          }
+        }
+      }
+      .message-details {
+        display: flex;
+        align-items: flex-start;
+        a {
+          margin-right: 78px;
+          @media only screen and (max-width: 1470px) {
+            margin-right: 70px;
+          }
+        }
+        .message-text {
+          h5 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #272727;
+            margin-bottom: 4px;
+          }
+          p {
+            font: normal normal normal 16px/20px "Quicksand";
+            letter-spacing: 0px;
+            color: #777777;
+            text-transform: unset;
+            @media only screen and (max-width: 1470px) {
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .show-messages {
+        @media only screen and (max-width: 1470px) {
+          display: none;
+        }
+        position: relative;
+        margin-left: auto;
+        margin-right: 0px;
+        .all-messages-count {
+          width: 22px;
+          height: 22px;
+          background: #ec6d75;
+          border-radius: 50%;
+          position: absolute;
+          top: -12px;
+          right: -12px;
+          span {
+            color: #fff;
+            font: normal normal 600 18px/56px "Quicksand";
+            letter-spacing: 0px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        padding: 17px 20px 14px 20px;
+        .message-details {
+          display: block;
+          a {
+            margin-right: 0px;
+            img {
+              width: auto;
+              height: 59px;
+            }
+          }
+          .message-text {
+            margin-top: 12px;
+            p {
+              font: normal normal 500 14px/18px "Quicksand";
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Presentations */
+.presentations {
+  max-width: 1077px;
+  @media only screen and (max-width: 1330px) {
+    width: 100%;
+    max-width: 1045px;
+    margin: 0 auto;
+  }
+  h2 {
+    margin-bottom: 40px;
+    font: normal normal bold 32px/40px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+  }
+  .about-presentations {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0px 36px;
+    margin-bottom: 14px;
+    list-style: none;
+    li {
+      width: 229px;
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #777777;
+      &:last-of-type {
+        margin-left: auto;
+        margin-right: 0px;
+      }
+    }
+  }
+  .all-presentations {
+    padding: 30px 36px;
+    background: #fff;
+    box-shadow: 0px 3px 30px #b2b2b23d;
+    border-radius: 15px;
+    .presentation {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #777777;
+      margin-top: 30px;
+      &:first-of-type {
+        margin-top: 0px;
+      }
+      h5,
+      a {
+        margin: 0;
+      }
+      h5 {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #272727;
+      }
+      .prix {
+        margin-left: auto;
+        margin-right: 0px;
+        width: 229px;
+        display: flex;
+        align-items: center;
+        a {
+          text-decoration: underline;
+          font: normal normal bold 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #ec6d75;
+          text-transform: uppercase;
+          margin-left: auto;
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font: normal normal bold 22px/28px "Quicksand";
+      margin-bottom: 22px;
+    }
+    .about-presentations {
+      display: none;
+    }
+    .all-presentations {
+      padding: 18px;
+      .presentation {
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 15px;
+        margin-top: 20.5px;
+        h5 {
+          font: normal normal 500 14px/18px "Quicksand";
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .prix {
+          h5 {
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            top: 0;
+          }
+          a {
+            font: normal normal 500 14px/18px "Quicksand";
+          }
+        }
+      }
+    }
+  }
+}
+
+/* My Payments */
+.my-payments {
+  table {
+    width: 100%;
+    max-width: 1010px;
+    tbody {
+      tr {
+        padding-top: 30px;
+        th {
+          font: normal normal 500 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #777777;
+        }
+        td {
+          padding: 30px 0px 20px 0px;
+          border-bottom: 1px solid #272727;
+          font: normal normal 500 18px/23px "Quicksand";
+          letter-spacing: 0px;
+          color: #272727;
+          span {
+            display: none;
+          }
+          &:last-of-type {
+            text-align: right;
+          }
+          a {
+            text-decoration: underline;
+            font: normal normal bold 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #ec6d75;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      max-width: 100%;
+      tbody {
+        tr {
+          th,
+          td {
+            font: normal normal 500 14px/18px "Quicksand";
+            &:nth-of-type(2) {
+              display: none;
+            }
+          }
+          td {
+            padding: 20px 0px 6px 0px;
+            align-items: flex-end;
+            a {
+              font: normal normal 700 14px/18px "Quicksand";
+            }
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Profile Details */
+.profile-details {
+  button[type="submit"] {
+    margin: 0;
+    padding: 8px 25px;
+    border: none;
+    text-decoration: underline;
+    font: normal normal bold 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #ec6d75 !important;
+    border-radius: 15px;
+    display: block;
+    @media only screen and (max-width: 567px) {
+      display: block;
+      width: 100%;
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+/* My Profile */
+.my-profile {
+  h2 {
+    font: normal normal bold 48px/60px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+    margin-bottom: 20px;
+    span {
+      color: #ec6d75;
+    }
+  }
+  .profile-picture {
+    margin-bottom: 15px;
+    img {
+      width: 112px;
+      height: 112px;
+    }
+  }
+  .add-picture {
+    margin-bottom: 25px;
+    p {
+      margin: 0;
+      font: normal normal 500 14px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+    }
+    .add-picture {
+      input {
+        display: none !important;
+      }
+    }
+  }
+  .profile-description {
+    margin-bottom: 30px;
+    h5 {
+      font: normal normal 500 14px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+    }
+    p {
+      font: normal normal 500 14px/18px "Quicksand";
+      letter-spacing: 0px;
+      margin: 0;
+      color: #ec6d75;
+      opacity: 0.55;
+    }
+  }
+  /* Save Time */
+  .save-time {
+    margin-top: 50px;
+    padding: 30px 33px;
+    background: #fff;
+    box-shadow: 0px 3px 40px #ec6d7529;
+    border-radius: 4px;
+    max-width: 791px;
+    h1 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin-bottom: 19px;
+    }
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      margin-bottom: 41px;
+      color: #777777;
+    }
+    a {
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border: 2px solid #ec6d75;
+      display: block;
+      width: fit-content;
+      background: #ec6d75;
+      border-radius: 15px;
+    }
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font: normal normal bold 22px/28px "Quicksand";
+        margin-bottom: 10px;
+      }
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+        br {
+          display: none;
+        }
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      text-align: center;
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+  /* Complete Address */
+  .complete-address {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    .all-inputs.get-street {
+      input {
+        width: 249px;
+      }
+    }
+    .all-inputs.get-postal-code {
+      input {
+        width: 88px;
+      }
+    }
+    .all-inputs.get-city {
+      input {
+        width: 88px;
+        &::placeholder {
+          font: normal normal bold 18px/23px "Quicksand";
+          opacity: 1;
+        }
+      }
+    }
+    .all-inputs {
+      margin-right: 25px;
+      &:last-of-type {
+        margin-right: 0px;
+      }
+    }
+    .postal-code-and-city {
+      display: flex;
+      align-items: flex-end;
+    }
+    @media only screen and (max-width: 768px) {
+      display: block;
+      margin-bottom: 40px;
+      .all-inputs.get-street {
+        margin-bottom: 30px;
+      }
+      .all-inputs.get-postal-code {
+        margin-right: 24px;
+        input {
+          width: 106px;
+        }
+      }
+      .all-inputs.get-city {
+        input {
+          width: 118px;
+          &::placeholder {
+            font: normal normal bold 18px/23px "Quicksand";
+            opacity: 1;
+          }
+        }
+      }
+      .all-inputs {
+        margin-right: 0px;
+      }
+    }
+  }
+  /* Ready to Move */
+  .ready-to-move {
+    margin-bottom: 50px;
+    p {
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      margin-bottom: 25px;
+      color: #272727;
+    }
+  }
+  /* Departments (Checkbox) */
+  .the-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    input,
+    label {
+      width: fit-content;
+    }
+    input {
+      margin-right: 17px;
+      padding: 0;
+      height: initial;
+      width: initial;
+      margin-bottom: 0;
+      display: none;
+      cursor: pointer;
+    }
+    label {
+      position: relative;
+      color: #777777;
+      cursor: pointer;
+      &::before {
+        content: "";
+        border: 1px solid #ec6d75;
+        border-radius: 3px;
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 15px;
+      }
+    }
+    input:checked + label {
+      color: #ec6d75;
+    }
+    input:checked + label::before {
+      background: #ec6d75;
+    }
+    input:checked + label:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 6px;
+      width: 8px;
+      height: 13px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* Departments */
+    .all-the-depatrtments {
+      .col-lg-2 {
+        margin-bottom: 20px;
+      }
+    }
+    /* Choose Department */
+    .choose-departments {
+      margin-top: 14px;
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+      }
+      .all-the-depatrtments {
+        margin-top: 25px;
+      }
+    }
+  }
+  /* Offer Ad */
+  .dashboard-offer-ad {
+    padding: 41px 0px 36px 33px;
+    background: #fff;
+    box-shadow: 0px 3px 40px #ec6d7529;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 26px;
+    width: 100%;
+    max-width: 791px;
+    margin-top: 63px;
+    h1 {
+      font: normal normal bold 48px/60px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      span {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+      }
+      margin-bottom: 10px;
+    }
+    h2 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin-bottom: 20px;
+      span {
+        color: #ec6d75;
+      }
+    }
+    a {
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 8px 23px;
+      text-align: center;
+      border: 2px solid #ec6d75;
+      display: block;
+      width: 209px;
+      background: #ec6d75;
+      border-radius: 15px;
+    }
+    .offer-top {
+      position: absolute;
+      top: -26px;
+      left: 36px;
+      width: fit-content;
+      padding: 15px 73px;
+      background: #ffeaea;
+      border-radius: 24px;
+      h5 {
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #ec6d75;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+    .check-points {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        .points {
+          display: flex;
+          align-items: center;
+          h4 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            margin: 0;
+            color: #272727;
+          }
+          img {
+            margin-right: 30px;
+          }
+        }
+        &:first-of-type {
+          margin-bottom: 25px;
+        }
+        &:nth-of-type(2) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1330px) {
+      .row {
+        display: flex;
+        .col-lg-6 {
+          width: fit-content;
+          &:last-of-type {
+            margin-left: auto;
+            margin-right: 10%;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 0px;
+        span {
+          font: normal normal 500 14px/18px "Quicksand";
+        }
+      }
+      h2 {
+        font: normal normal bold 24px/40px "Quicksand";
+        margin-bottom: 50px;
+      }
+      .check-points {
+        li {
+          .points {
+            h4 {
+              font: normal normal 500 14px/18px "Quicksand";
+            }
+            img {
+              margin-right: 30px;
+            }
+          }
+          &:first-of-type {
+            margin-bottom: 26px;
+          }
+          &:nth-of-type(2) {
+            margin-bottom: 13px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 567px) {
+      height: 325px;
+      text-align: center;
+      padding-top: 50px;
+      h1 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 30px;
+        span {
+          font: normal normal 500 14px/18px "Quicksand";
+        }
+      }
+      h2 {
+        display: none;
+      }
+      .row {
+        display: grid;
+        .col-lg-6 {
+          position: unset;
+          width: calc(100% - 32px);
+        }
+      }
+      a {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .offer-top {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .check-points {
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  /* Billing */
+  .billing {
+    margin-top: 25px;
+    a {
+      display: block;
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      width: fit-content;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      &.terminate {
+        color: #777777;
+      }
+    }
+  }
+
+  /* Personal Info Section */
+  /* Activities Section */
+  /* My Location Section */
+  &.personal-info,
+  &.my-activities,
+  &.my-location {
+    margin-bottom: 65px;
+  }
+
+  &.personal-info,
+  &.my-activities {
+    @media only screen and (max-width: 567px) {
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  /* Activities Section */
+  &.my-activities {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  /* My Location Section */
+  &.my-subscriptions {
+    margin-bottom: 100px;
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      color: #777777;
+    }
+    @media only screen and (max-width: 567px) {
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* Public Profile Page */
+.public-profile-page {
+  .heading-repeat {
+    margin: 0;
+    padding: 0;
+  }
+  /* Profile Picture */
+  .profile-picture {
+    img {
+      width: 197px;
+      height: 197px;
+    }
+    @media only screen and (max-width: 768px) {
+      img {
+        width: 112px;
+        height: 112px;
+      }
+    }
+  }
+  /* Profile Info */
+  .profile-info {
+    margin-bottom: 63px;
+    h2 {
+      font: normal normal bold 48px/60px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+      margin: 0;
+    }
+    span {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    .availability-date {
+      display: block;
+      margin-bottom: 5px;
+      span {
+        color: #ec6d75;
+      }
+    }
+    .availability-place {
+      margin-bottom: 15px;
+      display: block;
+    }
+    p {
+      font: normal normal 500 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #777777;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 40px;
+      h2 {
+        font: normal normal bold 32px/40px "Quicksand";
+        margin-bottom: 5px;
+      }
+      span {
+        font: normal normal 500 14px/18px "Quicksand";
+      }
+      p {
+        font: normal normal 500 14px/18px "Quicksand";
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  /* Profile Services */
+  /* Availability Section # 1 */
+  /* Availability Section # 2 */
+  .profile-services,
+  .availability-section-1,
+  .availability-section-2 {
+    h3 {
+      font: normal normal bold 32px/40px "Quicksand";
+      letter-spacing: 0px;
+      color: #272727;
+    }
+    @media only screen and (max-width: 768px) {
+      h3 {
+        font: normal normal bold 22px/28px "Quicksand";
+      }
+    }
+  }
+  /* Profile Services */
+  .profile-services {
+    .all-of-services {
+      &:first-of-type {
+        margin: 63px 0px 30px 0px;
+      }
+      &:last-of-type {
+        margin: 0px 0px 63px 0px;
+      }
+      padding: 0;
+      .col-lg-4 {
+        padding: 0;
+        &:first-of-type {
+          margin-right: 50px;
+        }
+      }
+      input,
+      label {
+        width: fit-content;
+      }
+      input {
+        margin-right: 17px;
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      .service-check {
+        width: 100%;
+        padding: 22px 30px;
+        box-shadow: 0px 3px 30px #91919100;
+        border-radius: 15px;
+        background: #ededed;
+        display: flex;
+        align-items: center;
+        .services-details {
+          span {
+            display: block;
+            color: #272727;
+            font: normal normal 500 18px/20px "Quicksand";
+            &:first-of-type {
+              margin-bottom: 10px;
+              font-weight: bold;
+            }
+          }
+        }
+        .check-this-service {
+          margin-left: auto;
+          margin-right: 0;
+          label {
+            position: relative;
+            color: #777777;
+            cursor: pointer;
+            &::before {
+              content: "";
+              border: 2px solid #7777773d;
+              border-radius: 3px;
+              width: 34px;
+              height: 34px;
+              border-radius: 50%;
+              display: inline-block;
+              position: relative;
+              vertical-align: middle;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      input:checked + .service-check {
+        background: #ffeaea;
+        .services-details {
+          span {
+            color: #ec6d75;
+          }
+        }
+        .check-this-service {
+          label:before {
+            border: 2px solid #ec6d75;
+            background: #ec6d75;
+          }
+          label:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 11px;
+            width: 11px;
+            height: 20px;
+            border: solid #fff;
+            border-width: 0 4px 4px 0;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .all-of-services {
+        &:first-of-type {
+          margin: 25px 0px 0px 0px;
+        }
+        &:last-of-type {
+          margin: 0px 0px 60px 0px;
+          .col-lg-4 {
+            &:last-of-type {
+              margin-bottom: 0px;
+            }
+          }
+        }
+        padding: 0;
+        .col-lg-4 {
+          padding: 0;
+          margin-bottom: 20px;
+
+          &:first-of-type {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+  /* Availability Section # 1 */
+  .availability-section-1 {
+    margin-bottom: 100px;
+    .my-availabilities-2 {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      .my-availability-col {
+        .day {
+          margin-bottom: 22px;
+          h5 {
+            font: normal normal 500 18px/23px "Quicksand";
+            letter-spacing: 0px;
+            color: #272727;
+          }
+        }
+        padding: 0px 30px;
+        min-width: 211px;
+        &:first-of-type {
+          padding-left: 0px;
+        }
+        border-right: 1px solid #272727;
+        .the-checkbox {
+          label {
+            font: normal normal 500 18px/23px "Quicksand";
+            &:after {
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1470px) {
+      .my-availabilities-2 {
+        .my-availability-col {
+          padding: 0;
+          border: 0px;
+          min-width: 20%;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .availability-section-2 {
+    .availability {
+      @media only screen and (max-width: 1470px) {
+        max-width: 100%;
+      }
+    }
+  }
+  /* Ratings */
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  .profile-reviews {
+    .intro {
+      display: flex;
+      align-items: center;
+      margin-bottom: 35px;
+      h3 {
+        font: normal normal bold 32px/32px "Quicksand";
+        letter-spacing: 0px;
+        color: #272727;
+        margin-right: 15px;
+      }
+      @media only screen and (max-width: 768px) {
+        h3 {
+          font: normal normal bold 22px/28px "Quicksand";
+        }
+        .rating {
+          img {
+            width: 27px;
+          }
+        }
+      }
+    }
+    /* Reviews */
+    .review {
+      .rating {
+        margin-bottom: 15px;
+      }
+      h6 {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        margin-bottom: 8px;
+        color: #272727;
+      }
+      p {
+        font: normal normal 500 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #777777;
+      }
+    }
+    .see-more-reviews {
+      margin: 22px 0px 100px 0px;
+      a {
+        text-decoration: underline;
+        font: normal normal bold 18px/23px "Quicksand";
+        letter-spacing: 0px;
+        color: #777777;
+        text-transform: uppercase;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font: normal normal bold 22px/28px "Quicksand";
+    }
+    .profile-reviews {
+      .review {
+        margin-bottom: 50px;
+        .rating {
+          img {
+            width: 24px;
+          }
+        }
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+      .see-more-reviews {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+/* Go Back */
+.way-back {
+  margin-bottom: 17px;
+  a {
+    font: normal normal bold 18px/23px "Quicksand";
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    letter-spacing: 0px;
+    color: #777777;
+    text-transform: uppercase;
+    text-decoration: none;
+    span.text {
+      text-decoration: underline;
+    }
+    span.icon {
+      margin-right: 10px;
+      transform: rotate(-180deg);
+      text-decoration: none;
+    }
+  }
+}
+
+/* Heading repeat on all sections */
+.heading-repeat {
+  margin-bottom: 45px;
+  h1 {
+    font: normal normal bold 32px/40px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+    span {
+      color: #ec6d75;
+    }
+  }
+  p {
+    font: normal normal 500 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #777777;
+    @media only screen and (max-width: 768px) {
+      font: normal normal 500 14px/18px "Quicksand";
+    }
+    @media only screen and (max-width: 567px) {
+      span {
+        display: block;
+      }
+    }
+  }
+  a {
+    text-decoration: underline;
+    font: normal normal 500 18px/23px "Quicksand";
+    letter-spacing: 0px;
+    color: #272727;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font: normal normal bold 22px/28px "Quicksand";
+    }
+  }
+  a.this-weak {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    h5 {
+      margin: 0;
+      font: normal normal 500 18px/23px "Quicksand";
+    }
+    img {
+      margin-left: 13px;
+    }
+
+    &.visible-none {
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  /* Heading */
+  .heading-area {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin-bottom: 28px;
+    @media only screen and (max-width: 768px) {
+      display: block;
+      margin-bottom: 6px;
+    }
+    .message-inbox {
+      display: flex;
+      align-items: center;
+      h2,
+      span {
+        margin: 0;
+      }
+      h2 {
+        font: normal normal bold 32px/40px "Quicksand";
+        letter-spacing: 0px;
+        color: #272727;
+        @media only screen and (max-width: 768px) {
+          font: normal normal bold 22px/28px "Quicksand";
+        }
+        span {
+          color: #ec6d75;
+        }
+      }
+      .all-reserved {
+        width: 28px;
+        height: 28px;
+        position: relative;
+        background: #ec6d75;
+        border-radius: 50%;
+        margin-left: 13px;
+        span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font: normal normal 600 18px/56px "Quicksand";
+          letter-spacing: 0px;
+          color: #ffffff;
+        }
+      }
+    }
+    a {
+      margin-left: auto;
+      margin-right: 0;
+      font-weight: bold;
+      color: #ffffff;
+      background: #ec6d75;
+      border-radius: 15px;
+      padding: 8px 25px;
+      @media only screen and (max-width: 768px) {
+        margin: 0;
+        margin-bottom: 50px;
+        display: block;
+        width: fit-content;
+      }
+      @media only screen and (max-width: 567px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .way-back a {
+      margin: 0;
+      padding: 0;
+      font: normal normal bold 18px/23px "Quicksand";
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      letter-spacing: 0px;
+      color: #777777;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: transparent;
+      span.text {
+        text-decoration: underline;
+      }
+      span.icon {
+        margin-right: 10px;
+        transform: rotate(-180deg);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Message Box */
+.message-box {
+  .all-of-the-messages {
+    background: #fff;
+    max-width: 1077px;
+    box-shadow: 0px 3px 30px #b2b2b23d;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    @media only screen and (max-width: 1330px) {
+      max-width: 100%;
+    }
+  }
+  /* All Messages */
+  .messages {
+    height: 670px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 50px 20px 0px 30px;
+    @media only screen and (max-width: 768px) {
+      padding: 20px 20px 0px 20px;
+      height: 588px;
+    }
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #ffeaea #ffffff;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+      @media only screen and (max-width: 768px) {
+        width: 4px;
+      }
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      background-color: #ffeaea;
+      border-radius: 10px;
+    }
+    .message {
+      display: flex;
+      align-items: flex-start;
+      width: fit-content;
+      margin-bottom: 50px;
+      &:last-of-type {
+        margin-bottom: 40px;
+      }
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 20px;
+        &:last-of-type {
+          margin-bottom: 20px;
+        }
+      }
+      img {
+        width: 77px;
+        height: 77px;
+        min-width: 77px;
+        @media only screen and (max-width: 768px) {
+          width: 47px;
+          height: 47px;
+          min-width: 47px;
+        }
+      }
+      .text {
+        padding: 15px 23px;
+        background: #ffeaea;
+        border-radius: 15px;
+        max-width: 655px;
+        p {
+          margin: 0;
+          font: normal normal normal 16px/20px "Quicksand";
+          letter-spacing: 0px;
+          color: #272727;
+          @media only screen and (max-width: 768px) {
+            font: normal normal 500 14px/18px "Quicksand";
+          }
+        }
+      }
+      &.received-message {
+        img {
+          margin-right: 30px;
+          @media only screen and (max-width: 768px) {
+            margin-right: 20px;
+          }
+        }
+      }
+      &.sent-messages {
+        flex-direction: row-reverse;
+        margin-left: auto;
+        margin-right: 0;
+        img {
+          @media only screen and (max-width: 768px) {
+            margin-left: 20px;
+          }
+        }
+        .text {
+          background: #f8f8f8;
+          p {
+            text-align: right;
+          }
+        }
+      }
+    }
+    /* New Message Line */
+    .new-message {
+      margin: 24px 0px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      span {
+        margin: 0;
+        &.ds {
+          display: block;
+        }
+        &.mb {
+          display: none;
+        }
+        font: normal normal normal 15px/19px "Quicksand";
+        @media only screen and (max-width: 768px) {
+          font: normal normal 500 14px/18px "Quicksand";
+          &.ds {
+            display: none;
+          }
+          &.mb {
+            display: block;
+          }
+        }
+        letter-spacing: 0px;
+        color: #ec6d75;
+        overflow: hidden;
+        text-align: center;
+        display: block;
+        &:before,
+        &:after {
+          background-color: #ec6d75;
+          content: "";
+          display: inline-block;
+          height: 1px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+        }
+        &:before {
+          right: 0.5em;
+          margin-left: -50%;
+        }
+        &:after {
+          left: 0.5em;
+          margin-right: -50%;
+        }
+      }
+    }
+  }
+  /* Type Messages */
+  .type-message {
+    padding: 0px 30px 26px 30px;
+    @media only screen and (max-width: 768px) {
+      padding: 0px 20px 20px 20px;
+    }
+    form {
+      display: flex;
+      overflow: hidden;
+      align-items: flex-start;
+      border-top: 1px solid #777777;
+      padding-top: 17px;
+      input,
+      button {
+        border: none;
+        outline: none;
+      }
+      input {
+        font: normal normal normal 16px/20px "Quicksand";
+        @media only screen and (max-width: 768px) {
+          font: normal normal 500 14px/18px "Quicksand";
+        }
+        letter-spacing: 0px;
+        text-transform: none;
+        width: 100%;
+        color: #777777;
+        &::placeholder {
+          color: #777777;
+        }
+      }
+      .actions {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 0px;
+        min-width: fit-content;
+        a {
+          text-decoration: none;
+          margin-right: 25px;
+
+          @media only screen and (max-width: 768px) {
+            margin: 0;
+            margin-right: 13px;
+            img {
+              width: 21px;
+              height: auto;
+            }
+          }
+        }
+        button {
+          background: unset;
+          cursor: pointer;
+          @media only screen and (max-width: 768px) {
+            img {
+              width: 24px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.inputs {
+  margin-bottom: 30px;
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+label {
+  display: block;
+  margin: 0;
+  font: normal normal 500 14px/18px "Quicksand";
+  letter-spacing: 0px;
+  color: #ec6d75;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+input {
+  width: 378px;
+  border-bottom: 2px solid #ec6d75;
+  font: normal normal 500 18px/23px "Quicksand";
+  padding-bottom: 6px;
+  letter-spacing: 0px;
+  color: #ec6d75;
+  text-transform: uppercase;
+  &::placeholder {
+    color: #ec6d75;
+    opacity: 0.55;
+  }
+}
+input[type="file"] {
+  visibility: hidden;
+  opacity: 0;
+}
+.choose-picture {
+  align-items: center;
+  font: normal normal 500 18px/23px "Quicksand";
+  text-decoration: underline;
+  min-width: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  letter-spacing: 0px;
+  color: #ec6d75;
+  img {
+    margin-left: 13px;
+  }
+  input {
+    display: none;
+  }
+}
+
+/* Service */
+.service {
+  .add-picture {
+    margin-bottom: 40px;
+    p {
+      margin: 0;
+      font: normal normal 500 14px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+    }
+  }
+  .pictures {
+    .row {
+      .col-md-4 {
+        margin-bottom: 30px;
+      }
+    }
+    .choosed {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .delete-image {
+        top: -18px;
+        right: -18px;
+        img {
+          position: absolute;
+          width: unset;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  .delete-image,
+  .add-image {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    background: #ec6d75;
+    span {
+      position: absolute;
+      display: block;
+      width: unset;
+      margin: 0;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font: normal normal bold 32px/18px "Quicksand";
+      letter-spacing: 0px;
+      color: #e6e6e6;
+    }
+  }
+  .add-more-pictures {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .center-content {
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .add-image {
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 7.5px;
+    }
+    p {
+      font: normal normal 600 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+    }
+  }
+  .cancel-update {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    button {
+      text-decoration: underline;
+      font: normal normal bold 18px/23px "Quicksand";
+      letter-spacing: 0px;
+      color: #ec6d75;
+      text-transform: uppercase;
+      display: block;
+      width: 200px;
+      padding: 8px 26px;
+      border: 2px solid #ec6d75;
+      border-radius: 15px;
+      background: transparent;
+      &.update {
+        margin-left: 20px;
+        background: #ec6d75;
+        color: #fff;
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      display: block;
+      button {
+        width: 100%;
+        &.update {
+          margin-left: 0;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* Setting up the desktop layout according to it's width */
+@media only screen and (max-width: 1700px) {
+  header {
+    .navbar {
+      max-width: 1440px;
+    }
+  }
+  .dashboard {
+    .container-fluid {
+      max-width: 1440px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  header {
+    .navbar {
+      max-width: 1300px;
+    }
+  }
+  .dashboard {
+    .container-fluid {
+      max-width: 1300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  header {
+    .navbar {
+      max-width: 100%;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+  .dashboard {
+    .container-fluid {
+      max-width: 100%;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+}
+
+/* Custom Slick Arrows */
+.slick-prev,
+.slick-next {
+  border: none;
+  outline: none;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: #68c8c7;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  position: absolute;
+  border-radius: 50%;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  @media only screen and (max-width: 1330px) {
+    top: -40px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+    top: -30px;
+  }
+}
+.slick-prev {
+  left: -56px;
+  transform: rotate(-180deg);
+  margin-top: -13px;
+  @media only screen and (max-width: 1330px) {
+    left: 0;
+  }
+}
+.slick-next {
+  right: -56px;
+  @media only screen and (max-width: 1330px) {
+    right: 0;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "➜";
+  color: #fff;
+  font-size: 16px;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.slick-active:nth-child(5n) li {
+  &:first-of-type {
+    border-top-right-radius: 18px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .slick-active:nth-child(2n) li {
+    &:first-of-type {
+      border-top-right-radius: 18px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Services Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-services-page {
+  .dashboard {
+    @media only screen and (max-width: 768px) {
+      padding: 40px 0px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Service Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-service-page {
+  @media only screen and (max-width: 768px) {
+    .heading-repeat {
+      .heading-area {
+        .message-inbox {
+          h2 {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    input {
+      width: 100%;
+    }
+    .dashboard {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> My Peyments Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-payments-page {
+  .way-back {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .heading-repeat {
+      .heading-area {
+        a {
+          display: none;
+        }
+      }
+    }
+    .way-back {
+      display: flex;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Profile Page <<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.profile-page {
+  .heading-repeat {
+    .heading-area {
+      align-items: center;
+      .message-inbox {
+        h2 {
+          font: normal normal bold 48px/60px "Quicksand";
+        }
+      }
+    }
+  }
+  .way-back {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .heading-repeat {
+      margin-bottom: 20px;
+      .heading-area {
+        a {
+          display: none;
+        }
+        .message-inbox {
+          h2 {
+            font: normal normal bold 32px/40px "Quicksand";
+            margin-bottom: 10px;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .way-back {
+      display: flex;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Images Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-images-page {
+  .way-back {
+    display: none;
+  }
+  .heading-repeat {
+    .heading-area {
+      .message-inbox {
+        h2 {
+          span {
+            color: #ec6d75;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .way-back {
+      display: flex;
+    }
+    .heading-repeat {
+      .heading-area {
+        a {
+          display: none;
+        }
+        .message-inbox {
+          h2 {
+            font: normal normal bold 32px/40px "Quicksand";
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .dashboard {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Messages Page <<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.messages-page {
+  .my-messages {
+    margin-bottom: 0px;
+  }
+  .dashboard {
+    @media only screen and (max-width: 768px) {
+      padding: 40px 0px;
+    }
+  }
+  .heading-repeat {
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 20px !important;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> My Messages Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-messages-page {
+  .heading-repeat {
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 30px !important;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> My Availability Page <<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-availability-page {
+  .heading-repeat {
+    margin-bottom: 45px;
+  }
+  .availability {
+    margin-bottom: 125px;
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+  .dashboard {
+    .reservation {
+      margin-bottom: 0px;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 40px 0px;
+      .reservation {
+        display: none;
+      }
+    }
+  }
+  .registration {
+    margin-top: 40px;
+  }
+  .registration a {
+    font-size: 18px;
+    text-decoration: underline;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #ec6d75;
+    border-radius: 15px;
+    padding: 8px 25px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>> My Reservation Page <<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+
+.my-reservation-page {
+  .dashboard {
+    .reservation {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
