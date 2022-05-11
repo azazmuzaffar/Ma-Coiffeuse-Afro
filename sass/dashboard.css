@@ -210,7 +210,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count {
   background: #ec6d75;
   border-radius: 50%;
   position: absolute;
-  top: -23px;
+  top: -12px;
   right: -12px;
 }
 
@@ -225,16 +225,24 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
           transform: translate(-50%, -50%);
 }
 
+header .navbar ul.header-profile li .show-messages img {
+  width: 27px;
+  height: 27px;
+}
+
 @media only screen and (max-width: 1330px) {
-  header .navbar ul.header-profile li .show-messages svg {
+  header .navbar ul.header-profile li .show-messages img {
+    display: block;
     margin-top: 10px;
     width: 24px;
     height: 24px;
+    margin: 0;
   }
   header .navbar ul.header-profile li .show-messages .all-messages-count {
     width: 19px;
     height: 19px;
-    top: -15px;
+    right: -11px;
+    top: -9px;
   }
 }
 
@@ -416,13 +424,16 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   text-decoration: underline;
 }
 
-.dashboard .container-fluid .main-content .see-all svg {
+.dashboard .container-fluid .main-content .see-all img {
   margin-left: 15px;
-  margin-top: -11px;
+  margin-top: -10px;
 }
 
 @media only screen and (max-width: 768px) {
   .dashboard .container-fluid .main-content .see-all {
+    display: block;
+  }
+  .dashboard .container-fluid .main-content .see-all.hide-mb {
     display: none;
   }
 }
@@ -588,29 +599,20 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   transition: 0.3s;
 }
 
-.dashboard-menu .dashboard-menu-options li a svg,
+.dashboard-menu .dashboard-menu-options li a img,
 .dashboard-menu .dashboard-menu-options li a .profile-stats {
   margin-right: 17px;
 }
 
-.dashboard-menu .dashboard-menu-options li a svg,
 .dashboard-menu .dashboard-menu-options li a h5 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.dashboard-menu .dashboard-menu-options li a:hover svg,
-.dashboard-menu .dashboard-menu-options li a:hover h5 {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.dashboard-menu .dashboard-menu-options li a:hover svg {
-  fill: #ec6d75;
-}
-
 .dashboard-menu .dashboard-menu-options li a:hover h5 {
   color: #ec6d75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .dashboard-menu .dashboard-menu-options li h5 {
@@ -618,10 +620,6 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   letter-spacing: 0px;
   color: #272727;
   margin: 0;
-}
-
-.dashboard-menu .dashboard-menu-options li:first-of-type a:hover svg {
-  fill: #272727;
 }
 
 .dashboard-menu .dashboard-menu-options li:first-of-type a:hover h5 {
@@ -651,7 +649,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .dashboard-menu .dashboard-menu-options.all-my-options li a svg,
+  .dashboard-menu .dashboard-menu-options.all-my-options li a img,
   .dashboard-menu .dashboard-menu-options.all-my-options li a .profile-stats {
     margin-right: 0px;
     margin-left: 17px;
@@ -715,7 +713,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   text-transform: uppercase;
 }
 
-.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type a svg {
+.dashboard-menu .dashboard-menu-options.all-my-stats li:first-of-type a img {
   margin-left: 11px;
 }
 
@@ -1441,7 +1439,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   margin-bottom: -20px;
 }
 
-.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date svg {
+.reservation .reservation-reserved-by .all-reservation .reserved-by .the-date img {
   margin-right: 13px;
 }
 
@@ -1457,7 +1455,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
     width: 100%;
     padding: 6px 0px 26px 10px;
   }
-  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date svg {
+  .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date img {
     display: none;
   }
   .reservation .reservation-reserved-by .all-reservation .reserved-by .the-date h5 {
@@ -1501,13 +1499,18 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   position: relative;
 }
 
+.reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages img {
+  width: 27px;
+  height: 27px;
+}
+
 .reservation .reservation-reserved-by .all-reservation .reserved-by .by li .show-messages .all-messages-count {
   width: 22px;
   height: 22px;
   background: #ec6d75;
   border-radius: 50%;
   position: absolute;
-  top: -23px;
+  top: -12px;
   right: -12px;
 }
 
@@ -2947,7 +2950,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   .public-profile-page .profile-reviews .intro h3 {
     font: normal normal bold 22px/28px "Quicksand";
   }
-  .public-profile-page .profile-reviews .intro .rating svg {
+  .public-profile-page .profile-reviews .intro .rating img {
     width: 27px;
   }
 }
@@ -2988,7 +2991,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   .public-profile-page .profile-reviews .review {
     margin-bottom: 50px;
   }
-  .public-profile-page .profile-reviews .review .rating svg {
+  .public-profile-page .profile-reviews .review .rating img {
     width: 24px;
   }
   .public-profile-page .profile-reviews .review p br {
@@ -3097,7 +3100,7 @@ header .navbar ul.header-profile li .show-messages .all-messages-count span {
   font: normal normal 500 18px/23px "Quicksand";
 }
 
-.heading-repeat a.this-weak svg {
+.heading-repeat a.this-weak img {
   margin-left: 13px;
 }
 

@@ -181,7 +181,7 @@ header {
               background: #ec6d75;
               border-radius: 50%;
               position: absolute;
-              top: -23px;
+              top: -12px;
               right: -12px;
               span {
                 color: #fff;
@@ -193,16 +193,23 @@ header {
                 transform: translate(-50%, -50%);
               }
             }
+            img {
+              width: 27px;
+              height: 27px;
+            }
             @media only screen and (max-width: 1330px) {
-              svg {
+              img {
+                display: block;
                 margin-top: 10px;
                 width: 24px;
                 height: 24px;
+                margin: 0;
               }
               .all-messages-count {
                 width: 19px;
                 height: 19px;
-                top: -15px;
+                right: -11px;
+                top: -9px;
               }
             }
           }
@@ -372,12 +379,15 @@ header {
         color: #ec6d75;
         background: transparent;
         text-decoration: underline;
-        svg {
+        img {
           margin-left: 15px;
-          margin-top: -11px;
+          margin-top: -10px;
         }
         @media only screen and (max-width: 768px) {
-          display: none;
+          display: block;
+          &.hide-mb {
+            display: none;
+          }
         }
       }
     }
@@ -508,24 +518,17 @@ header {
         text-decoration: none;
         color: unset;
         transition: 0.3s;
-        svg,
+        img,
         .profile-stats {
           margin-right: 17px;
         }
-        svg,
         h5 {
           transition: 0.3s;
         }
         &:hover {
-          svg,
-          h5 {
-            transition: 0.3s;
-          }
-          svg {
-            fill: #ec6d75;
-          }
           h5 {
             color: #ec6d75;
+            transition: 0.3s;
           }
         }
       }
@@ -538,9 +541,6 @@ header {
       &:first-of-type {
         a {
           &:hover {
-            svg {
-              fill: #272727;
-            }
             h5 {
               color: #272727;
             }
@@ -567,7 +567,7 @@ header {
           a {
             text-align: right;
             flex-direction: row-reverse;
-            svg,
+            img,
             .profile-stats {
               margin-right: 0px;
               margin-left: 17px;
@@ -620,7 +620,7 @@ header {
             letter-spacing: 0px;
             color: #272727;
             text-transform: uppercase;
-            svg {
+            img {
               margin-left: 11px;
             }
           }
@@ -1226,7 +1226,7 @@ header {
           border-top-right-radius: 15px;
           border-top-left-radius: 15px;
           margin-bottom: -20px;
-          svg {
+          img {
             margin-right: 13px;
           }
           h5 {
@@ -1238,7 +1238,7 @@ header {
           @media only screen and (max-width: 768px) {
             width: 100%;
             padding: 6px 0px 26px 10px;
-            svg {
+            img {
               display: none;
             }
             h5 {
@@ -1268,13 +1268,17 @@ header {
             }
             .show-messages {
               position: relative;
+              img {
+                width: 27px;
+                height: 27px;
+              }
               .all-messages-count {
                 width: 22px;
                 height: 22px;
                 background: #ec6d75;
                 border-radius: 50%;
                 position: absolute;
-                top: -23px;
+                top: -12px;
                 right: -12px;
                 span {
                   color: #fff;
@@ -2476,7 +2480,7 @@ header {
           font: normal normal bold 22px/28px "Quicksand";
         }
         .rating {
-          svg {
+          img {
             width: 27px;
           }
         }
@@ -2518,7 +2522,7 @@ header {
       .review {
         margin-bottom: 50px;
         .rating {
-          svg {
+          img {
             width: 24px;
           }
         }
@@ -2602,7 +2606,7 @@ header {
       margin: 0;
       font: normal normal 500 18px/23px "Quicksand";
     }
-    svg {
+    img {
       margin-left: 13px;
     }
 
