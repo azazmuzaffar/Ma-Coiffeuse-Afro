@@ -100,44 +100,59 @@
         <div class="all-points__each">
           <div class="all-points__each--header">
             <ul>
-              <li><a href="#" class="active">COMPTE</a></li>
+              <li><a href="#" class="active">CONTESTATION</a></li>
+              <li><a href="#">CONSIGNATION</a></li>
+              <li><a href="#">RÉCAPITULATIF</a></li>
+              <li><a href="#">PAIEMENT</a></li>
             </ul>
           </div>
-          <div class="all-points__each--body">
+          <div class="all-points__each--body align-center">
             <form action="">
-              <div class="form-compte">
+              <div class="form-contestation">
                 <div class="row include-mb">
-                  <div class="title">
-                    <h4>VÉHICULE</h4>
+                  <div class="col-lg-6 input-control">
+                    <label for="">NUMÉRO DE CONTRAVENTION</label>
+                    <div class="input-has-icon">
+                      <input type="text" placeholder="345598790000" />
+                      <div class="icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                          <g id="Group_30" data-name="Group 30" transform="translate(-322 -188)">
+                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="11" cy="11" r="11" transform="translate(322 188)" fill="#f37d2f" />
+                            <text
+                              id="_"
+                              data-name="?"
+                              transform="translate(333 205)"
+                              fill="#fff"
+                              font-size="15"
+                              font-family="Lato-Bold, Lato"
+                              font-weight="700"
+                            >
+                              <tspan x="-3.154" y="0">?</tspan>
+                            </text>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-lg-offset-1 input-control">
+                    <label for="">DATE DE L’AVIS</label>
+                    <input type="date" placeholder="05/11/2019" />
+                  </div>
+                  <div class="col-lg-4 input-control">
+                    <label for="">NOM</label>
+                    <input type="text" placeholder="DUPONT" />
+                  </div>
+                  <div class="col-lg-4 col-lg-offset-3 input-control">
+                    <label for="">PRÉNOM</label>
+                    <input type="text" placeholder="Jean" />
                   </div>
                   <div class="col-lg-6 input-control">
                     <label for="">IMMATRICULATION DU VÉHICULE</label>
-                    <input type="text" placeholder="immatriculation du véhicule" />
+                    <input type="text" placeholder="FR 201 RP" />
                   </div>
                 </div>
-                <div class="row">
-                  <div class="title">
-                    <h4>INFORMATIONS</h4>
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">TÉLÉPHONE</label>
-                    <input type="text" placeholder="Entrez votre numéro d e. téléphone" />
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">E-MAIL</label>
-                    <input type="text" placeholder="Entrez votre adresse e-mail" />
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">MOT DE PASSE</label>
-                    <input type="text" placeholder="Créez un mot de passe fort" />
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">CONFIRMER LE MOT DE PASSE</label>
-                    <input type="text" placeholder="Créez un mot de passe fort" />
-                  </div>
-                </div>
-                <div class="-line"></div>
-                <input type="submit" class="btn btn-orange" value="POURSUIVRE MON INSCRIPTION" />
+                <div class="-line mt-increase"></div>
+                <input type="submit" class="btn btn-orange" value="JE CONTESTE" />
               </div>
             </form>
           </div>

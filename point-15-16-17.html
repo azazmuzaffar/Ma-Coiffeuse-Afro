@@ -18,6 +18,9 @@
     <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
     <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css" />
 
+    <!-- >>> Nice Select <<< -->
+    <link rel="stylesheet" href="./nice-select/css/nice-select.css" />
+
     <!-- >>> Custom CSS <<< -->
     <link rel="stylesheet" href="./sass/app.css" />
   </head>
@@ -100,44 +103,30 @@
         <div class="all-points__each">
           <div class="all-points__each--header">
             <ul>
-              <li><a href="#" class="active">COMPTE</a></li>
+              <li><a href="#" class="active">CONNEXION</a></li>
             </ul>
           </div>
-          <div class="all-points__each--body">
+          <div class="all-points__each--body align-center">
             <form action="">
-              <div class="form-compte">
-                <div class="row include-mb">
-                  <div class="title">
-                    <h4>VÉHICULE</h4>
+              <div class="form-connexion">
+                <div class="select-wrapper">
+                  <div class="row">
+                    <div class="col-lg-12 input-control">
+                      <label for="" class="ml-increase">JE SUIS</label>
+                      <select id="select" name="" onchange="">
+                        <option value="">Sélectionner</option>
+                        <option value="1">Un particulier</option>
+                        <option value="2">Un professionnel</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">IMMATRICULATION DU VÉHICULE</label>
-                    <input type="text" placeholder="immatriculation du véhicule" />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="title">
-                    <h4>INFORMATIONS</h4>
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">TÉLÉPHONE</label>
-                    <input type="text" placeholder="Entrez votre numéro d e. téléphone" />
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">E-MAIL</label>
-                    <input type="text" placeholder="Entrez votre adresse e-mail" />
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">MOT DE PASSE</label>
-                    <input type="text" placeholder="Créez un mot de passe fort" />
-                  </div>
-                  <div class="col-lg-6 input-control">
-                    <label for="">CONFIRMER LE MOT DE PASSE</label>
-                    <input type="text" placeholder="Créez un mot de passe fort" />
-                  </div>
+                  <div class="-line"></div>
                 </div>
                 <div class="-line"></div>
-                <input type="submit" class="btn btn-orange" value="POURSUIVRE MON INSCRIPTION" />
+                <input type="submit" class="btn btn-orange" value="s’inscrire" />
+                <div class="not-registered">
+                  <a href="#">Je n’ai pas de compte <span>inscription</span></a>
+                </div>
               </div>
             </form>
           </div>
@@ -227,6 +216,9 @@
 
     <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
     <script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- >>> Nice Select <<< -->
+    <script src="./nice-select/js/jquery.nice-select.min.js"></script>
 
     <!-- >>> CUSTOM JS <<< -->
     <script src="./js/app.js"></script>
