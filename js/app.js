@@ -2,32 +2,36 @@
 /* >>>>>>>>>>>>>>>>>>> Start <<<<<<<<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<  */
 
-$(document).ready(function() {
-  $('#select').niceSelect();
+$(document).ready(function () {
+  $(document).ready(function () {
+    $(".nav-toggle").click(function () {
+      $(this).toggleClass("change");
+      $("#navbar").toggleClass("show");
+    });
+  });
 
-  let selected = $(".nice-select .list .option.selected").attr('data-value');
+  $("#select").niceSelect();
+
+  let selected = $(".nice-select .list .option.selected").attr("data-value");
   selected = parseInt(selected);
   let btn = $(".form-connexion .btn");
 
-  if (selected > 0)  {
+  if (selected > 0) {
     btn.removeClass("disabled");
   } else {
     btn.addClass("disabled");
   }
 
-  $(".nice-select .list .option").click(function(){
-    let selected = $(this).attr('data-value');
+  $(".nice-select .list .option").click(function () {
+    let selected = $(this).attr("data-value");
     let btn = $(".form-connexion .btn");
-  
+
     selected = parseInt(selected);
-    
-    if (selected > 0)  {
+
+    if (selected > 0) {
       btn.removeClass("disabled");
     } else {
       btn.addClass("disabled");
     }
   });
 });
-
-
-

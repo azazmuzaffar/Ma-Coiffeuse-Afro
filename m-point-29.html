@@ -100,77 +100,50 @@
         <div class="all-points__each">
           <div class="all-points__each--header">
             <ul>
-              <li><a href="#">CONTESTATION</a></li>
-              <li><a href="#" class="active">CONSIGNATION</a></li>
-              <li><a href="#">RÉCAPITULATIF</a></li>
-              <li><a href="#">PAIEMENT</a></li>
+              <li><a href="#" class="active">INSCRIPTION</a></li>
             </ul>
+            <div class="go-back visible-xs">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                  <path
+                    id="Icon_Close"
+                    data-name="Icon Close"
+                    d="M6.364,4.492,8.607,6.734A1.323,1.323,0,1,1,6.736,8.6L4.494,6.363,2.252,8.6A1.323,1.323,0,0,1,.382,6.734L2.624,4.492.382,2.25A1.323,1.323,0,1,1,2.252.38L4.494,2.623,6.736.38A1.323,1.323,0,0,1,8.607,2.25Z"
+                    transform="translate(0.006 0.007)"
+                    fill="#f37d2f"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="all-points__each--body">
             <form action="">
-              <div class="form-consignation">
-                <div class="question question--check">
-                  <h4>Devez-vous verser une consignation ?</h4>
-                  <div class="input-group">
-                    <label>
-                      <input type="checkbox" name="options" />
-                      <div class="btn btn-has-checkbox yes">
-                        <span>OUI</span>
-                      </div>
-                    </label>
-                    <label>
-                      <input type="checkbox" name="options" />
-                      <div class="btn btn-has-checkbox no">
-                        <span>NON</span>
-                      </div>
-                    </label>
+              <div class="form-compte">
+                <div class="row include-mb">
+                  <div class="col-sm-4 col-xs-6 input-control">
+                    <label for="">NOM</label>
+                    <input type="text" placeholder="Nom" />
                   </div>
-                  <div class="input-control">
-                    <label for="">NUMÉRO DE CONTRAVENTION</label>
-                    <div class="input-has-icon">
-                      <input type="text" placeholder="345598790000" />
-                      <div class="icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                          <g id="Group_30" data-name="Group 30" transform="translate(-322 -188)">
-                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="11" cy="11" r="11" transform="translate(322 188)" fill="#f37d2f" />
-                            <text
-                              id="_"
-                              data-name="?"
-                              transform="translate(333 205)"
-                              fill="#fff"
-                              font-size="15"
-                              font-family="Lato-Bold, Lato"
-                              font-weight="700"
-                            >
-                              <tspan x="-3.154" y="0">?</tspan>
-                            </text>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
+                  <div class="col-sm-4 col-xs-6 input-control">
+                    <label for="">Prénom</label>
+                    <input type="text" placeholder="Prénom" />
                   </div>
-                  <div class="-line"></div>
+                  <div class="col-sm-6 col-xs-12 input-control">
+                    <label for="">TÉLÉPHONE</label>
+                    <input type="text" placeholder="Entrez votre numéro d e. téléphone" />
+                  </div>
+                  <div class="col-sm-6 col-xs-12 input-control">
+                    <label for="">E-MAIL</label>
+                    <input type="text" placeholder="Entrez votre adresse e-mail" />
+                  </div>
                 </div>
-
-                <div class="question question--text visible-sm visible-md visible-lg">
-                  <h4>C’est quoi une consignation ?</h4>
-                  <p>
-                    Le versement de la consignation amende s’effectue uniquement si vous souhaitez contester une amende, mais elle n’est pas obligatoire pour
-                    toutes les contestations. Elle concerne uniquement les contestations relatives au cas numéro 3. C'est-à-dire tous les motifs autre que la
-                    dénonciation du conducteur et le vol ou usurpation du véhicule (cas n°1 et cas n 2)
-                  </p>
+                <div class="-line mt-increase"></div>
+                <div class="custom-checkbox">
+                  <input type="checkbox" id="checkbox-first" checked />
+                  <label for="checkbox-first">Accepter les <a href="#">Termes</a> et <a href="#">Conditions</a></label>
                 </div>
-
-                <input type="submit" class="btn btn-orange" value="VALIDER" />
-
-                <div class="question question--text visible-xs">
-                  <h4>C’est quoi une consignation ?</h4>
-                  <p>
-                    Le versement de la consignation amende s’effectue uniquement si vous souhaitez contester une amende, mais elle n’est pas obligatoire pour
-                    toutes les contestations. Elle concerne uniquement les contestations relatives au cas numéro 3. C'est-à-dire tous les motifs autre que la
-                    dénonciation du conducteur et le vol ou usurpation du véhicule (cas n°1 et cas n 2)
-                  </p>
-                </div>
+                <input type="submit" class="btn btn-orange" value="FINALISER MON INSCRIPTION" />
               </div>
             </form>
           </div>
@@ -261,39 +234,7 @@
     <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
     <script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $("input:checkbox").click(function () {
-          $("input:checkbox").not(this).prop("checked", false);
-
-          if ($(this).hasClass("checked")) {
-            $(this).toggleClass("checked");
-          } else {
-            $("input:checkbox").removeClass("checked");
-            $(this).addClass("checked");
-          }
-
-          if ($(this).siblings(".btn").children("span").text() == "OUI") {
-            $(".input-control").toggleClass("show");
-          } else {
-            $(".input-control").removeClass("show");
-          }
-
-          checkStatus();
-        });
-
-        function checkStatus() {
-          if ($("input.checked").length == 0) {
-            $("input.btn").addClass("disabled");
-          } else {
-            $("input.btn").removeClass("disabled");
-          }
-        }
-
-        checkStatus();
-      });
-    </script>
-
+    <!-- >>> CUSTOM JS <<< -->
     <script src="./js/app.js"></script>
   </body>
 </html>

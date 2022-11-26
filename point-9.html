@@ -78,13 +78,13 @@
               </g>
             </svg>
           </a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <div class="nav-toggle">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse ml-auto">
+        <div id="navbar" class="ml-auto">
           <ul>
             <li class="active"><a href="#">ACCUEIL</a></li>
             <li><a href="#">CONTESTATION</a></li>
@@ -102,6 +102,20 @@
             <ul>
               <li><a href="#" class="active">COMPTE</a></li>
             </ul>
+            <div class="go-back visible-xs">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                  <path
+                    id="Icon_Close"
+                    data-name="Icon Close"
+                    d="M6.364,4.492,8.607,6.734A1.323,1.323,0,1,1,6.736,8.6L4.494,6.363,2.252,8.6A1.323,1.323,0,0,1,.382,6.734L2.624,4.492.382,2.25A1.323,1.323,0,1,1,2.252.38L4.494,2.623,6.736.38A1.323,1.323,0,0,1,8.607,2.25Z"
+                    transform="translate(0.006 0.007)"
+                    fill="#f37d2f"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="all-points__each--body">
             <form action="">
@@ -110,11 +124,11 @@
                   <div class="title">
                     <h4>REPRÉSENTANT LÉGAL</h4>
                   </div>
-                  <div class="col-lg-4 input-control">
+                  <div class="col-sm-4 col-xs-6 input-control">
                     <label for="">NOM</label>
                     <input type="text" placeholder="Nom" />
                   </div>
-                  <div class="col-lg-4 input-control">
+                  <div class="col-sm-4 col-xs-6 input-control">
                     <label for="">Prénom</label>
                     <input type="text" placeholder="Prénom" />
                   </div>
@@ -123,19 +137,19 @@
                   <div class="title">
                     <h4>ADRESSE DE FACTURATION</h4>
                   </div>
-                  <div class="col-lg-6 input-control">
+                  <div class="col-sm-6 input-control">
                     <label for="">DÉNOMINATION SOCIALE</label>
                     <input type="text" placeholder="Dénomination sociale" />
                   </div>
-                  <div class="col-lg-6 input-control">
+                  <div class="col-sm-6 input-control">
                     <label for="">NUMERO DE SIRET</label>
                     <input type="text" placeholder="Numéro de Siret" />
                   </div>
-                  <div class="col-lg-6 input-control">
+                  <div class="col-sm-6 input-control">
                     <label for="">ADRESSE</label>
                     <input type="text" placeholder="N° et nom de la rue" />
                   </div>
-                  <div class="col-lg-6 input-control">
+                  <div class="col-sm-6 input-control">
                     <label for="">VILLE</label>
                     <input type="text" placeholder="Nom de la ville" />
                   </div>
