@@ -140,7 +140,6 @@ button {
   box-shadow: 0px 3px 6px #0000001A;
   padding: 22px 17px;
   position: relative;
-  overflow: hidden;
   z-index: 99;
 
   .navbar {
@@ -148,7 +147,6 @@ button {
     align-items: center;
     min-height: fit-content;
     position: unset;
-
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -245,15 +243,12 @@ button {
         right: 0;
         transition: .4s all ease;
         box-shadow: 0px 3px 6px #e2e2e2;
-
         background: white;
         padding: 4px 14px;
-        transform: translateX(100%);
         visibility: hidden;
         opacity: 0;
 
         &.show {
-          transform: translateX(0);
           visibility: visible;
           opacity: 1;
         }
