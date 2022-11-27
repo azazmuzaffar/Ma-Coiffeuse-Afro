@@ -140,6 +140,7 @@ button {
   box-shadow: 0px 3px 6px #0000001A;
   padding: 22px 17px;
   position: relative;
+  overflow: hidden;
   z-index: 99;
 
   .navbar {
@@ -362,6 +363,7 @@ button {
   position: relative;
   padding: 76px 30px 110px;
   background: #F5832F;
+  overflow-x: hidden;
 
   @media screen and (max-width: 991px) {
     padding: 60px 40px 100px;
