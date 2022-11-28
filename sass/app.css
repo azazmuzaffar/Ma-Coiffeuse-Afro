@@ -19,6 +19,7 @@ body {
   font-size: 11px;
   font-weight: 400;
   line-height: 1.27;
+  padding-top: 82px;
 }
 
 a {
@@ -128,7 +129,10 @@ button {
   background: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
   padding: 22px 17px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 99;
 }
 .site-header .navbar {
@@ -227,9 +231,11 @@ button {
     background: white;
     padding: 4px 14px;
     visibility: hidden;
+    transform: translate(100%);
     opacity: 0;
   }
   .site-header .navbar #navbar.show {
+    transform: translate(0);
     visibility: visible;
     opacity: 1;
   }
@@ -737,7 +743,7 @@ form label {
   font-weight: bold;
 }
 form input[type=text],
-form input[type=date] {
+form .date-picker {
   position: relative;
   display: block;
   padding: 15px;
@@ -749,21 +755,21 @@ form input[type=date] {
   outline: none;
   z-index: 1;
 }
-form input[type=text]::-moz-placeholder, form input[type=date]::-moz-placeholder {
+form input[type=text]::-moz-placeholder, form .date-picker::-moz-placeholder {
   color: #B9BED1;
 }
-form input[type=text]:-ms-input-placeholder, form input[type=date]:-ms-input-placeholder {
+form input[type=text]:-ms-input-placeholder, form .date-picker:-ms-input-placeholder {
   color: #B9BED1;
 }
 form input[type=text]::placeholder,
-form input[type=date]::placeholder {
+form .date-picker::placeholder {
   color: #B9BED1;
 }
-form input[type=date] {
+form .date-picker {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-form input[type=date]::-webkit-calendar-picker-indicator {
+form .date-picker::-webkit-calendar-picker-indicator {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='45' viewBox='0 0 42 45'%3E%3Cg id='Group_6725' data-name='Group 6725' transform='translate(-1185.25 -305.67)'%3E%3Crect id='Rectangle_10' data-name='Rectangle 10' width='42' height='45' rx='10' transform='translate(1185.25 305.67)' fill='%23f37d2f'/%3E%3Cg id='calendar' transform='translate(1191.059 314.196)'%3E%3Cpath id='Path_28' data-name='Path 28' d='M27.911 1.884h-3.3V.471A.471.471 0 0 0 24.142 0h-3.3a.471.471 0 0 0-.471.471V1.884H10.009V.471A.471.471 0 0 0 9.538 0H6.24a.471.471 0 0 0-.471.471V1.884h-3.3A.471.471 0 0 0 2 2.356V27.8a.471.471 0 0 0 .471.471h25.44a.471.471 0 0 0 .471-.471V2.356A.471.471 0 0 0 27.911 1.884Zm-6.6-.942h2.356V3.769H21.315V.942Zm-14.6 0H9.067V3.769H6.711V.942ZM2.942 2.827H5.769V4.24a.471.471 0 0 0 .471.471h3.3a.471.471 0 0 0 .471-.471V2.827H20.373V4.24a.471.471 0 0 0 .471.471h3.3a.471.471 0 0 0 .471-.471V2.827H27.44v4.24H2.942Zm0 24.5V8.009h24.5V27.324Z' fill='%23fff'/%3E%3Cpath id='Path_29' data-name='Path 29' d='M23.72 23H11V36.662H28.9V23H23.72Zm-3.3.942h3.3v3.3h-3.3Zm3.3 7.538h-3.3v-3.3h3.3Zm-7.538-3.3h3.3v3.3h-3.3Zm0-4.24h3.3v3.3h-3.3Zm-4.24 0h3.3v3.3h-3.3Zm0 4.24h3.3v3.3h-3.3Zm3.3 7.538h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm0-4.24h-3.3v-3.3h3.3Zm0-7.538v3.3h-3.3v-3.3Z' transform='translate(-4.76 -12.165)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   cursor: pointer;
   width: 43px;
@@ -913,7 +919,6 @@ form .custom-checkbox label a {
 }
 form .custom-checkbox label:before {
   content: "";
-  -webkit-appearance: none;
   background-color: transparent;
   border: 2px solid #707070;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
